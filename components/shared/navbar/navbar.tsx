@@ -57,41 +57,47 @@ export default function NavigationBar() {
             isOpen ? "block min-h-screen lg:min-h-0" : "hidden max-h-none"
           }`}
         >
-          <div className="text-sm lg:flex items-center gap-10">
+          <div className="text-sm flex lg:flex-row flex-col items-center justify-center lg:gap-10 gap-5">
             <a
               href="#"
-              className="block mt-4 lg:inline-block ml-5 lg:mt-0 text-center text-[#0000007a] dark:text-white font-[500]"
+              className="block lg:inline-block lg:ml-5 text-center text-[#0000007a] dark:text-white font-[500]"
             >
               Home
             </a>
             <a
               href="#"
-              className="block mt-4 lg:inline-block lg:mt-0 text-center text-[#0000007a] dark:text-white font-[500]"
+              className="block lg:inline-block lg:mt-0 text-center text-[#0000007a] dark:text-white font-[500]"
             >
               About Us
             </a>
             <a
               href="#"
-              className="block my-4 lg:mt-4 lg:inline-block text-center text-[#0000007a] dark:text-white font-[500]"
+              className="block lg:inline-block text-center text-[#0000007a] dark:text-white font-[500]"
             >
               Solutions
             </a>
             <a
               href="#"
-              className="block my-4 lg:mt-4 lg:inline-block text-center text-[#0000007a] dark:text-white font-[500]"
+              className="block lg:inline-block text-center text-[#0000007a] dark:text-white font-[500]"
+            >
+              News
+            </a>
+            <a
+              href="#"
+              className="block lg:inline-block text-center text-[#0000007a] dark:text-white font-[500]"
             >
               Contact Us
             </a>
           </div>
-          <div className="text-center ms-auto">
+          <div className="text-center ms-auto flex-col lg:flex-row flex items-center justify-center lg:gap-10 gap-5 lg:pt-0 pt-5">
             <a
               href="#"
-              className="block my-4 lg:mt-4 text-sm mr-5 lg:inline-block text-center text-[#0000007a] dark:text-white font-[500]"
+              className="block text-sm lg:inline-block text-center text-[#0000007a] dark:text-white font-[500]"
             >
               Support
             </a>
             <Button asChild className=" rounded-full">
-              <Link href="/login">Get Started</Link>
+              <Link href="/login">Download App</Link>
             </Button>
           </div>
         </div>
