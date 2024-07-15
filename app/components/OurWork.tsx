@@ -36,7 +36,7 @@ const cardData = [
 const OurWorkCard: React.FC<OurWorkCardProps> = ({ icon, header, description }) => {
   return (
     <Card className="w-[300px] p-6 border-0 rounded-xl max-h-[229px] md:w-[212px] md:max-h-[160px] md:p-[16.83px] md:pb-[9.67px] lg:w-[300px] lg:max-h-[229px] lg:p-6 ">
-      <Image src={icon} className='p-0 m-0 drop-shadow-2xl shadow-[#3232CB] w-[40px] h-[40px] md:w-[28.6px] md:h-[28.6px] md:w-[40px] lg:h-[40px] lg:w-[40px]' width={40} height={40} alt={header}/>
+      <Image src={icon} className='p-0 m-0 drop-shadow-2xl shadow-[#3232CB] w-[40px] h-[40px] md:w-[28.6px] md:h-[28.6px] md:w-[40px] lg:h-[40px] lg:w-[40px]' width={40} height={40} alt="icon"/>
       <CardHeader className='p-0 m-0 mt-4 mb-4 md:my-[11.22px] lg:my-4'>
           <CardTitle className='p-0 m-0 text-2xl leading-[29.05px] font-bold md:text-base md:leading-[19.36px] lg:text-2xl ld:leading-[29.05px]'>{header}</CardTitle>
       </CardHeader>
