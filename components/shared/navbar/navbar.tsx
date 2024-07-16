@@ -21,9 +21,9 @@ export default function NavigationBar() {
   }, [isOpen]);
 
   return (
-    <nav className="bg-[#F5F5F5] lg:px-4">
-      <div className="flex items-center justify-between flex-wrap max-w-[1040px] mx-auto py-3 px-4 lg:px-0">
-        <div className="flex items-center flex-shrink-0 text-white">
+    <nav className="bg-[#F5F5F5] md:px-4">
+      <div className="flex items-center justify-between flex-wrap max-w-[1040px] mx-auto md:py-3 px-4 md:px-0">
+        <div className="flex items-center flex-shrink-0 text-white py-1">
           <Image
             src="/assets/images/ecocan-logo.svg"
             alt="ecocan logo"
@@ -31,7 +31,7 @@ export default function NavigationBar() {
             height={46}
           />
         </div>
-        <div className="block lg:hidden">
+        <div className="block md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
@@ -53,46 +53,46 @@ export default function NavigationBar() {
           </button>
         </div>
         <div
-          className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${
-            isOpen ? "block min-h-screen lg:min-h-0" : "hidden max-h-none"
+          className={`w-full block flex-grow md:flex md:items-center md:w-auto ${
+            isOpen ? "block min-h-screen md:min-h-0" : "hidden max-h-none"
           }`}
         >
-          <div className="text-sm flex lg:flex-row flex-col items-center justify-center lg:gap-10 gap-5">
+          <div className="text-sm flex md:flex-row flex-col items-center justify-center lg:gap-10 gap-5">
             <a
               href="#"
-              className="block lg:inline-block lg:ml-5 text-center text-[#0000007a] dark:text-white font-[500]"
+              className="block md:inline-block md:ml-5 text-center text-[#0000007a] dark:text-white font-[500]"
             >
               Home
             </a>
             <a
               href="#"
-              className="block lg:inline-block lg:mt-0 text-center text-[#0000007a] dark:text-white font-[500]"
+              className="block md:inline-block md:mt-0 text-center text-[#0000007a] dark:text-white font-[500]"
             >
               About Us
             </a>
             <a
               href="#"
-              className="block lg:inline-block text-center text-[#0000007a] dark:text-white font-[500]"
+              className="block md:inline-block text-center text-[#0000007a] dark:text-white font-[500]"
             >
               Solutions
             </a>
             <a
               href="#"
-              className="block lg:inline-block text-center text-[#0000007a] dark:text-white font-[500]"
+              className="block md:inline-block text-center text-[#0000007a] dark:text-white font-[500]"
             >
               News
             </a>
             <a
               href="#"
-              className="block lg:inline-block text-center text-[#0000007a] dark:text-white font-[500]"
+              className="block md:inline-block text-center text-[#0000007a] dark:text-white font-[500]"
             >
               Contact Us
             </a>
           </div>
-          <div className="text-center ms-auto flex-col lg:flex-row flex items-center justify-center lg:gap-10 gap-5 lg:pt-0 pt-5">
+          <div className="text-center ms-auto flex-col md:flex-row flex items-center justify-center lg:gap-10 gap-5 md:pt-0 pt-5">
             <a
               href="#"
-              className="block text-sm lg:inline-block text-center text-[#0000007a] dark:text-white font-[500]"
+              className="block text-sm md:inline-block text-center text-[#0000007a] dark:text-white font-[500]"
             >
               Support
             </a>
