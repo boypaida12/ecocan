@@ -21,8 +21,8 @@ export default function NavigationBar() {
   }, [isOpen]);
 
   return (
-    <nav className="bg-[#F5F5F5] md:px-4">
-      <div className="flex items-center justify-between flex-wrap max-w-[1040px] mx-auto md:py-3 px-4 md:px-0">
+    <nav className="fixed top-0 left-0 right-0 bg-[#ffffffb2] backdrop-blur-xl md:px-4 border-b border-b-[#EDEDED] z-50">
+      <div className="flex items-center justify-between flex-wrap max-w-[1040px] mx-auto px-4 md:px-0">
         <div className="flex items-center flex-shrink-0 text-white py-1">
           <Image
             src="/assets/images/ecocan-logo.svg"
@@ -37,14 +37,14 @@ export default function NavigationBar() {
             className="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
           >
             <svg
-              className={`fill-current h-3 w-3 ${isOpen ? "hidden" : "block"}`}
+              className={`fill-current h-6 w-6 text-[#00000080] ${isOpen ? "hidden" : "block"}`}
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
             </svg>
             <svg
-              className={`fill-current h-3 w-3 ${isOpen ? "block" : "hidden"}`}
+              className={`fill-current h-6 w-6 text-[#00000080] ${isOpen ? "block" : "hidden"}`}
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -57,46 +57,46 @@ export default function NavigationBar() {
             isOpen ? "block min-h-screen md:min-h-0" : "hidden max-h-none"
           }`}
         >
-          <div className="text-sm flex md:flex-row flex-col items-center justify-center lg:gap-10 gap-5">
+          <div className="text-sm flex md:flex-row flex-col items-center justify-center gap-4">
             <a
               href="#"
-              className="block md:inline-block md:ml-5 text-center text-[#0000007a] dark:text-white font-[500]"
+              className="block md:inline-block md:ml-5 text-center text-[#00000080] dark:text-white font-[500]"
             >
               Home
             </a>
             <a
               href="#"
-              className="block md:inline-block md:mt-0 text-center text-[#0000007a] dark:text-white font-[500]"
+              className="block md:inline-block md:mt-0 text-center text-[#00000080] dark:text-white font-[500]"
             >
               About Us
             </a>
             <a
               href="#"
-              className="block md:inline-block text-center text-[#0000007a] dark:text-white font-[500]"
+              className="block md:inline-block text-center text-[#00000080] dark:text-white font-[500]"
             >
               Solutions
             </a>
             <a
               href="#"
-              className="block md:inline-block text-center text-[#0000007a] dark:text-white font-[500]"
+              className="block md:inline-block text-center text-[#00000080] dark:text-white font-[500]"
             >
               News
             </a>
             <a
               href="#"
-              className="block md:inline-block text-center text-[#0000007a] dark:text-white font-[500]"
+              className="block md:inline-block text-center text-[#00000080] dark:text-white font-[500]"
             >
               Contact Us
             </a>
           </div>
-          <div className="text-center ms-auto flex-col md:flex-row flex items-center justify-center lg:gap-10 gap-5 md:pt-0 pt-5">
+          <div className="text-center ms-auto flex-col md:flex-row flex items-center justify-center gap-4 md:pt-0 pt-5">
             <a
               href="#"
-              className="block text-sm md:inline-block text-center text-[#0000007a] dark:text-white font-[500]"
+              className="block text-sm md:inline-block text-center text-[#00000080] dark:text-white font-[500]"
             >
               Support
             </a>
-            <Button asChild className=" rounded-full">
+            <Button asChild className="rounded-full h-8">
               <Link href="/login">Download App</Link>
             </Button>
           </div>
