@@ -1,12 +1,14 @@
 import Image from "next/image";
 import React from "react";
-import { Facebook, Twitter, Instagram, Linkedin, LucideFacebook, LucideArrowUpWideNarrow, LucideArrowRightCircle, LucideArrowRight } from "lucide-react";
 import { Input } from "@/components/ui/input";
 
 type FooterItem =
   | { type: "logo"; src: string; alt: string }
   | { type: "text"; content: string }
-  | { type: "social"; links: { href: string; icon: JSX.Element }[] }
+  | {
+      type: "social";
+      links: { href: string; src: string; alt: string }[];
+    }
   | { type: "link"; href: string; content: string }
   | { type: "input"; placeholder: string };
 
@@ -32,10 +34,26 @@ const footerData: FooterColumn[] = [
       {
         type: "social",
         links: [
-          { href: "https://facebook.com", icon: <LucideFacebook /> },
-          { href: "https://twitter.com", icon: <Twitter /> },
-          { href: "https://instagram.com", icon: <Instagram /> },
-          { href: "https://linkedin.com", icon: <Linkedin /> },
+          {
+            href: "https://facebook.com",
+            src: "/assets/icons/facebook-brands-solid.svg",
+            alt: "Facebook",
+          },
+          {
+            href: "https://twitter.com",
+            src: "/assets/icons/twitter-brands-solid.svg",
+            alt: "Twitter",
+          },
+          {
+            href: "https://instagram.com",
+            src: "/assets/icons/instagram-brands-solid.svg",
+            alt: "Instagram",
+          },
+          {
+            href: "https://linkedin.com",
+            src: "/assets/icons/linkedin-brands-solid.svg",
+            alt: "LinkedIn",
+          },
         ],
       },
     ],
@@ -57,7 +75,7 @@ const footerData: FooterColumn[] = [
     ],
   },
   {
-    title: "Join our community",
+    title: "JOIN OUR COMMUNITY🔥",
     items: [{ type: "input", placeholder: "Enter your email" }],
   },
 ];
@@ -86,39 +104,59 @@ export default function Footer() {
                   );
                 case "text":
                   return (
-                    <p key={itemIndex} className="mb-4">
+                    <p key={itemIndex} className="mb-4 text-gray-600">
                       {item.content}
                     </p>
                   );
                 case "social":
                   return (
-                    <div key={itemIndex} className="flex space-x-4 mb-4">
+                    <div key={itemIndex} className="flex space-x-4 mb-4 gap-3">
                       {item.links.map((link, linkIndex) => (
                         <a
                           key={linkIndex}
                           href={link.href}
-                          className="text-gray-600 hover:text-gray-800"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-gray-800"
                         >
-                          {link.icon}
+                          <Image
+                            src={link.src}
+                            alt={link.alt}
+                            width={24}
+                            height={24}
+                          />
                         </a>
                       ))}
                     </div>
                   );
                 case "link":
                   return (
-                    <a
-                      key={itemIndex}
-                      href={item.href}
-                      className="block mb-2 text-gray-600 hover:text-gray-800"
-                    >
-                      {item.content}
-                    </a>
+                    <div key={itemIndex} className="gap-8">
+                      <a
+                        href={item.href}
+                        className="block mb-2 text-gray-600 hover:text-gray-800 gap-8"
+                      >
+                        {item.content}
+                      </a>
+                    </div>
                   );
                 case "input":
                   return (
-                    <div key={itemIndex} className="mb-4 border border-[#E6E8EC] rounded-full flex items-center">
-                      <Input placeholder="Enter your email" className="text-[#777E90] border-none rounded-full focus:outline-none focus:border-none focus:ring-0"/>
-                      <Image src="/assets/icons/right-arrow.svg" className="m-2" alt="right chevron arrow" width={32} height={32}/>
+                    <div
+                      key={itemIndex}
+                      className="mb-4 border border-[#E6E8EC] rounded-full flex items-center"
+                    >
+                      <Input
+                        placeholder="Enter your email"
+                        className="text-[#777E90] border-none rounded-full focus:outline-none focus:border-none focus:ring-0"
+                      />
+                      <Image
+                        src="/assets/icons/right-arrow.svg"
+                        className="m-2"
+                        alt="right chevron arrow"
+                        width={32}
+                        height={32}
+                      />
                     </div>
                   );
                 default:
@@ -127,6 +165,17 @@ export default function Footer() {
             })}
           </div>
         ))}
+      </div>
+      <div className="max-w-5xl mx-auto py-4 border-t border-gray-200 mt-8 flex justify-between items-center text-sm text-gray-600">
+        <span>© 2024 Ecocan. All Rights Reserved.</span>
+        <div className="flex space-x-8">
+          <a href="#" className="hover:text-gray-800">
+            Privacy Policy
+          </a>
+          <a href="#" className="hover:text-gray-800">
+            Terms & Conditions
+          </a>
+        </div>
       </div>
     </footer>
   );
