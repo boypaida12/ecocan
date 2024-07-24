@@ -1,5 +1,6 @@
 import Hero from "@/components/hero";
 import OurWork from "./components/OurWork";
+import Blog from "@/components/blog";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <main className="">
         <Hero/>
         <OurWork />
+        <Blog/>
       </main>
     </>
   );
