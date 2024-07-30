@@ -21,7 +21,7 @@ export default function NavigationBar() {
   }, [isOpen]);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-[#ffffffb2] backdrop-blur-xl md:px-4 border-b border-b-[#EDEDED] z-50">
+    <nav className="fixed top-0 left-0 right-0 bg-[#ffffffb2] backdrop-blur-xl md:px-4 border-b border-b-[#EDEDED] z-[9999]">
       <div className="flex items-center justify-between flex-wrap max-w-[1040px] mx-auto px-4 md:px-0">
         <div className="flex items-center flex-shrink-0 text-white py-1">
           <Image
@@ -90,14 +90,11 @@ export default function NavigationBar() {
             </a>
           </div>
           <div className="text-center ms-auto flex-col md:flex-row flex items-center justify-center gap-4 md:pt-0 pt-5">
-            <a
-              href="#"
-              className="block text-sm md:inline-block text-center text-[#00000080] dark:text-white font-[500]"
-            >
-              Support
-            </a>
+            <Button asChild className="rounded-full h-8 bg-transparent border border-primary text-primary hover:bg-transparent">
+              <Link href="/">Join Ecommunity</Link>
+            </Button>
             <Button asChild className="rounded-full h-8">
-              <Link href="/login">Download App</Link>
+              <Link href="/">Download App</Link>
             </Button>
           </div>
         </div>
