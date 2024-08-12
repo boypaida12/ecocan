@@ -82,8 +82,8 @@ const footerData: FooterColumn[] = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#FCFCFD] py-8">
-      <div className="xl:max-w-[65rem] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+    <footer className="bg-[#FCFCFD]">
+      <div className="xl:max-w-[65rem] mx-auto grid py-[6.25rem] grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {footerData.map((column, index) => (
           <div key={index}>
             {column.title && (
@@ -166,7 +166,7 @@ export default function Footer() {
           </div>
         ))}
       </div>
-      <div className="max-w-5xl mx-auto py-4 border-t border-gray-200 mt-8 flex justify-between items-center text-sm text-gray-600">
+      <div className="max-w-5xl mx-auto py-4 border-t border-gray-200 flex justify-between items-center text-sm text-gray-600">
         <span>© 2024 Ecocan. All Rights Reserved.</span>
         <div className="flex space-x-8">
           <a href="#" className="hover:text-gray-800">

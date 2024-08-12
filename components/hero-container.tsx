@@ -1,0 +1,35 @@
+import React from "react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { tabContent } from "@/lib/tabContent";
+
+export default function HeroContainer() {
+  return (
+    <>
+      <Tabs defaultValue="consumer" className="w-full">
+        <div className="lg:min-h-[100vh] pt-8 flex flex-col">
+          <div className="flex-grow">
+            {Object.entries(tabContent).map(([tab, { hero }]) => (
+              <TabsContent key={tab} value={tab}>
+                {hero}
+              </TabsContent>
+            ))}
+          </div>
+          <div className="justify-center items-center flex py-8">
+            <TabsList className="bg-white border-none rounded-full">
+              {Object.keys(tabContent).map((tab) => (
+                <TabsTrigger key={tab} value={tab} className="rounded-full w-36 text-[#0000004D]">
+                  {tab.charAt(0).toUpperCase() + tab.slice(1)}
+                </TabsTrigger>
+              ))}
+            </TabsList>
+          </div>
+        </div>
+        {Object.entries(tabContent).map(([tab, { content }]) => (
+          <TabsContent key={tab} value={tab}>
+            <div>{content}</div>
+          </TabsContent>
+        ))}
+      </Tabs>
+    </>
+  );
+}

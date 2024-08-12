@@ -5,7 +5,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
-export default function NavigationBar() {
+interface NavigationBarProps {
+  logoSrc: string;
+  firstButton: React.ReactNode;
+}
+
+ const NavigationBar:React.FC<NavigationBarProps> = ({logoSrc, firstButton}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -25,7 +30,7 @@ export default function NavigationBar() {
       <div className="flex items-center justify-between flex-wrap max-w-[1040px] mx-auto px-4 md:px-0">
         <div className="flex items-center flex-shrink-0 text-white py-1">
           <Image
-            src="/assets/images/ecocan-logo.svg"
+            src={logoSrc}
             alt="ecocan logo"
             width={46}
             height={46}
@@ -90,9 +95,10 @@ export default function NavigationBar() {
             </a>
           </div>
           <div className="text-center ms-auto flex-col md:flex-row flex items-center justify-center gap-4 md:pt-0 pt-5">
-            <Button asChild className="rounded-full h-8 bg-transparent border border-primary text-primary hover:bg-transparent">
+            {firstButton}
+            {/* <Button asChild className="rounded-full h-8 bg-transparent border border-primary text-primary hover:bg-transparent">
               <Link href="/">Join Ecommunity</Link>
-            </Button>
+            </Button> */}
             <Button asChild className="rounded-full h-8">
               <Link href="/">Download App</Link>
             </Button>
@@ -101,4 +107,7 @@ export default function NavigationBar() {
       </div>
     </nav>
   );
-}
+};
+
+
+export default NavigationBar;
