@@ -17,7 +17,7 @@ const navLinks = [
   { href: "#", label: "Home" },
   { href: "#", label: "About Us" },
   { href: "#", label: "Solutions" },
-  { href: "#", label: "News" },
+  { href: "#", label: "Blog" },
   { href: "#", label: "Contact Us" },
 ];
 
@@ -66,7 +66,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
         { "transform -translate-y-full": !isVisible }
       )}
     >
-      <div className="flex items-center justify-between flex-wrap max-w-[1040px] mx-auto px-4 md:px-0">
+      <div className="flex items-center justify-between flex-wrap xl:max-w-[77.5rem] mx-auto px-4 md:px-0">
         <div className="flex items-center flex-shrink-0 text-white py-1">
           <Image src={logoSrc} alt="ecocan logo" width={46} height={46} />
         </div>
@@ -106,7 +106,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
                 href={link.href}
                 key={link.label}
                 className={clsx(
-                  "block md:inline-block text-center text-[#00000080] font-[500]",
+                  "block md:inline-block text-center text-[#00000080] text-sm font-[500]",
                   linkColor
                 )}
               >
@@ -116,7 +116,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
           </div>
           <div className="text-center ms-auto flex-col md:flex-row flex items-center justify-center gap-4 md:pt-0 pt-5">
             {firstButton}
-            <Button asChild className="rounded-full h-8">
+            <Button asChild className="rounded-full h-7 xl:h-8">
               <Link href="/">Download App</Link>
             </Button>
           </div>

@@ -1,7 +1,8 @@
 import React from 'react'
-import TextWithCards from './shared/text-with-cards/text-with-cards'
-import CustomCard from './shared/text-with-cards/custom-card'
 import { LucideEye, LucideHandCoins, LucideRecycle } from 'lucide-react'
+import TextWithCards from '../shared/text-with-cards/text-with-cards';
+import CustomCard from '../shared/text-with-cards/custom-card';
+import ImageWithText from '../shared/image-with-text/image-with-text';
 
 const iconSize = 18;
 

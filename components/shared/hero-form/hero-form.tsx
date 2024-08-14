@@ -67,10 +67,10 @@ export default function HeroForm({title = "1, 2, 3. Go!!"}:HeroFormProps) {
   }
 
   return (
-    <Card className="w-full rounded-2xl absolute -bottom-10">
+    <Card className="lg:mt-96 xl:mt-44 rounded-2xl xl:w-full ms-auto me-4">
       <CardHeader className="text-[#23262FCC]">
         <CardTitle className="text-3xl">{title}</CardTitle>
-        <CardDescription className="text-xl font-light">
+        <CardDescription className="xl:text-xl font-light">
           Already a partner?{" "}
           <Link href="/" className="text-green-500 hover:underline">
             Log in
@@ -86,7 +86,7 @@ export default function HeroForm({title = "1, 2, 3. Go!!"}:HeroFormProps) {
                   name="businessName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Business legal Name</FormLabel>
+                      <FormLabel>Business Legal Name</FormLabel>
                       <FormControl>
                         <Input placeholder="Enter business name" {...field} />
                       </FormControl>
@@ -136,44 +136,46 @@ export default function HeroForm({title = "1, 2, 3. Go!!"}:HeroFormProps) {
                   )}
                 />
             </div>
-            <FormField
-              control={form.control}
-              name="businessType"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Business type</FormLabel>
-                  <Select
-                    onValueChange={field.onChange}
-                    defaultValue={field.value}
-                  >
-                    <FormControl>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select business type" />
-                      </SelectTrigger>
-                    </FormControl>
-                    <SelectContent>
-                      <SelectItem value="type1">Type 1</SelectItem>
-                      <SelectItem value="type2">Type 2</SelectItem>
-                      <SelectItem value="type3">Type 3</SelectItem>
-                    </SelectContent>
-                  </Select>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="email"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Email</FormLabel>
-                  <FormControl>
-                    <Input placeholder="Enter email address" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+            <div className="grid grid-cols-2 xl:grid-cols-1 gap-4">
+                <FormField
+                  control={form.control}
+                  name="businessType"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Business type</FormLabel>
+                      <Select
+                        onValueChange={field.onChange}
+                        defaultValue={field.value}
+                      >
+                        <FormControl>
+                          <SelectTrigger>
+                            <SelectValue placeholder="Select business type" />
+                          </SelectTrigger>
+                        </FormControl>
+                        <SelectContent>
+                          <SelectItem value="type1">Type 1</SelectItem>
+                          <SelectItem value="type2">Type 2</SelectItem>
+                          <SelectItem value="type3">Type 3</SelectItem>
+                        </SelectContent>
+                      </Select>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Email</FormLabel>
+                      <FormControl>
+                        <Input placeholder="Enter email address" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+            </div>
             <FormField
               control={form.control}
               name="contact"

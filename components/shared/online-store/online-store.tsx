@@ -17,7 +17,7 @@ export default function OnlineStore({
   imageSrc = "/assets/images/online-store.svg"
 }: OnlineStoreProps) {
   return (
-    <div className="max-w-[65rem] mx-auto flex flex-col md:flex-row gap-12 py-[6.25rem]">
+    <div className="max-w-[77.5rem] mx-auto flex flex-col md:flex-row gap-12 py-[6.25rem]">
       <div className="md:flex-grow-0 self-center space-y-4">
         <h2 className="text-[2rem] font-bold text-[#23262FCC]">{heading}</h2>
         <p className="text-[#23262FCC]">{description}</p>

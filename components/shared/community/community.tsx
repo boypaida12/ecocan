@@ -5,7 +5,7 @@ import React from "react";
 
 export default function JoinCommunity() {
   return (
-    <div className="flex max-w-[65rem] mx-auto py-[6.25rem] items-center">
+    <div className="flex max-w-[77.5rem] mx-auto py-[6.25rem] items-center">
       <div className="space-y-8">
         <h2 className="text-[2rem] text-[#23262FCC] font-semibold">Tap Tap Tap, and Wallah!</h2>
         <p>

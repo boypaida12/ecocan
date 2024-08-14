@@ -1,10 +1,11 @@
-import ConsumerContent from "@/components/consumer-content";
-import EcoStationContent from "@/components/eco-station-content";
+import ConsumerContent from "@/components/contents/consumer-content";
+import EcoStationContent from "@/components/contents/eco-station-content";
 import CourierHero from "@/components/shared/heros/courier-hero";
 import DefaultHero from "@/components/shared/heros/default-hero";
 import EcoStationHero from "@/components/shared/heros/eco-station-hero";
 import EventsHero from "@/components/shared/heros/events-hero";
 import ProducerHero from "@/components/shared/heros/producer-hero";
+import RecyclerHero from "@/components/shared/heros/recycler-hero";
 
 export interface TabContent {
     hero: React.ReactNode;
@@ -29,7 +30,7 @@ export interface TabContent {
         content: <p>Producer body</p>,
     },
     "recycler": {
-        hero: <DefaultHero/>,
+        hero: <RecyclerHero/>,
         content: <p>Recycler body</p>,
     },
     "events": {

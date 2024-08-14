@@ -1,11 +1,11 @@
 import React from "react";
-import TextWithCards from "./shared/text-with-cards/text-with-cards";
-import CustomCard from "./shared/text-with-cards/custom-card";
-import ImageWithText from "./shared/image-with-text/image-with-text";
-import OnlineStore from "./shared/online-store/online-store";
-import TextWithCard from "./shared/alt-text-with-card/text-with-card";
-import CtaCard from "./shared/cta-card/cta-card";
-import JoinCommunity from "./shared/community/community";
+import TextWithCards from "../shared/text-with-cards/text-with-cards";
+import CustomCard from "../shared/text-with-cards/custom-card";
+import ImageWithText from "../shared/image-with-text/image-with-text";
+import OnlineStore from "../shared/online-store/online-store";
+import TextWithCard from "../shared/alt-text-with-card/text-with-card";
+import CtaCard from "../shared/cta-card/cta-card";
+import JoinCommunity from "../shared/community/community";
 
 export default function ConsumerContent() {
   return (
@@ -13,7 +13,7 @@ export default function ConsumerContent() {
       <TextWithCards />
       <ImageWithText
         mainImage="/assets/images/scan-image.svg"
-        secondaryImage="/assets/images/earn-image.svg"
+        // secondaryImage="/assets/images/earn-image.svg"
         title="How the Ecocan app works"
         subtitle="How the Ecocan app works"
         directions={[
