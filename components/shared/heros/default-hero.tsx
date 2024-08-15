@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { LucideDownload } from "lucide-react";
+import { LucideArrowRight, LucideDownload } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import NavigationBar from "../navbar/navbar";
 import JoinCommunityButton from "../join-community-btn";
+import Link from "next/link";
 
 export default function DefaultHero() {
   return (
@@ -11,6 +12,9 @@ export default function DefaultHero() {
       <NavigationBar
         logoSrc="/assets/images/ecocan-logo.svg"
         firstButton={<JoinCommunityButton />}
+        secondButton={<Button asChild className="rounded-full h-7 xl:h-8 bg-[#FFDD4E] text-[#383A35] hover:bg-[#FFDD4E] hover:text-[#383A35]">
+          <Link href="/">ECOCAN Market</Link>
+        </Button>}
       />
       <div className="lg:h-[32.875rem] xl:h-[44rem] mt-[3.125rem]">
         <div className="bg-[url('/assets/images/hero-bg.jpeg')] bg-center h-[27rem] relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-70 after:z-10">
@@ -24,18 +28,22 @@ export default function DefaultHero() {
                   </span>
                 </h1>
               </div>
-              <div className="text-sm lg:text-base xl:text-lg">
+              <div className="text-sm lg:text-base xl:text-lg space-y-12">
                 <p className="tracking-wide text-white text-center md:text-start font-light">
                   At ECOCAN, sustainability goes beyond environmental
                   conservation, to nurturing healthy and thriving communities.
                 </p>
-                <p className="lg:text-white xl:text-accent font-light mt-8">
+                <p className="lg:text-white xl:text-accent font-light">
                   Download EcocanApp to avoid harmful fake drinks, make money by
                   recycling your empties; or order your favourite drinks online.{" "}
                 </p>
-                <Button className="before:ease rounded-full mt-6 relative xl:h-[3.25rem] mx-auto md:mx-0 w-fit xl:py-3 xl:px-8 overflow-hidden text-white transition-all before:absolute before:right-0 before:top-0 before:h-14 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-1000 hover:before:-translate-x-56">
+                <Button className="before:ease rounded-full relative xl:h-[3.25rem] mx-auto md:mx-0 w-fit xl:py-3 xl:px-8 overflow-hidden text-white transition-all before:absolute before:right-0 before:top-0 before:h-14 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-1000 hover:before:-translate-x-56">
                   <span className="relative z-10 text-lg">Download App</span>
                   <LucideDownload className="ml-2" />
+                </Button>
+                <Button className="rounded-full bg-transparent border border-primary text-primary hover:bg-transparent xl:h-[3.25rem] xl:py-3 xl:px-8 ml-4">
+                  <span className="relative z-10 text-lg">Join Ecommunity</span>
+                  <LucideArrowRight className="ml-2" />
                 </Button>
               </div>
             </div>

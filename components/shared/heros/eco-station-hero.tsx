@@ -2,6 +2,7 @@ import React from "react";
 import NavigationBar from "../navbar/navbar";
 import { Button } from "@/components/ui/button";
 import HeroForm from "../hero-form/hero-form";
+import Link from "next/link";
 
 export default function EcoStationHero() {
   return (
@@ -9,6 +10,9 @@ export default function EcoStationHero() {
       <NavigationBar
         logoSrc="/assets/images/ecocan-logo-alt.svg"
         firstButton={<Button variant="ghost">Support</Button>}
+        secondButton={<Button asChild className="rounded-full h-7 xl:h-8 bg-white text-black hover:bg-white hover:text-black">
+          <Link href="/">Download App</Link>
+        </Button>}
         className=" text-white backdrop-blur-none bg-transparent border-b-0"
         linkColor="text-white"
       />
@@ -33,7 +37,7 @@ export default function EcoStationHero() {
                 <p className="font-light">Sign up today to grow your business.</p>
               </div>
             </div>
-            <div className="lg:h-40 xl:h-[40rem] md:w-5/12 ms-auto relative overflow-hidden lg:overflow-visible z-40 items-center flex">
+            <div className="lg:h-40 xl:h-[40rem] xl:w-5/12 ms-auto relative overflow-hidden lg:overflow-visible z-40 items-center flex">
               <HeroForm title="Let's grow together" />
             </div>
           </div>

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 import NavigationBar from "../navbar/navbar";
+import Link from "next/link";
 
 export default function RecyclerHero() {
   return (
@@ -8,6 +9,9 @@ export default function RecyclerHero() {
       <NavigationBar
         logoSrc="/assets/images/ecocan-logo-alt.svg"
         firstButton={<Button variant="ghost">Support</Button>}
+        secondButton={<Button asChild className="rounded-full h-7 xl:h-8 bg-white text-black hover:bg-white hover:text-black">
+          <Link href="/">Download App</Link>
+        </Button>}
         className=" text-white backdrop-blur-none bg-transparent border-b-0"
         linkColor="text-white"
       />

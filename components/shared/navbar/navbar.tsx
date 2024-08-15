@@ -9,6 +9,7 @@ import clsx from "clsx";
 interface NavigationBarProps {
   logoSrc: string;
   firstButton: React.ReactNode;
+  secondButton: React.ReactNode;
   className?: string;
   linkColor?: string;
 }
@@ -24,6 +25,7 @@ const navLinks = [
 const NavigationBar: React.FC<NavigationBarProps> = ({
   logoSrc,
   firstButton,
+  secondButton,
   className,
   linkColor,
 }) => {
@@ -32,7 +34,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 200) {
         setIsVisible(false);
       } else {
         setIsVisible(true);
@@ -116,9 +118,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
           </div>
           <div className="text-center ms-auto flex-col md:flex-row flex items-center justify-center gap-4 md:pt-0 pt-5">
             {firstButton}
-            <Button asChild className="rounded-full h-7 xl:h-8">
-              <Link href="/">Download App</Link>
-            </Button>
+            {secondButton}
           </div>
         </div>
       </div>

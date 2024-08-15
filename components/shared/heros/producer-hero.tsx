@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 import NavigationBar from "../navbar/navbar";
+import Link from "next/link";
 
 export default function ProducerHero() {
   return (
@@ -8,6 +9,9 @@ export default function ProducerHero() {
       <NavigationBar
         logoSrc="/assets/images/ecocan-logo-alt.svg"
         firstButton={<Button variant="ghost">Support</Button>}
+        secondButton={<Button asChild className="rounded-full h-7 xl:h-8 bg-white text-black hover:bg-white hover:text-black">
+          <Link href="/">Download App</Link>
+        </Button>}
         className=" text-white backdrop-blur-none bg-transparent border-b-0"
         linkColor="text-white"
       />
@@ -25,9 +29,9 @@ export default function ProducerHero() {
               </div>
               <div className="tracking-wide text-sm lg:text-base xl:text-lg font-light text-white my-10 space-y-4">
                 <p className="text-center">
-                With ECOCAN, it's not business as usual. But ECO-smart business.
+                With ECOCAN, it&apos;s not business as usual. But ECO-smart business.
                 </p>
-                <p className="text-center lg:w-4/5 mx-auto">Become a catalyst for positive change by leveraging ECOCAN's suite of advanced technology to boost your sales, cut production costs, protect your customers from counterfeits, and most importantly, protect our planet from litter. </p>
+                <p className="text-center lg:w-4/5 mx-auto">Become a catalyst for positive change by leveraging ECOCAN&apos;s suite of advanced technology to boost your sales, cut production costs, protect your customers from counterfeits, and most importantly, protect our planet from litter. </p>
               </div>
             </div>
           </div>

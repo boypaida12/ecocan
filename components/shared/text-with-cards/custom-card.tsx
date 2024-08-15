@@ -47,7 +47,7 @@ const FeaturesGrid: React.FC<FeaturesGridProps> = ({
       <div className={`mt-8 grid w-full grid-cols-2 gap-12 md:grid-cols-2 lg:grid-cols-3`}>
         {features.map((feature) => {
           return (
-            <div key={feature.id} className={`width-fit text-left ${bgColor} p-4 rounded-xl`}>
+            <div key={feature.id} className={`width-fit text-left ${bgColor} py-4 rounded-xl`}>
               <div className="mb-2 w-fit rounded-lg bg-primary p-1 text-center text-white ">
                 {feature.icon}
               </div>

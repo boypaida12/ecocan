@@ -7,7 +7,7 @@ interface TextWithCardsProps {
     customCard?: React.ReactNode
 }
 
-export default function TextWithCards({title = "Get Started", description = "Whether you want to keep your environment clean or want to earn extra money more frequently, with ECOCAN you can strike a balance, with just a click of a button", customCard = <CustomCard/>}:TextWithCardsProps) {
+export default function TextWithCards({title = "Get Started", description = "Whether you want to keep your environment clean, earn extra cash, or to safeguard your health from fake drinks. With our free-to-use EcocanApp, it's all just a click away!", customCard = <CustomCard/>}:TextWithCardsProps) {
   return (
     <div className='max-w-[77.5rem] mx-auto py-[6.25rem]'>
         <div className="text-accent w-[72%]">
