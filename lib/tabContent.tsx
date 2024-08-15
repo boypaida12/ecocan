@@ -1,4 +1,5 @@
 import ConsumerContent from "@/components/contents/consumer-content";
+import CourierContent from "@/components/contents/courier-content";
 import EcoStationContent from "@/components/contents/eco-station-content";
 import CourierHero from "@/components/shared/heros/courier-hero";
 import DefaultHero from "@/components/shared/heros/default-hero";
@@ -23,7 +24,7 @@ export interface TabContent {
     },
     "courier": {
         hero: <CourierHero/>,
-        content: <p>Courier body</p>,
+        content: <CourierContent/>,
     },
     "producer": {
         hero: <ProducerHero/>,
