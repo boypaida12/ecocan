@@ -4,14 +4,49 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import clsx from "clsx";
 
 interface NavigationBarProps {
   logoSrc: string;
   firstButton: React.ReactNode;
+  secondButton: React.ReactNode;
+  className?: string;
+  linkColor?: string;
 }
 
- const NavigationBar:React.FC<NavigationBarProps> = ({logoSrc, firstButton}) => {
+const navLinks = [
+  { href: "#", label: "Home" },
+  { href: "#", label: "About Us" },
+  { href: "#", label: "Solutions" },
+  { href: "#", label: "Blog" },
+  { href: "#", label: "Contact Us" },
+];
+
+const NavigationBar: React.FC<NavigationBarProps> = ({
+  logoSrc,
+  firstButton,
+  secondButton,
+  className,
+  linkColor,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     if (isOpen) {
@@ -26,15 +61,16 @@ interface NavigationBarProps {
   }, [isOpen]);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-[#ffffffb2] backdrop-blur-xl md:px-4 border-b border-b-[#EDEDED] z-[9999]">
-      <div className="flex items-center justify-between flex-wrap max-w-[1040px] mx-auto px-4 md:px-0">
+    <nav
+      className={clsx(
+        "fixed top-0 left-0 right-0 md:px-4 border-b border-b-[#EDEDED] z-[9999] bg-[#ffffffb2] backdrop-blur-xl transition-transform duration-300",
+        className,
+        { "transform -translate-y-full": !isVisible }
+      )}
+    >
+      <div className="flex items-center justify-between flex-wrap xl:max-w-[77.5rem] mx-auto px-4 md:px-0">
         <div className="flex items-center flex-shrink-0 text-white py-1">
-          <Image
-            src={logoSrc}
-            alt="ecocan logo"
-            width={46}
-            height={46}
-          />
+          <Image src={logoSrc} alt="ecocan logo" width={46} height={46} />
         </div>
         <div className="block md:hidden">
           <button
@@ -42,14 +78,18 @@ interface NavigationBarProps {
             className="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
           >
             <svg
-              className={`fill-current h-6 w-6 text-[#00000080] ${isOpen ? "hidden" : "block"}`}
+              className={`fill-current h-6 w-6 text-[#00000080] ${
+                isOpen ? "hidden" : "block"
+              }`}
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
             </svg>
             <svg
-              className={`fill-current h-6 w-6 text-[#00000080] ${isOpen ? "block" : "hidden"}`}
+              className={`fill-current h-6 w-6 text-[#00000080] ${
+                isOpen ? "block" : "hidden"
+              }`}
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -62,52 +102,28 @@ interface NavigationBarProps {
             isOpen ? "block min-h-screen md:min-h-0" : "hidden max-h-none"
           }`}
         >
-          <div className="text-sm flex md:flex-row flex-col items-center justify-center gap-4">
-            <a
-              href="#"
-              className="block md:inline-block md:ml-5 text-center text-[#00000080] dark:text-white font-[500]"
-            >
-              Home
-            </a>
-            <a
-              href="#"
-              className="block md:inline-block md:mt-0 text-center text-[#00000080] dark:text-white font-[500]"
-            >
-              About Us
-            </a>
-            <a
-              href="#"
-              className="block md:inline-block text-center text-[#00000080] dark:text-white font-[500]"
-            >
-              Solutions
-            </a>
-            <a
-              href="#"
-              className="block md:inline-block text-center text-[#00000080] dark:text-white font-[500]"
-            >
-              News
-            </a>
-            <a
-              href="#"
-              className="block md:inline-block text-center text-[#00000080] dark:text-white font-[500]"
-            >
-              Contact Us
-            </a>
+          <div className="text-sm flex md:flex-row flex-col items-center justify-center gap-4 ms-4">
+            {navLinks.map((link) => (
+              <Link
+                href={link.href}
+                key={link.label}
+                className={clsx(
+                  "block md:inline-block text-center text-[#00000080] text-sm font-[500]",
+                  linkColor
+                )}
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
           <div className="text-center ms-auto flex-col md:flex-row flex items-center justify-center gap-4 md:pt-0 pt-5">
             {firstButton}
-            {/* <Button asChild className="rounded-full h-8 bg-transparent border border-primary text-primary hover:bg-transparent">
-              <Link href="/">Join Ecommunity</Link>
-            </Button> */}
-            <Button asChild className="rounded-full h-8">
-              <Link href="/">Download App</Link>
-            </Button>
+            {secondButton}
           </div>
         </div>
       </div>
     </nav>
   );
 };
-
 
 export default NavigationBar;

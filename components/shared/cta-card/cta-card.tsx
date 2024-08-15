@@ -17,7 +17,7 @@ export default function CtaCard({
 }: CtaCardProps) {
   return (
     <div
-      className={`max-w-[65rem] flex mx-auto py-[6.25rem] mt-[6.25rem] px-12 bg-white rounded-2xl ${flexReverse}`}
+      className={`max-w-[77.5rem] flex mx-auto py-[6.25rem] mt-[6.25rem] px-12 bg-white rounded-2xl ${flexReverse}`}
     >
       <div className="md:flex-grow-0 space-y-8">
         <h2 className="text-2xl lg:text-5xl text-[#23262FCC] font-bold">

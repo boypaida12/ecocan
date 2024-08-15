@@ -37,7 +37,7 @@ export default function ImageWithText({
   imageHeight = "h-[12.625rem]",
 }: ImageWithTextProps) {
   return (
-    <div className="max-w-[65rem] mx-auto flex flex-col md:flex-row gap-12 py-[6.25rem]">
+    <div className="max-w-[77.5rem] mx-auto flex flex-col md:flex-row gap-12 py-[6.25rem]">
       <div className="md:flex-0 space-y-4">
         <div
           className={`${imageWidth} ${imageHeight} overflow-hidden rounded-2xl`}

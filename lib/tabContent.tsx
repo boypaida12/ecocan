@@ -1,6 +1,11 @@
-import ConsumerContent from "@/components/consumer-content";
-import DefaultHero from "@/components/shared/hero-content/default-hero";
-import HeroContent from "@/components/shared/hero-content/hero-content";
+import ConsumerContent from "@/components/contents/consumer-content";
+import EcoStationContent from "@/components/contents/eco-station-content";
+import CourierHero from "@/components/shared/heros/courier-hero";
+import DefaultHero from "@/components/shared/heros/default-hero";
+import EcoStationHero from "@/components/shared/heros/eco-station-hero";
+import EventsHero from "@/components/shared/heros/events-hero";
+import ProducerHero from "@/components/shared/heros/producer-hero";
+import RecyclerHero from "@/components/shared/heros/recycler-hero";
 
 export interface TabContent {
     hero: React.ReactNode;
@@ -9,27 +14,27 @@ export interface TabContent {
   
   export const tabContent: Record<string, TabContent> = {
     "consumer": {
-      hero: <HeroContent/>,
+      hero: <DefaultHero/>,
       content: <ConsumerContent/>,
     },
     "eco-station": {
-      hero: <p>Eco-Station hero</p>,
-      content: <p>Eco-Station body</p>,
+      hero: <EcoStationHero/>,
+      content: <EcoStationContent/>,
     },
     "courier": {
-        hero: <p>Courier hero</p>,
+        hero: <CourierHero/>,
         content: <p>Courier body</p>,
     },
     "producer": {
-        hero: <p>Producer hero</p>,
+        hero: <ProducerHero/>,
         content: <p>Producer body</p>,
     },
     "recycler": {
-        hero: <p>Recycler hero</p>,
+        hero: <RecyclerHero/>,
         content: <p>Recycler body</p>,
     },
     "events": {
-        hero: <p>Events hero</p>,
+        hero: <EventsHero/>,
         content: <p>Events body</p>,
     },  
   };

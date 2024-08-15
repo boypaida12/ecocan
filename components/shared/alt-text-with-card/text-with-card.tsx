@@ -12,7 +12,7 @@ export default function TextWithCard({
   heading?: string;
 }) {
   return (
-    <div className="max-w-[65rem] mx-auto py-[6.25rem]">
+    <div className="max-w-[77.5rem] mx-auto py-[6.25rem]">
       <h2 className="text-center text-[2rem] font-bold text-[#23262FCC] mb-12">
         {heading}
       </h2>
