@@ -1,6 +1,4 @@
-import Image from "next/image";
 import React from "react";
-import PrimaryButton from "../primary-btn";
 import clsx from "clsx";
 
 interface CtaCardProps {
