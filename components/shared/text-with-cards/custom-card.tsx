@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import clsx from "clsx";
+import HyperLink from "../hyperlink/hyperlink";
 
 interface Feature {
   id: number;
@@ -20,14 +21,6 @@ interface Feature {
 
 const iconSize = 18;
 
-const HyperLink = ({ link }: { link: string }) => {
-  return (
-    <Link href="/" className="text-primary">
-      {link}
-    </Link>
-  );
-};
-
 const defaultFeaturesData: Feature[] = [
   {
     id: 1,
@@ -37,8 +30,8 @@ const defaultFeaturesData: Feature[] = [
     answer: (
       <div className="italic text-accent/50 space-y-4">
         <p>
-          <HyperLink link="EcocanApp" />
-          helps you to identify <HyperLink link="genuine eligible" />
+          <HyperLink link="EcocanApp" />{" "}
+          helps you to identify <HyperLink link="genuine eligible" />{" "}
           drinks.
         </p>
         <p>Just scan the ECOCAN security codes printed on the packaging.</p>
@@ -58,7 +51,7 @@ const defaultFeaturesData: Feature[] = [
     answer: (
       <div className="italic text-accent/50 space-y-4">
         <p>
-          Every day 1.4 Billion used <HyperLink link="empties" />
+          Every day 1.4 Billion used <HyperLink link="empties" />{" "}
           are carelessly thrown into the environment.
         </p>
         <p>
@@ -67,9 +60,9 @@ const defaultFeaturesData: Feature[] = [
         </p>
         <p>
           Help us stop this, by turning in for recycling,{" "}
-          <HyperLink link="eligible" />
+          <HyperLink link="eligible" />{" "}
           used empties of PET plastics, Aluminium cans, Glass bottles, and
-          drinks cartons, at any of our <HyperLink link="Eco-Stations," />
+          drinks cartons, at any of our <HyperLink link="Eco-Stations," />{" "}
           and get paid.
         </p>
       </div>
