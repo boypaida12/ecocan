@@ -9,6 +9,7 @@ import BuyOnline from "./components/buy-online";
 import HyperLink from "@/components/shared/hyperlink/hyperlink";
 import CustomCard from "@/components/shared/text-with-cards/custom-card";
 import {
+  LucideDownload,
   LucideShieldCheck,
   LucideShieldPlus,
   LucideTicketPercent,
@@ -16,6 +17,10 @@ import {
 import MultipleImagesAndItem from "@/components/shared/multiple-images-and-item/multiple-images-and-item";
 import TextWithComponent from "./components/buy-online";
 import { Input } from "@/components/ui/input";
+import { FaqSection } from "./components/faq";
+import CtaCard from "@/components/shared/cta-card/cta-card";
+import PrimaryButton from "@/components/shared/primary-btn";
+import { Button } from "@/components/ui/button";
 
 const images = [
   "/assets/images/earn-image.svg",
@@ -161,6 +166,34 @@ export default function ConsumerContent() {
             height={500}
             className="w-auto h-auto"
           />
+        }
+      />
+      <FaqSection />
+      <CtaCard
+        item={
+            <TextWithComponent
+              title="Cheers to ECO-friendly savings!"
+              description="Save BIG, while, Saving the planet. Only with EcocanApp."
+              component={
+                <div className="flex gap-4">
+                  <PrimaryButton
+                    buttonText="Download App"
+                    buttonIcon={<LucideDownload />}
+                  />
+                  <Button
+                    variant="outline"
+                    className="hover:bg-transparent border-primary text-primary hover:text-primary rounded-full h-[3.25rem] py-3 px-8 text-lg"
+                  >
+                    Become an Econsumer
+                  </Button>
+                </div>
+              }
+            />
+        }
+        image={
+          <div className="w-[19.75rem] h-[22.625rem] mx-auto">
+            <Image src="/assets/images/mobile-alt.svg" alt="" width={100} height={100} className="w-full h-full"/>
+          </div>
         }
       />
     </div>
