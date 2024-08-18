@@ -52,7 +52,7 @@ const featureData = [
       id: 1,
       title: "Tell us a bit about yourself",
       description: (
-        <>Fill out the <span className="underline text-[#4AC63F]">Sign-up form</span>, maybe tell us why you rock, and have your ID + Driving licence ready</>
+        <>Fill out the <span className="underline text-[#4AC63F]">Sign-up form</span>, maybe tell us why you rock,<br/> and have your ID + Driving licence ready</>
       ),
     },
     {
@@ -66,14 +66,14 @@ const featureData = [
       id: 3,
       title: "Just be mobile",
       description: (
-        <>Deliver any way you like without using fossil fuels, and if you're fast, Econsumers may tip you.</>
+        <>Deliver any way you like without using fossil fuels,<br/>and if you're fast, Econsumers may tip you.</>
       ),
     },
     {
       id: 4,
       title: "And have insurance",
       description: (
-        <>We love having you around, and seeing you earn more. So get yourself covered, that we keep doing this. Together.</>
+        <>We love having you around, and seeing you earn more.<br/>So get yourself covered, that we keep doing this. Together.</>
       ),
     }
   ]
@@ -88,7 +88,7 @@ const featureData = [
       <div className="flex items-center justify-center min-w-5 h-5 bg-[#4AC63F] rounded-full mr-5">
         <p className="text-xs text-white leading-none">{id}</p>
       </div>
-      <div className="pt-1">
+      <div className="pt-0.5">
         <p className="text-[1.125rem] font-semibold">{title}</p>
         <p className="text-xs" >{description}</p>
       </div>
@@ -127,7 +127,20 @@ export default function CourierContent() {
                   image={<Image src="/assets/images/courier/become.png" className="p-0 m-0" width={491} height={540} alt=""/>}
                 />
               </div>
+            </div>
 
+            {/* your hustle your rules */}
+            <div className="h-[46.25rem] flex justify-center items-center" >
+              <div className="w-[65rem] p-0 m-0">
+                <ImageAndItem
+                  title=""
+                  subtitle=""
+                  description=""
+                  item={<Item/>}
+                  className="flex flex-row-reverse "
+                  image={<Image src="/assets/images/courier/become.png" className="p-0 m-0" width={491} height={540} alt=""/>}
+                />
+              </div>
             </div>
 
         </div>
