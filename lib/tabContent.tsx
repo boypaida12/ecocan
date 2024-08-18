@@ -1,4 +1,4 @@
-import ConsumerContent from "@/components/contents/consumer-content";
+import ConsumerContent from "@/components/contents/consumer/consumer-content";
 import CourierContent from "@/components/contents/courier-content";
 import EcoStationContent from "@/components/contents/eco-station-content";
 import CourierHero from "@/components/shared/heros/courier-hero";

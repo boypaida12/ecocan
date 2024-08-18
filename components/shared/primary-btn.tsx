@@ -11,7 +11,7 @@ interface PrimaryButtonProps {
 
 export default function PrimaryButton({
   buttonText = "Download App",
-  buttonIcon = <LucideDownload />,
+  buttonIcon,
   buttonLink = "/"
 }: PrimaryButtonProps) {
   return (

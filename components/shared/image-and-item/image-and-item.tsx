@@ -3,12 +3,12 @@ import Image from "next/image";
 import clsx from "clsx";
 
 interface ImageAndItemProps {
-  title?: string;
-  subtitle?: string;
-  description?:string;
+  title?: React.ReactNode;
+  subtitle?: React.ReactNode;
+  description?:React.ReactNode;
   item?: React.ReactNode;
   image?: React.ReactNode;
-  className: string;
+  className?: string;
 }
 
 export default function ImageAndItem({
@@ -30,7 +30,7 @@ export default function ImageAndItem({
         <div className="md:flex-0 space-y-4">
           {image}
         </div>
-        <div className="md:w-1/2 space-y-4">
+        <div className="md:w-1/2 space-y-4 self-center">
           {item}
         </div>
       </div>
