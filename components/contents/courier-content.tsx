@@ -1,6 +1,8 @@
 import React from "react";
 import TextWithCards from "../shared/text-with-cards/text-with-cards";
 import CustomCard from "../shared/text-with-cards/custom-card";
+import ImageAndItem from "../shared/image-and-item/image-and-item"
+import Image from "next/image";
 import {
     Sparkles,
     LucideTriangleAlert,
@@ -45,6 +47,67 @@ const featureData = [
       },
   ];
 
+  const howToData = [
+    {
+      id: 1,
+      title: "Tell us a bit about yourself",
+      description: (
+        <>Fill out the <span className="underline text-[#4AC63F]">Sign-up form</span>, maybe tell us why you rock, and have your ID + Driving licence ready</>
+      ),
+    },
+    {
+      id: 2,
+      title: "You'll need a smartphone",
+      description: (
+        <>So, grab a working smartphone and let's get started! </>
+      ),
+    },
+    {
+      id: 3,
+      title: "Just be mobile",
+      description: (
+        <>Deliver any way you like without using fossil fuels, and if you're fast, Econsumers may tip you.</>
+      ),
+    },
+    {
+      id: 4,
+      title: "And have insurance",
+      description: (
+        <>We love having you around, and seeing you earn more. So get yourself covered, that we keep doing this. Together.</>
+      ),
+    }
+  ]
+  interface ItemListProps {
+    id: number | string;
+    title: string;
+    description: React.ReactNode;
+  }
+  
+  const ItemList: React.FC<ItemListProps> = ({ id, title, description }) => (
+    <div className="flex flex-row mb-8">
+      <div className="flex items-center justify-center min-w-5 h-5 bg-[#4AC63F] rounded-full mr-5">
+        <p className="text-xs text-white leading-none">{id}</p>
+      </div>
+      <div className="pt-1">
+        <p className="text-[1.125rem] font-semibold">{title}</p>
+        <p className="text-xs" >{description}</p>
+      </div>
+    </div>
+  );
+const Item = ()=> (
+  <div className="w-[31.3rem] h-[33.75rem]">
+    <div className="text-accent mt-1 mb-8">
+      <p className="text-2xl font-semibold pb-1">How to become an Eco-Courier</p>
+      <p className="text-sm ">Want to start earning more today? With ECOCAN, it’s <br/>easy like Sunday Morning. </p>
+    </div>
+    {
+      howToData.map((data) => (
+        <ItemList key={data.id} title={data.title} description={data.description} id={data.id} />
+      ))
+    }
+  </div>
+)
+
 export default function CourierContent() {
   return (
         <div className="space-y-24 py-8">
@@ -53,6 +116,20 @@ export default function CourierContent() {
                 description=""
                 customCard={<CustomCard features={featureData}/>}
             />
+            <div className="h-[46.25rem] flex justify-center items-center" >
+              <div className="w-[65rem] p-0 m-0">
+                <ImageAndItem
+                  title=""
+                  subtitle=""
+                  description=""
+                  item={<Item/>}
+                  className=""
+                  image={<Image src="/assets/images/courier/become.png" className="p-0 m-0" width={491} height={540} alt=""/>}
+                />
+              </div>
+
+            </div>
+
         </div>
   );
 }
