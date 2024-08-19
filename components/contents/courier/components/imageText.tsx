@@ -2,7 +2,7 @@ import React from 'react'
 import { Card } from '@/components/ui/card'
 import { ItemList } from '../courier-content';
 import { Button } from '@/components/ui/button';
-
+import './image.css';
 
 const ImageText: React.FC = () => {
     const howToData = [
@@ -37,7 +37,14 @@ const ImageText: React.FC = () => {
       ]
   return (
     <div className='w-full flex justify-center py-[6.25rem]'>
-        <div className='bg-black text-white w-[57.125rem] rounded-3xl px-[3.688rem] py-[4.469rem]'>
+        <div className='text-white w-[57.125rem] rounded-3xl px-[3.688rem] py-[4.469rem] relative overlay'
+            style={{ 
+              backgroundImage: 'url("/assets/images/courier/money.png")', 
+              backgroundSize: 'cover', 
+              backgroundRepeat: 'no-repeat' 
+            }}
+        >
+          <div style={{ position: 'relative', zIndex: 2 }}>
             <h2 className='font-semibold text-[2rem]'>While you make more money, we also make a bit</h2>
             <p className='text-base text-white/80 mb-[4.5rem]'>The lowest commission ever! That we keep growing together We’ll load you up with as many trips as you can handle, and we only get a tiny 7% cut of the pay</p>
 
@@ -46,7 +53,7 @@ const ImageText: React.FC = () => {
                     <ItemList key={data.id} title={data.title} description={data.description} id={data.id} />
                 ))
             }
-            <div className='w-full flex justify-center mt-24'>
+            {/* <div className='w-full flex justify-center mt-24'>
               <div className='w-[56.875rem] border-2 border-dashed rounded-3xl border-[#FAFAFA]/40 flex flex-col items-center space-y-3 py-3'>
                 <h2 className='text-5xl font-bold text-white'>Sustainable hustle</h2>
                 <p className='text-xl text-white'>While earning more</p>
@@ -54,6 +61,7 @@ const ImageText: React.FC = () => {
                   <span className="relative z-10 text-lg">Join ECOmmunity</span>
                 </Button>
               </div>
+            </div> */}
             </div>
         </div>
 
