@@ -1,5 +1,5 @@
 import ConsumerContent from "@/components/contents/consumer/consumer-content";
-import CourierContent from "@/components/contents/courier-content";
+import CourierContent from "@/components/contents/courier/courier-content";
 import EcoStationContent from "@/components/contents/eco-station-content";
 import CourierHero from "@/components/shared/heros/courier-hero";
 import DefaultHero from "@/components/shared/heros/default-hero";
