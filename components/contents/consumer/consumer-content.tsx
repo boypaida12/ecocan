@@ -94,7 +94,7 @@ export default function ConsumerContent() {
                   <div className="italic text-accent/50 space-y-4">
                     <p>
                       for recycling, not only do you get your deposit money
-                      back, but we'll also give you up to 50% discount on your
+                      back, but we&apos;ll also give you up to 50% discount on your
                       next Eco-product purchase.{" "}
                     </p>
                   </div>
@@ -110,7 +110,7 @@ export default function ConsumerContent() {
                     <p>
                       it using your ECO-Scanner. After enjoying your purchase,
                       return to ECO-stations exact same empties you
-                      authenticated. And we'll reward you with up to a 50%
+                      authenticated. And we&apos;ll reward you with up to a 50%
                       discount on your next purchase.
                     </p>
                   </div>

@@ -20,7 +20,7 @@ export default function ImageAndItem({
   image
 }: ImageAndItemProps) {
   return (
-    <div className="max-w-[77.5rem] mx-auto">
+    <div className="max-w-[77.5rem] mx-auto px-4 xl:px-0">
       <div className="text-center mb-12">
         <h2 className="text-[2rem] font-bold text-[#23262FCC]">{title}</h2>
         <p>{description}</p>
