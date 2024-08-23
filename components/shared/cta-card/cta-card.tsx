@@ -1,19 +1,21 @@
-import Image from "next/image";
 import React from "react";
-import PrimaryButton from "../primary-btn";
 import clsx from "clsx";
 
 interface CtaCardProps {
-  item: React.ReactNode;
-  className: string;
+  item?: React.ReactNode;
+  className?: string;
+  image?: React.ReactNode
 }
 
-export default function CtaCard({ item, className }: CtaCardProps) {
+export default function CtaCard({ item, className, image }: CtaCardProps) {
   return (
-    <div
-      className={clsx("max-w-[77.5rem] flex mx-auto mt-[6.25rem] px-12 bg-white rounded-2xl", className)}
-    >
-      {item}
+    <div className="px-4 xl:px-0">
+      <div
+        className={clsx("max-w-[77.5rem] flex mx-auto mt-[6.25rem] ps-[7.25rem] py-[4.75rem] bg-white rounded-2xl", className)}
+      >
+        <div className="w-3/5">{item}</div>
+        <div className="">{image}</div>
+      </div>
     </div>
   );
 }

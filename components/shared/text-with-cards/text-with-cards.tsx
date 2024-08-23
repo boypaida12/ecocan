@@ -1,11 +1,14 @@
 import React from "react";
 import CustomCard from "./custom-card";
 import Link from "next/link";
+import clsx from "clsx";
 
 interface TextWithCardsProps {
   title?: string;
   description?: React.ReactNode;
   customCard?: React.ReactNode;
+  subtitle?: React.ReactNode;
+  className?: string;
 }
 
 export default function TextWithCards({
@@ -17,12 +20,15 @@ export default function TextWithCards({
       it&apos;s all just a <Link href="/" className="text-primary">click away!</Link>
     </p>
   ),
+  subtitle,
   customCard = <CustomCard />,
+  className
 }: TextWithCardsProps) {
   return (
-    <div className="max-w-[77.5rem] mx-auto">
-      <div className="text-accent w-[72%]">
+    <div className="max-w-[77.5rem] mx-auto px-4 xl:px-0">
+      <div className={clsx("text-accent w-[72%]", className)}>
         <h2 className="font-bold text-[2.5rem]">{title}</h2>
+        {subtitle}
         {description}
       </div>
       {customCard}
