@@ -12,6 +12,7 @@ import ImageAndItem from "../../shared/image-and-item/image-and-item";
 import BecomeEcostation from "./components/become-ecostation";
 import Image from "next/image";
 import HyperLink from "@/components/shared/hyperlink/hyperlink";
+import TextWithComponent from "./components/avail-rvm";
 const iconSize = 18;
 
 export default function EcoStationContent() {
@@ -95,6 +96,19 @@ export default function EcoStationContent() {
         }
         item={<BecomeEcostation />}
         className=""
+      />
+      <ImageAndItem
+       className="md:flex-row-reverse"
+        image={
+          <Image
+            src="/assets/images/rvm.png"
+            alt="Online store"
+            className="object-cover rounded-3xl bg-primary"
+            width={500}
+            height={100}
+          />
+        }
+        item={<TextWithComponent />}
       />
     </>
   );
