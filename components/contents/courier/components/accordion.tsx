@@ -50,7 +50,7 @@ const accordionData: AccordionData[] = [
     title: "Receive your money instantly!",
     description: (
       <>
-        <p>There’s no better feeling than receiving what you've rightfully earned, and we'll ensure you get it fast! </p>
+        <p>There's no better feeling than receiving what you've rightfully earned, and we'll ensure you get it fast! </p>
       </>
     ),
   }
