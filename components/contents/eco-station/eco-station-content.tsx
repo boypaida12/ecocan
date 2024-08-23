@@ -50,7 +50,7 @@ export default function EcoStationContent() {
                 name: "Earn commissions",
                 question: (
                   <p>
-                    For every <HyperLink link="eligible" /> empty you accept, we’ll pay
+                    For every <HyperLink link="eligible" />{" "}empty you accept, we’ll pay
                     you a commission
                   </p>
                 ),
