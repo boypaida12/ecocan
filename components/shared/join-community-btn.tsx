@@ -9,7 +9,7 @@ export default function JoinCommunityButton() {
       asChild
       className="rounded-full h-7 xl:h-8 bg-transparent border border-primary text-primary hover:bg-transparent"
     >
-      <Link href="/">Join Ecommunity</Link>
+      <Link href="/">Join ECOmmunity</Link>
     </Button>
   );
 }

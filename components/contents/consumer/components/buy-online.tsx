@@ -14,7 +14,7 @@ export default function TextWithComponent({
 }: TextWithComponentProps) {
   return (
     <div>
-      <div className="xl:w-3/5">
+      <div className="xl:w-5/6">
           <h2 className="text-5xl text-accent font-bold">{title}</h2>
           <p className="text-accent my-5">{description}</p>
           {component && <div className="mt-10 w-3/5">{component}</div>}

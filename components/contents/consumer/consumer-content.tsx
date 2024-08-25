@@ -9,7 +9,10 @@ import BuyOnline from "./components/buy-online";
 import HyperLink from "@/components/shared/hyperlink/hyperlink";
 import CustomCard from "@/components/shared/text-with-cards/custom-card";
 import {
+  LucideAward,
   LucideDownload,
+  LucideGem,
+  LucideRecycle,
   LucideShieldCheck,
   LucideShieldPlus,
   LucideTicketPercent,
@@ -21,6 +24,7 @@ import { FaqSection } from "./components/faq";
 import CtaCard from "@/components/shared/cta-card/cta-card";
 import PrimaryButton from "@/components/shared/primary-btn";
 import { Button } from "@/components/ui/button";
+import WhiteBgCard from "@/components/shared/white-bg-card";
 
 const images = [
   "/assets/images/earn-image.svg",
@@ -28,6 +32,27 @@ const images = [
   "/assets/images/map-image.svg",
   "/assets/images/pay-image.svg",
   "/assets/images/earn-image.svg",
+];
+
+const cardContent = [
+  {
+    icon: <LucideRecycle />,
+    title: "Recycling Coupons",
+    content:
+      "Whenever you return 10 eligible empties for recycling, you'll get back the deposit money, plus, we'll reward you with up to 30% discount on your next purchase. Just activate your e-coupon while at the ECO-station, show the one-time coupon QR code to the Egent, and pay less! Or, if you order online, add the coupon to your order, to discount your bill",
+  },
+  {
+    icon: <LucideAward />,
+    title: "Loyalty Discounts",
+    content:
+      "Before you buy an ECO-product, authenticate it using your ECO-Scanner. And after enjoying the drink, return to ECO-stations the exact same empties you authenticated. And we'll reward you with up to a 50% loyalty discount on your next ECO-product purchase.",
+  },
+  {
+    icon: <LucideGem />,
+    title: "VIP treatment",
+    content:
+      "Join the ECOmmunity, and we'll roll out the Red Carpet, just for YOU! And enjoy priority access to exclusive events. Skip the long queues by ordering your drinks in advance. Get exclusive behind-the-scenes content. And we might just spoil you by popping a complimentary drink!",
+  },
 ];
 
 const iconSize = 18;
@@ -84,56 +109,16 @@ export default function ConsumerContent() {
         }
         className="mx-auto text-center"
         customCard={
-          <CustomCard
-            features={[
-              {
-                id: 1,
-                name: "Coupon discounts",
-                question: "Every time you return 10 eligible empties...",
-                answer: (
-                  <div className="italic text-accent/50 space-y-4">
-                    <p>
-                      for recycling, not only do you get your deposit money
-                      back, but we&apos;ll also give you up to 50% discount on your
-                      next Eco-product purchase.{" "}
-                    </p>
-                  </div>
-                ),
-                icon: <LucideTicketPercent size={iconSize} />,
-              },
-              {
-                id: 2,
-                name: "Loyalty Discounts",
-                question: "Before you buy an ECO-product, authenticate...",
-                answer: (
-                  <div className="italic text-accent/50 space-y-4">
-                    <p>
-                      it using your ECO-Scanner. After enjoying your purchase,
-                      return to ECO-stations exact same empties you
-                      authenticated. And we&apos;ll reward you with up to a 50%
-                      discount on your next purchase.
-                    </p>
-                  </div>
-                ),
-                icon: <LucideShieldCheck size={iconSize} />,
-              },
-              {
-                id: 3,
-                name: "VIP Treatment",
-                question: "We’ll roll out the Red Carpet, just for YOU...",
-                answer: (
-                  <div className="italic text-accent/50 space-y-4">
-                    <p>
-                      Get priority access to exclusive events. Skip the long
-                      queues by ordering your drinks in advance. And we might
-                      just pop a complimentary bottle for you!
-                    </p>
-                  </div>
-                ),
-                icon: <LucideShieldPlus size={iconSize} />,
-              },
-            ]}
-          />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            {cardContent.map((card, index) => (
+              <WhiteBgCard
+                key={index}
+                icon={card.icon}
+                title={card.title}
+                content={card.content}
+              />
+            ))}
+          </div>
         }
       />
       <MultipleImagesAndItem
@@ -170,29 +155,46 @@ export default function ConsumerContent() {
       />
       <FaqSection />
       <CtaCard
+        className="bg-[url('/assets/images/consumer-cta-card.jpeg')] bg-contain relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:-z-10 overflow-hidden z-50"
         item={
-            <TextWithComponent
-              title="Cheers to ECO-friendly savings!"
-              description="Save BIG, while, Saving the planet. Only with EcocanApp."
-              component={
-                <div className="flex gap-4">
-                  <PrimaryButton
-                    buttonText="Download App"
-                    buttonIcon={<LucideDownload />}
-                  />
-                  <Button
-                    variant="outline"
-                    className="hover:bg-transparent border-primary text-primary hover:text-primary rounded-full h-[3.25rem] py-3 px-8 text-lg"
-                  >
-                    Become an Econsumer
-                  </Button>
-                </div>
-              }
-            />
+          <TextWithComponent
+            title={
+              <p className="text-white">
+                Cheers to ECO-
+                <br />
+                friendly savings!
+              </p>
+            }
+            description={
+              <span className="text-white">
+                Save BIG, while, Saving the planet. Only with EcocanApp.
+              </span>
+            }
+            component={
+              <div className="flex gap-4">
+                <PrimaryButton
+                  buttonText="Download App"
+                  buttonIcon={<LucideDownload />}
+                />
+                <Button
+                  variant="outline"
+                  className="bg-transparent hover:bg-transparent border-white text-white hover:text-white rounded-full h-[3.25rem] py-3 px-8 text-lg"
+                >
+                  Become an Econsumer
+                </Button>
+              </div>
+            }
+          />
         }
         image={
           <div className="w-[19.75rem] h-[22.625rem] mx-auto">
-            <Image src="/assets/images/mobile-alt.svg" alt="" width={100} height={100} className="w-full h-full"/>
+            <Image
+              src="/assets/images/mobile-alt.svg"
+              alt=""
+              width={100}
+              height={100}
+              className="w-full h-full"
+            />
           </div>
         }
       />

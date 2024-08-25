@@ -25,7 +25,7 @@ export default function TextWithCards({
   className
 }: TextWithCardsProps) {
   return (
-    <div className="max-w-[77.5rem] mx-auto px-4 xl:px-0">
+    <div className="max-w-[65rem] mx-auto px-4 xl:px-0">
       <div className={clsx("text-accent w-[72%]", className)}>
         <h2 className="font-bold text-[2.5rem]">{title}</h2>
         {subtitle}
