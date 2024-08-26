@@ -10,16 +10,12 @@ export default function EventsHero() {
     <>
       <NavigationBar
         logoSrc="/assets/images/ecocan-logo-alt.svg"
-        firstButton={<Button variant="ghost">Support</Button>}
-        secondButton={<Button asChild className="rounded-full h-7 xl:h-8 bg-white text-black hover:bg-white hover:text-black">
-          <Link href="/">Download App</Link>
-        </Button>}
         className=" text-white backdrop-blur-none bg-transparent border-b-0"
         linkColor="text-white"
       />
       <div className="lg:h-[36rem] xl:h-[47.125rem]">
         <div className="bg-[url('/assets/images/events-hero-bg.jpeg')] lg:h-[32rem] xl:h-[42rem] bg-center relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-70 after:z-10">
-          <div className="xl:max-w-[77.5rem] flex flex-col md:flex md:flex-row mx-auto lg:my-0 lg:gap-12 lg:pt-[3.125rem] xl:pt-0">
+          <div className="xl:max-w-[65rem] flex flex-col md:flex md:flex-row mx-auto lg:my-0 lg:gap-12 lg:pt-[3.125rem] xl:pt-0">
             <div className="flex flex-col gap-4 lg:mt-28 xl:mt-60 md:w-1/2 px-4 xl:px-0 text-white z-50">
               <div>
                 <h1 className="lg:text-6xl text-2xl xl:text-7xl text-center md:text-start font-semibold">

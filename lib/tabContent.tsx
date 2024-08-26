@@ -13,27 +13,27 @@ export interface TabContent {
   }
   
   export const tabContent: Record<string, TabContent> = {
-    "consumer": {
+    "ECOsumer": {
       hero: <DefaultHero/>,
       content: <ConsumerContent/>,
     },
-    "eco-station": {
+    "ECO-station": {
       hero: <EcoStationHero/>,
       content: <EcoStationContent/>,
     },
-    "courier": {
+    "ECOurier": {
         hero: <CourierHero/>,
         content: <p>Courier body</p>,
     },
-    "producer": {
+    "ECO-Producer": {
         hero: <ProducerHero/>,
         content: <p>Producer body</p>,
     },
-    "recycler": {
+    "ECO-Recycler": {
         hero: <RecyclerHero/>,
         content: <p>Recycler body</p>,
     },
-    "events": {
+    "ECO-Events": {
         hero: <EventsHero/>,
         content: <p>Events body</p>,
     },  
