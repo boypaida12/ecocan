@@ -30,8 +30,8 @@ const defaultFeaturesData: Feature[] = [
     answer: (
       <div className="italic text-accent/50 space-y-4">
         <p>
-          <HyperLink link="EcocanApp" />{" "}
-          helps you to identify <HyperLink link="genuine eligible" />{" "}
+          <HyperLink link="EcocanApp" href="/"/>{" "}
+          helps you to identify <HyperLink link="genuine eligible" href="/"/>{" "}
           drinks.
         </p>
         <p>Just scan the ECOCAN security codes printed on the packaging.</p>
@@ -51,7 +51,7 @@ const defaultFeaturesData: Feature[] = [
     answer: (
       <div className="italic text-accent/50 space-y-4">
         <p>
-          Every day 1.4 Billion used <HyperLink link="empties" />{" "}
+          Every day 1.4 Billion used <HyperLink link="empties" href="/"/>{" "}
           are carelessly thrown into the environment.
         </p>
         <p>
@@ -60,9 +60,9 @@ const defaultFeaturesData: Feature[] = [
         </p>
         <p>
           Help us stop this, by turning in for recycling,{" "}
-          <HyperLink link="eligible" />{" "}
+          <HyperLink link="eligible" href="/"/>{" "}
           used empties of PET plastics, Aluminium cans, Glass bottles, and
-          drinks cartons, at any of our <HyperLink link="Eco-Stations," />{" "}
+          drinks cartons, at any of our <HyperLink link="Eco-Stations," href="/"/>{" "}
           and get paid.
         </p>
       </div>
@@ -74,8 +74,7 @@ const defaultFeaturesData: Feature[] = [
     name: "Shop Online",
     question: (
       <p>
-        <HyperLink link="ECOCAN Market" /> is the go-to supermarket, in your
-        <br /> pocket
+        <HyperLink link="ECOCAN Market" href="/"/> is the go-to supermarket, in your pocket
       </p>
     ),
     answer: (
@@ -136,7 +135,7 @@ const FeaturesGrid: React.FC<FeaturesGridProps> = ({
                       isExpanded ? "mt-4" : "mt-0"
                     }`}
                   >
-                    {isExpanded ? "Show less" : "Read more"}
+                    {isExpanded ? "Show less" : "Show more"}
                   </button>
                 </div>
               )}

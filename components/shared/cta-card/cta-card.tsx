@@ -9,7 +9,7 @@ interface CtaCardProps {
 
 export default function CtaCard({ item, className, image }: CtaCardProps) {
   return (
-    <div className="px-4 xl:px-0">
+    <div>
       <div
         className={clsx("max-w-[65rem] flex mx-auto mt-[6.25rem] ps-[7.25rem] py-[4.75rem] bg-white rounded-2xl", className)}
       >

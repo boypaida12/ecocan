@@ -8,17 +8,17 @@ interface TextWithComponentProps {
 }
 
 export default function TextWithComponent({
-  title = "Buy Online",
-  description = " Discover new ECO-products on ECOCAN market, place your order with just a few clicks, and have your favourite drinks delivered to your doorstep, or wherever you are, in minutes",
-  component = <PrimaryButton buttonText="Learn more" />,
+  title,
+  description,
+  component,
 }: TextWithComponentProps) {
   return (
-    <div>
-      <div className="xl:w-5/6">
-          <h2 className="text-5xl text-accent font-bold">{title}</h2>
-          <p className="text-accent my-5">{description}</p>
-          {component && <div className="mt-10 w-3/5">{component}</div>}
+    <>
+      <div>
+          <h2 className="text-[2rem] text-accent font-semibold">{title}</h2>
+          <div className="text-accent my-5">{description}</div>
+          {component && <div className="mt-10">{component}</div>}
       </div>
-    </div>
+    </>
   );
 }

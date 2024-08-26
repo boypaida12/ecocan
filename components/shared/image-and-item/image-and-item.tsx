@@ -20,14 +20,14 @@ export default function ImageAndItem({
   image
 }: ImageAndItemProps) {
   return (
-    <div className="max-w-[65rem] mx-auto px-4 xl:px-0">
+    <div>
       <div className="text-center mb-12">
         <h2 className="text-[2rem] font-bold text-[#23262FCC]">{title}</h2>
         <p>{description}</p>
         <p className="text-gray-600">{subtitle}</p>
       </div>
-      <div className={clsx("flex flex-col md:flex-row gap-12", className)}>
-        <div className="md:flex-0 space-y-4">
+      <div className={clsx("flex flex-col md:flex-row", className)}>
+        <div className="md:flex-0 space-y-4 relative">
           {image}
         </div>
         <div className="md:w-1/2 space-y-4 self-center">

@@ -13,7 +13,7 @@ export default function MultipleImagesAndItem({
   multipleImages,
 }: MultipleImagesAndItemProps) {
   return (
-    <div className="flex max-w-[65rem] mx-auto items-center px-4 xl:px-0">
+    <div className="flex items-center gap-12">
       {item}
       {multipleImages}
     </div>
