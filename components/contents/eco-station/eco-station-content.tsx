@@ -13,6 +13,7 @@ import BecomeEcostation from "./components/become-ecostation";
 import Image from "next/image";
 import HyperLink from "@/components/shared/hyperlink/hyperlink";
 import TextWithComponent from "./components/avail-rvm";
+import SellMoreOnline from "./components/sell-more-online";
 const iconSize = 18;
 
 export default function EcoStationContent() {
@@ -110,6 +111,7 @@ export default function EcoStationContent() {
         }
         item={<TextWithComponent />}
       />
+      <SellMoreOnline/>
     </>
   );
 }

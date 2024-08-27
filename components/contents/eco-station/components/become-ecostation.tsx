@@ -3,7 +3,7 @@ import React from "react";
 
 export default function BecomeEcostation() {
   return (
-    <div className="max-w-[1280px] mx-auto p-4">
+    <div className="max-w-[1040px] mx-auto p-4">
       <div className="bg-white flex w-[1044px] h-[536px] mx-auto">
         {/* Right Side with Content */}
         <div className="lg:ml-[73px] lg:w-[530px] h-full flex flex-col gap-8">
