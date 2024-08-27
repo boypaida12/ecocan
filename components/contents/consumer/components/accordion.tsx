@@ -88,7 +88,7 @@ const accordionData: AccordionData[] = [
           deposits to friends, donate to charity, or cash out.
         </StyledText>
         <StyledText>
-          Take a peek at the <HyperLink link="EcocanApp tutorial" /> for more
+          Take a peek at the <HyperLink link="EcocanApp tutorial" href="/"/> for more
           guidance!
         </StyledText>
       </>

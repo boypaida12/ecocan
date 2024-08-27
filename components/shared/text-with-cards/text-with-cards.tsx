@@ -2,6 +2,7 @@ import React from "react";
 import CustomCard from "./custom-card";
 import Link from "next/link";
 import clsx from "clsx";
+import HyperLink from "../hyperlink/hyperlink";
 
 interface TextWithCardsProps {
   title?: string;
@@ -12,24 +13,18 @@ interface TextWithCardsProps {
 }
 
 export default function TextWithCards({
-  title = "Get Started",
-  description = (
-    <p>
-      Whether you want to keep your environment clean, earn extra cash, or to
-      safeguard your health from fake drinks. With our <span className="font-semibold">free-to-use</span> EcocanApp,
-      it&apos;s all just a <Link href="/" className="text-primary">click away!</Link>
-    </p>
-  ),
+  title,
+  description,
   subtitle,
   customCard = <CustomCard />,
   className
 }: TextWithCardsProps) {
   return (
-    <div className="max-w-[77.5rem] mx-auto">
+    <div>
       <div className={clsx("text-accent w-[72%]", className)}>
         <h2 className="font-bold text-[2.5rem]">{title}</h2>
-        {subtitle}
-        {description}
+        <p>{subtitle}</p>
+        <p>{description}</p>
       </div>
       {customCard}
     </div>

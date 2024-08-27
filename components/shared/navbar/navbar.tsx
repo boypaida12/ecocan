@@ -8,8 +8,8 @@ import clsx from "clsx";
 
 interface NavigationBarProps {
   logoSrc: string;
-  firstButton: React.ReactNode;
-  secondButton: React.ReactNode;
+  firstButtonClassName?: React.ReactNode;
+  secondButtonClassName?: React.ReactNode;
   className?: string;
   linkColor?: string;
 }
@@ -24,8 +24,8 @@ const navLinks = [
 
 const NavigationBar: React.FC<NavigationBarProps> = ({
   logoSrc,
-  firstButton,
-  secondButton,
+  firstButtonClassName,
+  secondButtonClassName,
   className,
   linkColor,
 }) => {
@@ -68,9 +68,15 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
         { "transform -translate-y-full": !isVisible }
       )}
     >
-      <div className="flex items-center justify-between flex-wrap xl:max-w-[77.5rem] mx-auto px-4 md:px-0">
-        <div className="flex items-center flex-shrink-0 text-white py-1">
-          <Image src={logoSrc} alt="ecocan logo" width={46} height={46} />
+      <div className="flex items-center justify-between flex-wrap xl:max-w-[65rem] mx-auto px-4 md:px-0">
+        <div className="flex items-center flex-shrink-0 text-white py-4">
+          <Image
+            src={logoSrc}
+            alt="ecocan logo"
+            width={46}
+            height={46}
+            className="w-full h-full"
+          />
         </div>
         <div className="block md:hidden">
           <button
@@ -117,8 +123,13 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
             ))}
           </div>
           <div className="text-center ms-auto flex-col md:flex-row flex items-center justify-center gap-4 md:pt-0 pt-5">
-            {firstButton}
-            {secondButton}
+            <Button variant="ghost" className={clsx("hover:bg-transparent hover:text-white", firstButtonClassName)}>Join ECOmmunity</Button>
+            <Button
+              asChild
+              className={clsx("rounded-full h-7 xl:h-8 bg-white text-black hover:bg-white hover:text-black", secondButtonClassName)}
+            >
+              <Link href="/">Download App</Link>
+            </Button>
           </div>
         </div>
       </div>
