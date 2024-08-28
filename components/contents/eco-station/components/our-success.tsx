@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function OurSuccess() {
   return (
-    <div className="lg:w-[898px] lg:h-[288px] gap-6 text-[#23262F]/[0.8] lg:mt-10">
+    <div className="max-w-[1040px] lg:w-[898px] lg:h-[288px] gap-6 text-[#23262F]/[0.8] lg:mt-10">
       <h1 className="font-bold text-[40px] leading-[56px] lg:mb-6">
         Your success, our pride
       </h1>

@@ -15,6 +15,7 @@ import HyperLink from "@/components/shared/hyperlink/hyperlink";
 import TextWithComponent from "./components/avail-rvm";
 import SellMoreOnline from "./components/sell-more-online";
 import OurSuccess from "./components/our-success";
+import { FaqSection } from "../consumer/components/faq";
 const iconSize = 18;
 
 export default function EcoStationContent() {
@@ -114,6 +115,7 @@ export default function EcoStationContent() {
       />
       <SellMoreOnline/>
       <OurSuccess/>
+      <FaqSection/>
     </>
   );
 }
