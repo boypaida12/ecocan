@@ -59,7 +59,7 @@ export function FaqSection() {
               }`}
             >
               <AccordionTrigger className="flex justify-between items-center p-8 hover:bg-gray-50 w-full">
-                <span className="text-lg font-medium text-left">
+                <span className="text-lg font-medium text-left ">
                   {faq.question}
                 </span>
               </AccordionTrigger>
