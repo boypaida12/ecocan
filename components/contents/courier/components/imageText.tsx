@@ -10,7 +10,7 @@ const ImageText: React.FC = () => {
           id: 1,
           title: "Be live during ‘our rush hours’",
           description: (
-            <p className="text-base text-white/75">We are unique and you can be too; we're busiest with pick-ups between 10:00 AM and 14:00 PM when other services go quiet. So, boost your earnings by going live at this time</p>
+            <p className="text-base text-white/75">We are unique and you can be too; we&apos;re busiest with pick-ups between 10:00 AM and 14:00 PM when other services go quiet. So, boost your earnings by going live at this time</p>
           ),
         },
         {
@@ -37,7 +37,7 @@ const ImageText: React.FC = () => {
       ]
   return (
     <div className='w-full flex justify-center '>
-        <div className='text-white w-[1024px] rounded-3xl px-[60px] py-[57px] relative overlay'
+        <div className='text-white w-full rounded-3xl px-[60px] py-[57px] relative overlay'
             style={{ 
               backgroundImage: 'url("/assets/images/courier/money.png")', 
               backgroundSize: 'cover', 
