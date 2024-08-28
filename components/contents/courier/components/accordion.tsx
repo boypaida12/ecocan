@@ -72,7 +72,7 @@ export function AccordionDemo({
     <Accordion
       type="single"
       collapsible
-      className="w-full"
+      className="w-full pr-[10px]"
       value={openItem}
       onValueChange={(value) => setOpenItem(value)}
     >

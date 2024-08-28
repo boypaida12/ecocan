@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card } from '@/components/ui/card'
-import { ItemList } from '../courier-content';
+import { ItemList } from './ItemList';
 import { Button } from '@/components/ui/button';
 import './image.css';
 
@@ -8,36 +8,36 @@ const ImageText: React.FC = () => {
     const howToData = [
         {
           id: 1,
-          title: "Receive your money instantly!",
+          title: "Be live during ‘our rush hours’",
           description: (
-            <p className="text-base text-white/75">We're busiest with pick-ups between 10:00 AM and 14:00 PM, when other ride-hailing and delivery services go quiet. So, boost your earnings by going live during this time! </p>
+            <p className="text-base text-white/75">We are unique and you can be too; we're busiest with pick-ups between 10:00 AM and 14:00 PM when other services go quiet. So, boost your earnings by going live at this time</p>
           ),
         },
         {
           id: 2,
           title: "Earn more with tips",
           description: (
-            <p className="text-base text-white/75">Be professional and nice, it doesn’t cost a thing. But if you are not, it might cost you everything! </p>
+            <p className="text-base text-white/75">Be professional and nice, it doesn’t cost a thing. But if you are not it might cost you everything! ECOnsumers who appreciate your service can tip you </p>
           ),
         },
         {
           id: 3,
           title: "Deliver efficiently",
           description: (
-            <p className="text-base text-white/75">Both are ECO-friendly, save on energy, and double as workouts—no gym membership needed to stay in shape. For Crawling... well…, if you want to stand out, why not?</p>
+            <p className="text-base text-white/75">Bicycles are great for longer distances, while walking is perfect for short trips; but both are ECO-friendly and double as workouts. For Crawling... well…, if you want to stand out, why not?</p>
           ),
         },
         {
           id: 4,
           title: "Watch out for ECO-promotions",
           description: (
-            <p className="text-base text-white/75"> In recognition of your ECO-friendly hustle. So, keep an eye out for those sweet rewards! </p>
+            <p className="text-base text-white/75">Every once in a while we may spoil you with bonuses and challenges, in recognition of your ECO-friendly hustle. So, keep an eye out for those sweet rewards! </p>
           ),
         }
       ]
   return (
-    <div className='w-full flex justify-center py-[6.25rem]'>
-        <div className='text-white w-[57.125rem] rounded-3xl px-[3.688rem] py-[4.469rem] relative overlay'
+    <div className='w-full flex justify-center '>
+        <div className='text-white w-[1024px] rounded-3xl px-[60px] py-[57px] relative overlay'
             style={{ 
               backgroundImage: 'url("/assets/images/courier/money.png")', 
               backgroundSize: 'cover', 
@@ -45,8 +45,8 @@ const ImageText: React.FC = () => {
             }}
         >
           <div style={{ position: 'relative', zIndex: 2 }}>
-            <h2 className='font-semibold text-[2rem]'>While you make more money, we also make a bit</h2>
-            <p className='text-base text-white/80 mb-[4.5rem]'>The lowest commission ever! That we keep growing together We’ll load you up with as many trips as you can handle, and we only get a tiny 7% cut of the pay</p>
+            <h2 className='font-semibold text-[2rem]'>Maximise your earnings</h2>
+            <p className=' text-white my-[1.5rem]'>We love having you around, so we are sharing these handy tips to help you earn more</p>
 
             {
                 howToData.map((data) => (

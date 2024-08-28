@@ -13,6 +13,9 @@ import {
   } from "lucide-react";
 import Link from "next/link";
 import ImageText from "./components/imageText";
+import HowTo from "./components/HowTo";
+import { FaqSection } from "./components/faq";
+import CtaCardComponent from "./components/sustainableHustle";
 
 const iconSize = 18;
 const HyperLink = ({ link }: { link: string }) => {
@@ -29,8 +32,7 @@ const featureData = [
         name: "Make extra cash, Easy & Fast",
         question: (
             <p>
-              <HyperLink link="Sign up" /> here to become an Ecourier, and start making money today! Just have a smartphone.
-              <br /> pocket
+              <HyperLink link="Sign up" /> here to become an ECOurier, and start making money today! 
             </p>
           ),
         icon: <LucideTriangleAlert size={iconSize} />,
@@ -39,77 +41,18 @@ const featureData = [
         id: 2,
         name: "You are the boss!",
         question:
-          "Make deliveries and pickups whenever you want, and earn as much money as you need. It’s up to you",
+          "Hustle whenever you want, and earn as much as you need. It’s up to you",
         icon: <LucideRecycle size={iconSize} />,
       },
       {
         id: 3,
         name: "Deliver however",
-        question: "Fit pick-ups around your lifestyle; Walk, Cycle, Bike, Drive or even Crawl. Just don’t use fossil fuel. And keep time",
+        question: "Fit pick-ups around your lifestyle; Walk, Cycle, Drive or even Crawl. Just avoid  fossil fuel",
         icon: <LucideCreditCard size={iconSize} />,
       },
   ];
 
-  const howToData = [
-    {
-      id: 1,
-      title: "Tell us a bit about yourself",
-      description: (
-        <p className="text-xs">Fill out the <span className="underline text-[#4AC63F]">Sign-up form</span>, maybe tell us why you rock,<br/> and have your ID + Driving licence ready</p>
-      ),
-    },
-    {
-      id: 2,
-      title: "You'll need a smartphone",
-      description: (
-        <p className="text-xs">It'd be easier to just shout instructions at you, but we can't. So, grab a working smartphone </p>
-      ),
-    },
-    {
-      id: 3,
-      title: "Be mobile",
-      description: (
-        <p className="text-xs">Deliver however, but don't use fossil fuel. And don't keep ECOnsumers waiting</p>
-      ),
-    },
-    {
-      id: 4,
-      title: "And have insurance",
-      description: (
-        <p className="text-xs">Let's keep the good times rolling! So get yourself covered, that we keep doing this. Together</p>
-      ),
-    }
-  ]
-  interface ItemListProps {
-    id: number | string;
-    title: string;
-    description: React.ReactNode;
-  }
-  
-  export const ItemList: React.FC<ItemListProps> = ({ id, title, description }) => (
-    <div className="flex flex-row mb-8">
-      <div className="flex items-center justify-center min-w-5 h-5 bg-[#4AC63F] rounded-full mr-5">
-        <p className="text-xs text-white leading-none">{id}</p>
-      </div>
-      <div className="pt-0">
-        <p className="text-[1.125rem] font-semibold">{title}</p>
-        {description}
-      </div>
-    </div>
-  );
-const Item = ()=> (
-  <div className="w-[31.3rem] h-[33.75rem]">
-    <div className="text-accent mt-1 mb-8">
-      <p className="text-2xl font-semibold pb-1">How to become an Eco-Courier</p>
-      <p className="text-sm ">Want to start earning more today? With ECOCAN, it’s <br/>easy like Sunday Morning. </p>
-    </div>
-    {
-      howToData.map((data) => (
-        <ItemList key={data.id} title={data.title} description={data.description} id={data.id} />
-      ))
-    }
-  </div>
-)
+
 
 export default function CourierContent() {
   const [selectedImage, setSelectedImage] = useState(0);
@@ -118,30 +61,21 @@ export default function CourierContent() {
     setSelectedImage(id - 1);
   };
   return (
-        <div className="space-y-24 py-8">
+        <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
             <TextWithCards 
                 title="Let’s drive your hustle forward"
                 description=""
                 customCard={<CustomCard features={featureData}/>}
             />
-            {/* how to become an eco-courier */}
-            <div className="h-[46.25rem] flex justify-center items-center" >
-              <div className="w-[65rem]">
-                <ImageAndItem
-                  title=""
-                  subtitle=""
-                  description=""
-                  item={<Item/>}
-                  className=""
-                  image={<Image src="/assets/images/courier/become.png" className="p-0 m-0" width={491} height={540} alt=""/>}
-                />
-              </div>
-            </div>
 
+            {/* how to become an eco-courier */}
+            <HowTo />
             {/* your hustle your rules */}
+            
+   
             <ImageAndItem
-              // title="Your hustle, Your rules!"
-              // subtitle="Making money has never been this Flexible. Easy. And. Transparent"
+              title="Your hustle, Your rules!"
+              subtitle="Making money has never been this Flexible. Easy. And. Transparent"
               image={
                 <Image
                   src="/assets/images/courier/your-hustle.png"
@@ -154,8 +88,15 @@ export default function CourierContent() {
               className="md:flex-row-reverse"
               item={<AccordionDemo onSelect={handleAccordionSelect} />}
             />
+
           {/* image text */}
           <ImageText/>
+
+          {/* Faq section */}
+          <FaqSection />
+
+          {/* sustainable-hustle*/}
+          <CtaCardComponent />
         </div>
   );
 }
