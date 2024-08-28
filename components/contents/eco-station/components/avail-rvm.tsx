@@ -16,7 +16,7 @@ export default function TextWithComponent({
   ),
   description = (
     <p>
-        If over 100 ECOnsumers return empties to you every day, we can help set up an <HyperLink link="ECOCAN R.V.M" />{" "}To boost your efficiency, and offer ECOnsumers unforgettable recycling experience. That they’ll keep coming back. And spend more&quot;
+        If over 100 ECOnsumers return empties to you every day, we can help set up an <HyperLink link="ECOCAN R.V.M" href={"/"} />{" "}To boost your efficiency, and offer ECOnsumers unforgettable recycling experience. That they’ll keep coming back. And spend more&quot;
     </p>
   ),
   component = <PrimaryButton buttonText="Learn more" />,

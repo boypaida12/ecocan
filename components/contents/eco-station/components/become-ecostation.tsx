@@ -27,7 +27,7 @@ export default function BecomeEcostation() {
                   1
                 </span>
                 <h2 className="text-[20px] text-[#404040] font-semibold">
-                  For every <HyperLink link="Register here," /> to become an
+                  For every <HyperLink link="Register here," href={"/"} /> to become an
                   Eco-station
                 </h2>
               </div>
