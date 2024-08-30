@@ -23,17 +23,13 @@ const accordionData: AccordionData[] = [
   {
     id: 1,
     title: "You decide when to make money",
-    description: (
-      <>
-        <p>Go "live" whenever you decide, and accept whatever requests you want </p>
-      </>
-    ),
+    description: "Go live whenever you decide, and accept whatever requests you want"
   },
   {
     id: 2,
     title: "Get paid twice, on the same journey",
     description: (
-        <p>Complete a delivery, and we'll assign you empties pick-up in the same area, to maximize your earnings! No wasting time</p>
+        <p>Complete a delivery, and we&apos;ll assign you empties pick-up in the same area, to maximize your earnings! No wasting time</p>
     ),
   },
   {
@@ -50,7 +46,7 @@ const accordionData: AccordionData[] = [
     title: "Receive your money instantly!",
     description: (
       <>
-        <p>There's no better feeling than receiving what you've rightfully earned, and we'll ensure you get it fast! </p>
+        <p>There&apos;s no better feeling than receiving what you&apos;ve rightfully earned, and we&apos;ll ensure you get it fast! </p>
       </>
     ),
   }
