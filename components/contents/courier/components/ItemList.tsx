@@ -1,6 +1,8 @@
+import React from "react";
+
 interface ItemListProps {
     id: number | string;
-    title: string;
+    title: React.ReactNode;
     description: React.ReactNode;
   }
   

@@ -23,7 +23,7 @@ export default function ImageAndItem({
     <div>
       <div className="text-center mb-12">
         <h2 className="text-[2rem] font-bold text-[#23262FCC]">{title}</h2>
-        <p>{description}</p>
+        <div>{description}</div>
         <p className="text-gray-600">{subtitle}</p>
       </div>
       <div className={clsx("flex flex-col md:flex-row", className)}>

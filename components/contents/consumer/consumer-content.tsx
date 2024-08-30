@@ -21,6 +21,7 @@ import PrimaryButton from "@/components/shared/primary-btn";
 import { Button } from "@/components/ui/button";
 import WhiteBgCard from "@/components/shared/white-bg-card";
 import CheckList from "./components/checklist";
+import CustomCard from "@/components/shared/text-with-cards/custom-card";
 
 const images = [
   "/assets/images/earn-image.svg",
@@ -90,6 +91,7 @@ export default function ConsumerContent() {
             it&apos;s all just a <HyperLink link="click away!" href="/" />
           </span>
         }
+        customCard={<CustomCard/>}
       />
       <ImageAndItem
         className="gap-12"

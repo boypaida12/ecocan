@@ -123,10 +123,21 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
             ))}
           </div>
           <div className="text-center ms-auto flex-col md:flex-row flex items-center justify-center gap-4 md:pt-0 pt-5">
-            <Button variant="ghost" className={clsx("hover:bg-transparent hover:text-white", firstButtonClassName)}>Join ECOmmunity</Button>
+            <Button
+              variant="ghost"
+              className={clsx(
+                "hover:bg-transparent hover:text-white",
+                firstButtonClassName
+              )}
+            >
+              Join ECOmmunity
+            </Button>
             <Button
               asChild
-              className={clsx("rounded-full h-7 xl:h-8 bg-white text-black hover:bg-white hover:text-black", secondButtonClassName)}
+              className={clsx(
+                "rounded-full h-7 xl:h-8 bg-white text-black hover:bg-white hover:text-black",
+                secondButtonClassName
+              )}
             >
               <Link href="/">Download App</Link>
             </Button>
