@@ -79,7 +79,7 @@ interface HowToItem {
 
 interface HowToProps {
   itemsTitle: React.ReactNode;
-  itemsSubtitle: string;
+  itemsSubtitle?: string;
   items: HowToItem[];
   imageSrc: string;
   imageAlt: string;

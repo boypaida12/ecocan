@@ -1,5 +1,6 @@
 import ConsumerContent from "@/components/contents/consumer/consumer-content";
 import CourierContent from "@/components/contents/courier/courier-content";
+import ProducerContent from "@/components/contents/eco-producer/producer-content";
 import EcoStationContent from "@/components/contents/eco-station/eco-station-content";
 import CourierHero from "@/components/shared/heros/courier-hero";
 import DefaultHero from "@/components/shared/heros/default-hero";
@@ -28,7 +29,7 @@ export interface TabContent {
     },
     "ECO-Producer": {
         hero: <ProducerHero/>,
-        content: <p>Producer body</p>,
+        content: <ProducerContent/>,
     },
     "ECO-Recycler": {
         hero: <RecyclerHero/>,
