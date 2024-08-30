@@ -14,7 +14,7 @@ export default function CourierHero() {
         linkColor="text-white"
       />
       <div className="lg:h-[36rem] xl:h-[47.125rem]">
-        <div className="bg-[url('/assets/images/courier-bg.jpeg')] lg:h-[32rem] xl:h-[42rem] lg:bg-contain xl:bg-cover relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-0 after:z-10">
+        <div className="bg-[url('/assets/images/courier-bg.jpeg')] lg:h-[32rem] xl:h-[42rem] lg:bg-contain xl:bg-cover relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:z-10">
           <div className="xl:max-w-[65rem] flex flex-col md:flex md:flex-row mx-auto lg:gap-12 lg:pt-[3.125rem] xl:pt-0">
             <div className="flex flex-col gap-4 lg:mt-28 xl:mt-60 md:w-1/2 px-4 xl:px-0 text-white z-50">
               <div>
