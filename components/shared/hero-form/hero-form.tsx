@@ -67,7 +67,7 @@ export default function HeroForm({title = "1, 2, 3. Go!!"}:HeroFormProps) {
   }
 
   return (
-    <Card className="lg:mt-96 xl:mt-44 rounded-2xl xl:w-full ms-auto me-4">
+    <Card className="lg:mt-96 xl:mt-44 rounded-2xl xl:w-full lg:me-4 xl:me-0">
       <CardHeader className="text-[#23262FCC]">
         <CardTitle className="text-3xl">{title}</CardTitle>
         <CardDescription className="xl:text-xl font-light">

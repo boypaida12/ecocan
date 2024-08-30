@@ -54,6 +54,51 @@ const featureData = [
   },
 ];
 
+const howToData = [
+  {
+    id: 1,
+    title: "Tell us a bit about yourself",
+    description: (
+      <p className="text-xs">
+        Fill out the{" "}
+        <span className="underline text-[#4AC63F]">Sign-up form</span>, maybe
+        tell us why you rock,
+        <br /> and have your ID + Driving licence ready
+      </p>
+    ),
+  },
+  {
+    id: 2,
+    title: "You'll need a smartphone",
+    description: (
+      <p className="text-xs">
+        It&apos;d be easier to just shout instructions at you, but we
+        can&apos;t. So, grab a working smartphone{" "}
+      </p>
+    ),
+  },
+  {
+    id: 3,
+    title: "Be mobile",
+    description: (
+      <p className="text-xs">
+        Deliver however, but don&apos;t use fossil fuel. And don&apos;t keep
+        ECOnsumers waiting
+      </p>
+    ),
+  },
+  {
+    id: 4,
+    title: "And have insurance",
+    description: (
+      <p className="text-xs">
+        Let&apos;s keep the good times rolling! So get yourself covered, that we
+        keep doing this. Together
+      </p>
+    ),
+  },
+];
+
 export default function CourierContent() {
   const [selectedImage, setSelectedImage] = useState(0);
 
@@ -68,9 +113,16 @@ export default function CourierContent() {
       />
 
       {/* how to become an eco-courier */}
-      <HowTo />
-      {/* your hustle your rules */}
+      <HowTo
+        itemsTitle="How to become an Eco-Courier"
+        itemsSubtitle="Want to start earning more today? With ECOCAN, it's easy like Sunday Morning."
+        items={howToData}
+        imageSrc="/assets/images/courier/become.png"
+        imageAlt="Become an Eco-Courier"
+      />
 
+
+      {/* your hustle your rules */}
       <ImageAndItem
         title="Your hustle, Your rules!"
         subtitle="Making money has never been this Flexible. Easy. And. Transparent"

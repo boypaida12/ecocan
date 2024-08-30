@@ -75,7 +75,7 @@ export default function BecomeEcostation() {
                 </h2>
               </div>
               <p className="text-[16px] text-[#777E90] pl-8">
-                We’ll ensure you are prominently visible.
+                We&apos;ll ensure you are prominently visible.
               </p>
             </div>
           </div>

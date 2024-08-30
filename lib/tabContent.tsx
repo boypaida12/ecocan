@@ -14,7 +14,7 @@ export interface TabContent {
   }
   
   export const tabContent: Record<string, TabContent> = {
-    "ECOsumer": {
+    "ECOnsumer": {
       hero: <DefaultHero/>,
       content: <ConsumerContent/>,
     },
