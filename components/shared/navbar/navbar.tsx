@@ -65,10 +65,9 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
       className={clsx(
         "fixed top-0 left-0 right-0 md:px-4 border-b border-b-[#EDEDED] z-[9999] transition-all duration-300",
         className,
-        {
-          "bg-primary/90 backdrop-blur-xl": isScrolled,
-          "bg-transparent backdrop-blur-sm": !isScrolled,
-        }
+        isScrolled
+          ? "bg-primary/90 backdrop-blur-xl"
+          : "bg-transparent backdrop-blur-xl"
       )}
     >
       <div className="flex items-center justify-between flex-wrap xl:max-w-[65rem] mx-auto px-4 md:px-0">
@@ -134,7 +133,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
                 firstButtonClassName,
                 isScrolled
                   ? "text-white border-none hover:text-white"
-                  : "text-primary hover:text-primary",
+                  : "text-primary hover:text-primary"
               )}
             >
               Join ECOmmunity
@@ -142,8 +141,8 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
             <Button
               asChild
               className={clsx(
-                "rounded-full h-7 xl:h-8",
-                secondButtonClassName,
+                "rounded-full h-7 xl:h-8 text-black hover:text-primary bg-[#FFDD4C]",
+                secondButtonClassName
               )}
             >
               <Link href="/">Download App</Link>
