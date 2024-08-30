@@ -5,7 +5,7 @@ import { tabContent } from "@/lib/tabContent";
 export default function HeroContainer() {
   return (
     <>
-      <Tabs defaultValue="ECOsumer" className="w-full">
+      <Tabs defaultValue="ECOnsumer" className="w-full">
         <div className="relative">
           {Object.entries(tabContent).map(([tab, { hero }]) => (
             <TabsContent key={tab} value={tab}>

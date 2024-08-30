@@ -15,7 +15,7 @@ export default function TextWithComponent({
   return (
     <>
       <div>
-          <h2 className="text-[2rem] text-accent font-semibold">{title}</h2>
+          <h2 className="text-[2.5rem] text-accent font-semibold">{title}</h2>
           <div className="text-accent my-5">{description}</div>
           {component && <div className="mt-10">{component}</div>}
       </div>
