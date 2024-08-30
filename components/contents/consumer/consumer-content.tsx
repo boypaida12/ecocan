@@ -33,6 +33,29 @@ const images = [
 
 const iconSize = 18;
 
+const steps = [
+  {
+    id: 1,
+    description: "Verify empties' eligibility by scanning attached ECOCAN security codes. DO NOT rely on your naked eye",
+  },
+  {
+    id: 2,
+    description: "Use ECOCAN Map to navigate to the closest or your preferred ECO-station",
+  },
+  {
+    id: 3,
+    description: "Hand-over your intact empties to ECO-Station Egents, who will verify them, and digitally issue applicable deposit into your ECO-Wallet",
+  },
+  {
+    id: 4,
+    description: "Alternatively, feed eligible empties into ECOCAN R.V.M, which will verify the package and transfer applicable deposit into your ECO-Wallet",
+  },
+  {
+    id: 5,
+    description: "That's all. You can then spend your money as you please",
+  },
+];
+
 const cardContent = [
   {
     icon: <LucideRecycle />,
@@ -270,7 +293,7 @@ export default function ConsumerContent() {
                 </div>
               </>
             }
-            component={<CheckList />}
+            component={<CheckList items={steps}/>}
           />
         }
       />
