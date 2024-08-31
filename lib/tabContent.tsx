@@ -8,6 +8,7 @@ import EcoStationHero from "@/components/shared/heros/eco-station-hero";
 import EventsHero from "@/components/shared/heros/events-hero";
 import ProducerHero from "@/components/shared/heros/producer-hero";
 import RecyclerHero from "@/components/shared/heros/recycler-hero";
+import Events from "@/components/contents/events/events";
 
 export interface TabContent {
     hero: React.ReactNode;
@@ -37,6 +38,6 @@ export interface TabContent {
     },
     "ECO-Events": {
         hero: <EventsHero/>,
-        content: <p>Events body</p>,
+        content: <Events/>,
     },  
   };
