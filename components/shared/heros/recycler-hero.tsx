@@ -1,12 +1,36 @@
-import React from "react";
+
+
+"use client"
+import React, { useEffect, useState } from "react";
 import NavigationBar from "../navbar/navbar";
 
+
+
 export default function RecyclerHero() {
+
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 5) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       <NavigationBar
         logoSrc="/assets/images/ecocan-logo-alt.svg"
-        className=" text-white backdrop-blur-none bg-transparent border-b-0"
+        className={
+          isScrolled ? "bg-[#4ac63f]" : "bg-transparent backdrop-blur-xl border-b-0"
+        }
         linkColor="text-white"
       />
       <div className="lg:h-[36rem] xl:h-[47.575rem]">
