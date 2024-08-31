@@ -65,9 +65,6 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
       className={clsx(
         "fixed top-0 left-0 right-0 md:px-4 border-b border-b-[#EDEDED] z-[9999] transition-all duration-300",
         className,
-        isScrolled
-          ? "bg-primary/90 backdrop-blur-xl"
-          : "bg-transparent backdrop-blur-xl"
       )}
     >
       <div className="flex items-center justify-between flex-wrap xl:max-w-[65rem] mx-auto px-4 md:px-0">

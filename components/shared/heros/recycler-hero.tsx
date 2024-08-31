@@ -1,7 +1,5 @@
-import { Button } from "@/components/ui/button";
 import React from "react";
 import NavigationBar from "../navbar/navbar";
-import Link from "next/link";
 
 export default function RecyclerHero() {
   return (

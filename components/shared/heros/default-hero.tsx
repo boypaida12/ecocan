@@ -1,15 +1,36 @@
+"use client"
+
 import { Button } from "@/components/ui/button";
 import { LucideArrowRight, LucideDownload } from "lucide-react";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import NavigationBar from "../navbar/navbar";
 import JoinCommunityButton from "../join-community-btn";
 import Link from "next/link";
 
 export default function DefaultHero() {
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 5) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       <NavigationBar
+        className={
+          isScrolled ? "bg-[#4ac63f]" : "bg-transparent backdrop-blur-xl"
+        }
         logoSrc="/assets/images/ecocan-logo.svg"
         firstButtonClassName="rounded-full h-7 xl:h-8 bg-transparent border border-primary text-primary hover:bg-transparent hover:text-primary"
         secondButtonClassName="rounded-full h-7 xl:h-8 bg-[#FFDD4E] text-[#383A35] hover:bg-[#FFDD4E] hover:text-[#383A35]"
