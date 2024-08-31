@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import NavigationBar from "../navbar/navbar";
 import { Button } from "@/components/ui/button";
 import HeroForm from "../hero-form/hero-form";
@@ -6,11 +7,31 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function CourierHero() {
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 5) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       <NavigationBar
         logoSrc="/assets/images/ecocan-logo-alt.svg"
-        className=" text-white backdrop-blur-none bg-transparent border-b-0"
+        className={
+          isScrolled
+            ? "bg-[#4ac63f]"
+            : "bg-transparent backdrop-blur-xl text-white border-b-0 "
+        }
         linkColor="text-white"
       />
       <div className="lg:h-[36rem] xl:h-[47.575rem]">
@@ -24,14 +45,13 @@ export default function CourierHero() {
                   {/* <span className="bg-gradient-to-r from-[#228B22] via-[#4AC63F] to-[#FFDD4C] text-transparent bg-clip-text">
                     Payday!
                   </span> */}
-                  <span className="bg-clip-text">
-                    Payday!
-                  </span>
+                  <span className="bg-clip-text">Payday!</span>
                 </h1>
               </div>
               <div className="space-y-8 text-sm lg:text-base xl:text-lg">
                 <p className="font-light">
-                  Make deliveries and pick-ups, and get paid<br /> twice! 
+                  Make deliveries and pick-ups, and get paid
+                  <br /> twice!
                 </p>
               </div>
             </div>
@@ -39,7 +59,7 @@ export default function CourierHero() {
               <HeroForm title="Join the hustle" />
             </div> */}
 
-              {/* <div className="lg:h-[32rem] xl:h-[44rem] md:w-1/2 relative overflow-hidden lg:overflow-visible z-20">
+            {/* <div className="lg:h-[32rem] xl:h-[44rem] md:w-1/2 relative overflow-hidden lg:overflow-visible z-20">
               <Image
                 src="/assets/images/courier/side-hustle.svg"
                 className="absolute max-w-[20rem] xl:max-w-none h-auto -left-24"
