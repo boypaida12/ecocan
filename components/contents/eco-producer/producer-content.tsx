@@ -4,7 +4,7 @@ import TextWithCards from "@/components/shared/text-with-cards/text-with-cards";
 import WhiteBgCard from "@/components/shared/white-bg-card";
 import { LucideAward, LucideDownload, LucideGem, LucideRecycle } from "lucide-react";
 import React from "react";
-import HowTo from "../courier/components/HowTo";
+import HowTo from "../../shared/HowTo";
 import Optimize from "./components/optimize";
 import { title } from "process";
 import { FaqSection } from "../consumer/components/faq";

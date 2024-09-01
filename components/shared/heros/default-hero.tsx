@@ -5,8 +5,6 @@ import { LucideArrowRight, LucideDownload } from "lucide-react";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import NavigationBar from "../navbar/navbar";
-import JoinCommunityButton from "../join-community-btn";
-import Link from "next/link";
 
 export default function DefaultHero() {
   const [isScrolled, setIsScrolled] = useState(false);

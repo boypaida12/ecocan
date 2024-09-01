@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import ImageText from "./components/imageText";
-import HowTo from "./components/HowTo";
+import HowTo from "../../shared/HowTo";
 import { FaqSection } from "./components/faq";
 import CtaCardComponent from "./components/sustainableHustle";
 

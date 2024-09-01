@@ -2,10 +2,7 @@
 "use client"
 import React, { useEffect, useState } from "react";
 import NavigationBar from "../navbar/navbar";
-import { Button } from "@/components/ui/button";
 import HeroForm from "../hero-form/hero-form";
-import { LucideDownload } from "lucide-react";
-import Link from "next/link";
 
 export default function EventsHero() {
   const [isScrolled, setIsScrolled] = useState(false);
