@@ -15,7 +15,7 @@ interface NavigationBarProps {
 }
 
 const navLinks = [
-  { href: "#", label: "Home" },
+  { href: "/", label: "Home" },
   { href: "#", label: "About Us" },
   { href: "/solutions", label: "Solutions" },
   { href: "#", label: "Blog" },
@@ -67,7 +67,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
         className,
       )}
     >
-      <div className="flex items-center justify-between flex-wrap xl:max-w-[65rem] mx-auto px-4 md:px-0">
+      <div className="flex items-center justify-between flex-wrap xl:max-w-[77.5rem] mx-auto px-4 md:px-0">
         <div className="flex items-center flex-shrink-0 text-white py-4">
           <Image
             src={logoSrc}

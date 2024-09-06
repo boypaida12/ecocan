@@ -27,7 +27,7 @@ export default function ImageAndItem({
         <h2 className="text-[2rem] font-bold text-[#23262FCC]">{title}</h2>
         <p
           className={clsx(
-             "font-bold text-[#23262FCC]",
+             "text-[#23262FCC]",
             mainClassName
           )}
         >

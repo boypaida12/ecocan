@@ -69,9 +69,22 @@ const accordionItems = [
   },
 ];
 
+const data = [
+  {
+    id: 1,
+    name: "Product 1",
+    description: "xyz",
+  },
+  {
+    id: 2,
+    name: "Product 2",
+    description: "you",
+  },
+];
+
 export default function RecyclerContent() {
   return (
-    <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+    <div className="space-y-24 py-8 max-w-[77.5rem] mx-auto px-4 xl:px-0">
       <TextWithComponent
         title="Closed-loop recycling"
         description={
@@ -141,15 +154,15 @@ export default function RecyclerContent() {
                   revolution in developing markets where it is needed the most.
                   But numerous bottlenecks have been hindering implementation,
                   until now. Leveraging our advanced technologies and extensive
-                  recycling experience, we’ve overcome those prohibitive
-                  barriers. By tailoring a DRS to developing markets’
+                  recycling experience, we&apos;ve overcome those prohibitive
+                  barriers. By tailoring a DRS to developing markets&apos;
                   environment, made it over 70% cheaper to set up, and slashed
                   administration cost by millions of dollars
                 </p>
 
                 <p>
-                  Curious how we’ve archived this? Join the ECOmmunity to find
-                  out
+                  Curious how we&apos;ve archived this? Join the ECOmmunity to
+                  find out
                 </p>
               </div>
             }
@@ -180,9 +193,7 @@ export default function RecyclerContent() {
                 </p>
               }
               description={
-                <p className="text-black mt-4">
-                  We can’t do this alone.
-                </p>
+                <p className="text-black mt-4">We can&apos;t do this alone.</p>
               }
             />
           }

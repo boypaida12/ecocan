@@ -147,7 +147,7 @@ const howToData = [
 
 export default function ProducerContent() {
   return (
-    <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+    <div className="space-y-24 py-8 max-w-[77.5rem] mx-auto px-4 xl:px-0">
       <TextWithCards
         title="Do more in the ECOmmunity"
         description="Directly engage with ECOnsumers to elevate your presence, amplify your impact and shape your strategies"
