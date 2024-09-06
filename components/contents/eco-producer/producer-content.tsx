@@ -4,7 +4,7 @@ import TextWithCards from "@/components/shared/text-with-cards/text-with-cards";
 import WhiteBgCard from "@/components/shared/white-bg-card";
 import { LucideAward, LucideDownload, LucideGem, LucideRecycle } from "lucide-react";
 import React from "react";
-import HowTo from "../courier/components/HowTo";
+import HowTo from "../../shared/HowTo";
 import Optimize from "./components/optimize";
 import { title } from "process";
 import { FaqSection } from "../consumer/components/faq";
@@ -147,7 +147,7 @@ const howToData = [
 
 export default function ProducerContent() {
   return (
-    <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+    <div className="space-y-24 py-8 max-w-[77.5rem] mx-auto px-4 xl:px-0">
       <TextWithCards
         title="Do more in the ECOmmunity"
         description="Directly engage with ECOnsumers to elevate your presence, amplify your impact and shape your strategies"

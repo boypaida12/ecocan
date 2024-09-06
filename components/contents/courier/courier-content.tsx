@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import ImageText from "./components/imageText";
-import HowTo from "./components/HowTo";
+import HowTo from "../../shared/HowTo";
 import { FaqSection } from "./components/faq";
 import CtaCardComponent from "./components/sustainableHustle";
 
@@ -106,7 +106,7 @@ export default function CourierContent() {
     setSelectedImage(id - 1);
   };
   return (
-    <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+    <div className="space-y-24 py-8 max-w-[77.5rem] mx-auto px-4 xl:px-0">
       <TextWithCards
         title="Let’s drive your hustle forward"
         customCard={<CustomCard features={featureData} />}

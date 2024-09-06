@@ -6,7 +6,7 @@ import PrimaryButton from '@/components/shared/primary-btn';
 
 const GreatMoments = () => {
   return (
-    <div className='max-w-[65rem] mx-auto p-8'>
+    <div className='max-w-[77.5rem] mx-auto p-8'>
       <CtaCard
         className="bg-[url('/assets/images/events/greatMoments.jpeg')] bg-cover bg-no-repeat relative after:absolute after:inset-0 after:content-['']  overflow-hidden z-50 flex items-center"
         item={
