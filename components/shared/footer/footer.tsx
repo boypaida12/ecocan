@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 
 type FooterItem =
   | { type: "logo"; src: string; alt: string }
-  | { type: "text"; content: string }
+  | { type: "text" }
   | {
       type: "social";
       links: { href: string; src: string; alt: string }[];
@@ -23,13 +23,11 @@ const footerData: FooterColumn[] = [
     items: [
       {
         type: "logo",
-        src: "/assets/images/ecocan-logo.svg",
+        src: "/assets/images/logo-curved.svg",
         alt: "Company Logo",
       },
       {
         type: "text",
-        content:
-          "A description about the company. This is a brief description.",
       },
       {
         type: "social",
@@ -83,7 +81,7 @@ const footerData: FooterColumn[] = [
 export default function Footer() {
   return (
     <footer className="bg-[#FCFCFD] px-4 xl:px-0">
-      <div className="xl:max-w-[77.5rem] mx-auto grid py-[6.25rem] grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <div className="xl:max-w-[77.5rem] mx-auto grid py-[6.25rem] grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
         {footerData.map((column, index) => (
           <div key={index}>
             {column.title && (
@@ -97,16 +95,10 @@ export default function Footer() {
                       <Image
                         src={item.src}
                         alt={item.alt}
-                        width={46}
-                        height={46}
+                        width={180}
+                        height={84}
                       />
                     </div>
-                  );
-                case "text":
-                  return (
-                    <p key={itemIndex} className="mb-4 text-gray-600">
-                      {item.content}
-                    </p>
                   );
                 case "social":
                   return (
@@ -134,7 +126,7 @@ export default function Footer() {
                     <div key={itemIndex} className="gap-8">
                       <a
                         href={item.href}
-                        className="block mb-2 text-gray-600 hover:text-gray-800 gap-8"
+                        className="block mb-4 text-gray-600 hover:text-gray-800 gap-8"
                       >
                         {item.content}
                       </a>
