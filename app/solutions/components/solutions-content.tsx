@@ -16,7 +16,7 @@ import StyledText from "@/components/shared/styled-text";
 import { LucideDownload } from "lucide-react";
 import ExpandableCards from "./expandable-cards";
 import { CardData } from "@/types/card-data";
-
+import { useScroll } from "@/lib/useScroll";
 
 interface SolutionsContentProps {
   cardData: CardData[];
@@ -38,7 +38,6 @@ const steps = [
   },
 ];
 
-
 const facts = [
   "Did you know that used aluminium cans are among the most valuable scrap materials in the world? They can be recycled indefinitely without losing material value. Yes, forever!",
   "Recycling just one aluminium can save up to 95% of the energy required to produce a new can. In other words, the energy saved from recycling a single can could power your TV for three whole days!",
@@ -48,23 +47,11 @@ const facts = [
   "And your next Eco-product purchase will arrive in a fully recycled, and ECO-friendly container",
 ];
 
-export default function SolutionsContent({ cardData, onCardExpand }: SolutionsContentProps) {
-  const [isScrolled, setIsScrolled] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 5) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+export default function SolutionsContent({
+  cardData,
+  onCardExpand,
+}: SolutionsContentProps) {
+  const isScrolled = useScroll();
   return (
     <>
       <NavigationBar
@@ -193,9 +180,7 @@ export default function SolutionsContent({ cardData, onCardExpand }: SolutionsCo
                   </p>
                 }
                 description={
-                  <p className="text-black mt-4">
-                    Whenever. Wherever
-                  </p>
+                  <p className="text-black mt-4">Whenever. Wherever</p>
                 }
                 component={
                   <PrimaryButton

@@ -16,10 +16,9 @@ interface NavigationBarProps {
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "#", label: "About Us" },
+  { href: "/about-us", label: "About Us" },
   { href: "/solutions", label: "Solutions" },
   { href: "#", label: "Blog" },
-  { href: "#", label: "Contact Us" },
 ];
 
 const NavigationBar: React.FC<NavigationBarProps> = ({
