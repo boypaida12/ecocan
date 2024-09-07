@@ -182,11 +182,11 @@ export default function SolutionsContent({ cardData, onCardExpand }: SolutionsCo
 
           {/* call to action */}
           <CtaCard
-            className="bg-[#F6C92D] py-0 pt-[6.25rem]"
+            className="bg-[#F6C92D] py-0"
             item={
               <TextWithComponent
                 title={
-                  <p className="text-black text-5xl">
+                  <p className="text-black text-5xl pt-[3.25rem]">
                     Affordable online
                     <br />
                     purchases
@@ -206,7 +206,7 @@ export default function SolutionsContent({ cardData, onCardExpand }: SolutionsCo
               />
             }
             image={
-              <div className="w-[36.575rem] h-[22.625rem] mx-auto">
+              <div className="w-[36.575rem] h-[22.625rem] border border-red-500">
                 <Image
                   src="/assets/images/solution-cta.svg"
                   alt=""
