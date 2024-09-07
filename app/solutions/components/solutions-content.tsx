@@ -206,7 +206,7 @@ export default function SolutionsContent({ cardData, onCardExpand }: SolutionsCo
               />
             }
             image={
-              <div className="w-full border border-red-500 overflow-hidden">
+              <div className="w-full overflow-hidden">
                 <Image
                   src="/assets/images/solution-cta.svg"
                   alt=""
