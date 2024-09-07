@@ -331,7 +331,7 @@ export default function ConsumerContent() {
       />
       <FaqSection />
       <CtaCard
-        className="bg-[url('/assets/images/consumer-cta-card.jpeg')] bg-cover bg-center relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:-z-10 overflow-hidden z-50"
+        className="bg-[url('/assets/images/consumer-cta-card.jpeg')] py-[4.75rem] bg-cover bg-center relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:-z-10 overflow-hidden z-50"
         item={
           <TextWithComponent
             title={
