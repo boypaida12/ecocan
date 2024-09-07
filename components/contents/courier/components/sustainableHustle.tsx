@@ -9,7 +9,7 @@ import PrimaryButton from "@/components/shared/primary-btn";
 const CtaCardComponent: React.FC = () => {
   return (
     <CtaCard
-      className="bg-[url('/assets/images/courier/sustainable-hustle.jpeg')] bg-cover bg-no-repeat relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:-z-10 overflow-hidden z-50 h-[453px] items-center"
+      className="bg-[url('/assets/images/courier/sustainable-hustle.jpeg')] py-[4.75rem] bg-cover bg-no-repeat relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:-z-10 overflow-hidden z-50 h-[453px] items-center"
       item={
         <TextWithComponent
           title={

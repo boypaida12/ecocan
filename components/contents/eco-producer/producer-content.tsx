@@ -205,7 +205,7 @@ export default function ProducerContent() {
       {/* call to action */}
 
       <CtaCard
-        className="bg-[url('/assets/images/unfair-advantage.jpeg')] bg-cover bg-center relative"
+        className="bg-[url('/assets/images/unfair-advantage.jpeg')] py-[4.75rem] bg-cover bg-center relative"
         item={
           <TextWithComponent
             title={

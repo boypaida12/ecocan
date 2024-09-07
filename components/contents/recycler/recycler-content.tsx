@@ -182,7 +182,7 @@ export default function RecyclerContent() {
         {/* call to action */}
 
         <CtaCard
-          className="bg-[url('/assets/images/recycler-cta.jpeg')] bg-cover bg-center items-center"
+          className="bg-[url('/assets/images/recycler-cta.jpeg')] py-[4.75rem] bg-cover bg-center items-center"
           item={
             <TextWithComponent
               title={

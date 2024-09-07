@@ -268,7 +268,7 @@ export default function EcoStationContent() {
 
       {/* call to action */}
       <CtaCard
-        className="bg-[url('/assets/images/join-eco-community.jpeg')] bg-cover bg-center relative"
+        className="bg-[url('/assets/images/join-eco-community.jpeg')] py-[4.75rem] bg-cover bg-center relative"
         item={
           <TextWithComponent
             title={
