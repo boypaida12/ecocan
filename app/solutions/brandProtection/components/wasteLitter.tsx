@@ -1,7 +1,7 @@
 import React from 'react'
 import ImageAndItem from '@/components/shared/image-and-item/image-and-item'
 import Image from "next/image";
-import TextWithComponent from '../../../components/contents/consumer/components/buy-online';
+import TextWithComponent from '../../../../components/contents/consumer/components/buy-online';
 
 interface ImageTextProps {
     image:string;

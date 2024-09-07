@@ -5,9 +5,14 @@ import WasteLitter from './components/wasteLitter';
 import WasteLitterCard from './components/wasteLitterCard';
 import HyperLink from '@/components/shared/hyperlink/hyperlink';
 import TNT from './components/tnt';
+import Qr from './components/qr';
+import { ImageList } from './components/imageList';
+import SerializedList from './components/serializedList';
+import NonSerializedList from './components/nonSerializedList';
+import EcocanApp from './components/ecocanApp';
 
 
-const BrandPosition = () => {
+const BrandProtection = () => {
 const description = (
     <p className="max-w-[56.125rem] font-inter text-[1.25rem] font-normal leading-[1.512rem] tracking-[-0.02em] text-left text-[#23262FCC]">
         30% of all beverages sold globally is illicit. In Africa it's worse - 2 out of 5 drinks sold are fake! Consuming these harmful products leads to loss of life, harming of health, depriving value for money, and hurts legitimate trade. Good news? We can now stop this, with EcocanApp.
@@ -37,11 +42,31 @@ const description = (
             </ul>
           </div>
           <TNT />
+          <Qr/>
+          <p className="py-[6.125rem] font-inter text-[1.25rem] font-normal leading-[1.5125rem] tracking-[-0.02em] text-left">
+          <HyperLink link="ECOCAN Security Codes" href="#" /> are serialized, blockchain-compatible, anti-copy codes. Which are only printed onto packaging of genuine eligible products. To ensure each product is unique, is digitally connected, and can be traced. ECOnsumers can scan these codes with their ECO-scanners to authenticate the products in under 3 seconds.<br/><br/>
+          <HyperLink link="Learn more" href="#" />
+          </p>
         </div>
+        <div className='bg-white p-[2.813rem] mt-8 shadow-lg flex space-x-4'>
+          <ImageList 
+          heading={<p className="font-dm-sans text-[1.75rem] font-bold leading-[2.27875rem] text-center text-[#FF4D07]">Not Serialised</p>}
+          subheading={<p className="font-dm-sans text-[1.5rem] font-bold leading-[1.953125rem] text-center">Every QR is the same</p>}
+          imageSrc='/assets/images/brandPosition/not-serialized.png'
+          description={<NonSerializedList/>}
+          />
 
+          <ImageList 
+          heading={<p className="font-dm-sans text-[1.75rem] font-bold leading-[2.27875rem] text-center text-[#83C755]">Serialised</p>}
+          subheading={<p className="font-dm-sans text-[1.5rem] font-bold leading-[1.953125rem] text-center">Every QR code is unique</p>}
+          imageSrc='/assets/images/brandPosition/not-serialized.png'
+          description={<SerializedList/>}
+          />
+        </div>
+        <EcocanApp/>
     </div>
     
   )
 }
 
-export default BrandPosition
+export default BrandProtection;

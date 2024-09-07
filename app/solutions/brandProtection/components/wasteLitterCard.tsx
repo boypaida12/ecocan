@@ -3,6 +3,7 @@ import React from "react";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import './wasteLitterCard.css'
 import HyperLink from "@/components/shared/hyperlink/hyperlink";
+
 export default function WasteLitterCard() {
   return (
     <div className="p-6 pt-0 max-w-5xl mx-auto">

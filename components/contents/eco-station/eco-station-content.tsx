@@ -18,7 +18,7 @@ import { FaqSection } from "../consumer/components/faq";
 import CtaCard from "@/components/shared/cta-card/cta-card";
 import PrimaryButton from "@/components/shared/primary-btn";
 import { Button } from "@/components/ui/button";
-import HowTo from "../courier/components/HowTo";
+import HowTo from "../../shared/HowTo";
 import TextWithComponent from "../consumer/components/buy-online";
 import SellMore from "./components/sell-more";
 import { ReusableAccordion } from "../../shared/accordion";
@@ -90,12 +90,8 @@ const howToData = [
 ];
 
 export default function EcoStationContent() {
-  function handleAccordionSelect(id: number): void {
-    throw new Error("Function not implemented.");
-  }
-
   return (
-    <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+    <div className="space-y-24 py-8 max-w-[77.5rem] mx-auto px-4 xl:px-0">
       <TextWithCards
         title="Why become an ECO-station"
         description="It's a win-win-win; while you help keep the environment clean by accepting empties, and issuing deposits to ECOnsumers, we’ll bring more business to you"
@@ -272,7 +268,7 @@ export default function EcoStationContent() {
 
       {/* call to action */}
       <CtaCard
-        className="bg-[url('/assets/images/join-eco-community.jpeg')] bg-cover bg-center relative"
+        className="bg-[url('/assets/images/join-eco-community.jpeg')] py-[4.75rem] bg-cover bg-center relative"
         item={
           <TextWithComponent
             title={

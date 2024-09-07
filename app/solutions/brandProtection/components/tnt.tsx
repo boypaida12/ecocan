@@ -21,7 +21,7 @@ const steps = [
 
 const TNT = () => {
   return (
-    <div>
+    <div className='mb-12'>
         <WasteLitter
         image='/assets/images/brandPosition/Rectangle.png'
         title='ECOCAN TnT'

@@ -103,7 +103,7 @@ export default function ConsumerContent() {
   };
 
   return (
-    <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+    <div className="space-y-24 py-8 max-w-[77.5rem] mx-auto px-4 xl:px-0">
       <TextWithCards
         title="Get Started"
         description={
@@ -331,7 +331,7 @@ export default function ConsumerContent() {
       />
       <FaqSection />
       <CtaCard
-        className="bg-[url('/assets/images/consumer-cta-card.jpeg')] bg-contain relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:-z-10 overflow-hidden z-50"
+        className="bg-[url('/assets/images/consumer-cta-card.jpeg')] py-[4.75rem] bg-cover bg-center relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:-z-10 overflow-hidden z-50"
         item={
           <TextWithComponent
             title={

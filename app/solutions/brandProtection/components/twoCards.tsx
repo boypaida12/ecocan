@@ -1,7 +1,7 @@
 import React from 'react';
 import SimpleCard from './simpleCard';
 import CheckList from '@/components/contents/consumer/components/checklist';
-import '../../../components/contents/courier/components/image.css'
+import '../../../../components/contents/courier/components/image.css'
 
 const TwoCards = () => {
     const steps = [

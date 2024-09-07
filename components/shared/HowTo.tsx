@@ -66,9 +66,9 @@
 // export default HowTo
 
 import React from "react";
-import ImageAndItem from "../../../shared/image-and-item/image-and-item";
+import ImageAndItem from "./image-and-item/image-and-item";
 import Image from "next/image";
-import { ItemList } from "./ItemList";
+import { ItemList } from "../contents/courier/components/ItemList";
 
 // Define prop types
 interface HowToItem {
@@ -96,7 +96,7 @@ const HowTo: React.FC<HowToProps> = ({
     <div className="w-[31.3rem] h-[33.75rem] pl-[48px] ms-auto flex flex-col justify-center">
       <div className="text-accent mt-1 mb-8">
         <p className="text-2xl font-semibold pb-1">{itemsTitle}</p>
-        <p className="text-sm ">{itemsSubtitle}</p>
+        <p className="text-sm">{itemsSubtitle}</p>
       </div>
       {items.map((data) => (
         <ItemList

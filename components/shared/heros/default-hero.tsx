@@ -5,8 +5,6 @@ import { LucideArrowRight, LucideDownload } from "lucide-react";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import NavigationBar from "../navbar/navbar";
-import JoinCommunityButton from "../join-community-btn";
-import Link from "next/link";
 
 export default function DefaultHero() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,7 +35,7 @@ export default function DefaultHero() {
       />
       <div className="lg:h-[32.875rem] xl:h-[44rem] mt-[3.575rem]">
         <div className="bg-[url('/assets/images/hero-bg.jpeg')] bg-center h-[27rem] relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-70 after:z-10">
-          <div className="xl:max-w-[65rem] flex flex-col md:flex md:flex-row mx-auto lg:gap-12">
+          <div className="xl:max-w-[77.5rem] flex flex-col md:flex md:flex-row mx-auto lg:gap-12">
             <div className="flex flex-col gap-4 md:w-1/2 px-4 xl:px-0 text-white z-50 items-center justify-center mt-4 xl:mt-16 space-y-4">
               <div>
                 <h1 className="lg:text-6xl text-2xl xl:text-7xl text-center md:text-start font-semibold">
