@@ -9,6 +9,7 @@ interface ImageAndItemProps {
   item?: React.ReactNode;
   image?: React.ReactNode;
   className?: string;
+  alignment? : string;
 }
 
 export default function ImageAndItem({
@@ -17,7 +18,8 @@ export default function ImageAndItem({
   description,
   item,
   className,
-  image
+  image,
+   alignment = 'self-center'
 }: ImageAndItemProps) {
   return (
     <div>
@@ -30,7 +32,7 @@ export default function ImageAndItem({
         <div className="md:flex-0 space-y-4 relative">
           {image}
         </div>
-        <div className="md:w-1/2 space-y-4 self-center">
+        <div className={`md:w-1/2 space-y-4 ${alignment}`}>
           {item}
         </div>
       </div>
