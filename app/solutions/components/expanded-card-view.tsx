@@ -39,7 +39,15 @@ const ExpandedCardView: React.FC<ExpandedCardViewProps> = ({
   }, []);
   return (
     <>
-      <div className="space-y-2 py-8 max-w-[77.5rem] mx-auto px-4 xl:px-0">
+      <NavigationBar
+        className={
+          isScrolled ? "bg-[#4ac63f]" : "bg-transparent backdrop-blur-xl"
+        }
+        logoSrc="/assets/images/ecocan-logo.svg"
+        firstButtonClassName="rounded-full h-7 xl:h-8 bg-transparent border border-primary text-primary hover:bg-transparent hover:text-primary"
+        secondButtonClassName="rounded-full h-7 xl:h-8 bg-[#FFDD4E] text-[#383A35] hover:bg-[#FFDD4E] hover:text-[#383A35]"
+      />
+      <div className="space-y-2 py-8 max-w-[77.5rem] mx-auto px-4 xl:px-0 mt-[3.575rem]">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
