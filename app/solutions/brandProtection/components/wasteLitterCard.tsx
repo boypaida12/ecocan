@@ -34,6 +34,18 @@ export default function WasteLitterCard() {
               </li>
               </ul>
             </div>
+            <div className="flex-shrink-0 w-[18.688rem] p-4 bg-white rounded-lg" style={{ boxShadow: '0px 2px 3px 0px #0000004D, 0px 6px 10px 4px #00000026' }}>
+            <ul className="list-disc pl-5">
+                <li className="font-inter text-sm font-normal leading-[1.059rem] text-left text-[#777E90] tracking-wide">If you’re a producer who doesn’t safeguard the integrity of your products, nor facilitate elaborate recycling of the post-consumer empties, you’re inadvertently supporting counterfeit trade 
+              </li>
+              </ul>
+            </div>
+            <div className="flex-shrink-0 w-[18.688rem] p-4 bg-white rounded-lg" style={{ boxShadow: '0px 2px 3px 0px #0000004D, 0px 6px 10px 4px #00000026' }}>
+            <ul className="list-disc pl-5">
+                <li className="font-inter text-sm font-normal leading-[1.059rem] text-left text-[#777E90] tracking-wide">So, let’s join hands in the <HyperLink link="ECOmmunity" href="/" /> and stop these criminals, protect our health from harmful fake drinks, ensure we get value for money, and safeguard our legitimate businesses  
+              </li>
+              </ul>
+            </div>
           </div>
         </CardContent>
       </Card>
