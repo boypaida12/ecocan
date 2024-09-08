@@ -4,11 +4,6 @@ import { CardData } from '@/types/card-data';
 import React, { useState } from 'react';
 import ExpandedCardView from './components/expanded-card-view';
 import SolutionsContent from './components/solutions-content';
-import BrandProtection from './brandProtection/BrandProtection';
-import OnlineSales from './onlineSales/OnlineSales';
-import PackagingRecycling from './packagingRecycling/PackagingRecycling';
-import ConsumerEngagement from './consumerEngagement/consumerEngagement';
-
 
 
 const cardData: CardData[] = [
@@ -17,28 +12,28 @@ const cardData: CardData[] = [
     title: "Brand Protection",
     imageGrey: "/assets/images/solutions/brand-protection.svg",
     imageColor: "/assets/images/solutions/brand-protection-active.svg",
-    content: <BrandProtection/>,
+    content: "Detailed information about Brand Protection...",
   },
   {
     id: 2,
     title: "Packaging Recycling",
     imageGrey: "/assets/images/solutions/packaging.svg",
     imageColor: "/assets/images/solutions/packaging-active.svg",
-    content: <PackagingRecycling/>,
+    content: "Detailed information about Packaging Recycling...",
   },
   {
     id: 3,
     title: "Consumer Engagement",
     imageGrey: "/assets/images/solutions/consumer.svg",
     imageColor: "/assets/images/solutions/consumer-active.svg",
-    content: <ConsumerEngagement/>,
+    content: "Detailed information about Consumer Engagement...",
   },
   {
     id: 4,
     title: "Online Sales",
     imageGrey: "/assets/images/solutions/online-sales.svg",
     imageColor: "/assets/images/solutions/onlinesales-active.svg",
-    content: <OnlineSales/>,
+    content: "Detailed information about Online Sales...",
   },
 ];
 

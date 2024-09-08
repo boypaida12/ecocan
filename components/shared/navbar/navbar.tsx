@@ -29,14 +29,14 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
   linkColor,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isVisible, setIsVisible] = useState(true);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 200) {
-        setIsVisible(false);
+      if (window.scrollY > 5) {
+        setIsScrolled(true);
       } else {
-        setIsVisible(true);
+        setIsScrolled(false);
       }
     };
 
@@ -62,9 +62,8 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
   return (
     <nav
       className={clsx(
-        "fixed top-0 left-0 right-0 md:px-4 border-b border-b-[#EDEDED] z-[9999] bg-[#ffffffb2] backdrop-blur-xl transition-transform duration-300",
+        "fixed top-0 left-0 right-0 md:px-4 border-b border-b-[#EDEDED] z-[9999] transition-all duration-300",
         className,
-        { "transform -translate-y-full": !isVisible }
       )}
     >
       <div className="flex items-center justify-between flex-wrap xl:max-w-[77.5rem] mx-auto px-4 md:px-0">
@@ -113,7 +112,8 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
                 href={link.href}
                 key={link.label}
                 className={clsx(
-                  "block md:inline-block text-center text-[#00000080] text-sm font-[500]",
+                  "block md:inline-block text-center text-sm font-[500]",
+                  isScrolled ? "text-white" : "text-[#00000080]",
                   linkColor
                 )}
               >
@@ -125,8 +125,11 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
             <Button
               variant="ghost"
               className={clsx(
-                "hover:bg-transparent hover:text-white",
-                firstButtonClassName
+                "hover:bg-transparent",
+                firstButtonClassName,
+                isScrolled
+                  ? "text-white border-none hover:text-white"
+                  : "text-primary hover:text-primary"
               )}
             >
               Join ECOmmunity
@@ -134,7 +137,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
             <Button
               asChild
               className={clsx(
-                "rounded-full h-7 xl:h-8 bg-white text-black hover:bg-white hover:text-black",
+                "rounded-full h-7 xl:h-8 text-black hover:text-primary bg-[#FFDD4C]",
                 secondButtonClassName
               )}
             >
