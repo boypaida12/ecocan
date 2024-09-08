@@ -5,6 +5,8 @@ import React, { useState } from 'react';
 import ExpandedCardView from './components/expanded-card-view';
 import SolutionsContent from './components/solutions-content';
 import BrandProtection from './brandProtection/BrandProtection';
+import OnlineSales from './onlineSales/OnlineSales';
+
 
 
 const cardData: CardData[] = [
@@ -34,7 +36,7 @@ const cardData: CardData[] = [
     title: "Online Sales",
     imageGrey: "/assets/images/solutions/online-sales.svg",
     imageColor: "/assets/images/solutions/onlinesales-active.svg",
-    content: "Detailed information about Online Sales...",
+    content: <OnlineSales/>,
   },
 ];
 
