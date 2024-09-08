@@ -6,6 +6,8 @@ import ExpandedCardView from './components/expanded-card-view';
 import SolutionsContent from './components/solutions-content';
 import BrandProtection from './brandProtection/BrandProtection';
 import OnlineSales from './onlineSales/OnlineSales';
+import PackagingRecycling from './packagingRecycling/PackagingRecycling';
+import ConsumerEngagement from './consumerEngagement/consumerEngagement';
 
 
 
@@ -22,14 +24,14 @@ const cardData: CardData[] = [
     title: "Packaging Recycling",
     imageGrey: "/assets/images/solutions/packaging.svg",
     imageColor: "/assets/images/solutions/packaging-active.svg",
-    content: "Detailed information about Packaging Recycling...",
+    content: <PackagingRecycling/>,
   },
   {
     id: 3,
     title: "Consumer Engagement",
     imageGrey: "/assets/images/solutions/consumer.svg",
     imageColor: "/assets/images/solutions/consumer-active.svg",
-    content: "Detailed information about Consumer Engagement...",
+    content: <ConsumerEngagement/>,
   },
   {
     id: 4,
