@@ -10,7 +10,6 @@ interface ImageAndItemProps {
   image?: React.ReactNode;
   className?: string;
   mainClassName?: string;
-  alignment? : string;
 }
 
 export default function ImageAndItem({
@@ -21,7 +20,6 @@ export default function ImageAndItem({
   mainClassName,
   className,
   image,
-  alignment = 'self-center'
 }: ImageAndItemProps) {
   return (
     <div>
@@ -38,9 +36,7 @@ export default function ImageAndItem({
       </div>
       <div className={clsx("flex flex-col md:flex-row", className)}>
         <div className="md:flex-0 space-y-4 relative">{image}</div>
-        <div className={`md:w-1/2 space-y-4 ${alignment}`}>
-          {item}
-        </div>
+        <div className="md:w-1/2 space-y-4 self-center">{item}</div>
       </div>
     </div>
   );

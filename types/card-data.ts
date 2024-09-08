@@ -3,5 +3,5 @@ export interface CardData {
     title: string;
     imageGrey: string;
     imageColor: string;
-    content: React.ReactNode;
+    content: string;
   }
