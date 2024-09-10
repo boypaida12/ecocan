@@ -10,6 +10,8 @@ import {
 import Link from "next/link";
 import clsx from "clsx";
 import HyperLink from "../hyperlink/hyperlink";
+import Image from "next/image";
+import { greenBall } from "@/lib/imageIndex";
 
 interface Feature {
   id: number;
@@ -115,9 +117,7 @@ const FeaturesGrid: React.FC<FeaturesGridProps> = ({
               key={feature.id}
               className={`width-fit text-left ${bgColor} py-4 rounded-xl`}
             >
-              <div className="mb-2 w-fit rounded-lg bg-primary p-1 text-center text-white ">
-                {feature.icon}
-              </div>
+              <Image src={greenBall} alt="green icon" className="w-12 h-12" width={47} height={47}/>
               <div className="text-md mb-1 font-semibold text-gray-900">
                 {feature.name}
               </div>
