@@ -11,6 +11,7 @@ import {
   BreadcrumbPage,
 } from "@/components/ui/breadcrumb";
 import NavigationBar from "@/components/shared/navbar/navbar";
+import { useScroll } from "@/lib/useScroll";
 
 interface ExpandedCardViewProps {
   card: CardData;
@@ -21,22 +22,8 @@ const ExpandedCardView: React.FC<ExpandedCardViewProps> = ({
   card,
   onBack,
 }) => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 5) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
+  const isScrolled = useScroll();
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
     <>
       <NavigationBar

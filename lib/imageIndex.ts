@@ -6,3 +6,4 @@ export const ecomarket = '/assets/images/eco-market.png';
 export const serialized = '/assets/images/solutions/serialized.svg';
 export const ecocanMobile = '/assets/images/consumer/ecocan-app.svg';
 export const alphaMale = '/assets/images/solutions/alpha-male.jpeg';
+export const blogHero = '/assets/images/blog/hero.jpeg';
