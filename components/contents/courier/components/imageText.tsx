@@ -4,10 +4,10 @@ import clsx from "clsx";
 
 interface ImageTextOverlayProps {
   className?: string;
-  children: React.ReactNode;
+  item: React.ReactNode;
 }
 
-const ImageTextOverlay = ({ children, className }: ImageTextOverlayProps) => {
+const ImageTextOverlay = ({ item, className }: ImageTextOverlayProps) => {
   return (
     <div
       className={clsx(
@@ -15,7 +15,7 @@ const ImageTextOverlay = ({ children, className }: ImageTextOverlayProps) => {
         className
       )}
     >
-      <div>{children}</div>
+      <div>{item}</div>
     </div>
   );
 };

@@ -139,7 +139,7 @@ export default function OnlineSales() {
         className="md:flex-row-reverse"
         image={
           <ImageTextOverlay
-            children={
+            item={
               <>
                 <TextWithCards
                   className="text-white w-full"

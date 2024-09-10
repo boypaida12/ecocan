@@ -180,7 +180,7 @@ export default function CourierContent() {
       {/* image text */}
       <ImageTextOverlay
       className="bg-[url('/assets/images/courier/money.png')]"
-        children={
+        item={
           <div className="w-5/6 mx-auto">
             <h2 className="text-[2rem] font-bold">Maximise your earnings</h2>
             <p className="text-lg font-light">

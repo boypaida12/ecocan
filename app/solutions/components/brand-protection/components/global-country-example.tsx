@@ -36,14 +36,14 @@ export default function GlobalCountryExample() {
         </Card>
       </div>
       <ImageTextOverlay
-        children={
-          <>
+        item={
+          <div>
             <TextWithCards
               className="text-white w-full"
               title="In Kenya for example:"
               description={<><CheckList items={steps} /></>}
             />
-          </>
+          </div>
         }
         className="bg-[url('/assets/images/solutions/bottles-in-bucket.png')]"
       />
