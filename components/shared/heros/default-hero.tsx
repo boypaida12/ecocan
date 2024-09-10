@@ -51,8 +51,8 @@ export default function DefaultHero() {
                   conservation, to nurturing healthy and thriving communities.
                 </p>
                 <p className="lg:text-white xl:text-accent font-light">
-                  Download EcocanApp to avoid harmful fake drinks, make money by
-                  recycling your empties; or order your favourite drinks online.{" "}
+                  Download EcocanApp to make money by
+                  recycling your empties, avoid harmful fake drinks; or order your favourite drinks online.{" "}
                 </p>
                 <Button className="before:ease rounded-full relative xl:h-[3.25rem] mx-auto md:mx-0 w-fit xl:py-3 xl:px-8 overflow-hidden text-white transition-all before:absolute before:right-0 before:top-0 before:h-14 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-1000 hover:before:-translate-x-56">
                   <span className="relative z-10 text-lg">Download App</span>
