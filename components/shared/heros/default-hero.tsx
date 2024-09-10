@@ -34,7 +34,7 @@ export default function DefaultHero() {
         secondButtonClassName="rounded-full h-7 xl:h-8 bg-[#FFDD4E] text-[#383A35] hover:bg-[#FFDD4E] hover:text-[#383A35]"
       />
       <div className="lg:h-[32.875rem] xl:h-[44rem] mt-[3.575rem]">
-        <div className="bg-[url('/assets/images/hero-bg.jpeg')] bg-center h-[27rem] relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-70 after:z-10">
+        <div className="bg-[url('/assets/images/consumer/hero-bg.jpeg')] bg-center h-[27rem] relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-70 after:z-10">
           <div className="xl:max-w-[77.5rem] flex flex-col md:flex md:flex-row mx-auto lg:gap-12">
             <div className="flex flex-col gap-4 md:w-1/2 px-4 xl:px-0 text-white z-50 items-center justify-center mt-4 xl:mt-16 space-y-4">
               <div>
@@ -66,7 +66,7 @@ export default function DefaultHero() {
             </div>
             <div className="lg:h-[32rem] xl:h-[44rem] md:w-1/2 relative overflow-hidden lg:overflow-visible z-20">
               <Image
-                src="/assets/images/hero-img.svg"
+                src="/assets/images/consumer/hero-img.svg"
                 className="absolute max-w-[35rem] xl:max-w-none h-auto -left-24"
                 alt="ecocan mobile app"
                 width={700}

@@ -62,7 +62,6 @@ const ExpandedCardView: React.FC<ExpandedCardViewProps> = ({
           </BreadcrumbList>
         </Breadcrumb>
         <div className="">
-          <h2 className="text-2xl font-bold mt-4 mb-2">{card.title}</h2>
           <p>{card.content}</p>
         </div>
         {/* Add more detailed content here */}

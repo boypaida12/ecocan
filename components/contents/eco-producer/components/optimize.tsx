@@ -40,22 +40,22 @@ export default function Optimize() {
         <FeatureCard
           title="Transform ordinary packaging into digitally connected assets"
           description="We'll help unlock the digital power of your beverage containers, by enabling individual item-unit traceability across the entire market, in real-time! This prevents counterfeiting and diversion activities, as well as offer you unmatched market intelligence"
-          imageSrc="/assets/images/optimize-1.svg"
+          imageSrc="/assets/images/producer/optimize-1.svg"
         />
         <FeatureCard
           title="Convert them into low-cost yet expansive, marketing channels"
           description="Your packaging is more than a one-time consumable; we'll convert it into a dynamic marketing platform, for directly engaging with your customers through personalized campaigns. In return, you'll gain actionable insights to enhance your operations"
-          imageSrc="/assets/images/optimize-2.svg"
+          imageSrc="/assets/images/producer/optimize-2.svg"
         />
         <FeatureCard
           title="Increase their resource efficiency, and cut your environmental impact"
           description="Through reuse and recycling via the ECOCAN DRS, we'll tell you exactly what individual packaging has been collected and recycled, when and where. We'll also ensure regulators know about your ECO-friendly efforts"
-          imageSrc="/assets/images/optimize-3.svg"
+          imageSrc="/assets/images/producer/optimize-3.svg"
         />
         <FeatureCard
           title="Closed-loop recycling"
           description="We directly offer a service for automated bottle washing and quality inspection. Deploying top-of-the-line PAC Swiss bottle washers, and Krones Electronic Bottle Inspector (E.B.I.). That we deliver most hygienic and palletised washed glass bottles ready for reuse"
-          imageSrc="/assets/images/optimize-4.svg"
+          imageSrc="/assets/images/producer/optimize-4.svg"
         />
       </div>
 

@@ -19,7 +19,7 @@ export default function TextWithCards({
   return (
     <div>
       <div className={clsx("text-accent w-[72%]", className)}>
-        <h2 className="font-bold text-[2rem]">{title}</h2>
+        <h2 className="font-bold text-[2rem] tracking-tight">{title}</h2>
         <div>{subtitle}</div>
         <div>{description}</div>
       </div>

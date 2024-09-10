@@ -12,19 +12,14 @@ import {
   LucideCreditCard,
 } from "lucide-react";
 import Link from "next/link";
-import ImageText from "./components/imageText";
 import HowTo from "../../shared/HowTo";
 import { FaqSection } from "./components/faq";
 import CtaCardComponent from "./components/sustainableHustle";
+import ImageTextOverlay from "./components/imageText";
+import { ReusableAccordion } from "@/components/shared/accordion";
+import HyperLink from "@/components/shared/hyperlink/hyperlink";
 
 const iconSize = 18;
-const HyperLink = ({ link }: { link: string }) => {
-  return (
-    <Link href="/" className="text-primary">
-      {link}
-    </Link>
-  );
-};
 
 const featureData = [
   {
@@ -32,7 +27,7 @@ const featureData = [
     name: "Make extra cash, Easy & Fast",
     question: (
       <p>
-        <HyperLink link="Sign up" /> here to become an ECOurier, and start
+        <HyperLink link="Sign up" href="/"/> here to become an ECOurier, and start
         making money today!
       </p>
     ),
@@ -59,11 +54,8 @@ const howToData = [
     id: 1,
     title: "Tell us a bit about yourself",
     description: (
-      <p className="text-xs">
-        Fill out the{" "}
-        <span className="underline text-[#4AC63F]">Sign-up form</span>, maybe
-        tell us why you rock,
-        <br /> and have your ID + Driving licence ready
+      <p className="text-sm">
+        <HyperLink link="Sign up here" href="/"/> and have your ID +/license ready 
       </p>
     ),
   },
@@ -71,7 +63,7 @@ const howToData = [
     id: 2,
     title: "You'll need a smartphone",
     description: (
-      <p className="text-xs">
+      <p className="text-sm">
         It&apos;d be easier to just shout instructions at you, but we
         can&apos;t. So, grab a working smartphone{" "}
       </p>
@@ -81,7 +73,7 @@ const howToData = [
     id: 3,
     title: "Be mobile",
     description: (
-      <p className="text-xs">
+      <p className="text-sm">
         Deliver however, but don&apos;t use fossil fuel. And don&apos;t keep
         ECOnsumers waiting
       </p>
@@ -91,9 +83,56 @@ const howToData = [
     id: 4,
     title: "And have insurance",
     description: (
-      <p className="text-xs">
+      <p className="text-sm">
         Let&apos;s keep the good times rolling! So get yourself covered, that we
         keep doing this. Together
+      </p>
+    ),
+  },
+];
+
+const accordionItems = [
+  {
+    id: "item-1",
+    question: "Be live during ‘our rush hours’",
+    answer: (
+      <p className="text-white font-light">
+        We are unique and you can be too; we&apos;re busiest with pick-ups
+        between 10:00 AM and 14:00 PM when other services go quiet. So, boost
+        your earnings by going live at this time
+      </p>
+    ),
+  },
+  {
+    id: "item-2",
+    question: "Earn more with tips",
+    answer: (
+      <p className="text-white font-light">
+        Be professional and nice, it doesn’t cost a thing. But if you are not it
+        might cost you everything! ECOnsumers who appreciate your service can
+        tip you
+      </p>
+    ),
+  },
+  {
+    id: "item-3",
+    question: "Deliver efficiently",
+    answer: (
+      <p className="text-white font-light">
+        Bicycles are great for longer distances, while walking is perfect for
+        short trips; but both are ECO-friendly and double as workouts. For
+        Crawling... well…, if you want to stand out, why not?
+      </p>
+    ),
+  },
+  {
+    id: "item-4",
+    question: "Watch out for ECO-promotions",
+    answer: (
+      <p className="text-white/80 font-light">
+        Every once in a while we may spoil you with bonuses and challenges, in
+        recognition of your ECO-friendly hustle. So, keep an eye out for those
+        sweet rewards!
       </p>
     ),
   },
@@ -117,10 +156,9 @@ export default function CourierContent() {
         itemsTitle="How to become an Eco-Courier"
         itemsSubtitle="Want to start earning more today? With ECOCAN, it's easy like Sunday Morning."
         items={howToData}
-        imageSrc="/assets/images/courier/become.png"
+        imageSrc="/assets/images/courier/courier-woman.svg"
         imageAlt="Become an Eco-Courier"
       />
-
 
       {/* your hustle your rules */}
       <ImageAndItem
@@ -140,7 +178,19 @@ export default function CourierContent() {
       />
 
       {/* image text */}
-      <ImageText />
+      <ImageTextOverlay
+      className="bg-[url('/assets/images/courier/money.png')]"
+        children={
+          <div className="w-5/6 mx-auto">
+            <h2 className="text-[2rem] font-bold">Maximise your earnings</h2>
+            <p className="text-lg font-light">
+              We love having you around, so we are sharing these handy tips to
+              help you earn more
+            </p>
+            <ReusableAccordion items={accordionItems} />
+          </div>
+        }
+      />
 
       {/* Faq section */}
       <FaqSection />

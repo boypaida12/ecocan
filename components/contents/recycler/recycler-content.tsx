@@ -112,7 +112,7 @@ export default function RecyclerContent() {
         image={
           <div className="relative h-[43.5rem] w-[28rem]">
             <Image
-              src="/assets/images/ecocan-app.svg"
+              src="/assets/images/consumer/ecocan-app.svg"
               width={1000}
               height={1000}
               className="w-full h-full absolute -left-[5rem]"
@@ -168,7 +168,7 @@ export default function RecyclerContent() {
             }
             component={
               <Image
-                src="/assets/images/drs-world.png"
+                src="/assets/images/recycler/drs-world.png"
                 alt="DRS"
                 width={1000}
                 height={1000}
@@ -182,7 +182,7 @@ export default function RecyclerContent() {
         {/* call to action */}
 
         <CtaCard
-          className="bg-[url('/assets/images/recycler-cta.jpeg')] py-[4.75rem] bg-cover bg-center items-center"
+          className="bg-[url('/assets/images/recycler/recycler-cta.jpeg')] py-[4.75rem] bg-cover bg-center items-center"
           item={
             <TextWithComponent
               title={

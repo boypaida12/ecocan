@@ -174,7 +174,7 @@ export default function ProducerContent() {
       <HowTo
         itemsTitle="How to join the ECOmmunity"
         items={howToData}
-        imageSrc="/assets/images/ecommunity.svg"
+        imageSrc="/assets/images/producer/ecommunity.svg"
         imageAlt="Become an Eco-station"
       />
       {/* optimize */}
