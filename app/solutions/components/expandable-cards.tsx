@@ -31,22 +31,22 @@ const ExpandableCards: React.FC<ExpandableCardsProps> = ({
   };
 
   return (
-    <div className="flex space-x-1">
+    <div className="flex xl:space-x-1">
       {cardData.map((card) => (
         <div
           key={card.id}
           className={`relative transition-all duration-300 ${
             activeCardId === card.id
-              ? "w-[45.5625rem] h-[29.4375rem] cursor-pointer"
-              : "w-[12.25rem] h-[29.4375rem]"
-          } rounded-xl overflow-hidden`}
+              ? "w-[45.5625rem] cursor-pointer"
+              : "w-[12.25rem] xl:h-[29.4375rem] lg:h-80"
+          } rounded-2xl overflow-hidden`}
           onClick={() => handleCardClick(card)}
         >
           <Image
             src={activeCardId === card.id ? card.imageColor : card.imageGrey}
             alt={card.title}
             layout="fill"
-            className="object-cover"
+            className="xl:object-cover"
           />
         </div>
       ))}

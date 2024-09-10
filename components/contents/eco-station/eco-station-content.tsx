@@ -163,7 +163,7 @@ export default function EcoStationContent() {
         itemsTitle="How to become an ECO-station"
         itemsSubtitle="4 easy steps to unlock limitless opportunities"
         items={howToData}
-        imageSrc="/assets/images/become-ecostation.svg"
+        imageSrc="/assets/images/eco-station/become-ecostation.svg"
         imageAlt="Become an Eco-station"
       />
 
@@ -172,8 +172,8 @@ export default function EcoStationContent() {
         className="md:flex-row-reverse gap-12"
         image={
           <Image
-            src="/assets/images/rvm.svg"
-            alt="Online store"
+            src="/assets/images/eco-station/rvm.svg"
+            alt="RVM"
             className="object-cover rounded-3xl"
             priority
             width={500}
@@ -254,7 +254,7 @@ export default function EcoStationContent() {
         item={<ReusableAccordion items={accordionItems} />}
         image={
           <Image
-            src="/assets/images/insights.svg"
+            src="/assets/images/courier/insights.svg"
             alt="Online store"
             className="object-cover rounded-3xl"
             priority

@@ -49,16 +49,16 @@ const accordionData: AccordionData[] = [
   },
   {
     id: 3,
-    title: "Navigate with ECOCAN Map",
+    title: "Return for recycling",
     description: (
       <>
         <StyledText>
-          After enjoying your genuine beverage, finding the nearest Eco-Station
-          is a breeze! Just a tap is enough.
+          After enjoying your drink, you can find the nearest ECO-station with
+          just a quick tap.
         </StyledText>
         <StyledText>
-          At the Eco-Stations, you can either hand your empties to Agents, or
-          drop them into ECOCAN R.V.Ms (Reverse Vending Machines.)
+          While there, either hand your empties to Egents, or drop them into{" "}
+          <HyperLink link="ECOCAN R.V.Ms" href="/" />
         </StyledText>
       </>
     ),
@@ -88,8 +88,8 @@ const accordionData: AccordionData[] = [
           deposits to friends, donate to charity, or cash out.
         </StyledText>
         <StyledText>
-          Take a peek at the <HyperLink link="EcocanApp tutorial" href="/"/> for more
-          guidance!
+          Take a peek at the <HyperLink link="EcocanApp tutorial" href="/" />{" "}
+          for more guidance!
         </StyledText>
       </>
     ),

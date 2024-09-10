@@ -1,5 +1,5 @@
 import React from "react";
-import { LucideCheckCircle2 } from "lucide-react";
+import { LucideCheck, LucideCheckCircle2 } from "lucide-react";
 
 interface CheckListItem {
   id: number | string;
@@ -21,7 +21,7 @@ const CheckList: React.FC<CheckListProps> = ({
       {items.map((item) => (
         <div className="flex items-start gap-3 mt-5" key={item.id}>
           <div>
-            <LucideCheckCircle2 className="fill-primary text-white" />
+            <LucideCheck className="text-white bg-primary rounded-full p-1" />
           </div>
           <div>
             <div>{item.step}</div>

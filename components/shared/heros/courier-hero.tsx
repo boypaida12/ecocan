@@ -35,7 +35,7 @@ export default function CourierHero() {
         linkColor="text-white"
       />
       <div className="lg:h-[36rem] xl:h-[47.575rem]">
-        <div className="bg-[url('/assets/images/courier-bg.jpeg')] lg:h-[32rem] xl:h-[42rem] lg:bg-contain xl:bg-cover relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:z-10">
+        <div className="bg-[url('/assets/images/courier/courier-bg.jpeg')] lg:h-[32rem] xl:h-[42rem] bg-cover relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:z-10">
           <div className="xl:max-w-[77.5rem] flex flex-col md:flex md:flex-row mx-auto lg:gap-12 lg:pt-[3.125rem] xl:pt-0">
             <div className="flex flex-col gap-4 lg:mt-28 xl:mt-60 md:w-1/2 px-4 xl:px-0 text-white z-50">
               <div>
@@ -55,19 +55,15 @@ export default function CourierHero() {
                 </p>
               </div>
             </div>
-            {/* <div className="lg:h-40 xl:h-[40rem] xl:w-5/12 ms-auto relative overflow-hidden lg:overflow-visible z-40 items-center flex">
-              <HeroForm title="Join the hustle" />
-            </div> */}
-
-            {/* <div className="lg:h-[32rem] xl:h-[44rem] md:w-1/2 relative overflow-hidden lg:overflow-visible z-20">
+            <div className="lg:h-[32rem] xl:h-[44rem] md:w-1/2 relative overflow-hidden lg:overflow-visible z-20">
               <Image
                 src="/assets/images/courier/side-hustle.svg"
-                className="absolute max-w-[20rem] xl:max-w-none h-auto -left-24"
+                className="absolute max-w-[20rem] xl:max-w-none h-auto -left-2 top-24"
                 alt="ecocan mobile app"
                 width={700}
                 height={900}
               />
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

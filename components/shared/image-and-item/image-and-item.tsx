@@ -35,8 +35,8 @@ export default function ImageAndItem({
         </p>
       </div>
       <div className={clsx("flex flex-col md:flex-row", className)}>
-        <div className="md:flex-0 space-y-4 relative">{image}</div>
-        <div className="md:w-1/2 space-y-4 self-center">{item}</div>
+        <div className="space-y-4 relative">{image}</div>
+        <div className="md:w-1/2 space-y-4 self-center me-auto">{item}</div>
       </div>
     </div>
   );

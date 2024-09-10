@@ -24,11 +24,11 @@ import CheckList from "./components/checklist";
 import CustomCard from "@/components/shared/text-with-cards/custom-card";
 
 const images = [
-  "/assets/images/earn-image.svg",
-  "/assets/images/scan-image.svg",
-  "/assets/images/map-image.svg",
-  "/assets/images/pay-image.svg",
-  "/assets/images/earn-image.svg",
+  "/assets/images/consumer/earn-image.svg",
+  "/assets/images/consumer/scan-image.svg",
+  "/assets/images/consumer/map-image.svg",
+  "/assets/images/consumer/pay-image.svg",
+  "/assets/images/consumer/earn-image.svg",
 ];
 
 const iconSize = 18;
@@ -254,7 +254,7 @@ export default function ConsumerContent() {
         }
         component={
           <Image
-            src="/assets/images/identify.png"
+            src="/assets/images/consumer/identify.png"
             alt="How to identify genuine eligible products"
             width={1000}
             height={1000}
@@ -266,7 +266,7 @@ export default function ConsumerContent() {
         image={
           <div className="relative h-[43.5rem] w-[28rem]">
             <Image
-              src="/assets/images/ecocan-app.svg"
+              src="/assets/images/consumer/ecocan-app.svg"
               width={1000}
               height={1000}
               className="w-full h-full absolute -left-[5rem]"
@@ -303,7 +303,7 @@ export default function ConsumerContent() {
             title="Stay in the loop"
             description="Subscribe to our newsletter and stay updated with what's happening within the Ecommunity."
             component={
-              <div className="mb-4 border border-[#E6E8EC] bg-white rounded-full flex items-center">
+              <div className="mb-4 border border-[#E6E8EC] bg-white rounded-full flex items-center w-3/5">
                 <Input
                   placeholder="Enter your email"
                   className="text-[#777E90] border-none rounded-full focus:outline-none focus:border-none focus:ring-0"
@@ -321,7 +321,7 @@ export default function ConsumerContent() {
         }
         multipleImages={
           <Image
-            src="/assets/images/courier-four-img.svg"
+            src="/assets/images/courier/courier-four-img.svg"
             alt="multiple image"
             width={500}
             height={500}
@@ -331,7 +331,7 @@ export default function ConsumerContent() {
       />
       <FaqSection />
       <CtaCard
-        className="bg-[url('/assets/images/consumer-cta-card.jpeg')] py-[4.75rem] bg-cover bg-center relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:-z-10 overflow-hidden z-50"
+        className="bg-[url('/assets/images/consumer/consumer-cta-card.jpeg')] py-[4.75rem] bg-cover bg-center relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:-z-10 overflow-hidden z-50"
         item={
           <TextWithComponent
             title={
