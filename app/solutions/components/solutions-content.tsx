@@ -144,13 +144,13 @@ export default function SolutionsContent({
           <ImageAndItem
             className="gap-12"
             image={
-              <div className="w-[27.5rem] h-[35.75rem] rounded-xl overflow-hidden bg-primary">
+              <div className="w-[27.5rem] rounded-xl overflow-hidden">
                 <Image
-                  src=""
+                  src="/assets/images/courier/courier-woman.svg"
                   width={1000}
                   height={1000}
                   alt="fun facts about ecocan"
-                  className=""
+                  className="object-cover w-full h-full"
                 />
               </div>
             }

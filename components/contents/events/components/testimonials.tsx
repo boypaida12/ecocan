@@ -3,28 +3,28 @@ import TestimonialCard from './testimonialCard';
 
 const testimonialsData = [
   {
-    image: 'assets/images/events/memoji.png',
+    image: '/assets/images/events/memoji.png',
     name: 'John',
     surname: 'Doe',
     testimony: 'This is a great product! I highly recommend it to everyone.',
     title: 'CEO, Company Inc.'
   },
   {
-    image: 'assets/images/events/memoji.png',
+    image: '/assets/images/events/memoji.png',
     name: 'Jane',
     surname: 'Smith',
     testimony: 'Amazing experience! Will definitely use this service again.',
     title: 'CTO, Tech Solutions'
   },
   {
-    image: 'assets/images/events/memoji.png',
+    image: '/assets/images/events/memoji.png',
     name: 'Alice',
     surname: 'Johnson',
     testimony: 'Highly satisfied with the results. Great job!',
     title: 'Manager, Business Corp.'
   },
   {
-    image: 'assets/images/events/memoji.png',
+    image: '/assets/images/events/memoji.png',
     name: 'Bob',
     surname: 'Brown',
     testimony: 'Exceptional quality and service. Five stars!',

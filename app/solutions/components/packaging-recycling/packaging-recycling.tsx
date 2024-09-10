@@ -41,7 +41,7 @@ export default function PackagingRecycling() {
       <TextWithComponent
         title="Packaging Recycling"
         description={
-          <div className="w-4/6 space-y-4">
+          <div className="w-[81%] space-y-4">
             <p>
               ECOCAN D.R.S is a circular economy platform, which streamlines the
               extensive collection and recycling of{" "}

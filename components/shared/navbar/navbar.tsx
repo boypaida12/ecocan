@@ -18,7 +18,7 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about-us", label: "About Us" },
   { href: "/solutions", label: "Solutions" },
-  { href: "#", label: "Blog" },
+  { href: "/blog", label: "Blog" },
 ];
 
 const NavigationBar: React.FC<NavigationBarProps> = ({
