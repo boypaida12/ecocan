@@ -256,7 +256,6 @@ export default function AboutPage() {
                   className="border-none"
                   title={card.title}
                   key={index}
-                  icon={card.icon}
                   content={card.content}
                 />
               ))}

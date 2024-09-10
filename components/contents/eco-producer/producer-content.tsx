@@ -157,7 +157,6 @@ export default function ProducerContent() {
               <WhiteBgCard
                 className="border-transparent"
                 key={index}
-                icon={card.icon}
                 content={card.content}
               />
             ))}
@@ -190,7 +189,6 @@ export default function ProducerContent() {
               <WhiteBgCard
               className="border-transparent shadow-none"
                 key={index}
-                icon={card.icon}
                 title={card.title}
                 content={card.content}
               />

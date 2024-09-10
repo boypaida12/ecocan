@@ -22,6 +22,7 @@ import { Button } from "@/components/ui/button";
 import WhiteBgCard from "@/components/shared/white-bg-card";
 import CheckList from "./components/checklist";
 import CustomCard from "@/components/shared/text-with-cards/custom-card";
+import ExpandableContent from "./components/expandable-content";
 
 const images = [
   "/assets/images/consumer/earn-image.svg",
@@ -36,19 +37,23 @@ const iconSize = 18;
 const steps = [
   {
     id: 1,
-    description: "Verify empties' eligibility by scanning attached ECOCAN security codes. DO NOT rely on your naked eye",
+    description:
+      "Verify empties' eligibility by scanning attached ECOCAN security codes. DO NOT rely on your naked eye",
   },
   {
     id: 2,
-    description: "Use ECOCAN Map to navigate to the closest or your preferred ECO-station",
+    description:
+      "Use ECOCAN Map to navigate to the closest or your preferred ECO-station",
   },
   {
     id: 3,
-    description: "Hand-over your intact empties to ECO-Station Egents, who will verify them, and digitally issue applicable deposit into your ECO-Wallet",
+    description:
+      "Hand-over your intact empties to ECO-Station Egents, who will verify them, and digitally issue applicable deposit into your ECO-Wallet",
   },
   {
     id: 4,
-    description: "Alternatively, feed eligible empties into ECOCAN R.V.M, which will verify the package and transfer applicable deposit into your ECO-Wallet",
+    description:
+      "Alternatively, feed eligible empties into ECOCAN R.V.M, which will verify the package and transfer applicable deposit into your ECO-Wallet",
   },
   {
     id: 5,
@@ -114,7 +119,7 @@ export default function ConsumerContent() {
             it&apos;s all just a <HyperLink link="click away!" href="/" />
           </span>
         }
-        customCard={<CustomCard/>}
+        customCard={<CustomCard />}
       />
       <ImageAndItem
         className="gap-12"
@@ -161,11 +166,7 @@ export default function ConsumerContent() {
         customCard={
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
             {rvmContent.map((card, index) => (
-              <WhiteBgCard
-                key={index}
-                icon={card.icon}
-                content={card.content}
-              />
+              <WhiteBgCard key={index} content={card.content} />
             ))}
           </div>
         }
@@ -216,9 +217,8 @@ export default function ConsumerContent() {
             {cardContent.map((card, index) => (
               <WhiteBgCard
                 key={index}
-                icon={card.icon}
                 title={card.title}
-                content={card.content}
+                content={<ExpandableContent content={card.content} />}
               />
             ))}
           </div>
@@ -293,7 +293,7 @@ export default function ConsumerContent() {
                 </div>
               </>
             }
-            component={<CheckList items={steps}/>}
+            component={<CheckList items={steps} />}
           />
         }
       />

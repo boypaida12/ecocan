@@ -5,14 +5,12 @@ import Image from "next/image";
 import { greenBall } from "@/lib/imageIndex";
 
 export default function WhiteBgCard({
-  icon,
   title,
   content,
   className,
 }: {
-  icon?: React.ReactNode;
   title?: string;
-  content?: string;
+  content?: React.ReactNode;
   className?: string;
 }) {
   return (
