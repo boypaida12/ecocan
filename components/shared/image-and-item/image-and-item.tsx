@@ -10,12 +10,13 @@ interface ImageAndItemProps {
   image?: React.ReactNode;
   className?: string;
   mainClassName?: string;
+  fDivClassName? : string;
 }
 
 export default function ImageAndItem({
   title,
   subtitle,
-  description,
+  fDivClassName,
   item,
   mainClassName,
   className,
@@ -23,7 +24,7 @@ export default function ImageAndItem({
 }: ImageAndItemProps) {
   return (
     <div>
-      <div className={clsx("text-center mb-12")}>
+      <div className={clsx("text-center mb-12", fDivClassName)}>
         <h2 className="text-[2rem] font-bold text-[#23262FCC]">{title}</h2>
         <p
           className={clsx(

@@ -25,15 +25,15 @@ export default function WhiteBgCard({
           <Image
             src={greenBall}
             alt="green icon"
-            className="w-12 h-12"
-            width={47}
-            height={47}
+            className="w-10 h-10"
+            width={40}
+            height={40}
           />
           {title}
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <p className="text-accent/70 text-sm">{content}</p>
+        <div className="text-accent/70 text-sm">{content}</div>
       </CardContent>
     </Card>
   );

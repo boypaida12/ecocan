@@ -141,7 +141,7 @@ export default function ConsumerContent() {
         className="md:flex-row-reverse gap-12"
         image={
           <Image
-            src="/assets/images/online-store.svg"
+            src="/assets/images/consumer/rvm.svg"
             alt="Online store"
             className="object-cover rounded-3xl bg-primary"
             priority
@@ -166,7 +166,7 @@ export default function ConsumerContent() {
         customCard={
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
             {rvmContent.map((card, index) => (
-              <WhiteBgCard key={index} content={card.content} />
+              <WhiteBgCard className="border-none" key={index} content={card.content} />
             ))}
           </div>
         }
@@ -175,7 +175,7 @@ export default function ConsumerContent() {
         className="gap-12"
         image={
           <Image
-            src="/assets/images/online-store.svg"
+            src="/assets/images/consumer/buy-online-consumer.svg"
             alt="Online store"
             className="object-cover rounded-3xl bg-primary"
             priority
@@ -184,7 +184,8 @@ export default function ConsumerContent() {
           />
         }
         item={
-          <TextWithComponent
+          <div className="w-4/5">
+            <TextWithComponent
             title="Buy Online"
             description={
               <p>
@@ -196,6 +197,7 @@ export default function ConsumerContent() {
             }
             component={<PrimaryButton buttonText="Learn more" />}
           />
+          </div>
         }
       />
       <TextWithCards
@@ -266,7 +268,7 @@ export default function ConsumerContent() {
         image={
           <div className="relative h-[43.5rem] w-[28rem]">
             <Image
-              src="/assets/images/consumer/ecocan-app.svg"
+              src="/assets/images/consumer/return-empties.svg"
               width={1000}
               height={1000}
               className="w-full h-full absolute -left-[5rem]"

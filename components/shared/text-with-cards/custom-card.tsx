@@ -80,7 +80,7 @@ const defaultFeaturesData: Feature[] = [
       </p>
     ),
     answer: (
-      <p>
+      <p className="italic text-accent/50">
         Order your favourite genuine drinks with just a few taps, then sit back
         and relax. ECouriers will most affordably deliver it to you, in minutes.
         Wherever. Whenever.
@@ -117,7 +117,7 @@ const FeaturesGrid: React.FC<FeaturesGridProps> = ({
               key={feature.id}
               className={`width-fit text-left ${bgColor} py-4 rounded-xl`}
             >
-              <Image src={greenBall} alt="green icon" className="w-12 h-12" width={47} height={47}/>
+              <Image src={greenBall} alt="green icon" className="w-10 h-10 mb-2" width={47} height={47}/>
               <div className="text-md mb-1 font-semibold text-gray-900">
                 {feature.name}
               </div>

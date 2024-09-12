@@ -174,10 +174,10 @@ export default function EcoStationContent() {
           <Image
             src="/assets/images/eco-station/rvm.svg"
             alt="RVM"
-            className="object-cover rounded-3xl"
+            className="object-cover rounded-3xl w-full h-full"
             priority
-            width={500}
-            height={100}
+            width={1000}
+            height={1000}
           />
         }
         item={
@@ -244,7 +244,7 @@ export default function EcoStationContent() {
             </span>
           </span>
         }
-        description={
+        subtitle={
           <div className="w-4/5 mx-auto">
             Make data-driven decisions with insights from the ECOCAN TnT, giving
             you full visibility into your operations, allowing you to track Key
