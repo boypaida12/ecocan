@@ -6,7 +6,7 @@ interface StyledTextProps {
 }
 
 const StyledText: React.FC<StyledTextProps> = ({ children }) => (
-  <div className="flex items-start gap-3 py-2">
+  <div className="flex items-start gap-3 py-2 w-5/6">
     <div className="border-2 border-transparent">
         <LucideDot className="fill-accent"/>
     </div>

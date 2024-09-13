@@ -28,21 +28,27 @@ const iconSize = 18;
 const accordionItems = [
   {
     id: "item-1",
-    question: "Unique Customers",
+    question: <p>Unique Customers</p>,
     answer:
       "Know who frequents your store, and why. Interact directly with ECOnsumers who've just placed their first order, or those who've spotted you on ECOCAN Market.",
   },
   {
     id: "item-2",
-    question: "Orders and order value",
+    question: <p>Orders and order value</p>,
     answer:
       "Get a detailed breakdown of each purchase or order, including average spend.",
   },
   {
     id: "item-3",
-    question: "Conversion",
+    question: <p>Conversion</p>,
     answer:
       "Does listing your business on ECOCAN Market make a difference? Find out by who visited your store or placed orders after opening your profile, and check out their feedback.",
+  },
+  {
+    id: "item-4",
+    question: <p>Your sustainability performance</p>,
+    answer:
+      "We'll share your ECO-friendly contributions; CO2 emissions you've helped reduce, energy saved, and packaging litter you've helped remove from the environment.",
   },
 ];
 
@@ -91,7 +97,7 @@ const howToData = [
 
 export default function EcoStationContent() {
   return (
-    <div className="space-y-24 py-8 max-w-[77.5rem] mx-auto px-4 xl:px-0">
+    <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
       <TextWithCards
         title="Why become an ECO-station"
         description="It's a win-win-win; while you help keep the environment clean by accepting empties, and issuing deposits to ECOnsumers, we’ll bring more business to you"

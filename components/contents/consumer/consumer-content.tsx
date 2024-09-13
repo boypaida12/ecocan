@@ -108,274 +108,283 @@ export default function ConsumerContent() {
   };
 
   return (
-    <div className="space-y-24 py-8 max-w-[77.5rem] mx-auto px-4 xl:px-0">
-      <TextWithCards
-        title="Get Started"
-        description={
-          <span>
-            Whether you want to keep your environment clean, earn extra cash, or
-            to safeguard your health from fake drinks. With our{" "}
-            <span className="font-semibold">free-to-use</span> EcocanApp,
-            it&apos;s all just a <HyperLink link="click away!" href="/" />
-          </span>
-        }
-        customCard={<CustomCard />}
-      />
-      <ImageAndItem
-        className="gap-12"
-        title="How EcocanApp works"
-        subtitle="Tap Tap Tap, and, Wallah! It's better than Magic."
-        image={
-          <Image
-            src={images[selectedImage]}
-            alt={`EcocanApp step ${selectedImage + 1}`}
-            className="object-cover"
-            width={500}
-            height={100}
-            priority
-          />
-        }
-        item={<AccordionDemo onSelect={handleAccordionSelect} />}
-      />
-      <ImageAndItem
-        className="md:flex-row-reverse gap-12"
-        image={
-          <Image
-            src="/assets/images/consumer/rvm.svg"
-            alt="Online store"
-            className="object-cover rounded-3xl bg-primary"
-            priority
-            width={500}
-            height={100}
-          />
-        }
-        item={
-          <TextWithComponent
-            title="What is ECOCAN RVM?"
-            description={
-              <p>
-                The ECOCAN Reverse Vending Machine is an automated device, that
-                accepts eligible empties returned for recycling, and refunds
-                applicable deposit money digitally into ECO-wallets
-              </p>
-            }
-          />
-        }
-      />
-      <TextWithCards
-        customCard={
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-            {rvmContent.map((card, index) => (
-              <WhiteBgCard className="border-none" key={index} content={card.content} />
-            ))}
-          </div>
-        }
-      />
-      <ImageAndItem
-        className="gap-12"
-        image={
-          <Image
-            src="/assets/images/consumer/buy-online-consumer.svg"
-            alt="Online store"
-            className="object-cover rounded-3xl bg-primary"
-            priority
-            width={500}
-            height={100}
-          />
-        }
-        item={
-          <div className="w-4/5">
-            <TextWithComponent
-            title="Buy Online"
-            description={
-              <p>
-                Discover new <HyperLink link="ECO-products" href="/" /> on
-                ECOCAN market, place your order with just a few clicks, and have
-                your favourite drinks delivered to your doorstep, or wherever
-                you are, in minutes
-              </p>
-            }
-            component={<PrimaryButton buttonText="Learn more" />}
-          />
-          </div>
-        }
-      />
-      <TextWithCards
-        title="Exclusive discounts  for Econsumers"
-        subtitle={
-          <span className="bg-gradient-to-t text-2xl from-[#FFDD4C] to-[#4AC63F] text-transparent bg-clip-text font-semibold">
-            You&apos;ll go bananas!
-          </span>
-        }
-        description={
-          <span>
-            Enjoy unbelievably jaw dropping benefits by simply joining the{" "}
-            <HyperLink link="Ecommunity" href="/" />.
-          </span>
-        }
-        className="mx-auto text-center"
-        customCard={
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-            {cardContent.map((card, index) => (
-              <WhiteBgCard
-                key={index}
-                title={card.title}
-                content={<ExpandableContent content={card.content} />}
-              />
-            ))}
-          </div>
-        }
-      />
-      <TextWithComponent
-        title="How to identify genuine eligible products"
-        description={
-          <>
-            <span className="text-accent/80">
-              Use your <HyperLink link="Eco-scanner" href="/" /> to scan{" "}
-              <HyperLink link="ECOCAN security codes" href="/" /> which are only
-              printed on packaging of genuine eligible products. And an
-              authentication landing page will pop-up, confirming if the product
-              is authentic, and displaying product details, including the
-              deposit amount it carries. If the product is not eligible, a
-              warning notification will pop up
+    <div className="space-y-24 py-8 px-4 xl:px-0">
+      <div className="max-w-[65rem] mx-auto space-y-24">
+        <TextWithCards
+          title="Get Started"
+          description={
+            <span>
+              Whether you want to keep your environment clean, earn extra cash, or
+              to safeguard your health from fake drinks. With our{" "}
+              <span className="font-semibold">free-to-use</span> EcocanApp,
+              it&apos;s all just a <HyperLink link="click away!" href="/" />
             </span>
-            <br />
-            <br />
-            <span className="text-accent/80">
-              <span className="text-red-700">
-                Do not rely on your naked eye to identify genuine eligible
-                products!
-              </span>{" "}
-              As criminals may try to fool you by imitating ECOCAN security
-              codes, without success of course! We&apos;ve ensured ECOCAN
-              Security Codes cannot be copied. And the Eco-scanner&apos;s
-              advanced machine learning technology will immediately notify you
-              if the code is an imitation
-            </span>
-          </>
-        }
-        component={
-          <Image
-            src="/assets/images/consumer/identify.png"
-            alt="How to identify genuine eligible products"
-            width={1000}
-            height={1000}
-            className="w-full h-full rounded-2xl"
-          />
-        }
-      />
-      <ImageAndItem
-        image={
-          <div className="relative h-[43.5rem] w-[28rem]">
+          }
+          customCard={<CustomCard />}
+        />
+        <ImageAndItem
+          className="gap-12"
+          title="How EcocanApp works"
+          subtitle="Tap Tap Tap, and, Wallah!"
+          image={
             <Image
-              src="/assets/images/consumer/return-empties.svg"
+              src={images[selectedImage]}
+              alt={`EcocanApp step ${selectedImage + 1}`}
+              className="object-cover"
+              width={500}
+              height={100}
+              priority
+            />
+          }
+          item={<AccordionDemo onSelect={handleAccordionSelect} />}
+        />
+      </div>
+      <div className="bg-[#B2B2B240] py-8">
+        <div className="max-w-[65rem] mx-auto">
+          <ImageAndItem
+            className="md:flex-row-reverse"
+            image={
+              <Image
+                src="/assets/images/consumer/rvm.svg"
+                alt="Online store"
+                className="object-cover rounded-3xl"
+                priority
+                width={500}
+                height={100}
+              />
+            }
+            item={
+              <TextWithComponent
+                title="What is ECOCAN RVM?"
+                description={
+                  <p className="w-4/5">
+                    The ECOCAN Reverse Vending Machine is an automated device, that
+                    accepts eligible empties returned for recycling, and refunds
+                    applicable deposit money digitally into ECO-wallets
+                  </p>
+                }
+              />
+            }
+          />
+          <TextWithCards
+            customCard={
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                {rvmContent.map((card, index) => (
+                  <WhiteBgCard className="border-none bg-transparent shadow-none" key={index} content={card.content} />
+                ))}
+              </div>
+            }
+          />
+        </div>
+      </div>
+      <div className="max-w-[65rem] mx-auto space-y-24">
+        <ImageAndItem
+          className="gap-12"
+          image={
+            <Image
+              src="/assets/images/consumer/buy-online-consumer.svg"
+              alt="Online store"
+              className="object-cover rounded-3xl bg-primary"
+              priority
+              width={500}
+              height={100}
+            />
+          }
+          item={
+            <div className="w-4/5">
+              <TextWithComponent
+              title="Buy Online"
+              description={
+                <p>
+                  Discover new <HyperLink link="ECO-products" href="/" /> on
+                  ECOCAN market, place your order with just a few clicks, and have
+                  your favourite drinks delivered to your doorstep, or wherever
+                  you are, in minutes
+                </p>
+              }
+              component={<PrimaryButton buttonText="Learn more" />}
+            />
+            </div>
+          }
+        />
+        <TextWithCards
+          title="Exclusive discounts  for Econsumers"
+          subtitle={
+            <span className="bg-gradient-to-t text-2xl from-[#FFDD4C] to-[#4AC63F] text-transparent bg-clip-text font-semibold">
+              You&apos;ll go bananas!
+            </span>
+          }
+          description={
+            <span>
+              Enjoy unbelievably jaw dropping benefits by simply joining the{" "}
+              <HyperLink link="Ecommunity" href="/" />.
+            </span>
+          }
+          className="mx-auto text-center"
+          customCard={
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+              {cardContent.map((card, index) => (
+                <WhiteBgCard
+                  key={index}
+                  title={card.title}
+                  content={<ExpandableContent content={card.content} />}
+                />
+              ))}
+            </div>
+          }
+        />
+        <TextWithComponent
+          title="How to identify genuine eligible products"
+          description={
+            <div className="w-4/5">
+              <span className="text-accent/80">
+                Use your <HyperLink link="Eco-scanner" href="/" /> to scan{" "}
+                <HyperLink link="ECOCAN security codes" href="/" /> which are only
+                printed on packaging of genuine eligible products. And an
+                authentication landing page will pop-up, confirming if the product
+                is authentic, and displaying product details, including the
+                deposit amount it carries. If the product is not eligible, a
+                warning notification will pop up
+              </span>
+              <br />
+              <br />
+              <span className="text-accent/80">
+                <span className="text-red-700">
+                  Do not rely on your naked eye to identify genuine eligible
+                  products!
+                </span>{" "}
+                As criminals may try to fool you by imitating ECOCAN security
+                codes, without success of course! We&apos;ve ensured ECOCAN
+                Security Codes cannot be copied. And the Eco-scanner&apos;s
+                advanced machine learning technology will immediately notify you
+                if the code is an imitation
+              </span>
+            </div>
+          }
+          component={
+            <Image
+              src="/assets/images/consumer/identify.png"
+              alt="How to identify genuine eligible products"
               width={1000}
               height={1000}
-              className="w-full h-full absolute -left-[5rem]"
-              priority
-              alt="How to return eligible empties"
+              className="w-full h-full rounded-2xl"
             />
-          </div>
-        }
-        item={
-          <TextWithComponent
-            title="How to return eligible empties"
-            description={
-              <>
-                <span>
-                  Only return intact empties; not compacted nor deformed, and
-                  with ECOCAN security codes clearly visible. Of Aluminium cans,
-                  PET plastic bottles, glass bottles and beverage cartons.{" "}
-                  <br />
-                  That are listed and published on the ECOCAN website and
-                  ECO-products section of EcocanApp
-                </span>
-                <div className="mt-4">
-                  <HyperLink link="See full ECO-products list here" href="/" />
+          }
+        />
+        <ImageAndItem
+        className="gap-12"
+          image={
+            <div className="relative h-[43.5rem] w-[28rem] overflow-hidden">
+              <Image
+                src="/assets/images/consumer/return-empties.svg"
+                width={1000}
+                height={1000}
+                className="w-full h-full"
+                priority
+                alt="How to return eligible empties"
+              />
+            </div>
+          }
+          item={
+            <TextWithComponent
+              title="How to return eligible empties"
+              description={
+                <>
+                  <span>
+                    Only return intact empties; not compacted nor deformed, and
+                    with ECOCAN security codes clearly visible. Of Aluminium cans,
+                    PET plastic bottles, glass bottles and beverage cartons.{" "}
+                    <br />
+                    That are listed and published on the ECOCAN website and
+                    ECO-products section of EcocanApp
+                  </span>
+                  <div className="mt-4">
+                    <HyperLink link="See full ECO-products list here" href="/" />
+                  </div>
+                </>
+              }
+              component={<CheckList items={steps} />}
+            />
+          }
+        />
+        <MultipleImagesAndItem
+          item={
+            <TextWithComponent
+              title="Stay in the loop"
+              description="Subscribe to our newsletter and stay updated with what's happening within the Ecommunity."
+              component={
+                <div className="mb-4 border border-[#E6E8EC] bg-white rounded-full flex items-center w-3/5">
+                  <Input
+                    placeholder="Enter your email"
+                    className="text-[#777E90] border-none rounded-full focus:outline-none focus:border-none focus:ring-0"
+                  />
+                  <Image
+                    src="/assets/icons/right-arrow.svg"
+                    className="m-2"
+                    alt="right chevron arrow"
+                    width={32}
+                    height={32}
+                  />
                 </div>
-              </>
-            }
-            component={<CheckList items={steps} />}
-          />
-        }
-      />
-      <MultipleImagesAndItem
-        item={
-          <TextWithComponent
-            title="Stay in the loop"
-            description="Subscribe to our newsletter and stay updated with what's happening within the Ecommunity."
-            component={
-              <div className="mb-4 border border-[#E6E8EC] bg-white rounded-full flex items-center w-3/5">
-                <Input
-                  placeholder="Enter your email"
-                  className="text-[#777E90] border-none rounded-full focus:outline-none focus:border-none focus:ring-0"
-                />
-                <Image
-                  src="/assets/icons/right-arrow.svg"
-                  className="m-2"
-                  alt="right chevron arrow"
-                  width={32}
-                  height={32}
-                />
-              </div>
-            }
-          />
-        }
-        multipleImages={
-          <Image
-            src="/assets/images/courier/courier-four-img.svg"
-            alt="multiple image"
-            width={500}
-            height={500}
-            className="w-auto h-auto"
-          />
-        }
-      />
-      <FaqSection />
-      <CtaCard
-        className="bg-[url('/assets/images/consumer/consumer-cta-card.jpeg')] py-[4.75rem] bg-cover bg-center relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:-z-10 overflow-hidden z-50"
-        item={
-          <TextWithComponent
-            title={
-              <p className="text-white text-5xl">
-                Cheers to ECO-
-                <br />
-                friendly savings!
-              </p>
-            }
-            description={
-              <span className="text-white">
-                Save BIG, while, Saving the planet. Only with EcocanApp.
-              </span>
-            }
-            component={
-              <div className="flex gap-4">
-                <PrimaryButton
-                  buttonText="Download App"
-                  buttonIcon={<LucideDownload />}
-                />
-                <Button
-                  variant="outline"
-                  className="bg-transparent hover:bg-transparent border-white text-white hover:text-white rounded-full h-[3.25rem] py-3 px-8 text-lg"
-                >
-                  Become an Econsumer
-                </Button>
-              </div>
-            }
-          />
-        }
-        image={
-          <div className="w-[19.75rem] h-[22.625rem] mx-auto">
-            <Image
-              src="/assets/images/mobile-alt.svg"
-              alt=""
-              width={100}
-              height={100}
-              className="w-full h-full"
+              }
             />
-          </div>
-        }
-      />
+          }
+          multipleImages={
+            <Image
+              src="/assets/images/courier/courier-four-img.svg"
+              alt="multiple image"
+              width={500}
+              height={500}
+              className="w-auto h-auto"
+            />
+          }
+        />
+        <FaqSection />
+        <CtaCard
+          className="bg-[url('/assets/images/consumer/consumer-cta-card.jpeg')] py-[4.75rem] bg-cover bg-center relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:-z-10 overflow-hidden z-50"
+          item={
+            <TextWithComponent
+              title={
+                <p className="text-white text-5xl">
+                  Cheers to ECO-
+                  <br />
+                  friendly savings!
+                </p>
+              }
+              description={
+                <span className="text-white">
+                  Save BIG, while, Saving the planet. Only with EcocanApp.
+                </span>
+              }
+              component={
+                <div className="flex gap-4">
+                  <PrimaryButton
+                    buttonText="Download App"
+                    buttonIcon={<LucideDownload />}
+                  />
+                  <Button
+                    variant="outline"
+                    className="bg-transparent hover:bg-transparent border-white text-white hover:text-white rounded-full h-[3.25rem] py-3 px-8 text-lg"
+                  >
+                    Become an Econsumer
+                  </Button>
+                </div>
+              }
+            />
+          }
+          image={
+            <div className="w-[19.75rem] h-[22.625rem] mx-auto">
+              <Image
+                src="/assets/images/mobile-alt.svg"
+                alt=""
+                width={100}
+                height={100}
+                className="w-full h-full"
+              />
+            </div>
+          }
+        />
+      </div>
     </div>
   );
 }

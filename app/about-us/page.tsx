@@ -80,7 +80,7 @@ export default function AboutPage() {
   return (
     <>
       <AboutHero />
-      <div className="space-y-24 py-8 max-w-[77.5rem] mx-auto px-4 xl:px-0">
+      <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
         <TextWithComponent
           title="Catalysts of positive change"
           description={
@@ -112,7 +112,7 @@ export default function AboutPage() {
 
         {/* who is ecocan */}
         <ImageAndItem
-          className="gap-12 md:flex-row-reverse"
+          className="gap-12 md:flex-row-reverse items-center"
           image={
             <Image
               src="/assets/images/about/people.svg"
@@ -150,7 +150,7 @@ export default function AboutPage() {
 
         {/* on a mission */}
         <ImageAndItem
-          className="gap-12"
+          className="gap-12 items-center"
           image={
             <Image
               src="/assets/images/about/more-people.svg"
@@ -175,7 +175,7 @@ export default function AboutPage() {
 
         {/* to be committed */}
         <ImageAndItem
-          className="gap-12 md:flex-row-reverse"
+          className="gap-12 md:flex-row-reverse items-center"
           image={
             <Image
               src="/assets/images/about/board-char.svg"
@@ -211,7 +211,7 @@ export default function AboutPage() {
 
         {/* draw identity */}
         <ImageAndItem
-          className="gap-12"
+          className="gap-12 items-center"
           image={
             <Image
               src="/assets/images/about/dog-street.svg"
@@ -284,7 +284,7 @@ export default function AboutPage() {
 
         {/* call to action */}
         <CtaCard
-          className="bg-white py-0 md:flex-row-reverse shadow-lg ps-0 rounded-2xl overflow-hidden"
+          className="bg-white py-0 md:flex-row-reverse shadow-lg ps-[0rem] rounded-2xl overflow-hidden"
           item={
             <TextWithComponent
               title={

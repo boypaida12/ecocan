@@ -63,7 +63,7 @@ export default function SolutionsContent({
       {/* our offering */}
       <div className="lg:h-[36rem] xl:h-[40rem]">
         <div className="bg-[url('/assets/images/solutions/solution-hero.png')] lg:h-[32rem] xl:h-[40rem] bg-cover relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:z-10">
-          <div className="xl:max-w-[77.5rem] flex flex-col md:flex md:flex-row mx-auto lg:my-0 lg:gap-12">
+          <div className="xl:max-w-[65rem] flex flex-col md:flex md:flex-row mx-auto lg:my-0 lg:gap-12">
             <div className="mt-60 px-4 xl:px-0 text-white z-50 mx-auto">
               <div>
                 <h1 className="lg:text-6xl text-2xl xl:text-7xl text-center font-semibold text-white">
@@ -82,17 +82,18 @@ export default function SolutionsContent({
         </div>
       </div>
       <div className="bg-[#FAFAFA]">
-        <div className="space-y-24 py-8 max-w-[77.5rem] mx-auto px-4 xl:px-0">
-          <div>
+        <div className="py-24">
+          <div className="lg:max-w-[70rem] xl:max-w-[80rem] mx-auto">
             <ImageAndItem
               title="Our Offering"
               subtitle="Brand Protection | Packaging recycling | Consumer engagement | Online Sales"
               mainClassName="text-accent font-light text-lg"
             />
             {/* expandable cards */}
-
             <ExpandableCards cardData={cardData} onCardExpand={onCardExpand} />
           </div>
+        </div>
+        <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
           {/* online Sales */}
           <TextWithComponent
             title="Online Sales"
@@ -120,7 +121,7 @@ export default function SolutionsContent({
             }
           />
           <ImageAndItem
-            className="md:flex-row-reverse gap-12"
+            className="md:flex-row-reverse items-center"
             image={
               <Image
                 src="/assets/images/online-store.svg"

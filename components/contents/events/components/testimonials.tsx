@@ -34,7 +34,7 @@ const testimonialsData = [
 
 const Testimonials = () => {
   return (
-    <div className="bg-white max-w-[77.5rem] mx-auto p-8">
+    <div className="bg-white max-w-[65rem] mx-auto p-8">
       <h2 className="text-center font-inter font-medium text-5xl leading-[3.631rem] bg-clip-text text-transparent my-[6.25rem]" style={{ 
         backgroundImage: 'linear-gradient(73.15deg, #228B22 11.62%, #4AC63F 35.45%, #FFDD4C 64.2%), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))'
       }}>

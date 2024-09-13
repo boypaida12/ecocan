@@ -62,7 +62,7 @@ export default function ContactForm({
   }
 
   return (
-    <Card className="lg:mt-[28rem] xl:mt-44 rounded-2xl w-full lg:me-4 xl:me-0">
+    <Card className="lg:mt-[28rem] xl:mt-60 rounded-2xl w-full lg:me-4 xl:me-0">
       <CardHeader className="text-[#23262FCC]">
         <CardTitle className="text-3xl">{title}</CardTitle>
         <CardDescription className="xl:text-xl font-light"></CardDescription>

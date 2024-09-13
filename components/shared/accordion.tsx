@@ -8,7 +8,7 @@ import {
 
 interface AccordionItemData {
   id: string;
-  question: string;
+  question: React.ReactNode;
   answer: React.ReactNode;
 }
 

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import clsx from "clsx";
+import { useScroll } from "@/lib/useScroll";
 
 interface NavigationBarProps {
   logoSrc: string;
@@ -29,23 +30,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
   linkColor,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 5) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const isScrolled = useScroll();
 
   useEffect(() => {
     if (isOpen) {
@@ -66,7 +51,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
         className,
       )}
     >
-      <div className="flex items-center justify-between flex-wrap xl:max-w-[77.5rem] mx-auto px-4 md:px-0">
+      <div className="flex items-center justify-between flex-wrap xl:max-w-[65rem] mx-auto px-4 md:px-0">
         <div className="flex items-center flex-shrink-0 text-white py-4">
           <Image
             src={logoSrc}
@@ -141,7 +126,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
                 secondButtonClassName
               )}
             >
-              <Link href="/">Download App</Link>
+              <Link href="/">ECOCAN MARKET</Link>
             </Button>
           </div>
         </div>

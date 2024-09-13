@@ -84,7 +84,7 @@ const data = [
 
 export default function RecyclerContent() {
   return (
-    <div className="space-y-24 py-8 max-w-[77.5rem] mx-auto px-4 xl:px-0">
+    <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
       <TextWithComponent
         title="Closed-loop recycling"
         description={

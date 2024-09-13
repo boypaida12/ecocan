@@ -1,8 +1,15 @@
+"use client"
+
 import { ReusableAccordion } from "@/components/shared/accordion";
 import HyperLink from "@/components/shared/hyperlink/hyperlink";
 import TextWithCards from "@/components/shared/text-with-cards/text-with-cards";
 import WhiteBgCard from "@/components/shared/white-bg-card";
-import { LucideAward, LucideDownload, LucideGem, LucideRecycle } from "lucide-react";
+import {
+  LucideAward,
+  LucideDownload,
+  LucideGem,
+  LucideRecycle,
+} from "lucide-react";
 import React from "react";
 import HowTo from "../../shared/HowTo";
 import Optimize from "./components/optimize";
@@ -13,6 +20,7 @@ import PrimaryButton from "@/components/shared/primary-btn";
 import { Button } from "@/components/ui/button";
 import CtaCard from "@/components/shared/cta-card/cta-card";
 import TextWithComponent from "../consumer/components/buy-online";
+import ExpandableContent from "../consumer/components/expandable-content";
 
 const cardContent = [
   {
@@ -50,7 +58,6 @@ const alchemyContent = [
     content: "Econsumers care more than just the price",
   },
 ];
-
 
 const accordionItems = [
   {
@@ -147,7 +154,7 @@ const howToData = [
 
 export default function ProducerContent() {
   return (
-    <div className="space-y-24 py-8 max-w-[77.5rem] mx-auto px-4 xl:px-0">
+    <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
       <TextWithCards
         title="Do more in the ECOmmunity"
         description="Directly engage with ECOnsumers to elevate your presence, amplify your impact and shape your strategies"
@@ -167,7 +174,11 @@ export default function ProducerContent() {
       <TextWithCards
         title="What's in for you?"
         description="Reclaim lost market share, conquer new markets, stay compliant with environmental laws, and improve your brand image!"
-        customCard={<ReusableAccordion items={accordionItems} />}
+        customCard={
+          <div className="w-3/5">
+            <ReusableAccordion items={accordionItems} />
+          </div>
+        }
       />
       {/* how to join the ecommunity */}
       <HowTo
@@ -177,7 +188,7 @@ export default function ProducerContent() {
         imageAlt="Become an Eco-station"
       />
       {/* optimize */}
-      <Optimize/>
+      <Optimize />
 
       {/* alchemy */}
       <TextWithCards
@@ -187,10 +198,10 @@ export default function ProducerContent() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
             {alchemyContent.map((card, index) => (
               <WhiteBgCard
-              className="border-transparent shadow-none"
+                className="border-transparent shadow-none"
                 key={index}
                 title={card.title}
-                content={card.content}
+                content={<ExpandableContent content={card.content}/>}
               />
             ))}
           </div>
@@ -198,7 +209,7 @@ export default function ProducerContent() {
       />
 
       {/* faq */}
-      <FaqSection/>
+      <FaqSection />
 
       {/* call to action */}
 
@@ -208,15 +219,13 @@ export default function ProducerContent() {
           <TextWithComponent
             title={
               <p className="text-black text-5xl">
-                ECOCAN, your unfair   
+                ECOCAN, your unfair
                 <br />
                 advantage!
               </p>
             }
             description={
-              <span className="text-black">
-                Join the ECOmmunity today
-              </span>
+              <span className="text-black">Join the ECOmmunity today</span>
             }
           />
         }

@@ -13,7 +13,7 @@ const FeatureCard = ({ title, description, imageSrc }: FeatureProps) => (
     <Image
       src={imageSrc}
       alt={title}
-      className="w-full h-48 object-cover rounded-2xl"
+      className="w-full h-60 object-cover rounded-2xl"
       width={100}
       height={100}
     />

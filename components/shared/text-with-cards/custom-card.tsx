@@ -32,9 +32,8 @@ const defaultFeaturesData: Feature[] = [
     answer: (
       <div className="italic text-accent/50 space-y-4">
         <p>
-          <HyperLink link="EcocanApp" href="/"/>{" "}
-          helps you to identify <HyperLink link="genuine eligible" href="/"/>{" "}
-          drinks.
+          <HyperLink link="EcocanApp" href="/" /> helps you to identify{" "}
+          <HyperLink link="genuine eligible" href="/" /> drinks.
         </p>
         <p>Just scan the ECOCAN security codes printed on the packaging.</p>
         <p>
@@ -53,8 +52,8 @@ const defaultFeaturesData: Feature[] = [
     answer: (
       <div className="italic text-accent/50 space-y-4">
         <p>
-          Every day 1.4 Billion used <HyperLink link="empties" href="/"/>{" "}
-          are carelessly thrown into the environment.
+          Every day 1.4 Billion used <HyperLink link="empties" href="/" /> are
+          carelessly thrown into the environment.
         </p>
         <p>
           And our oceans now contain over 1.7 trillion plastic particles, which
@@ -62,10 +61,9 @@ const defaultFeaturesData: Feature[] = [
         </p>
         <p>
           Help us stop this, by turning in for recycling,{" "}
-          <HyperLink link="eligible" href="/"/>{" "}
-          used empties of PET plastics, Aluminium cans, Glass bottles, and
-          drinks cartons, at any of our <HyperLink link="Eco-Stations," href="/"/>{" "}
-          and get paid.
+          <HyperLink link="eligible" href="/" /> used empties of PET plastics,
+          Aluminium cans, Glass bottles, and drinks cartons, at any of our{" "}
+          <HyperLink link="Eco-Stations," href="/" /> and get paid.
         </p>
       </div>
     ),
@@ -76,15 +74,22 @@ const defaultFeaturesData: Feature[] = [
     name: "Shop Online",
     question: (
       <p>
-        <HyperLink link="ECOCAN Market" href="/"/> is the go-to supermarket, in your pocket
+        <HyperLink link="ECOCAN Market" href="/" /> is the go-to supermarket, in
+        your pocket
       </p>
     ),
     answer: (
-      <p className="italic text-accent/50">
-        Order your favourite genuine drinks with just a few taps, then sit back
-        and relax. ECouriers will most affordably deliver it to you, in minutes.
-        Wherever. Whenever.
-      </p>
+      <div className="italic text-accent/50 space-y-4">
+        <p>
+          Order your favourite genuine drinks with just a few taps, then sit
+          back and relax. ECouriers will most affordably deliver it to you, in
+          minutes. Wherever. Whenever.
+        </p>
+        <p>
+          Or, allow us 60 minutes to aggregate orders,that we cut our carbon
+          footprint
+        </p>
+      </div>
     ),
     icon: <LucideCreditCard size={iconSize} />,
   },
@@ -117,7 +122,13 @@ const FeaturesGrid: React.FC<FeaturesGridProps> = ({
               key={feature.id}
               className={`width-fit text-left ${bgColor} py-4 rounded-xl`}
             >
-              <Image src={greenBall} alt="green icon" className="w-10 h-10 mb-2" width={47} height={47}/>
+              <Image
+                src={greenBall}
+                alt="green icon"
+                className="w-10 h-10 mb-2"
+                width={47}
+                height={47}
+              />
               <div className="text-md mb-1 font-semibold text-gray-900">
                 {feature.name}
               </div>
@@ -135,7 +146,7 @@ const FeaturesGrid: React.FC<FeaturesGridProps> = ({
                       isExpanded ? "mt-4" : "mt-0"
                     }`}
                   >
-                    {isExpanded ? "Show less" : "Show more"}
+                    {isExpanded ? "Close" : "Read More"}
                   </button>
                 </div>
               )}

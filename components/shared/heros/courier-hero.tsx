@@ -35,8 +35,8 @@ export default function CourierHero() {
         linkColor="text-white"
       />
       <div className="lg:h-[36rem] xl:h-[47.575rem]">
-        <div className="bg-[url('/assets/images/courier/courier-bg.jpeg')] lg:h-[32rem] xl:h-[42rem] bg-cover relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:z-10">
-          <div className="xl:max-w-[77.5rem] flex flex-col md:flex md:flex-row mx-auto lg:gap-12 lg:pt-[3.125rem] xl:pt-0">
+        <div className="bg-[url('/assets/images/courier/courier-bg.jpeg')] lg:h-[36rem] xl:h-[48rem] bg-cover relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:z-10">
+          <div className="xl:max-w-[65rem] flex flex-col md:flex md:flex-row mx-auto lg:gap-12 lg:pt-[3.125rem] xl:pt-0">
             <div className="flex flex-col gap-4 lg:mt-28 xl:mt-60 md:w-1/2 px-4 xl:px-0 text-white z-50">
               <div>
                 <h1 className="lg:text-6xl text-2xl xl:text-7xl text-center md:text-start font-semibold">
@@ -48,8 +48,8 @@ export default function CourierHero() {
                   <span className="bg-clip-text">Payday!</span>
                 </h1>
               </div>
-              <div className="space-y-8 text-sm lg:text-base xl:text-lg">
-                <p className="font-light">
+              <div className="text-sm lg:text-base xl:text-lg">
+                <p>
                   Make deliveries and pick-ups, and get paid
                   <br /> twice!
                 </p>

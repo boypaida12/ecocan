@@ -81,7 +81,7 @@ const footerData: FooterColumn[] = [
 export default function Footer() {
   return (
     <footer className="bg-[#FCFCFD] px-4 xl:px-0">
-      <div className="xl:max-w-[77.5rem] mx-auto grid py-[6.25rem] grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="xl:max-w-[65rem] mx-auto grid py-[6.25rem] grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
         {footerData.map((column, index) => (
           <div key={index}>
             {column.title && (
