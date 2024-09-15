@@ -175,7 +175,7 @@ export default function EcoStationContent() {
 
       {/* We'll avail an RVM */}
       <ImageAndItem
-        className="md:flex-row-reverse gap-12"
+        className="md:flex-row-reverse items-center"
         image={
           <Image
             src="/assets/images/eco-station/rvm.svg"

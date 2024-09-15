@@ -49,7 +49,7 @@ const Events = () => {
 
       <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
         <ImageText
-          className="md:flex-row-reverse"
+          className="md:flex-row-reverse items-center"
           title="We’ll avail ECOCAN RVMs"
           description={
             <>
@@ -66,6 +66,7 @@ const Events = () => {
         />
         <ImageText
           title="Let’s keep enhancing the fan experience, together "
+          className="items-center"
           description={
             <>
               We’ve rolled out the Red Carpet for ECOnsumers and availed the

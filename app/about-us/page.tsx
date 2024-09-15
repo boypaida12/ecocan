@@ -284,7 +284,7 @@ export default function AboutPage() {
 
         {/* call to action */}
         <CtaCard
-          className="bg-white py-0 md:flex-row-reverse shadow-lg ps-[0rem] rounded-2xl overflow-hidden"
+          className="bg-white py-0 md:flex-row-reverse shadow-lg pl-[0rem] rounded-2xl overflow-hidden"
           item={
             <TextWithComponent
               title={

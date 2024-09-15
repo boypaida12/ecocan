@@ -104,7 +104,7 @@ const rvmContent = [
 const accordionItems = [
   {
     id: "item-1",
-    question: <p className="text-primary">See full ECO-products list here</p>,
+    question: <p className="text-primary">See full ECO-products list below</p>,
     answer: <CheckList items={steps} />,
   },
 ];
@@ -192,7 +192,7 @@ export default function ConsumerContent() {
       </div>
       <div className="max-w-[65rem] mx-auto space-y-24">
         <ImageAndItem
-          className="gap-12"
+          className="gap-12 items-center"
           image={
             <Image
               src="/assets/images/consumer/buy-online-consumer.svg"
