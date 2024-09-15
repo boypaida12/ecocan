@@ -29,7 +29,7 @@ export default function DefaultHero() {
           <div className="xl:max-w-[65rem] flex flex-col md:flex md:flex-row mx-auto lg:gap-12">
             <div className="flex flex-col gap-4 md:w-1/2 px-4 xl:px-0 text-white z-50 items-center justify-center mt-4 xl:mt-16 space-y-4">
               <div>
-                <h1 className="lg:text-6xl text-2xl xl:text-7xl text-center md:text-start font-semibold">
+                <h1 className="lg:text-6xl text-2xl xl:text-[4rem] text-center md:text-start font-semibold">
                   Re-imagining{" "}
                   <span className="bg-gradient-to-r from-[#228B22] via-[#4AC63F] to-[#FFDD4C] text-transparent bg-clip-text">
                     Sustainability

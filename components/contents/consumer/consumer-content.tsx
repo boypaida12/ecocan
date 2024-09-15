@@ -23,6 +23,7 @@ import WhiteBgCard from "@/components/shared/white-bg-card";
 import CheckList from "./components/checklist";
 import CustomCard from "@/components/shared/text-with-cards/custom-card";
 import ExpandableContent from "./components/expandable-content";
+import { ReusableAccordion } from "@/components/shared/accordion";
 
 const images = [
   "/assets/images/consumer/earn-image.svg",
@@ -100,6 +101,14 @@ const rvmContent = [
   },
 ];
 
+const accordionItems = [
+  {
+    id: "item-1",
+    question: <p className="text-primary">See full ECO-products list here</p>,
+    answer: <CheckList items={steps} />,
+  },
+];
+
 export default function ConsumerContent() {
   const [selectedImage, setSelectedImage] = useState(0);
 
@@ -114,8 +123,8 @@ export default function ConsumerContent() {
           title="Get Started"
           description={
             <span>
-              Whether you want to keep your environment clean, earn extra cash, or
-              to safeguard your health from fake drinks. With our{" "}
+              Whether you want to keep your environment clean, earn extra cash,
+              or to safeguard your health from fake drinks. With our{" "}
               <span className="font-semibold">free-to-use</span> EcocanApp,
               it&apos;s all just a <HyperLink link="click away!" href="/" />
             </span>
@@ -158,9 +167,9 @@ export default function ConsumerContent() {
                 title="What is ECOCAN RVM?"
                 description={
                   <p className="w-4/5">
-                    The ECOCAN Reverse Vending Machine is an automated device, that
-                    accepts eligible empties returned for recycling, and refunds
-                    applicable deposit money digitally into ECO-wallets
+                    The ECOCAN Reverse Vending Machine is an automated device,
+                    that accepts eligible empties returned for recycling, and
+                    refunds applicable deposit money digitally into ECO-wallets
                   </p>
                 }
               />
@@ -170,7 +179,11 @@ export default function ConsumerContent() {
             customCard={
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
                 {rvmContent.map((card, index) => (
-                  <WhiteBgCard className="border-none bg-transparent shadow-none" key={index} content={card.content} />
+                  <WhiteBgCard
+                    className="border-none bg-transparent shadow-none"
+                    key={index}
+                    content={card.content}
+                  />
                 ))}
               </div>
             }
@@ -193,17 +206,17 @@ export default function ConsumerContent() {
           item={
             <div className="w-4/5">
               <TextWithComponent
-              title="Buy Online"
-              description={
-                <p>
-                  Discover new <HyperLink link="ECO-products" href="/" /> on
-                  ECOCAN market, place your order with just a few clicks, and have
-                  your favourite drinks delivered to your doorstep, or wherever
-                  you are, in minutes
-                </p>
-              }
-              component={<PrimaryButton buttonText="Learn more" />}
-            />
+                title="Buy Online"
+                description={
+                  <p>
+                    Discover new <HyperLink link="ECO-products" href="/" /> on
+                    ECOCAN market, place your order with just a few clicks, and
+                    have your favourite drinks delivered to your doorstep, or
+                    wherever you are, in minutes
+                  </p>
+                }
+                component={<PrimaryButton buttonText="Learn more" />}
+              />
             </div>
           }
         />
@@ -236,29 +249,27 @@ export default function ConsumerContent() {
         <TextWithComponent
           title="How to identify genuine eligible products"
           description={
-            <div className="w-4/5">
-              <span className="text-accent/80">
+            <div className="w-4/5 space-y-8">
+              <p className="text-accent/80">
                 Use your <HyperLink link="Eco-scanner" href="/" /> to scan{" "}
-                <HyperLink link="ECOCAN security codes" href="/" /> which are only
-                printed on packaging of genuine eligible products. And an
-                authentication landing page will pop-up, confirming if the product
-                is authentic, and displaying product details, including the
-                deposit amount it carries. If the product is not eligible, a
+                <HyperLink link="ECOCAN security codes" href="/" /> which are
+                only printed on packaging of genuine eligible products. And an
+                authentication landing page will pop-up, confirming if the
+                product is authentic, and displaying product details, including
+                the deposit amount it carries. If the product is not eligible, a
                 warning notification will pop up
-              </span>
-              <br />
-              <br />
-              <span className="text-accent/80">
+              </p>
+              <p className="text-accent/80">
                 <span className="text-red-700">
                   Do not rely on your naked eye to identify genuine eligible
                   products!
                 </span>{" "}
-                As criminals may try to fool you by imitating ECOCAN security
-                codes, without success of course! We&apos;ve ensured ECOCAN
-                Security Codes cannot be copied. And the Eco-scanner&apos;s
-                advanced machine learning technology will immediately notify you
-                if the code is an imitation
-              </span>
+                <ExpandableContent
+                  content={
+                    "As criminals may try to fool you by imitating ECOCAN security codes, without success of course! We&apos;ve ensured ECOCAN Security Codes cannot be copied. And the Eco-scanner's advanced machine learning technology will immediately notify you if the code is an imitation"
+                  }
+                />
+              </p>
             </div>
           }
           component={
@@ -272,18 +283,16 @@ export default function ConsumerContent() {
           }
         />
         <ImageAndItem
-        className="gap-12"
+          className="gap-12 items-center"
           image={
-            <div className="relative h-[43.5rem] w-[28rem] overflow-hidden">
-              <Image
-                src="/assets/images/consumer/return-empties.svg"
-                width={1000}
-                height={1000}
-                className="w-full h-full"
-                priority
-                alt="How to return eligible empties"
-              />
-            </div>
+            <Image
+              src="/assets/images/consumer/return-empties.svg"
+              width={1000}
+              height={1000}
+              className="w-full h-full"
+              priority
+              alt="How to return eligible empties"
+            />
           }
           item={
             <TextWithComponent
@@ -292,18 +301,15 @@ export default function ConsumerContent() {
                 <>
                   <span>
                     Only return intact empties; not compacted nor deformed, and
-                    with ECOCAN security codes clearly visible. Of Aluminium cans,
-                    PET plastic bottles, glass bottles and beverage cartons.{" "}
-                    <br />
+                    with ECOCAN security codes clearly visible. Of Aluminium
+                    cans, PET plastic bottles, glass bottles and beverage
+                    cartons. <br />
                     That are listed and published on the ECOCAN website and
                     ECO-products section of EcocanApp
                   </span>
-                  <div className="mt-4">
-                    <HyperLink link="See full ECO-products list here" href="/" />
-                  </div>
                 </>
               }
-              component={<CheckList items={steps} />}
+              component={<ReusableAccordion items={accordionItems} />}
             />
           }
         />

@@ -36,7 +36,7 @@ export default function ProducerHero() {
           <div className="xl:max-w-[65rem] flex flex-col md:flex md:flex-row mx-auto lg:my-0 lg:gap-12">
             <div className="lg:mt-28 xl:mt-60 px-4 xl:px-0 text-white z-50 mx-auto">
               <div>
-                <h1 className="lg:text-6xl text-2xl xl:text-7xl text-center font-semibold text-white">
+                <h1 className="lg:text-6xl text-2xl xl:text-[4rem] text-center font-semibold text-white">
                 Maximize Earnings,<br/>
                   <span className="bg-gradient-to-r from-[#228B22] via-[#4AC63F] to-[#FFDD4C] text-transparent bg-clip-text">
                   Minimize Pollution
