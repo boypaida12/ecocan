@@ -36,18 +36,38 @@ export default function ProducerHero() {
           <div className="xl:max-w-[65rem] flex flex-col md:flex md:flex-row mx-auto lg:my-0 lg:gap-12">
             <div className="lg:mt-28 xl:mt-60 px-4 xl:px-0 text-white z-50 mx-auto">
               <div>
-                <h1 className="lg:text-6xl text-2xl xl:text-[4rem] text-center font-semibold text-white">
+                <h1 className="lg:text-6xl text-2xl xl:text-[4rem] text-left font-semibold text-white">
                 Maximize Earnings,<br/>
-                  <span className="bg-gradient-to-r from-[#228B22] via-[#4AC63F] to-[#FFDD4C] text-transparent bg-clip-text">
-                  Minimize Pollution
+                  <span className="bg-gradient-to-r from-[#228B22] via-[#4AC63F] to-[#FFDD4C] text-transparent bg-clip-text text-[3rem] text-left space-x-1">
+                  <span className="text-[68px] font-light">M</span>
+                  <span className="text-[65px] font-light">i</span>
+                  <span className="text-[63px] font-light">n</span>
+                  <span className="text-[61px] font-light">i</span>
+                  <span className="text-[59px] font-light">m</span>
+                  <span className="text-[57px] font-light">i</span>
+                  <span className="text-[55px] font-light">z</span>
+                  <span className="text-[53px] font-light">e</span>
+                  <span className="text-[51px] font-light"> </span>
+                  <span className="text-[49px] font-light">P</span>
+                  <span className="text-[47px] font-light">o</span>
+                  <span className="text-[45px] font-light">l</span>
+                  <span className="text-[43px] font-light">l</span>
+                  <span className="text-[41px] font-light">u</span>
+                  <span className="text-[39px] font-light">t</span>
+                  <span className="text-[37px] font-light">i</span>
+                  <span className="text-[35px] font-light">o</span>
+                  <span className="text-[33px] font-light">n</span>
                   </span>
                 </h1>
               </div>
               <div className="tracking-wide text-sm lg:text-base xl:text-lg font-light text-white my-10 space-y-4">
-                <p className="text-center">
+                <p className="text-left">
                 With ECOCAN, it&apos;s not business as usual. But ECO-smart business.
                 </p>
-                <p className="text-center lg:w-4/5 mx-auto">Become a catalyst for positive change by leveraging ECOCAN&apos;s suite of advanced technology to boost your sales, cut production costs, protect your customers from counterfeits, and most importantly, protect our planet from litter. </p>
+                <p className="text-left">
+                But ECO-smart business.
+                </p>
+                {/* <p className="text-center lg:w-4/5 mx-auto">Become a catalyst for positive change by leveraging ECOCAN&apos;s suite of advanced technology to boost your sales, cut production costs, protect your customers from counterfeits, and most importantly, protect our planet from litter. </p> */}
               </div>
             </div>
           </div>
