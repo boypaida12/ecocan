@@ -108,11 +108,23 @@ const accordionItems = [
       </div>
     ),
   },
+  {
+    id: "item-4",
+    question: "Cut production cost",
+    answer: (
+      <div className="space-y-6">
+        <p>
+        Packaging costs are skyrocketing! But we can help keep your costs down by collecting your empties for reuse or recycling, through the clean-loop ECOCAN DRS. If you prefer, we can even process the collected empties for you.
+        </p>
+      </div>
+    ),
+  },
 ];
 
 const howToData = [
   {
     id: 1,
+    icon: (<Image src="/assets/images/producer/one.png" width={23} height={23} alt='icon'/>),
     title: (
       <div>
         <HyperLink link="Register Here" href="/" /> and we&apos;ll revert ASAP
@@ -126,6 +138,7 @@ const howToData = [
   },
   {
     id: 2,
+    icon: (<Image src="/assets/images/producer/two.png" width={23} height={23} alt='icon'/>),
     title: "After onboarding, we'll tailor our systems for you",
     description: (
       <p className="text-sm mt-2">
@@ -135,6 +148,7 @@ const howToData = [
   },
   {
     id: 3,
+    icon: (<Image src="/assets/images/producer/three.png" width={23} height={23} alt='icon'/>),
     title: "Then digitally deliver the codes  to your printers",
     description: (
       <p className="text-sm mt-2">
@@ -145,6 +159,7 @@ const howToData = [
   },
   {
     id: 4,
+    icon: (<Image src="/assets/images/producer/four.png" width={23} height={23} alt='icon'/>),
     title: "And you are good to go!",
     description: (
       <p className="text-sm mt-2">
@@ -221,28 +236,28 @@ export default function ProducerContent() {
       {/* call to action */}
 
       <CtaCard
-        className="bg-[url('/assets/images/unfair-advantage.jpeg')] py-[4.75rem] bg-cover bg-center relative"
+        className="bg-[url('/assets/images/producer/unfair-advantage.jpeg')] py-[4.75rem] bg-cover bg-center items-center h-[26.75rem]"
         item={
           <TextWithComponent
             title={
-              <p className="text-black text-5xl">
+              <p className="text-white text-4xl">
                 ECOCAN, your unfair
                 <br />
                 advantage!
               </p>
             }
             description={
-              <span className="text-black">Join the ECOmmunity today</span>
+              <span className="text-white">Join the ECOmmunity today</span>
             }
           />
         }
         image={
-          <div className="w-[19.75rem] h-[22.625rem] mx-auto">
+          <div className="w-[40.611rem] h-[25.594rem] mx-auto">
             <Image
-              src="/assets/images/mobile-alt.svg"
+              src="/assets/images/producer/top-img.png"
               alt=""
-              width={100}
-              height={100}
+              width={841.78}
+              height={473.5}
               className="w-full h-full"
             />
           </div>

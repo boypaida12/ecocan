@@ -75,6 +75,7 @@ interface HowToItem {
   id: number;
   title: React.ReactNode;
   description: React.ReactNode;
+  icon?: React.ReactNode;
 }
 
 interface HowToProps {
@@ -104,6 +105,7 @@ const HowTo: React.FC<HowToProps> = ({
           title={data.title}
           description={data.description}
           id={data.id}
+          icon={data.icon}
         />
       ))}
     </div>
