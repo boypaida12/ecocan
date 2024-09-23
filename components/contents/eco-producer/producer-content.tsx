@@ -21,22 +21,24 @@ import { Button } from "@/components/ui/button";
 import CtaCard from "@/components/shared/cta-card/cta-card";
 import TextWithComponent from "../consumer/components/buy-online";
 import ExpandableContent from "../consumer/components/expandable-content";
+import SimpleCard from "./components/simpleCard";
+
 
 const cardContent = [
   {
-    icon: <LucideRecycle />,
+    src: '/assets/images/producer/image2.png',
     content: "Boost your revenues",
   },
   {
-    icon: <LucideAward />,
+    src: '/assets/images/producer/image3.png',
     content: "Optimise your efficiency",
   },
   {
-    icon: <LucideGem />,
+    src: '/assets/images/producer/image4.png',
     content: "Protect your customers",
   },
   {
-    icon: <LucideGem />,
+    src: '/assets/images/producer/image5.png',
     content: "Preserve the planet",
   },
 ];
@@ -161,11 +163,12 @@ export default function ProducerContent() {
         customCard={
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-6">
             {cardContent.map((card, index) => (
-              <WhiteBgCard
-                className="border-transparent"
-                key={index}
-                content={card.content}
-              />
+              <SimpleCard
+              className="border-transparent p-0 w-[16rem]"
+              image={<div className=" w-[full] max-h-[11.75rem] overflow-hidden"><Image src={card.src} alt="image" width={280} height={220} className="object-cover h-full w-full"/></div>}
+              key={index}
+              content={<p className="font-inter text-[1.125rem] font-medium leading-[1.625rem] text-left text-black">{card.content}</p>}
+            />
             ))}
           </div>
         }
