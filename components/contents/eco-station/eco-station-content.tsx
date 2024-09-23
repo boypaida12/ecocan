@@ -245,7 +245,7 @@ export default function EcoStationContent() {
         title={
           <span>
             Intelligent insights,{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#228B22] via-[#4AC63F] to-[#FFDD4C]">
+            <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#228B22] via-[#4AC63F] to-[#0000001A]">
               for smart business
             </span>
           </span>

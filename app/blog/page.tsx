@@ -20,8 +20,8 @@ export default function Blog() {
       />
       <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0 mt-[3.575rem]">
         <div className="text-center">
-            <h1 className="bg-gradient-to-br from-[#228B22] via-[#4AC63F] to-[#FFDD4C] text-transparent bg-clip-text text-7xl font-semibold">
-              Bl<span className="bg-gradient-to-br from-[#4AC63F] to-[#FFDD4C] text-transparent bg-clip-text">og</span>
+            <h1 className="bg-gradient-to-br from-[#228B22] via-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text text-7xl font-semibold">
+              Bl<span className="bg-gradient-to-br from-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text">og</span>
             </h1>
             <p className="text-accent/60 mt-4">Sustainability news</p>
         </div>

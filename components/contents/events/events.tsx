@@ -33,7 +33,7 @@ const Events = () => {
         }}
       >
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
-          <h1 className="text-[2.5rem] leading-[3.631rem] font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#228B22] via-[#4AC63F] to-[#FFDD4C] mb-4">
+          <h1 className="text-[2.5rem] leading-[3.631rem] font-medium bg-clip-text text-transparent bg-gradient-to-br from-[#228B22] via-[#4AC63FCF] to-[#A6A6A6] mb-4">
             We are sustainability experts
           </h1>
           <p className="text-white/80 text-lg w-3/5 mx-auto font-normal leading-[24.2px] tracking-[-0.02em] text-center">

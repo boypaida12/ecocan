@@ -31,12 +31,12 @@ export default function DefaultHero() {
               <div>
                 <h1 className="lg:text-6xl text-2xl xl:text-[4rem] text-center md:text-start font-semibold">
                   Re-imagining{" "}
-                  <span className="bg-gradient-to-r from-[#228B22] via-[#4AC63F] to-[#FFDD4C] text-transparent bg-clip-text">
+                  <span className="bg-gradient-to-br from-[#228B22] via-[#4AC63FCF] to-[#A6A6A6] text-transparent bg-clip-text">
                     Sustainability
                   </span>
                 </h1>
               </div>
-              <div className="text-sm lg:text-base xl:text-lg space-y-12">
+              <div className="text-sm lg:text-base space-y-12">
                 <p className="tracking-wide text-white text-center md:text-start">
                   At ECOCAN, sustainability goes beyond environmental
                   conservation, to nurturing healthy and thriving communities.
@@ -66,7 +66,7 @@ export default function DefaultHero() {
               />
             </div>
           </div>
-          <h2 className="bg-gradient-to-r from-[#228B22] via-[#FFDD4C] to-[#4AC63F] text-transparent bg-clip-text text-center text-[2rem] font-medium">
+          <h2 className="bg-gradient-to-t from-[#228B22] via-[#4AC63FCF] to-[#A6A6A6] text-transparent bg-clip-text text-center text-[2rem] font-medium">
             The ECO-friendly COmmunity
           </h2>
         </div>

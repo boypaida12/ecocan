@@ -128,9 +128,9 @@ export default function AboutPage() {
               title="Who is ECOCAN"
               description={
                 <div>
-                  <h2 className="bg-gradient-to-r my-2 from-[#228B22] via-[#4AC63F] to-[#FFDD4C] text-transparent bg-clip-text font-semibold text-2xl">
+                  <h2 className="bg-gradient-to-bl my-2 from-[#228B22] via-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text font-semibold text-2xl">
                     A COmmunity of{" "}
-                    <span className="bg-gradient-to-r from-[#4AC63F] via-[#FFDD4C] to-[#FFDD4C] text-transparent bg-clip-text">
+                    <span className="bg-gradient-to-bl from-[#4AC63F] via-[#FFDD4C] to-[#0000001A] text-transparent bg-clip-text">
                       visionaries
                     </span>
                   </h2>
@@ -164,7 +164,7 @@ export default function AboutPage() {
           item={
             <TextWithComponent
               title={
-                <h2 className="bg-gradient-to-bl my-2 from-[#228B22] via-[#4AC63F] to-[#FFDD4C] text-transparent bg-clip-text font-semibold text-2xl">
+                <h2 className="bg-gradient-to-bl my-2 from-[#228B22] via-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text font-semibold text-2xl">
                   On a mission
                 </h2>
               }
@@ -190,9 +190,9 @@ export default function AboutPage() {
             <TextWithComponent
               description={
                 <div>
-                  <h2 className="bg-gradient-to-r my-2 from-[#228B22] via-[#4AC63F] to-[#FFDD4C] text-transparent bg-clip-text font-semibold text-2xl">
+                  <h2 className="bg-gradient-to-bl my-2 from-[#228B22] via-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text font-semibold text-2xl">
                     To which we are{" "}
-                    <span className="bg-gradient-to-r from-[#4AC63F] via-[#FFDD4C] to-[#FFDD4C] text-transparent bg-clip-text">
+                    <span className="bg-gradient-to-bl from-[#4AC63F] via-[#FFDD4C] to-[#0000001A] text-transparent bg-clip-text">
                       committed
                     </span>
                   </h2>
@@ -226,9 +226,9 @@ export default function AboutPage() {
             <TextWithComponent
               description={
                 <div>
-                  <h2 className="bg-gradient-to-r my-2 from-[#228B22] via-[#4AC63F] to-[#FFDD4C] text-transparent bg-clip-text font-semibold text-2xl">
+                  <h2 className="bg-gradient-to-bl my-2 from-[#228B22] via-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text font-semibold text-2xl">
                     And draw our{" "}
-                    <span className="bg-gradient-to-tr from-[#4AC63F] via-[#FFDD4C] to-[#FFDD4C] text-transparent bg-clip-text">
+                    <span className="bg-gradient-to-tr from-[#4AC63F] via-[#FFDD4C] to-[#0000001A] text-transparent bg-clip-text">
                       identity
                     </span>
                   </h2>

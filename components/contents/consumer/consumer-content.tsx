@@ -259,7 +259,7 @@ export default function ConsumerContent() {
                 the deposit amount it carries. If the product is not eligible, a
                 warning notification will pop up
               </p>
-              <p className="text-accent/80">
+              <div className="text-accent/80">
                 <span className="text-red-700">
                   Do not rely on your naked eye to identify genuine eligible
                   products!
@@ -269,7 +269,7 @@ export default function ConsumerContent() {
                     "As criminals may try to fool you by imitating ECOCAN security codes, without success of course! We&apos;ve ensured ECOCAN Security Codes cannot be copied. And the Eco-scanner's advanced machine learning technology will immediately notify you if the code is an imitation"
                   }
                 />
-              </p>
+              </div>
             </div>
           }
           component={
