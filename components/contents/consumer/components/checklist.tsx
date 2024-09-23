@@ -5,6 +5,7 @@ interface CheckListItem {
   id: number | string;
   step?: React.ReactNode;
   description?: React.ReactNode;
+  icon?:React.ReactNode;
 }
 
 interface CheckListProps {
@@ -21,7 +22,7 @@ const CheckList: React.FC<CheckListProps> = ({
       {items.map((item) => (
         <div className="flex items-start gap-3 mt-5" key={item.id}>
           <div>
-            <LucideCheck className="text-white bg-primary rounded-full p-1" />
+            {item.icon ? item.icon : <LucideCheck className="text-white bg-primary rounded-full p-1" />}
           </div>
           <div>
             <div>{item.step}</div>
