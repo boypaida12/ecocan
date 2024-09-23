@@ -156,6 +156,7 @@ const howToData = [
 
 export default function ProducerContent() {
   return (
+  <div className="w-full">
     <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
       <TextWithCards
         title="Do more in the ECOmmunity"
@@ -187,13 +188,15 @@ export default function ProducerContent() {
       <HowTo
         itemsTitle="How to join the ECOmmunity"
         items={howToData}
-        imageSrc="/assets/images/producer/ecommunity.svg"
+        imageSrc="/assets/images/producer/howto.png"
         imageAlt="Become an Eco-station"
       />
       {/* optimize */}
       <Optimize />
-
+      </div>
+      
       {/* alchemy */}
+      <div className="mx-auto text-center w-full h-[40.063rem] bg-[url('/assets/images/producer/bg_001.png')] bg-cover bg-center flex items-center justify-center p-0 m-0">                    
       <TextWithCards
         title="The Alchemy behind this ECOCAN magic"
         className="mx-auto text-center"
@@ -201,16 +204,17 @@ export default function ProducerContent() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
             {alchemyContent.map((card, index) => (
               <WhiteBgCard
-                className="border-transparent shadow-none"
+                className="border-transparent shadow-xl text-left"
                 key={index}
                 title={card.title}
-                content={<ExpandableContent content={card.content}/>}
+                content={<div><ExpandableContent content={card.content}/><br/><br/> <a className="underline">learn more</a></div>}
               />
             ))}
           </div>
         }
       />
-
+      </div>
+      <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
       {/* faq */}
       <FaqSection />
 
@@ -245,5 +249,6 @@ export default function ProducerContent() {
         }
       />
     </div>
+  </div>
   );
 }
