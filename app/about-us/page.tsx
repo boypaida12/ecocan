@@ -253,6 +253,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
               {rvmContent.map((card, index) => (
                 <WhiteBgCard
+                iconPath="/assets/images/all/green-ball.svg"
                   className="border-none"
                   title={card.title}
                   key={index}
