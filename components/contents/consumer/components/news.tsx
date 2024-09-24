@@ -27,7 +27,7 @@ export default function News() {
           <div className="grid lg:grid-cols-3 gap-3">
             {newsCards.map((card, index) => {
               return (
-                <Card className="border-none bg-transparent shadow-none">
+                <Card className="border-none bg-transparent shadow-none" key={index}>
                   <Image
                     src={card.image}
                     alt={card.title}
