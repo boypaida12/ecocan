@@ -162,6 +162,7 @@ export default function ProducerContent() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-6">
             {cardContent.map((card, index) => (
               <WhiteBgCard
+              iconPath="/assets/images/all/green-ball.svg"
                 className="border-transparent"
                 key={index}
                 content={card.content}
@@ -198,6 +199,7 @@ export default function ProducerContent() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
             {alchemyContent.map((card, index) => (
               <WhiteBgCard
+              iconPath="/assets/images/all/green-ball.svg"
                 className="border-transparent shadow-none"
                 key={index}
                 title={card.title}

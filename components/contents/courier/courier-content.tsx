@@ -31,21 +31,21 @@ const featureData = [
         making money today!
       </p>
     ),
-    icon: <LucideTriangleAlert size={iconSize} />,
+    icon: "/assets/images/eco-station/commission.svg",
   },
   {
     id: 2,
     name: "You are the boss!",
     question:
       "Hustle whenever you want, and earn as much as you need. It’s up to you",
-    icon: <LucideRecycle size={iconSize} />,
+    icon: "/assets/images/courier/boss.svg",
   },
   {
     id: 3,
     name: "Deliver however",
     question:
       "Fit pick-ups around your lifestyle; Walk, Cycle, Drive or even Crawl. Just avoid  fossil fuel",
-    icon: <LucideCreditCard size={iconSize} />,
+    icon: "/assets/images/courier/deliver.svg",
   },
 ];
 

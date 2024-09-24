@@ -124,7 +124,7 @@ export default function EcoStationContent() {
                     </p>
                   </div>
                 ),
-                icon: <LucideTriangleAlert size={iconSize} />,
+                icon: "/assets/images/eco-station/customers.svg",
               },
               {
                 id: 2,
@@ -143,7 +143,7 @@ export default function EcoStationContent() {
                     </p>
                   </div>
                 ),
-                icon: <LucideRecycle size={iconSize} />,
+                icon: "/assets/images/eco-station/commission.svg",
               },
               {
                 id: 3,
@@ -158,7 +158,7 @@ export default function EcoStationContent() {
                     </p>
                   </div>
                 ),
-                icon: <LucideCreditCard size={iconSize} />,
+                icon: "/assets/images/eco-station/revenues.svg",
               },
             ]}
           />
