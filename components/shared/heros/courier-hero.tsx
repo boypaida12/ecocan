@@ -42,7 +42,7 @@ export default function CourierHero() {
                 <h1 className="lg:text-6xl text-2xl xl:text-[4rem] text-center md:text-start font-semibold">
                   Every day is
                   <br />
-                  {/* <span className="bg-gradient-to-r from-[#228B22] via-[#4AC63F] to-[#FFDD4C] text-transparent bg-clip-text">
+                  {/* <span className="bg-gradient-to-br from-[#228B22] via-[#4AC63FCF] to-[#A6A6A6] text-transparent bg-clip-text">
                     Payday!
                   </span> */}
                   <span className="bg-clip-text">Payday!</span>

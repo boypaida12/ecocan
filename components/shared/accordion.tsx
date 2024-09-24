@@ -19,7 +19,7 @@ interface ReusableAccordionProps {
 
 export function ReusableAccordion({ items, className = "" }: ReusableAccordionProps) {
   return (
-    <Accordion type="multiple" defaultValue={[items[0]?.id]} className={className}>
+    <Accordion type="multiple" className={className}>
       {items.map((item) => (
         <AccordionItem key={item.id} value={item.id}>
           <AccordionTrigger>{item.question}</AccordionTrigger>

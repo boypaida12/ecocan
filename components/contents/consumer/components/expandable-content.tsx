@@ -4,10 +4,10 @@ import React, { useState } from "react";
 export default function ExpandableContent({ content }: { content: string }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const words = content.split(" ");
-  const shouldTruncate = words.length > 10;
+  const shouldTruncate = words.length > 5;
 
   const truncatedContent = shouldTruncate
-    ? words.slice(0, 10).join(" ") + "..."
+    ? words.slice(0, 5).join(" ") + "..."
     : content;
   return (
     <div>

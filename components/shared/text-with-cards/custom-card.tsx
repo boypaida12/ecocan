@@ -18,7 +18,7 @@ interface Feature {
   name: string;
   question: React.ReactNode;
   answer?: React.ReactNode;
-  icon: JSX.Element;
+  icon: string;
 }
 
 const iconSize = 18;
@@ -28,21 +28,28 @@ const defaultFeaturesData: Feature[] = [
     id: 1,
     name: "Avoid Fakes",
     question:
-      "Did you know that over 30% of all beverages sold in Africa is illicit, hence harmful to you?",
+      "Did you know that over 30% of all beverages sold worldwide is illicit, hence harmful to you?",
     answer: (
       <div className="italic text-accent/50 space-y-4">
         <p>
-          <HyperLink link="EcocanApp" href="/" /> helps you to identify{" "}
-          <HyperLink link="genuine eligible" href="/" /> drinks.
+          Eco-Scanner helps you to identify genuine <HyperLink link="eligible" href="/"/> beverages, before
+          purchase.
         </p>
-        <p>Just scan the ECOCAN security codes printed on the packaging.</p>
+
         <p>
-          If it&apos;s a fake, the App will alert you instantly, and block
+          Just scan the unique <HyperLink link="ECOCAN security codes" href="/"/> printed only on genuine
+          beverages, to verify authenticity.
+        </p>
+
+        <p>
+          If it&apos;s a fake, EcocanApp will alert you instantly, and block
           access to the authentication page.
         </p>
+
+        <p><span className="text-red-500">DO NOT BUY</span> such fake products!</p>
       </div>
     ),
-    icon: <LucideTriangleAlert size={iconSize} />,
+    icon: "/assets/images/consumer/avoid-fakes.svg",
   },
   {
     id: 2,
@@ -67,7 +74,7 @@ const defaultFeaturesData: Feature[] = [
         </p>
       </div>
     ),
-    icon: <LucideRecycle size={iconSize} />,
+    icon: "/assets/images/consumer/make-money.svg",
   },
   {
     id: 3,
@@ -91,7 +98,7 @@ const defaultFeaturesData: Feature[] = [
         </p>
       </div>
     ),
-    icon: <LucideCreditCard size={iconSize} />,
+    icon: "/assets/images/consumer/shop-online.svg",
   },
 ];
 
@@ -120,15 +127,17 @@ const FeaturesGrid: React.FC<FeaturesGridProps> = ({
           return (
             <div
               key={feature.id}
-              className={`width-fit text-left ${bgColor} py-4 rounded-xl`}
+              className={`text-left ${bgColor} py-4 rounded-xl`}
             >
-              <Image
-                src={greenBall}
-                alt="green icon"
-                className="w-10 h-10 mb-2"
-                width={47}
-                height={47}
-              />
+              <div className="w-full h-16 overflow-hidden relative">
+                <Image
+                  src={feature.icon}
+                  alt="green icon"
+                  className="w-auto absolute -left-6"
+                  width={47}
+                  height={47}
+                />
+              </div>
               <div className="text-md mb-1 font-semibold text-gray-900">
                 {feature.name}
               </div>
