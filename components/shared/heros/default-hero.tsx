@@ -20,7 +20,7 @@ export default function DefaultHero() {
         firstButtonClassName="rounded-full h-7 xl:h-8 bg-transparent text-primary hover:bg-transparent hover:text-primary"
         secondButtonClassName={`rounded-full h-7 xl:h-8 ${
           isScrolled
-            ? "bg-[#FFDD4E] text-[#383A35] hover:bg-[#FFDD4E] hover:text-[#383A35]"
+            ? "bg-white text-[#383A35] hover:bg-white hover:text-[#383A35]"
             : "bg-transparent hover:bg-transparent text-primary border border-primary hover:text-primary"
         }`}
       />
@@ -66,9 +66,11 @@ export default function DefaultHero() {
               />
             </div>
           </div>
-          <h2 className="bg-gradient-to-t from-[#228B22] via-[#4AC63FCF] to-[#A6A6A6] text-transparent bg-clip-text text-center text-[2rem] font-medium">
-            The ECO-friendly COmmunity
-          </h2>
+          <div className="pt-6 xl:pt-0">
+            <h2 className="bg-gradient-to-t from-[#228B22] via-[#4AC63FCF] to-[#A6A6A6] text-transparent bg-clip-text text-center text-[2rem] font-medium">
+              The ECO-friendly COmmunity
+            </h2>
+          </div>
         </div>
       </div>
     </>

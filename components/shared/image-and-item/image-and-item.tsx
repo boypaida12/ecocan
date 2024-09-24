@@ -25,7 +25,7 @@ export default function ImageAndItem({
   return (
     <div>
       <div className={clsx("text-center mb-12", fDivClassName)}>
-        <h2 className="text-[2rem] font-bold text-[#23262FCC]">{title}</h2>
+        <h2 className="text-[2rem] font-bold">{title}</h2>
         <p
           className={clsx(
              "text-[#23262FCC]",

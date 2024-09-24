@@ -10,6 +10,7 @@ import {
 import { LucideCheckCircle2 } from "lucide-react";
 import HyperLink from "@/components/shared/hyperlink/hyperlink";
 import StyledText from "@/components/shared/styled-text";
+import Image from "next/image";
 
 interface AccordionData {
   id: number;
@@ -26,12 +27,12 @@ const accordionData: AccordionData[] = [
     description: (
       <>
         <StyledText>
-          Download our proprietary app here, sign up in under 2 minutes, and
-          start earning right away!
+          Download EcocanApp <HyperLink link="here" href="" />, sign up in under
+          2 minutes, and start earning today!
         </StyledText>
         <StyledText>
-          Subsequently, you can join our exclusive Ecommunity here, to enjoy
-          jaw-dropping discounts, and VIP access.
+          After registration, you can join the exclusive ECOmmunity here, to
+          enjoy jaw-dropping discounts, and Red-Carpet benefits.
         </StyledText>
       </>
     ),
@@ -40,11 +41,20 @@ const accordionData: AccordionData[] = [
     id: 2,
     title: "Scan to Authenticate",
     description: (
-      <StyledText>
-        With Eco-Scanner, you can easily but securely tell what&apos;s real from
-        fake. Just scan the ECOCAN security codes, and an authentication page
-        will pop up.
-      </StyledText>
+      <>
+        <StyledText>
+          With <HyperLink link="Eco-Scanner" href="" />, you can easily and
+          securely tell what’s real from fake.
+        </StyledText>
+        <StyledText>
+          Just scan the ECOCAN security codes, and an authentication page will
+          pop up.{" "}
+          <p>
+            If it doesn’t pop up,{" "}
+            <span className="text-red-500">it’s a fake! DON’T BUY IT!</span>
+          </p>
+        </StyledText>
+      </>
     ),
   },
   {
@@ -69,8 +79,8 @@ const accordionData: AccordionData[] = [
     description: (
       <>
         <StyledText>
-          Once your eligible empties are verified and accepted, you won&apos;t
-          have to wait for payday.
+          Once your <HyperLink link="eligible empties" href="/" /> are verified
+          and accepted, you won&apos;t have to wait long for payday.
         </StyledText>
         <StyledText>
           You&apos;ll get paid instantly, right into your Eco-wallet!
@@ -122,8 +132,16 @@ export function AccordionDemo({
           value={`item-${item.id}`}
           className="text-accent/80"
         >
-          <div className="flex items-center gap-3">
-            <LucideCheckCircle2 className="fill-primary text-white" />
+          <div className="flex items-center">
+            <div className="w-12 h-12 flex items-center">
+              <Image
+                src="/assets/images/consumer/checkmark.svg"
+                alt="checklist"
+                width={24}
+                height={24}
+                className="w-6 h-6"
+              />
+            </div>
             <div className="w-full">
               <AccordionTrigger onClick={() => handleItemClick(item.id)}>
                 {item.title}
