@@ -12,7 +12,7 @@ import GreatMoments from "./components/greatMoments";
 const Events = () => {
   return (
     <>
-      <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+      <div className="space-y-48 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
         <TextWithCards
           title="Catch the Wave"
           description={
@@ -47,7 +47,7 @@ const Events = () => {
         </div>
       </div>
 
-      <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+      <div className="space-y-48 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
         <ImageText
           className="md:flex-row-reverse items-center"
           title="We’ll avail ECOCAN RVMs"

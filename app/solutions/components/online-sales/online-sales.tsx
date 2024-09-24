@@ -115,7 +115,7 @@ const howToData = [
 
 export default function OnlineSales() {
   return (
-    <div className="space-y-24">
+    <div className="space-y-48">
       <TextWithComponent
         title="Online Sales"
         description={
@@ -136,7 +136,7 @@ export default function OnlineSales() {
         }
       />
       <ImageAndItem
-        className="md:flex-row-reverse"
+        className="md:flex-row-reverse items-center"
         image={
           <ImageTextOverlay
             item={
@@ -152,7 +152,7 @@ export default function OnlineSales() {
                 />
               </>
             }
-            className="bg-[url('/assets/images/solutions/sky.jpeg')] after:opacity-0"
+            className="bg-[url('/assets/images/solutions/sky.jpeg')] after:opacity-0 py-[2.25rem]"
           />
         }
         item={

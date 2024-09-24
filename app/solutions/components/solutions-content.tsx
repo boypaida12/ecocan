@@ -93,7 +93,7 @@ export default function SolutionsContent({
             <ExpandableCards cardData={cardData} onCardExpand={onCardExpand} />
           </div>
         </div>
-        <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+        <div className="space-y-48 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
           {/* online Sales */}
           <TextWithComponent
             title="Online Sales"
@@ -141,33 +141,9 @@ export default function SolutionsContent({
             }
           />
 
-          {/* fun facts about eco can*/}
-          <ImageAndItem
-            className="gap-12"
-            image={
-              <div className="w-[27.5rem] rounded-xl overflow-hidden">
-                <Image
-                  src="/assets/images/courier/courier-woman.svg"
-                  width={1000}
-                  height={1000}
-                  alt="fun facts about ecocan"
-                  className="object-cover w-full h-full"
-                />
-              </div>
-            }
-            item={
-              <div>
-                <h2 className="text-[2rem]">Fun Facts!</h2>
-                {facts.map((fact, index) => {
-                  return <StyledText key={index}>{fact}</StyledText>;
-                })}
-              </div>
-            }
-          />
-
           {/* call to action */}
           <CtaCard
-            className="bg-[#F6C92D] py-0"
+            className="bg-[#F6C92D] py-0 ps-[5.25rem]"
             item={
               <TextWithComponent
                 title={

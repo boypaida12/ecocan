@@ -39,7 +39,7 @@ const accordionItems = [
 
 export default function ConsumerEngagement() {
   return (
-    <div className="space-y-24">
+    <div className="space-y-48">
       <TextWithComponent
         title="Consumer engagement"
         description={
@@ -60,7 +60,7 @@ export default function ConsumerEngagement() {
         }
       />
       <ImageAndItem
-        className="md:flex-row-reverse"
+        className="md:flex-row-reverse items-center"
         image={
           <Image
             src={alphaMale}

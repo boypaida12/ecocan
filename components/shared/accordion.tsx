@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Accordion,
   AccordionContent,
@@ -15,11 +15,20 @@ interface AccordionItemData {
 interface ReusableAccordionProps {
   items: AccordionItemData[];
   className?: string;
+  defaultOpenItems?: string[];
 }
 
-export function ReusableAccordion({ items, className = "" }: ReusableAccordionProps) {
+export function ReusableAccordion({
+  items,
+  className = "",
+  defaultOpenItems,
+}: ReusableAccordionProps) {
   return (
-    <Accordion type="multiple" className={className}>
+    <Accordion
+      type="multiple"
+      defaultValue={defaultOpenItems || [items[0]?.id]}
+      className={className}
+    >
       {items.map((item) => (
         <AccordionItem key={item.id} value={item.id}>
           <AccordionTrigger>{item.question}</AccordionTrigger>

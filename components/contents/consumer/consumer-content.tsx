@@ -126,8 +126,8 @@ export default function ConsumerContent() {
   };
 
   return (
-    <div className="space-y-24 py-8 px-4 xl:px-0">
-      <div className="max-w-[65rem] mx-auto space-y-24">
+    <div className="space-y-48 py-8 px-4 xl:px-0">
+      <div className="max-w-[65rem] mx-auto space-y-48">
         <TextWithCards
           title="Get Started"
           description={
@@ -264,7 +264,7 @@ export default function ConsumerContent() {
           />
         </div>
       </div>
-      <div className="max-w-[65rem] mx-auto space-y-24">
+      <div className="max-w-[65rem] mx-auto space-y-48">
         <WasteLitter />
         <IdentifyGenuine />
         <ImageAndItem
@@ -294,7 +294,7 @@ export default function ConsumerContent() {
                   </span>
                 </>
               }
-              component={<ReusableAccordion items={accordionItems} />}
+              component={<ReusableAccordion items={accordionItems} defaultOpenItems={[]}/>}
             />
           }
         />
@@ -334,7 +334,7 @@ export default function ConsumerContent() {
         />
         <FaqSection />
         <CtaCard
-          className="bg-[url('/assets/images/consumer/consumer-cta-card.jpeg')] py-[3.75rem] bg-cover bg-center relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:-z-10 overflow-hidden z-50"
+          className="bg-[url('/assets/images/consumer/consumer-cta-card.jpeg')] py-[3.75rem] ps-[7.25rem] bg-cover bg-center relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:-z-10 overflow-hidden z-50"
           item={
             <TextWithComponent
               title={

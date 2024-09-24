@@ -154,7 +154,7 @@ const howToData = [
 
 export default function ProducerContent() {
   return (
-    <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+    <div className="space-y-48 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
       <TextWithCards
         title="Do more in the ECOmmunity"
         description="Directly engage with ECOnsumers to elevate your presence, amplify your impact and shape your strategies"
@@ -216,7 +216,7 @@ export default function ProducerContent() {
       {/* call to action */}
 
       <CtaCard
-        className="bg-[url('/assets/images/unfair-advantage.jpeg')] py-[4.75rem] bg-cover bg-center relative"
+        className="bg-[url('/assets/images/unfair-advantage.jpeg')] ps-[7.25rem] py-[2.75rem] bg-cover bg-bottom relative"
         item={
           <TextWithComponent
             title={

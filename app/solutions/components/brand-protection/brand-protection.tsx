@@ -87,7 +87,7 @@ const stepsTwo = [
 
 export default function BrandProtection() {
   return (
-    <div className="space-y-24">
+    <div className="space-y-48">
       <TextWithComponent
         title="Brand Protection"
         description={
@@ -140,7 +140,7 @@ export default function BrandProtection() {
       />
       {/* ecocan tnt */}
       <ImageAndItem
-        className="gap-12"
+        className="gap-12 items-center"
         image={
           <Image
             src={computer}
@@ -172,7 +172,7 @@ export default function BrandProtection() {
       />
       <TextWithComponent
         description={
-          <div>
+          <div className="lg:w-3/4">
             <p>
               <HyperLink link="ECOCAN Security Codes" href="/" /> are
               serialized, blockchain-compatible, anti-copy codes. Which are only
