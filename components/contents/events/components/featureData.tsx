@@ -9,7 +9,7 @@ const iconSize = 18;
 const featureData = [
   {
     id: 1,
-    name: "Make extra cash, Easy & Fast",
+    name: "Collabo with us",
     question:(
       <p>
         <HyperLink link="Join the ECOmmunity" href="/"/> today, and elevate your event’s sustainability
@@ -27,7 +27,7 @@ const featureData = [
   },
   {
     id: 2,
-    name: "You are the boss!",
+    name: "Secure your ticketing ",
     question:(
       <p>
       Utilize <HyperLink link="ECOCAN security codes" href="/"/> to protect the integrity of your ticketing
@@ -44,7 +44,7 @@ const featureData = [
   },
   {
     id: 3,
-    name: "Deliver however",
+    name: "Streamline your sales",
     question:
       "Allow your fans to pre-order their favourite genuine drinks in advance ",
     answer: (

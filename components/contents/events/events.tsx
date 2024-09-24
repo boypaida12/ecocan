@@ -26,7 +26,7 @@ const Events = () => {
         />
       </div>
       <div
-        className="w-full bg-slate-800 h-[14.75rem] bg-cover bg-center relative"
+        className="w-[65rem] bg-slate-800 h-[14.75rem] mx-auto rounded-3xl bg-cover bg-center relative"
         style={{
           backgroundImage:
             "url('assets/images/events/sustainable_experts.jpeg')",
@@ -77,10 +77,11 @@ const Events = () => {
             </>
           }
         />
-        <FaqSection />
+        
       </div>
       <div className="w-full bg-white">
         <Testimonials />
+        <FaqSection />
         <GreatMoments />
       </div>
     </>
