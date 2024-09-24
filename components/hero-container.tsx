@@ -28,10 +28,10 @@ export default function HeroContainer() {
         </div>
         {Object.entries(tabContent).map(([tab, { content }]) => (
           <TabsContent key={tab} value={tab}>
-            <div>{content}</div>
+            <div className="mt-24">{content}</div>
           </TabsContent>
         ))}
-        <div className="justify-center items-center flex pt-8 mt-8">
+        <div className="justify-center items-center flex pt-8">
           <TabsList className="bg-white border-none rounded-full">
             {Object.keys(tabContent).map((tab) => (
               <TabsTrigger

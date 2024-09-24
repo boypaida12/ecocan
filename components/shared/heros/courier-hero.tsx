@@ -42,10 +42,9 @@ export default function CourierHero() {
                 <h1 className="lg:text-6xl text-2xl xl:text-[4rem] text-center md:text-start font-semibold">
                   Every day is
                   <br />
-                  {/* <span className="bg-gradient-to-br from-[#228B22] via-[#4AC63FCF] to-[#A6A6A6] text-transparent bg-clip-text">
+                  <span className="bg-gradient-to-br from-[#228B22] via-[#4AC63FCF] to-[#A6A6A6] text-transparent bg-clip-text">
                     Payday!
-                  </span> */}
-                  <span className="bg-clip-text">Payday!</span>
+                  </span>
                 </h1>
               </div>
               <div className="text-sm lg:text-base xl:text-lg">
@@ -57,8 +56,8 @@ export default function CourierHero() {
             </div>
             <div className="lg:h-[32rem] xl:h-[44rem] md:w-1/2 relative overflow-hidden lg:overflow-visible z-20">
               <Image
-                src="/assets/images/courier/side-hustle.svg"
-                className="absolute max-w-[20rem] xl:max-w-none h-auto -left-2 top-24"
+                src="/assets/images/courier/side-hustle.png"
+                className="absolute max-w-[20rem] xl:max-w-[32rem] h-auto left-8 top-48"
                 alt="ecocan mobile app"
                 width={700}
                 height={900}

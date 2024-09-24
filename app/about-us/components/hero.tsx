@@ -31,9 +31,9 @@ export default function AboutHero() {
                 </h1>
               </div>
             </div>
-            <div className="lg:h-32 xl:h-[40rem] lg:w-8/12 ms-auto relative overflow-hidden lg:overflow-visible z-40 items-center flex">
+            {/* <div className="lg:h-32 xl:h-[40rem] lg:w-8/12 ms-auto relative overflow-hidden lg:overflow-visible z-40 items-center flex">
               <ContactForm title="Leave us a message" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

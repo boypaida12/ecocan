@@ -7,7 +7,7 @@ export default function SellMore() {
     <div className="bg-[url('/assets/images/eco-station/bg-overlay.png')] bg-cover bg-center relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:-z-10 overflow-hidden z-50 rounded-2xl text-center h-[27rem] flex flex-col justify-center">
       <div className="w-[39rem] mx-auto text-white z-20">
         <h2 className="text-[2rem] font-semibold">Sell more online</h2>
-        <p className="my-4 text-xl font-extralight">
+        <p className="my-4 text-lg font-medium">
           ECOCAN Market connects passionate entrepreneurs like yourself, with
           ECO-friendly ECOnsumers, for sustainable commerce.{" "}
         </p>

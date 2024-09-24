@@ -84,7 +84,7 @@ const data = [
 
 export default function RecyclerContent() {
   return (
-    <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+    <div className="space-y-48 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
       <TextWithComponent
         title="Closed-loop recycling"
         description={
@@ -182,7 +182,7 @@ export default function RecyclerContent() {
         {/* call to action */}
 
         <CtaCard
-          className="bg-[url('/assets/images/recycler/recycler-cta.jpeg')] py-[4.75rem] bg-cover bg-center items-center"
+          className="bg-[url('/assets/images/recycler/recycler-cta.jpeg')] ps-[7.25rem] py-[4.75rem] bg-cover bg-center items-center"
           item={
             <TextWithComponent
               title={

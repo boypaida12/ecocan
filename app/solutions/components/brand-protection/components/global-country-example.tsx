@@ -45,7 +45,7 @@ export default function GlobalCountryExample() {
             />
           </div>
         }
-        className="bg-[url('/assets/images/solutions/bottles-in-bucket.png')]"
+        className="bg-[url('/assets/images/solutions/bottles-in-bucket.png')] flex items-center"
       />
     </div>
   );
