@@ -93,7 +93,7 @@ export default function SolutionsContent({
             <ExpandableCards cardData={cardData} onCardExpand={onCardExpand} />
           </div>
         </div>
-        <div className="space-y-48 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+        <div className="space-y-32 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
           {/* online Sales */}
           <TextWithComponent
             title="Online Sales"
@@ -133,7 +133,7 @@ export default function SolutionsContent({
             }
             item={
               <TextWithComponent
-                description={<CheckList items={steps} />}
+                description={<CheckList items={steps} className="items-center"/>}
                 component={
                   <PrimaryButton buttonText="Learn more" buttonLink="/" />
                 }

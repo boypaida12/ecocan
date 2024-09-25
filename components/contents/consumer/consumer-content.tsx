@@ -114,7 +114,7 @@ const accordionItems = [
   {
     id: "item-1",
     question: <p className="text-primary">See full ECO-products list below</p>,
-    answer: <CheckList items={steps} />,
+    answer: <CheckList items={steps} className="items-center" />,
   },
 ];
 
@@ -126,38 +126,42 @@ export default function ConsumerContent() {
   };
 
   return (
-    <div className="space-y-48 py-8 px-4 xl:px-0">
-      <div className="max-w-[65rem] mx-auto space-y-48">
-        <TextWithCards
-          title="Get Started"
-          description={
-            <span>
-              Whether you want to keep your environment clean, earn extra cash,
-              or to safeguard your health from fake drinks. With EcocanApp,
-              it&apos;s all just a <HyperLink link="click away!" href="/" />
-            </span>
-          }
-          customCard={<CustomCard />}
-        />
-        <ImageAndItem
-          className="gap-12 items-center"
-          title="How EcocanApp works"
-          subtitle="Tap Tap Tap, and, Wallah!"
-          image={
-            <Image
-              src={images[selectedImage]}
-              alt={`EcocanApp step ${selectedImage + 1}`}
-              className="object-cover"
-              width={500}
-              height={100}
-              priority
-            />
-          }
-          item={<AccordionDemo onSelect={handleAccordionSelect} />}
-        />
+    <>
+      <div className="space-y-32 py-8 px-4 xl:px-0">
+        <div className="max-w-[65rem] mx-auto space-y-32">
+          <TextWithCards
+            title="Get Started"
+            description={
+              <span>
+                Whether you want to keep your environment clean, earn extra
+                cash, or to safeguard your health from fake drinks. With
+                EcocanApp, it&apos;s all just a{" "}
+                <HyperLink link="click away!" href="/" />
+              </span>
+            }
+            customCard={<CustomCard />}
+          />
+          <ImageAndItem
+            className="gap-12 items-center"
+            title="How EcocanApp works"
+            subtitle="Tap Tap Tap, and, Wallah!"
+            image={
+              <Image
+                src={images[selectedImage]}
+                alt={`EcocanApp step ${selectedImage + 1}`}
+                className="object-cover"
+                width={500}
+                height={100}
+                priority
+              />
+            }
+            item={<AccordionDemo onSelect={handleAccordionSelect} />}
+          />
+        </div>
       </div>
-      <div className="bg-[#B2B2B240] py-8">
-        <div className="max-w-[65rem] mx-auto">
+
+      <div className="bg-[#B2B2B240] py-8 my-32">
+        <div className="max-w-[65rem] mx-auto px-4 xl:px-0">
           <ImageAndItem
             className="md:flex-row-reverse items-center"
             image={
@@ -189,7 +193,7 @@ export default function ConsumerContent() {
                 {rvmContent.map((card, index) => (
                   <WhiteBgCard
                     iconPath={card.iconPath}
-                    className="border-none bg-transparent shadow-none"
+                    className="border bg-transparent shadow-none"
                     key={index}
                     content={card.content}
                   />
@@ -199,8 +203,9 @@ export default function ConsumerContent() {
           />
         </div>
       </div>
+
       {/* buy online */}
-      <div className="max-w-[65rem] mx-auto">
+      <div className="max-w-[65rem] mx-auto mb-32 px-4 xl:px-0">
         <ImageAndItem
           className="gap-12 items-center"
           image={
@@ -232,8 +237,8 @@ export default function ConsumerContent() {
         />
       </div>
       {/* exclusive benefits */}
-      <div className="bg-[url('/assets/images/consumer/bananas-bg.svg')] h-[36rem] bg-center bg-cover flex items-center">
-        <div className="max-w-[65rem] mx-auto">
+      <div className="bg-[url('/assets/images/consumer/bananas-bg.svg')] h-[36rem] bg-center bg-cover flex items-center mb-32">
+        <div className="max-w-[65rem] mx-auto px-4 xl:px-0">
           <TextWithCards
             title="Exclusive benefits for ECOnsumers"
             subtitle={
@@ -264,7 +269,7 @@ export default function ConsumerContent() {
           />
         </div>
       </div>
-      <div className="max-w-[65rem] mx-auto space-y-48">
+      <div className="max-w-[65rem] mx-auto space-y-32 px-4 xl:px-0">
         <WasteLitter />
         <IdentifyGenuine />
         <ImageAndItem
@@ -294,11 +299,16 @@ export default function ConsumerContent() {
                   </span>
                 </>
               }
-              component={<ReusableAccordion items={accordionItems} defaultOpenItems={[]}/>}
+              component={
+                <ReusableAccordion
+                  items={accordionItems}
+                  defaultOpenItems={[]}
+                />
+              }
             />
           }
         />
-        <News/>
+        <News />
         {/* stay in the loop */}
         <MultipleImagesAndItem
           item={
@@ -379,6 +389,6 @@ export default function ConsumerContent() {
           }
         />
       </div>
-    </div>
+    </>
   );
 }

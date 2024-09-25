@@ -1,9 +1,10 @@
 import React from "react";
 
 interface ItemListProps {
-    id: number | string;
+    id: number | string ;
     title?: React.ReactNode;
     description?: React.ReactNode;
+    icon?: React.ReactNode
   }
   
   export const ItemList: React.FC<ItemListProps> = ({ id, title, description }) => (
