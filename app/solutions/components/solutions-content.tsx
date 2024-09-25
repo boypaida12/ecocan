@@ -133,7 +133,7 @@ export default function SolutionsContent({
             }
             item={
               <TextWithComponent
-                description={<CheckList items={steps} />}
+                description={<CheckList items={steps} className="items-center"/>}
                 component={
                   <PrimaryButton buttonText="Learn more" buttonLink="/" />
                 }
