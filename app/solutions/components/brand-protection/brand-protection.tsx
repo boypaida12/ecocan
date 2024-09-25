@@ -87,7 +87,7 @@ const stepsTwo = [
 
 export default function BrandProtection() {
   return (
-    <div className="space-y-48">
+    <div className="space-y-32">
       <TextWithComponent
         title="Brand Protection"
         description={

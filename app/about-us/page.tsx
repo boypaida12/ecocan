@@ -80,7 +80,7 @@ export default function AboutPage() {
   return (
     <>
       <AboutHero />
-      <div className="space-y-48 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+      <div className="space-y-32 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
         <TextWithCards
           title="Who is ECOCAN"
           subtitle={

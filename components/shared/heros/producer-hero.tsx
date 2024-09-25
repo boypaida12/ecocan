@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 import NavigationBar from "../navbar/navbar";
 
@@ -32,41 +32,41 @@ export default function ProducerHero() {
         linkColor="text-white"
       />
       <div className="lg:h-[36rem] xl:h-[47.575rem]">
-        <div className="bg-[url('/assets/images/producer/hero.png')] lg:h-[36rem] xl:h-[48rem] lg:bg-contain xl:bg-cover relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-60 after:z-10">
+        <div className="bg-[url('/assets/images/producer/hero.svg')] lg:h-[36rem] xl:h-[48rem] lg:bg-cover relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-60 after:z-10">
           <div className="xl:max-w-[65rem] flex flex-col md:flex md:flex-row mx-auto lg:my-0 lg:gap-12">
-            <div className="lg:mt-28 xl:mt-60 px-4 xl:px-0 text-white z-50 mx-auto">
+            <div className="lg:mt-28 xl:mt-60 px-4 xl:px-0 text-white z-50">
               <div>
                 <h1 className="lg:text-6xl text-2xl xl:text-[4rem] text-left font-semibold text-white">
-                Maximize Earnings,<br/>
+                  Maximize Earnings,
+                  <br />
                   <span className="bg-gradient-to-br from-[#228B22] via-[#4AC63F] to-[#A6A6A6] text-transparent bg-clip-text text-[3rem] text-left space-x-1">
-                  <span className="text-[68px] font-light">M</span>
-                  <span className="text-[65px] font-light">i</span>
-                  <span className="text-[63px] font-light">n</span>
-                  <span className="text-[61px] font-light">i</span>
-                  <span className="text-[59px] font-light">m</span>
-                  <span className="text-[57px] font-light">i</span>
-                  <span className="text-[55px] font-light">z</span>
-                  <span className="text-[53px] font-light">e</span>
-                  <span className="text-[51px] font-light"> </span>
-                  <span className="text-[49px] font-light">P</span>
-                  <span className="text-[47px] font-light">o</span>
-                  <span className="text-[45px] font-light">l</span>
-                  <span className="text-[43px] font-light">l</span>
-                  <span className="text-[41px] font-light">u</span>
-                  <span className="text-[39px] font-light">t</span>
-                  <span className="text-[37px] font-light">i</span>
-                  <span className="text-[35px] font-light">o</span>
-                  <span className="text-[33px] font-light">n</span>
+                    <span className="text-[4.25rem] font-light">M</span>
+                    <span className="text-[4.0625rem] font-light">i</span>
+                    <span className="text-[3.9375rem] font-light">n</span>
+                    <span className="text-[3.8125rem] font-light">i</span>
+                    <span className="text-[3.6875rem] font-light">m</span>
+                    <span className="text-[3.5625rem] font-light">i</span>
+                    <span className="text-[3.4375rem] font-light">z</span>
+                    <span className="text-[3.3125rem] font-light">e</span>
+                    <span className="text-[3.1875rem] font-light"> </span>
+                    <span className="text-[3.0625rem] font-light">P</span>
+                    <span className="text-[2.9375rem] font-light">o</span>
+                    <span className="text-[2.8125rem] font-light">l</span>
+                    <span className="text-[2.6875rem] font-light">l</span>
+                    <span className="text-[2.5625rem] font-light">u</span>
+                    <span className="text-[2.4375rem] font-light">t</span>
+                    <span className="text-[2.3125rem] font-light">i</span>
+                    <span className="text-[2.1875rem] font-light">o</span>
+                    <span className="text-[2.0625rem] font-light">n</span>
                   </span>
                 </h1>
               </div>
               <div className="tracking-wide text-sm lg:text-base xl:text-lg font-light text-white my-10 space-y-4">
                 <p className="text-left">
-                With ECOCAN, it&apos;s not business as usual. But ECO-smart business.
+                  With ECOCAN, it&apos;s not business as usual. But ECO-smart
+                  business.
                 </p>
-                <p className="text-left">
-                But ECO-smart business.
-                </p>
+                <p className="text-left">But ECO-smart business.</p>
                 {/* <p className="text-center lg:w-4/5 mx-auto">Become a catalyst for positive change by leveraging ECOCAN&apos;s suite of advanced technology to boost your sales, cut production costs, protect your customers from counterfeits, and most importantly, protect our planet from litter. </p> */}
               </div>
             </div>

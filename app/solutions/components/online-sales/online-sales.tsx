@@ -115,7 +115,7 @@ const howToData = [
 
 export default function OnlineSales() {
   return (
-    <div className="space-y-48">
+    <div className="space-y-32">
       <TextWithComponent
         title="Online Sales"
         description={

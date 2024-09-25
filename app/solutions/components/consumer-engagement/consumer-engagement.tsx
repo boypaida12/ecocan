@@ -39,7 +39,7 @@ const accordionItems = [
 
 export default function ConsumerEngagement() {
   return (
-    <div className="space-y-48">
+    <div className="space-y-32">
       <TextWithComponent
         title="Consumer engagement"
         description={

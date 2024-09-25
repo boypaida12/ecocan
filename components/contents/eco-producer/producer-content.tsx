@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ReusableAccordion } from "@/components/shared/accordion";
 import HyperLink from "@/components/shared/hyperlink/hyperlink";
@@ -23,39 +23,38 @@ import TextWithComponent from "../consumer/components/buy-online";
 import ExpandableContent from "../consumer/components/expandable-content";
 import SimpleCard from "./components/simpleCard";
 
-
 const cardContent = [
   {
-    src: '/assets/images/producer/image2.png',
+    src: "/assets/images/producer/image2.png",
     content: "Boost your revenues",
   },
   {
-    src: '/assets/images/producer/image3.png',
+    src: "/assets/images/producer/image3.png",
     content: "Optimise your efficiency",
   },
   {
-    src: '/assets/images/producer/image4.png',
+    src: "/assets/images/producer/image4.png",
     content: "Protect your customers",
   },
   {
-    src: '/assets/images/producer/image5.png',
+    src: "/assets/images/producer/image5.png",
     content: "Preserve the planet",
   },
 ];
 
 const alchemyContent = [
   {
-    icon: <LucideRecycle />,
+    icon: "/assets/images/producer/alchemy-1.svg",
     title: "Brand protection",
     content: "We give you the controls",
   },
   {
-    icon: <LucideAward />,
+    icon: "/assets/images/producer/alchemy-2.svg",
     title: "Online Sales",
     content: "We live in a world of Super Convenience ",
   },
   {
-    icon: <LucideGem />,
+    icon: "/assets/images/producer/alchemy-3.svg",
     title: "Engagement",
     content: "Econsumers care more than just the price",
   },
@@ -114,7 +113,10 @@ const accordionItems = [
     answer: (
       <div className="space-y-6">
         <p>
-        Packaging costs are skyrocketing! But we can help keep your costs down by collecting your empties for reuse or recycling, through the clean-loop ECOCAN DRS. If you prefer, we can even process the collected empties for you.
+          Packaging costs are skyrocketing! But we can help keep your costs down
+          by collecting your empties for reuse or recycling, through the
+          clean-loop ECOCAN DRS. If you prefer, we can even process the
+          collected empties for you.
         </p>
       </div>
     ),
@@ -124,7 +126,14 @@ const accordionItems = [
 const howToData = [
   {
     id: 1,
-    icon: (<Image src="/assets/images/producer/one.png" width={23} height={23} alt='icon'/>),
+    icon: (
+      <Image
+        src="/assets/images/producer/one.png"
+        width={23}
+        height={23}
+        alt="icon"
+      />
+    ),
     title: (
       <div>
         <HyperLink link="Register Here" href="/" /> and we&apos;ll revert ASAP
@@ -138,7 +147,14 @@ const howToData = [
   },
   {
     id: 2,
-    icon: (<Image src="/assets/images/producer/two.png" width={23} height={23} alt='icon'/>),
+    icon: (
+      <Image
+        src="/assets/images/producer/two.png"
+        width={23}
+        height={23}
+        alt="icon"
+      />
+    ),
     title: "After onboarding, we'll tailor our systems for you",
     description: (
       <p className="text-sm mt-2">
@@ -148,7 +164,14 @@ const howToData = [
   },
   {
     id: 3,
-    icon: (<Image src="/assets/images/producer/three.png" width={23} height={23} alt='icon'/>),
+    icon: (
+      <Image
+        src="/assets/images/producer/three.png"
+        width={23}
+        height={23}
+        alt="icon"
+      />
+    ),
     title: "Then digitally deliver the codes  to your printers",
     description: (
       <p className="text-sm mt-2">
@@ -159,7 +182,14 @@ const howToData = [
   },
   {
     id: 4,
-    icon: (<Image src="/assets/images/producer/four.png" width={23} height={23} alt='icon'/>),
+    icon: (
+      <Image
+        src="/assets/images/producer/four.png"
+        width={23}
+        height={23}
+        alt="icon"
+      />
+    ),
     title: "And you are good to go!",
     description: (
       <p className="text-sm mt-2">
@@ -172,99 +202,117 @@ const howToData = [
 export default function ProducerContent() {
   return (
     <div className="w-full">
-    <div className="space-y-48 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
-      <TextWithCards
-        title="Do more in the ECOmmunity"
-        description="Directly engage with ECOnsumers to elevate your presence, amplify your impact and shape your strategies"
-        customCard={
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-6">
-            {cardContent.map((card, index) => (
-              <SimpleCard
-              className="border-transparent p-0 w-[16rem]"
-              image={<div className=" w-[full] max-h-[11.75rem] overflow-hidden"><Image src={card.src} alt="image" width={280} height={220} className="object-cover h-full w-full"/></div>}
-              key={index}
-              content={<p className="font-inter text-[1.125rem] font-medium leading-[1.625rem] text-left text-black">{card.content}</p>}
-            />
-            ))}
-          </div>
-        }
-      />
-      {/* what is in it for you */}
-      <TextWithCards
-        title="What's in for you?"
-        description="Reclaim lost market share, conquer new markets, stay compliant with environmental laws, and improve your brand image!"
-        customCard={
-          <div className="w-3/5">
-            <ReusableAccordion items={accordionItems} />
-          </div>
-        }
-      />
-      {/* how to join the ecommunity */}
-      <HowTo
-        itemsTitle="How to join the ECOmmunity"
-        items={howToData}
-        imageSrc="/assets/images/producer/howto.png"
-        imageAlt="Become an Eco-station"
-      />
-      {/* optimize */}
-      <Optimize />
+      <div className="space-y-32 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+        <TextWithCards
+          title="Do more in the ECOmmunity"
+          description="Directly engage with ECOnsumers to elevate your presence, amplify your impact and shape your strategies"
+          customCard={
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-6">
+              {cardContent.map((card, index) => (
+                <SimpleCard
+                  className="border-transparent p-0 xl:w-[16rem]"
+                  image={
+                    <div className=" w-[full] max-h-[11.75rem] overflow-hidden">
+                      <Image
+                        src={card.src}
+                        alt="image"
+                        width={280}
+                        height={220}
+                        className="object-cover h-full w-full"
+                      />
+                    </div>
+                  }
+                  key={index}
+                  title={
+                    <p className="text-[1.125rem] font-medium leading-[1.625rem] text-left text-black">
+                      {card.content}
+                    </p>
+                  }
+                />
+              ))}
+            </div>
+          }
+        />
+        {/* what is in it for you */}
+        <TextWithCards
+          title="What's in for you?"
+          description="Reclaim lost market share, conquer new markets, stay compliant with environmental laws, and improve your brand image!"
+          customCard={
+            <div className="w-3/5">
+              <ReusableAccordion items={accordionItems} />
+            </div>
+          }
+        />
+        {/* how to join the ecommunity */}
+        <HowTo
+          itemsTitle="How to join the ECOmmunity"
+          items={howToData}
+          imageSrc="/assets/images/producer/howto.png"
+          imageAlt="Become an Eco-station"
+        />
+        {/* optimize */}
+        <Optimize />
       </div>
-      
+
       {/* alchemy */}
-      <div className="mx-auto text-center w-full h-[40.063rem] bg-[url('/assets/images/producer/bg_001.png')] bg-cover bg-center flex items-center justify-center p-0 m-0">                    
-      <TextWithCards
-        title="The Alchemy behind this ECOCAN magic"
-        className="mx-auto text-center"
-        customCard={
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-            {alchemyContent.map((card, index) => (
-              <WhiteBgCard
-              iconPath="/assets/images/all/green-ball.svg"
-                className="border-transparent shadow-none"
-                key={index}
-                title={card.title}
-                content={<div><ExpandableContent content={card.content}/><br/><br/> <a className="underline">learn more</a></div>}
-              />
-            ))}
-          </div>
-        }
-      />
-      </div>
-      <div className="space-y-48 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
-      {/* faq */}
-      <FaqSection />
-
-      {/* call to action */}
-
-      <CtaCard
-        className="bg-[url('/assets/images/producer/unfair-advantage.jpeg')] py-[4.75rem] bg-cover bg-center items-center h-[26.75rem]"
-        item={
-          <TextWithComponent
-            title={
-              <p className="text-white text-4xl">
-                ECOCAN, your unfair
-                <br />
-                advantage!
-              </p>
-            }
-            description={
-              <span className="text-white">Join the ECOmmunity today</span>
+      <div className="bg-[url('/assets/images/consumer/bananas-bg.svg')] h-[36rem] bg-center bg-cover flex items-center my-16">
+        <div className="max-w-[65rem] mx-auto">
+          <TextWithCards
+            title="The Alchemy behind this ECOCAN magic"
+            className="mx-auto text-center"
+            customCard={
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 xl:w-[65rem]">
+                {alchemyContent.map((card, index) => (
+                  <WhiteBgCard
+                    iconPath={card.icon}
+                    className="border-none"
+                    key={index}
+                    title={card.title}
+                    content={
+                      <div>
+                        <ExpandableContent content={card.content} />
+                      </div>
+                    }
+                  />
+                ))}
+              </div>
             }
           />
-        }
-        image={
-          <div className="w-[40.611rem] h-[25.594rem] mx-auto">
-            <Image
-              src="/assets/images/producer/top-img.png"
-              alt=""
-              width={841.78}
-              height={473.5}
-              className="w-full h-full"
+        </div>
+      </div>
+      <div className="space-y-32 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+        {/* faq */}
+        <FaqSection />
+
+        {/* call to action */}
+
+        <CtaCard
+          className="bg-[url('/assets/images/producer/unfair-advantage.jpeg')] ps-[2.25rem] py-[4.75rem] bg-cover bg-center items-center h-[26.75rem]"
+          item={
+            <TextWithComponent
+              title={
+                <p className="text-white text-4xl">
+                  ECOCAN, your unfair advantage!
+                </p>
+              }
+              description={
+                <span className="text-white">Join the ECOmmunity today</span>
+              }
             />
-          </div>
-        }
-      />
+          }
+          image={
+            <div>
+              <Image
+                src="/assets/images/producer/top-img.png"
+                alt=""
+                width={841.78}
+                height={473.5}
+                className="w-full h-full"
+              />
+            </div>
+          }
+        />
+      </div>
     </div>
-  </div>
   );
 }

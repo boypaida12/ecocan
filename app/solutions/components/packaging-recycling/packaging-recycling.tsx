@@ -37,7 +37,7 @@ const howToData = [
 
 export default function PackagingRecycling() {
   return (
-    <div className="space-y-48">
+    <div className="space-y-32">
       <TextWithComponent
         title="Packaging Recycling"
         description={

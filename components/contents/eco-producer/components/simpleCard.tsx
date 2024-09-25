@@ -1,19 +1,19 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "../../../ui/card";
 import clsx from "clsx";
-import Image from "next/image";
-
 
 export default function SimpleCard({
  image,
   title,
   content,
   className,
+  cardHeight,
 }: {
   image?: React.ReactNode;
-  title?: string;
+  title?: React.ReactNode;
   content?: React.ReactNode;
   className?: string;
+  cardHeight?: string;
 }) {
   return (
     <Card
@@ -23,14 +23,16 @@ export default function SimpleCard({
       )}
     >
         {image}
-      <CardHeader className="pb-2">
-        <CardTitle className="text-xl font-semibold">
-          {title}
-        </CardTitle>
-      </CardHeader>
-      <CardContent>
-        {content}
-      </CardContent>
+      <div className={`${cardHeight} flex flex-col`}>
+        <CardHeader className="pb-2">
+          <CardTitle className="text-xl font-semibold">
+            {title}
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          {content}
+        </CardContent>
+      </div>
     </Card>
   );
 }

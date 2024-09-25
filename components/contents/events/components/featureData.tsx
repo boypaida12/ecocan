@@ -23,7 +23,7 @@ const featureData = [
 
       </div>
     ),
-    icon: "/assets/images/consumer/avoid-fakes.svg",
+    icon: "/assets/images/events/collabo.svg",
   },
   {
     id: 2,
@@ -40,7 +40,7 @@ const featureData = [
         </p>
       </div>
     ),
-    icon: "/assets/images/consumer/avoid-fakes.svg",
+    icon: "/assets/images/events/ticketing.svg",
   },
   {
     id: 3,
@@ -54,7 +54,7 @@ const featureData = [
           </p>
         </div>
       ),
-    icon: "/assets/images/consumer/avoid-fakes.svg",
+    icon: "/assets/images/events/sales.svg",
   },
 ];
 
