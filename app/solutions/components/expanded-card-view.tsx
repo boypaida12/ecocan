@@ -51,7 +51,6 @@ const ExpandedCardView: React.FC<ExpandedCardViewProps> = ({
         <div className="">
           <p>{card.content}</p>
         </div>
-        {/* Add more detailed content here */}
       </div>
     </>
   );

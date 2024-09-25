@@ -7,14 +7,12 @@ interface ItemListProps {
     icon?: React.ReactNode
   }
   
-  export const ItemList: React.FC<ItemListProps> = ({ id, title, description, icon }) => (
-    <div className="flex flex-row mb-8">
-      <div className="flex items-center justify-center min-w-5 h-5 bg-[#4AC63F] rounded-full mr-5">
-      {icon ? (
-          icon
-        ) : (
+  export const ItemList: React.FC<ItemListProps> = ({ id, title, description }) => (
+    <div className="flex flex-row mb-8 gap-3">
+      <div>
+        <div className="flex items-center justify-center w-8 h-8 bg-gradient-to-r from-[#228B22] via-[#4ac63fcf] to-[#FFDD4C] rounded-full">
           <p className="text-xs text-white leading-none">{id}</p>
-        )}
+        </div>
       </div>
       <div className="pt-0">
         <p className="text-[1.125rem] font-semibold">{title}</p>

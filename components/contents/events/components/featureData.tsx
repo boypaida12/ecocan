@@ -23,7 +23,7 @@ const featureData = [
 
       </div>
     ),
-    icon: <LucideTriangleAlert size={iconSize} />,
+    icon: "/assets/images/consumer/avoid-fakes.svg",
   },
   {
     id: 2,
@@ -40,7 +40,7 @@ const featureData = [
         </p>
       </div>
     ),
-    icon: <LucideRecycle size={iconSize} />,
+    icon: "/assets/images/consumer/avoid-fakes.svg",
   },
   {
     id: 3,
@@ -54,7 +54,7 @@ const featureData = [
           </p>
         </div>
       ),
-    icon: <LucideCreditCard size={iconSize} />,
+    icon: "/assets/images/consumer/avoid-fakes.svg",
   },
 ];
 

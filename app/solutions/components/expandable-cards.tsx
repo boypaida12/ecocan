@@ -12,7 +12,7 @@ const ExpandableCards: React.FC<ExpandableCardsProps> = ({
   onCardExpand,
 }) => {
   const consumerEngagementCardId =
-    cardData.find((card) => card.title === "Consumer Engagement")?.id || 3;
+    cardData.find((card) => card.title === "Brand Protection")?.id || 1;
 
   const [activeCardId, setActiveCardId] = useState<number>(
     consumerEngagementCardId

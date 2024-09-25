@@ -20,6 +20,7 @@ const navLinks = [
   { href: "/about-us", label: "About Us" },
   { href: "/solutions", label: "Solutions" },
   { href: "/blog", label: "Blog" },
+  { href: "/", label: "Contact Us" },
 ];
 
 const NavigationBar: React.FC<NavigationBarProps> = ({
@@ -122,7 +123,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
             <Button
               asChild
               className={clsx(
-                "rounded-full h-7 xl:h-8 text-black hover:text-primary bg-[#FFDD4C]",
+                "rounded-full h-7 xl:h-8 text-black hover:text-primary bg-white hover:bg-white",
                 secondButtonClassName
               )}
             >

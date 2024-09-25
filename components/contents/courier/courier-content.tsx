@@ -18,6 +18,7 @@ import CtaCardComponent from "./components/sustainableHustle";
 import ImageTextOverlay from "./components/imageText";
 import { ReusableAccordion } from "@/components/shared/accordion";
 import HyperLink from "@/components/shared/hyperlink/hyperlink";
+import News from "../consumer/components/news";
 
 const iconSize = 18;
 
@@ -27,25 +28,25 @@ const featureData = [
     name: "Make extra cash, Easy & Fast",
     question: (
       <p>
-        <HyperLink link="Sign up" href="/"/> here to become an ECOurier, and start
-        making money today!
+        <HyperLink link="Sign up" href="/" /> here to become an ECOurier, and
+        start making money today!
       </p>
     ),
-    icon: <LucideTriangleAlert size={iconSize} />,
+    icon: "/assets/images/eco-station/commission.svg",
   },
   {
     id: 2,
     name: "You are the boss!",
     question:
       "Hustle whenever you want, and earn as much as you need. It’s up to you",
-    icon: <LucideRecycle size={iconSize} />,
+    icon: "/assets/images/courier/boss.svg",
   },
   {
     id: 3,
     name: "Deliver however",
     question:
       "Fit pick-ups around your lifestyle; Walk, Cycle, Drive or even Crawl. Just avoid  fossil fuel",
-    icon: <LucideCreditCard size={iconSize} />,
+    icon: "/assets/images/courier/deliver.svg",
   },
 ];
 
@@ -55,7 +56,8 @@ const howToData = [
     title: "Tell us a bit about yourself",
     description: (
       <p className="text-sm">
-        <HyperLink link="Sign up here" href="/"/> and have your ID +/license ready 
+        <HyperLink link="Sign up here" href="/" /> and have your ID +/license
+        ready
       </p>
     ),
   },
@@ -145,7 +147,7 @@ export default function CourierContent() {
     setSelectedImage(id - 1);
   };
   return (
-    <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+    <div className="space-y-48 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
       <TextWithCards
         title="Let’s drive your hustle forward"
         customCard={<CustomCard features={featureData} />}
@@ -154,7 +156,7 @@ export default function CourierContent() {
       {/* how to become an eco-courier */}
       <HowTo
         itemsTitle="How to become an Eco-Courier"
-        itemsSubtitle="Want to start earning more today? With ECOCAN, it's easy like Sunday Morning."
+        itemsSubtitle="It's easy like Sunday Morning."
         items={howToData}
         imageSrc="/assets/images/courier/courier-woman.svg"
         imageAlt="Become an Eco-Courier"
@@ -162,24 +164,28 @@ export default function CourierContent() {
 
       {/* your hustle your rules */}
       <ImageAndItem
-        title="Your hustle, Your rules!"
-        subtitle="Making money has never been this Flexible. Easy. And. Transparent"
         image={
           <Image
-            src="/assets/images/courier/your-hustle.png"
+            src="/assets/images/courier/hustle-rules.svg"
             alt="EcocanApp step"
-            className="object-cover"
-            width={421}
-            height={417}
+            width={500}
+            height={100}
           />
         }
-        className="md:flex-row-reverse"
-        item={<AccordionDemo onSelect={handleAccordionSelect} />}
+        className="md:flex-row-reverse items-center"
+        item={
+          <div className="mr-12">
+            <h2 className="font-semibold text-[2rem]">
+              Your hustle, Your rules!
+            </h2>
+            <AccordionDemo onSelect={handleAccordionSelect} />
+          </div>
+        }
       />
 
       {/* image text */}
       <ImageTextOverlay
-      className="bg-[url('/assets/images/courier/money.png')]"
+        className="bg-[url('/assets/images/courier/sustainable-hustle.svg')] after:bg-black/50 lg:h-[39rem] flex items-center"
         item={
           <div className="w-5/6 mx-auto">
             <h2 className="text-[2rem] font-bold">Maximise your earnings</h2>
@@ -191,6 +197,8 @@ export default function CourierContent() {
           </div>
         }
       />
+
+      <News/>
 
       {/* Faq section */}
       <FaqSection />

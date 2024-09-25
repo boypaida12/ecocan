@@ -38,7 +38,7 @@ export default function ProducerHero() {
               <div>
                 <h1 className="lg:text-6xl text-2xl xl:text-[4rem] text-left font-semibold text-white">
                 Maximize Earnings,<br/>
-                  <span className="bg-gradient-to-r from-[#228B22] via-[#4AC63F] to-[#FFDD4C] text-transparent bg-clip-text text-[3rem] text-left space-x-1">
+                  <span className="bg-gradient-to-br from-[#228B22] via-[#4AC63F] to-[#A6A6A6] text-transparent bg-clip-text text-[3rem] text-left space-x-1">
                   <span className="text-[68px] font-light">M</span>
                   <span className="text-[65px] font-light">i</span>
                   <span className="text-[63px] font-light">n</span>

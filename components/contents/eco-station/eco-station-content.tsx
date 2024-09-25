@@ -22,6 +22,7 @@ import HowTo from "../../shared/HowTo";
 import TextWithComponent from "../consumer/components/buy-online";
 import SellMore from "./components/sell-more";
 import { ReusableAccordion } from "../../shared/accordion";
+import News from "../consumer/components/news";
 
 const iconSize = 18;
 
@@ -97,7 +98,7 @@ const howToData = [
 
 export default function EcoStationContent() {
   return (
-    <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+    <div className="space-y-48 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
       <TextWithCards
         title="Why become an ECO-station"
         description="It's a win-win-win; while you help keep the environment clean by accepting empties, and issuing deposits to ECOnsumers, we’ll bring more business to you"
@@ -124,7 +125,7 @@ export default function EcoStationContent() {
                     </p>
                   </div>
                 ),
-                icon: <LucideTriangleAlert size={iconSize} />,
+                icon: "/assets/images/eco-station/customers.svg",
               },
               {
                 id: 2,
@@ -143,7 +144,7 @@ export default function EcoStationContent() {
                     </p>
                   </div>
                 ),
-                icon: <LucideRecycle size={iconSize} />,
+                icon: "/assets/images/eco-station/commission.svg",
               },
               {
                 id: 3,
@@ -158,7 +159,7 @@ export default function EcoStationContent() {
                     </p>
                   </div>
                 ),
-                icon: <LucideCreditCard size={iconSize} />,
+                icon: "/assets/images/eco-station/revenues.svg",
               },
             ]}
           />
@@ -213,15 +214,19 @@ export default function EcoStationContent() {
       <SellMore />
 
       {/* your success our pride */}
-      <TextWithCards
-        title="Your success, our pride "
-        subtitle={
-          <p className="font-semibold my-2">
-            Grow your business with our most intelligent insights
-          </p>
+      <ImageAndItem
+      className="gap-12 items-center"
+        image={
+          <Image
+            src="/assets/images/eco-station/success-pride.svg"
+            alt="eco-can scan"
+            width={500}
+            height={100}
+          />
         }
-        description={
+        item={
           <div className="space-y-6">
+            <h2 className="font-semibold text-[2rem]">Your success, our pride</h2>
             <p>
               Facilitate ECOnsumers to return eligible empties to your shop for
               recycling. And over 60% will most likely spend their deposit money
@@ -241,23 +246,23 @@ export default function EcoStationContent() {
 
       {/* intelligent business insights */}
       <ImageAndItem
-        className="md:flex-row-reverse gap-12"
+        className="md:flex-row-reverse items-center gap-12"
         title={
           <span>
             Intelligent insights,{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#228B22] via-[#4AC63F] to-[#FFDD4C]">
+            <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#228B22] via-[#4AC63F] to-[#0000001A]">
               for smart business
             </span>
           </span>
         }
         subtitle={
-          <div className="w-4/5 mx-auto">
+          <div className="w-3/5 mx-auto">
             Make data-driven decisions with insights from the ECOCAN TnT, giving
             you full visibility into your operations, allowing you to track Key
             Performance Indicators
           </div>
         }
-        item={<ReusableAccordion items={accordionItems} />}
+        item={<ReusableAccordion items={accordionItems} defaultOpenItems={["item-1", "item-4"]}/>}
         image={
           <Image
             src="/assets/images/courier/insights.svg"
@@ -269,12 +274,13 @@ export default function EcoStationContent() {
           />
         }
       />
+      <News/>
       {/* faq */}
       <FaqSection />
 
       {/* call to action */}
       <CtaCard
-        className="bg-[url('/assets/images/join-eco-community.jpeg')] py-[4.75rem] bg-cover bg-center relative"
+        className="bg-[url('/assets/images/join-eco-community.jpeg')] ps-[7.25rem] py-[3.75rem] bg-cover bg-center relative"
         item={
           <TextWithComponent
             title={

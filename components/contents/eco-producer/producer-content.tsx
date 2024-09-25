@@ -171,8 +171,8 @@ const howToData = [
 
 export default function ProducerContent() {
   return (
-  <div className="w-full">
-    <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+    <div className="w-full">
+    <div className="space-y-48 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
       <TextWithCards
         title="Do more in the ECOmmunity"
         description="Directly engage with ECOnsumers to elevate your presence, amplify your impact and shape your strategies"
@@ -219,7 +219,8 @@ export default function ProducerContent() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
             {alchemyContent.map((card, index) => (
               <WhiteBgCard
-                className="border-transparent shadow-xl text-left"
+              iconPath="/assets/images/all/green-ball.svg"
+                className="border-transparent shadow-none"
                 key={index}
                 title={card.title}
                 content={<div><ExpandableContent content={card.content}/><br/><br/> <a className="underline">learn more</a></div>}
@@ -229,7 +230,7 @@ export default function ProducerContent() {
         }
       />
       </div>
-      <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+      <div className="space-y-48 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
       {/* faq */}
       <FaqSection />
 

@@ -28,7 +28,7 @@ export default function Optimize() {
   return (
     <div className="bg-white p-8 rounded-2xl">
       <div className="text-center mb-6">
-          <h2 className="text-[2rem] bg-gradient-to-br from-[#228B22] via-[#4AC63F] to-[#FFDD4C] text-transparent bg-clip-text font-semibold">
+          <h2 className="text-[2rem] bg-gradient-to-br from-[#228B22] via-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text font-semibold">
             Optimise the value of <span className="bg-gradient-to-bl from-[#4AC63F] via-[#FFDD4C] to-[#4AC63F]  text-transparent bg-clip-text">your packaging</span>
           </h2>
           <p className="text-accent text-sm">

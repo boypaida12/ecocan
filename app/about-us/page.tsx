@@ -80,32 +80,26 @@ export default function AboutPage() {
   return (
     <>
       <AboutHero />
-      <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
-        <TextWithComponent
-          title="Catalysts of positive change"
+      <div className="space-y-48 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+        <TextWithCards
+          title="Who is ECOCAN"
+          subtitle={
+            <p className="bg-gradient-to-r from-[#228B22] via-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text font-semibold text-2xl">
+              We are catalysts of positive change
+            </p>
+          }
           description={
-            <div className="space-y-8 lg:w-[87%] xl:w-3/4">
+            <div className="space-y-8 mt-4">
               <p>
-                ECOCAN is a green-tech company, offering an end-to-end service,
-                for sustainable management of genuine beverage products; from
-                point of manufacture, through retail, to recycling.
+                Offering an end-to-end service, for sustainable management of
+                beverage products; from point of manufacture, through retail, to
+                recycling. This dynamic, first-to-market service is delivered
+                through the <HyperLink link="ECOCAN TnT platform" href="/"/>; a revolutionary technology
+                leveraging IoT, Blockchain, and AI, to provide comprehensive
+                product circulation insights, and deep market intelligence.
+                Giving stakeholders greater and unparalleled control.
               </p>
-              <div>
-                <p>
-                  This dynamic, first-to-market service is delivered through the{" "}
-                  <HyperLink link="ECOCAN TnT platform;" href="/" /> a
-                  revolutionary technology leveraging IoT, Blockchain, and AI,
-                  to provide comprehensive product circulation insights, and
-                  deep market intelligence. Giving stakeholders greater and
-                  unparalleled control.
-                </p>
-                <p>
-                  At the core of the ECOCAN TnT is our free-to-use{" "}
-                  <HyperLink link="EcocanApp" href="/" />, robust{" "}
-                  <HyperLink link="ECOCAN security codes" href="/" />, and the
-                  innovative <HyperLink link="ECOCAN DRS." href="/" />{" "}
-                </p>
-              </div>
+              <p>At the core of the ECOCAN TnT is our free-to-use <HyperLink link="EcocanApp" href="/"/>, robust ECOCAN security codes, and the innovative ECOCAN DRS. </p>
             </div>
           }
         />
@@ -128,9 +122,9 @@ export default function AboutPage() {
               title="Who is ECOCAN"
               description={
                 <div>
-                  <h2 className="bg-gradient-to-r my-2 from-[#228B22] via-[#4AC63F] to-[#FFDD4C] text-transparent bg-clip-text font-semibold text-2xl">
+                  <h2 className="bg-gradient-to-bl my-2 from-[#228B22] via-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text font-semibold text-2xl">
                     A COmmunity of{" "}
-                    <span className="bg-gradient-to-r from-[#4AC63F] via-[#FFDD4C] to-[#FFDD4C] text-transparent bg-clip-text">
+                    <span className="bg-gradient-to-bl from-[#4AC63F] via-[#FFDD4C] to-[#0000001A] text-transparent bg-clip-text">
                       visionaries
                     </span>
                   </h2>
@@ -164,7 +158,7 @@ export default function AboutPage() {
           item={
             <TextWithComponent
               title={
-                <h2 className="bg-gradient-to-bl my-2 from-[#228B22] via-[#4AC63F] to-[#FFDD4C] text-transparent bg-clip-text font-semibold text-2xl">
+                <h2 className="bg-gradient-to-bl my-2 from-[#228B22] via-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text font-semibold text-2xl">
                   On a mission
                 </h2>
               }
@@ -190,9 +184,9 @@ export default function AboutPage() {
             <TextWithComponent
               description={
                 <div>
-                  <h2 className="bg-gradient-to-r my-2 from-[#228B22] via-[#4AC63F] to-[#FFDD4C] text-transparent bg-clip-text font-semibold text-2xl">
+                  <h2 className="bg-gradient-to-bl my-2 from-[#228B22] via-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text font-semibold text-2xl">
                     To which we are{" "}
-                    <span className="bg-gradient-to-r from-[#4AC63F] via-[#FFDD4C] to-[#FFDD4C] text-transparent bg-clip-text">
+                    <span className="bg-gradient-to-bl from-[#4AC63F] via-[#FFDD4C] to-[#0000001A] text-transparent bg-clip-text">
                       committed
                     </span>
                   </h2>
@@ -226,9 +220,9 @@ export default function AboutPage() {
             <TextWithComponent
               description={
                 <div>
-                  <h2 className="bg-gradient-to-r my-2 from-[#228B22] via-[#4AC63F] to-[#FFDD4C] text-transparent bg-clip-text font-semibold text-2xl">
+                  <h2 className="bg-gradient-to-bl my-2 from-[#228B22] via-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text font-semibold text-2xl">
                     And draw our{" "}
-                    <span className="bg-gradient-to-tr from-[#4AC63F] via-[#FFDD4C] to-[#FFDD4C] text-transparent bg-clip-text">
+                    <span className="bg-gradient-to-tr from-[#4AC63F] via-[#FFDD4C] to-[#0000001A] text-transparent bg-clip-text">
                       identity
                     </span>
                   </h2>
@@ -253,6 +247,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
               {rvmContent.map((card, index) => (
                 <WhiteBgCard
+                  iconPath="/assets/images/all/green-ball.svg"
                   className="border-none"
                   title={card.title}
                   key={index}
@@ -284,7 +279,7 @@ export default function AboutPage() {
 
         {/* call to action */}
         <CtaCard
-          className="bg-white py-0 md:flex-row-reverse shadow-lg pl-[0rem] rounded-2xl overflow-hidden"
+          className="bg-white py-0 md:flex-row-reverse shadow-lg rounded-2xl overflow-hidden"
           item={
             <TextWithComponent
               title={
@@ -293,7 +288,7 @@ export default function AboutPage() {
                 </p>
               }
               description={
-                <p className="text-black/70 mt-4">
+                <p className="text-black/70 mt-4 lg:w-4/5">
                   We believe in the power of collaboration to drive positive
                   change. And the capability of technology to transform lives.
                   We invite you to join this once-in-a- generation revolution.

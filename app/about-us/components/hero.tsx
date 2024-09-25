@@ -25,15 +25,15 @@ export default function AboutHero() {
               <div>
                 <h1 className="lg:text-6xl text-2xl xl:text-[4rem] text-center md:text-start font-semibold">
                   Connecting communities. <br />
-                  <span className="bg-gradient-to-r from-[#228B22] via-[#4AC63F] to-[#FFDD4C] text-transparent bg-clip-text">
+                  <span className="bg-gradient-to-br from-[#228B22] via-[#4AC63FCF] to-[#A6A6A6] text-transparent bg-clip-text">
                     To shape the future
                   </span>
                 </h1>
               </div>
             </div>
-            <div className="lg:h-32 xl:h-[40rem] lg:w-8/12 ms-auto relative overflow-hidden lg:overflow-visible z-40 items-center flex">
+            {/* <div className="lg:h-32 xl:h-[40rem] lg:w-8/12 ms-auto relative overflow-hidden lg:overflow-visible z-40 items-center flex">
               <ContactForm title="Leave us a message" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

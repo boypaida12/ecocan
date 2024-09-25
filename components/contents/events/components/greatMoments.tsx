@@ -8,7 +8,7 @@ const GreatMoments = () => {
   return (
     <div className='max-w-[65rem] mx-auto p-8'>
       <CtaCard
-        className="bg-[url('/assets/images/events/great.png')] py-[4.75rem] bg-cover bg-no-repeat relative after:absolute after:inset-0 after:content-['']  overflow-hidden z-50 flex items-center h-[33rem]"
+        className="bg-[url('/assets/images/events/great.png')] ps-[7.25rem] py-[4.75rem] bg-cover bg-no-repeat relative after:absolute after:inset-0 after:content-['']  overflow-hidden z-50 flex items-center h-[33rem]"
         item={
           <TextWithComponent
             title={

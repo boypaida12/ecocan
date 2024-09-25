@@ -8,10 +8,12 @@ export default function WhiteBgCard({
   title,
   content,
   className,
+  iconPath
 }: {
   title?: string;
   content?: React.ReactNode;
   className?: string;
+  iconPath: string;
 }) {
   return (
     <Card
@@ -23,7 +25,7 @@ export default function WhiteBgCard({
       <CardHeader className="pb-2">
         <CardTitle className="text-xl font-semibold">
           <Image
-            src={greenBall}
+            src={iconPath}
             alt="green icon"
             className="w-10 h-10"
             width={40}

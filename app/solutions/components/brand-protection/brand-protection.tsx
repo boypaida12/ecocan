@@ -10,6 +10,7 @@ import { Card } from "@/components/ui/card";
 import StyledText from "@/components/shared/styled-text";
 import HyperLink from "@/components/shared/hyperlink/hyperlink";
 import CheckList from "@/components/contents/consumer/components/checklist";
+import WasteLitter from "./components/waste-litter";
 
 const steps = [
   {
@@ -84,25 +85,9 @@ const stepsTwo = [
   },
 ];
 
-const rvmContent = [
-  {
-    content:
-      "When you carelessly discard empties instead of returning them to ECO-stations, you’ll be helping counterfeit criminals. Who will simply pick the empties, fill them with fake drinks, and put them back to the market. And they’ll look exactly similar as genuine drinks",
-  },
-  {
-    content: (
-      <p>
-        But with <HyperLink link="EcocanApp" href="/" />, you now have the power
-        to identify fakes. Nevertheless, ensure to return your empties to
-        ECO-stations, that we completely starve these criminals{" "}
-      </p>
-    ),
-  },
-];
-
 export default function BrandProtection() {
   return (
-    <div className="space-y-24">
+    <div className="space-y-48">
       <TextWithComponent
         title="Brand Protection"
         description={
@@ -118,38 +103,8 @@ export default function BrandProtection() {
         }
       />
       <GlobalCountryExample />
-      <ImageAndItem
-        className="gap-12"
-        image={
-          <Image
-            src={beachBottle}
-            alt="beach bottle"
-            width={1000}
-            height={1000}
-            className="w-full h-full"
-          />
-        }
-        item={
-          <TextWithCards
-            className="w-full"
-            title="Waste litter => Counterfeit trade"
-            description="Counterfeit criminals often lack capacity to legitimately acquire new bottles for their illegal fake drinks. Instead, they rely on genuine used empties carelessly thrown in the environment, as their primary source of packaging."
-            customCard={
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-                {rvmContent.map((card, index) => (
-                  <Card key={index} className="border-none shadow-lg p-4">
-                    <StyledText>
-                      <div className="text-accent/50 text-sm">
-                        {card.content}
-                      </div>
-                    </StyledText>
-                  </Card>
-                ))}
-              </div>
-            }
-          />
-        }
-      />
+      {/* waste litter */}
+      <WasteLitter/>
       {/* much needed intervention */}
       <TextWithComponent
         title="Much needed intervention"
@@ -185,7 +140,7 @@ export default function BrandProtection() {
       />
       {/* ecocan tnt */}
       <ImageAndItem
-        className="gap-12"
+        className="gap-12 items-center"
         image={
           <Image
             src={computer}
@@ -217,7 +172,7 @@ export default function BrandProtection() {
       />
       <TextWithComponent
         description={
-          <div>
+          <div className="lg:w-3/4">
             <p>
               <HyperLink link="ECOCAN Security Codes" href="/" /> are
               serialized, blockchain-compatible, anti-copy codes. Which are only
