@@ -86,7 +86,7 @@ export default function SolutionsContent({
           <div className="lg:max-w-[70rem] xl:max-w-[80rem] mx-auto">
             <ImageAndItem
               title="Our Offering"
-              subtitle="Brand Protection | Packaging recycling | Consumer engagement | Online Sales"
+              subtitle="Brand Protection | Packaging recycling | All-in-one! | Consumer engagement | Online Sales"
               mainClassName="text-accent font-light text-lg"
             />
             {/* expandable cards */}

@@ -185,7 +185,7 @@ export default function CourierContent() {
 
       {/* image text */}
       <ImageTextOverlay
-        className="bg-[url('/assets/images/courier/sustainable-hustle.svg')] after:bg-black/50 lg:h-[39rem] flex items-center"
+        className="bg-[url('/assets/images/courier/sustainable-hustle.svg')] after:bg-black/40 lg:h-[39rem] flex items-center"
         item={
           <div className="w-5/6 mx-auto">
             <h2 className="text-[2rem] font-bold">Maximise your earnings</h2>

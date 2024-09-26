@@ -27,6 +27,7 @@ import { ReusableAccordion } from "@/components/shared/accordion";
 import WasteLitter from "@/app/solutions/components/brand-protection/components/waste-litter";
 import IdentifyGenuine from "./components/identify-genuine";
 import News from "./components/news";
+import ReturnEmpties from "./components/return-empties";
 
 const images = [
   "/assets/images/consumer/get-app.svg",
@@ -272,42 +273,7 @@ export default function ConsumerContent() {
       <div className="max-w-[65rem] mx-auto space-y-32 px-4 xl:px-0">
         <WasteLitter />
         <IdentifyGenuine />
-        <ImageAndItem
-          className="gap-12 items-center"
-          image={
-            <Image
-              src="/assets/images/consumer/return-empties.svg"
-              width={1000}
-              height={1000}
-              className="w-full h-full"
-              priority
-              alt="How to return eligible empties"
-            />
-          }
-          item={
-            <TextWithComponent
-              title="How to return eligible empties"
-              description={
-                <>
-                  <span>
-                    Only return intact empties; not compacted nor deformed, and
-                    with ECOCAN security codes clearly visible. Of Aluminium
-                    cans, PET plastic bottles, glass bottles and beverage
-                    cartons. <br />
-                    That are listed and published on the ECOCAN website and
-                    ECO-products section of EcocanApp
-                  </span>
-                </>
-              }
-              component={
-                <ReusableAccordion
-                  items={accordionItems}
-                  defaultOpenItems={[]}
-                />
-              }
-            />
-          }
-        />
+        <ReturnEmpties />
         <News />
         {/* stay in the loop */}
         <MultipleImagesAndItem
