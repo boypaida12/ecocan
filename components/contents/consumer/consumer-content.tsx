@@ -93,31 +93,31 @@ const cardContent = [
 const rvmContent = [
   {
     icon: <LucideRecycle />,
-    iconPath: "/assets/images/all/light-green.svg",
+    iconPath: "/assets/images/all/scan.svg",
     content:
       "Located at selected ECO-Stations, ECOnsumers identify themselves with their ECOCAN ID, before placing empties into the RVMs' in-feed. It then authenticates the empties by taking up to 1000 pictures/second, to verify them based on ECOCAN security codes, shape, size, weight & material",
   },
   {
     icon: <LucideAward />,
-    iconPath: "/assets/images/all/light-green.svg",
+    iconPath: "/assets/images/all/cash.svg",
     content:
       "If the empty is eligible, the RVM accepts it and calculates the deposit owed, which is then digitally refunded into ECO-wallets. ECOnsumers can transact with the deposits to make retail purchases, send it to other ECOnsumers, donate to charity, or cash out",
   },
   {
     icon: <LucideGem />,
-    iconPath: "/assets/images/all/light-green.svg",
+    iconPath: "/assets/images/all/measure.svg",
     content:
       "These machines are the world's smallest patented RVMs, measuring only 45.6 X 54.1 X 85 cm, yet equipped with capabilities of larger RVMs. Their compact size dramatically reduces floor space requirements, allowing them to be set up even in the smallest spaces",
   },
 ];
 
-const accordionItems = [
-  {
-    id: "item-1",
-    question: <p className="text-primary">See full ECO-products list below</p>,
-    answer: <CheckList items={steps} className="items-center" />,
-  },
-];
+// const accordionItems = [
+//   {
+//     id: "item-1",
+//     question: <p className="text-primary">See full ECO-products list below</p>,
+//     answer: <CheckList items={steps} className="items-center" />,
+//   },
+// ];
 
 export default function ConsumerContent() {
   const [selectedImage, setSelectedImage] = useState(0);
