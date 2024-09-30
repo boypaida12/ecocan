@@ -28,7 +28,7 @@ export default function HeroContainer() {
         </div>
         {Object.entries(tabContent).map(([tab, { content }]) => (
           <TabsContent key={tab} value={tab}>
-            <div className="mt-24">{content}</div>
+            <div className="mt-12">{content}</div>
           </TabsContent>
         ))}
         <div className="justify-center items-center flex pt-8">

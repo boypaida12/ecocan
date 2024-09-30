@@ -29,7 +29,7 @@ const HowTo: React.FC<HowToProps> = ({
     <div className="w-[31.3rem] h-[33.75rem] pl-[48px] ms-auto flex flex-col justify-center">
       <div className="mt-1 mb-8">
         <p className="text-2xl font-semibold pb-1">{itemsTitle}</p>
-        <p className="text-sm">{itemsSubtitle}</p>
+        <p className="text-base text-[#23262fcc]">{itemsSubtitle}</p>
       </div>
       {items.map((data) => (
         <ItemList

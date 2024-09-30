@@ -1,4 +1,4 @@
-import TextWithComponent from "@/components/contents/consumer/components/buy-online";
+import TextWithComponent from "@/components/contents/consumer/components/text-with-component";
 import CheckList from "@/components/contents/consumer/components/checklist";
 import ImageTextOverlay from "@/components/contents/courier/components/imageText";
 import HyperLink from "@/components/shared/hyperlink/hyperlink";
@@ -115,7 +115,7 @@ const howToData = [
 
 export default function OnlineSales() {
   return (
-    <div className="space-y-32">
+    <div className="space-y-24">
       <TextWithComponent
         title="Online Sales"
         description={

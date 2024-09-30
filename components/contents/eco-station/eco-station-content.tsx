@@ -19,7 +19,7 @@ import CtaCard from "@/components/shared/cta-card/cta-card";
 import PrimaryButton from "@/components/shared/primary-btn";
 import { Button } from "@/components/ui/button";
 import HowTo from "../../shared/HowTo";
-import TextWithComponent from "../consumer/components/buy-online";
+import TextWithComponent from "../consumer/components/text-with-component";
 import SellMore from "./components/sell-more";
 import { ReusableAccordion } from "../../shared/accordion";
 import News from "../consumer/components/news";
@@ -98,7 +98,7 @@ const howToData = [
 
 export default function EcoStationContent() {
   return (
-    <div className="space-y-32 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+    <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
       <TextWithCards
         title="Why become an ECO-station"
         description="It's a win-win-win; while you help keep the environment clean by accepting empties, and issuing deposits to ECOnsumers, we’ll bring more business to you"

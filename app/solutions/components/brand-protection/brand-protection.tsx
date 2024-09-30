@@ -1,4 +1,4 @@
-import TextWithComponent from "@/components/contents/consumer/components/buy-online";
+import TextWithComponent from "@/components/contents/consumer/components/text-with-component";
 import React from "react";
 import GlobalCountryExample from "./components/global-country-example";
 import ImageAndItem from "@/components/shared/image-and-item/image-and-item";
@@ -87,7 +87,7 @@ const stepsTwo = [
 
 export default function BrandProtection() {
   return (
-    <div className="space-y-32">
+    <div className="space-y-24">
       <TextWithComponent
         title="Brand Protection"
         description={

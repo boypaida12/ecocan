@@ -1,6 +1,6 @@
 import React from "react";
 import CtaCard from "@/components/shared/cta-card/cta-card";
-import TextWithComponent from "../../consumer/components/buy-online";
+import TextWithComponent from "../../consumer/components/text-with-component";
 
 const GreatMoments = () => {
   return (

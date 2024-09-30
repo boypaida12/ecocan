@@ -5,7 +5,7 @@ import HyperLink from "@/components/shared/hyperlink/hyperlink";
 import ImageAndItem from "@/components/shared/image-and-item/image-and-item";
 import Image from "next/image";
 import CtaCard from "@/components/shared/cta-card/cta-card";
-import TextWithComponent from "@/components/contents/consumer/components/buy-online";
+import TextWithComponent from "@/components/contents/consumer/components/text-with-component";
 import CheckList from "@/components/contents/consumer/components/checklist";
 import NavigationBar from "@/components/shared/navbar/navbar";
 import PrimaryButton from "@/components/shared/primary-btn";
@@ -93,7 +93,7 @@ export default function SolutionsContent({
             <ExpandableCards cardData={cardData} onCardExpand={onCardExpand} />
           </div>
         </div>
-        <div className="space-y-32 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+        <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
           {/* online Sales */}
           <TextWithComponent
             title="Online Sales"

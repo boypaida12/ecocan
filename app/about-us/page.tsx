@@ -1,6 +1,6 @@
 import React from "react";
 import AboutHero from "./components/hero";
-import TextWithComponent from "@/components/contents/consumer/components/buy-online";
+import TextWithComponent from "@/components/contents/consumer/components/text-with-component";
 import HyperLink from "@/components/shared/hyperlink/hyperlink";
 import ImageAndItem from "@/components/shared/image-and-item/image-and-item";
 import Image from "next/image";
@@ -80,7 +80,7 @@ export default function AboutPage() {
   return (
     <>
       <AboutHero />
-      <div className="space-y-32 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+      <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
         <TextWithCards
           title="Who is ECOCAN"
           subtitle={

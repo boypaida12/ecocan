@@ -1,4 +1,4 @@
-import TextWithComponent from "@/components/contents/consumer/components/buy-online";
+import TextWithComponent from "@/components/contents/consumer/components/text-with-component";
 import { ItemList } from "@/components/contents/courier/components/ItemList";
 import HyperLink from "@/components/shared/hyperlink/hyperlink";
 import ImageAndItem from "@/components/shared/image-and-item/image-and-item";
@@ -37,7 +37,7 @@ const howToData = [
 
 export default function PackagingRecycling() {
   return (
-    <div className="space-y-32">
+    <div className="space-y-24">
       <TextWithComponent
         title="Packaging Recycling"
         description={

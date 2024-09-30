@@ -23,11 +23,11 @@ const Timeline: React.FC<TimelineProps> = ({ title, subtitle, items, className }
 
       <div className="relative">
         {/* This div creates the vertical line */}
-        <div className={clsx("absolute left-1/2 top-0 bottom-[30%] w-0.5 bg-black transform -translate-x-1/2", className)}></div>
+        <div className={clsx("absolute left-[45%] top-0 bottom-[30%] w-[1px] bg-black transform -translate-x-1/2", className)}></div>
 
         {items.map((item, index) => (
           <div key={index} className="mb-8 flex items-stretch">
-            <div className="w-1/2 pr-8 flex">
+            <div className="w-[45%] pr-8 flex">
               <div className="relative w-11/12">
                 <div className="w-full h-[12.5rem] rounded-2xl overflow-hidden relative">
                   <Image
@@ -38,10 +38,10 @@ const Timeline: React.FC<TimelineProps> = ({ title, subtitle, items, className }
                   />
                 </div>
                 {/* This creates the horizontal line connecting to the vertical line */}
-                <div className="absolute top-0 lg:-right-[18%] xl:-right-[17.75%] w-3 h-3 bg-black"></div>
+                <div className="absolute top-0 lg:-right-[18%] xl:-right-[18.75%] w-3 h-3 bg-black"></div>
               </div>
             </div>
-            <div className="w-1/2 pl-8 flex flex-col">
+            <div className="w-[55%] flex flex-col">
               <div className="relative w-11/12 ms-auto">
                 <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                 <p>{item.description}</p>

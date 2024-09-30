@@ -32,7 +32,7 @@ export default function EcoStationHero() {
         linkColor="text-white"
       />
       <div className="lg:h-[36rem] xl:h-[47.575rem]">
-        <div className="bg-[url('/assets/images/eco-station/eco-station-hero.jpeg')] lg:h-[36rem] xl:h-[44rem] lg:bg-contain xl:bg-cover relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:z-10">
+        <div className="bg-[url('/assets/images/eco-station/eco-station-hero.jpeg')] bg-black lg:h-[36rem] xl:h-[45rem] lg:bg-contain xl:bg-cover xl:bg-[-200px] bg-no-repeat relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:z-10">
           <div className="xl:max-w-[65rem] flex flex-col md:flex md:flex-row mx-auto lg:my-0 lg:gap-12 lg:pt-[3.125rem] xl:pt-0">
             <div className="flex flex-col gap-4 lg:mt-28 xl:mt-60 md:w-1/2 px-4 xl:px-0 text-white z-50">
               <div>
@@ -51,7 +51,7 @@ export default function EcoStationHero() {
                 </p>
               </div>
             </div>
-            <div className="lg:h-40 xl:h-[40rem] xl:w-5/12 ms-auto relative overflow-hidden lg:overflow-visible z-40 items-center flex">
+            <div className="lg:h-40 xl:h-[40rem] xl:w-6/12 ms-auto relative overflow-hidden lg:overflow-visible z-40 items-center flex">
               <HeroForm title="Let's grow together" />
             </div>
           </div>

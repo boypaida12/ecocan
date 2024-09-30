@@ -19,25 +19,25 @@ import Image from "next/image";
 import PrimaryButton from "@/components/shared/primary-btn";
 import { Button } from "@/components/ui/button";
 import CtaCard from "@/components/shared/cta-card/cta-card";
-import TextWithComponent from "../consumer/components/buy-online";
+import TextWithComponent from "../consumer/components/text-with-component";
 import ExpandableContent from "../consumer/components/expandable-content";
 import SimpleCard from "./components/simpleCard";
 
 const cardContent = [
   {
-    src: "/assets/images/producer/image2.png",
+    src: "/assets/images/producer/revenue.svg",
     content: "Boost your revenues",
   },
   {
-    src: "/assets/images/producer/image3.png",
+    src: "/assets/images/producer/efficiency.svg",
     content: "Optimise your efficiency",
   },
   {
-    src: "/assets/images/producer/image4.png",
+    src: "/assets/images/producer/club.svg",
     content: "Protect your customers",
   },
   {
-    src: "/assets/images/producer/image5.png",
+    src: "/assets/images/producer/planet.svg",
     content: "Preserve the planet",
   },
 ];
@@ -202,7 +202,7 @@ const howToData = [
 export default function ProducerContent() {
   return (
     <div className="w-full">
-      <div className="space-y-32 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+      <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
         <TextWithCards
           title="Do more in the ECOmmunity"
           description="Directly engage with ECOnsumers to elevate your presence, amplify your impact and shape your strategies"
@@ -280,7 +280,7 @@ export default function ProducerContent() {
           />
         </div>
       </div>
-      <div className="space-y-32 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+      <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
         {/* faq */}
         <FaqSection />
 

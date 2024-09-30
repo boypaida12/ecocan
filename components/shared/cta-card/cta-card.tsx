@@ -14,7 +14,7 @@ export default function CtaCard({ item, className, image, itemClass }: CtaCardPr
       <div
         className={clsx("flex mx-auto mt-[6.25rem] rounded-2xl", className)}
       >
-        <div className={clsx("w-3/5", itemClass)}>{item}</div>
+        <div className={clsx("w-3/5 self-center", itemClass)}>{item}</div>
         <div className="">{image}</div>
       </div>
     </div>

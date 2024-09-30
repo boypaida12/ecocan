@@ -36,7 +36,7 @@ export default function DefaultHero() {
                   </span>
                 </h1>
               </div>
-              <div className="text-sm lg:text-base space-y-12">
+              <div className="text-sm lg:text-base space-y-12 xl:space-y-6">
                 <p className="tracking-wide text-white text-center md:text-start">
                   At ECOCAN, sustainability goes beyond environmental
                   conservation, to nurturing healthy and thriving communities.

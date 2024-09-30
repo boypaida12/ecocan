@@ -147,7 +147,7 @@ export default function CourierContent() {
     setSelectedImage(id - 1);
   };
   return (
-    <div className="space-y-32 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+    <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
       <TextWithCards
         title="Let’s drive your hustle forward"
         customCard={<CustomCard features={featureData} />}
@@ -185,7 +185,7 @@ export default function CourierContent() {
 
       {/* image text */}
       <ImageTextOverlay
-        className="bg-[url('/assets/images/courier/sustainable-hustle.svg')] after:bg-black/40 lg:h-[39rem] flex items-center"
+        className="bg-[url('/assets/images/courier/sustainable-hustle.svg')] lg:h-[39rem] flex items-center"
         item={
           <div className="w-5/6 mx-auto">
             <h2 className="text-[2rem] font-bold">Maximise your earnings</h2>

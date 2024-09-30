@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import TextWithComponent from "../consumer/components/buy-online";
+import TextWithComponent from "../consumer/components/text-with-component";
 import HyperLink from "@/components/shared/hyperlink/hyperlink";
 import ImageAndItem from "@/components/shared/image-and-item/image-and-item";
 import Image from "next/image";
@@ -13,7 +13,7 @@ import Matters from "./components/matters";
 
 export default function RecyclerContent() {
   return (
-    <div className="space-y-32 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+    <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
       <div className="space-y-12">
         <TextWithComponent
           title="Closed-loop recycling"

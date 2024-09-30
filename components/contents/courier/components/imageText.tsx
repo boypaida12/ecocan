@@ -11,7 +11,7 @@ const ImageTextOverlay = ({ item, className }: ImageTextOverlayProps) => {
   return (
     <div
       className={clsx(
-        "text-white w-full rounded-2xl px-[60px] relative bg-cover bg-center after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-80 after:-z-10 overflow-hidden z-50",
+        "text-white w-full rounded-2xl px-[60px] relative bg-cover bg-center after:absolute after:inset-0 after:content-[''] after:bg-black/40 after:opacity-80 after:-z-10 overflow-hidden z-50",
         className
       )}
     >

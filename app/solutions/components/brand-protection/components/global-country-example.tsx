@@ -1,4 +1,4 @@
-import TextWithComponent from "@/components/contents/consumer/components/buy-online";
+import TextWithComponent from "@/components/contents/consumer/components/text-with-component";
 import CheckList from "@/components/contents/consumer/components/checklist";
 import ImageTextOverlay from "@/components/contents/courier/components/imageText";
 import TextWithCards from "@/components/shared/text-with-cards/text-with-cards";

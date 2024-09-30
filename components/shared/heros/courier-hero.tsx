@@ -37,7 +37,7 @@ export default function CourierHero() {
       <div className="lg:h-[36rem] xl:h-[47.575rem]">
         <div className="bg-[url('/assets/images/courier/courier-bg.jpeg')] lg:h-[36rem] xl:h-[48rem] bg-cover relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:z-10">
           <div className="xl:max-w-[65rem] flex flex-col md:flex md:flex-row mx-auto lg:gap-12 lg:pt-[3.125rem] xl:pt-0">
-            <div className="flex flex-col gap-4 lg:mt-28 xl:mt-60 md:w-1/2 px-4 xl:px-0 text-white z-50">
+            <div className="flex flex-col gap-4 lg:mt-28 xl:mt-80 md:w-1/2 px-4 xl:px-0 text-white z-50">
               <div>
                 <h1 className="lg:text-6xl text-2xl xl:text-[4rem] text-center md:text-start font-semibold">
                   Every day is
@@ -57,7 +57,7 @@ export default function CourierHero() {
             <div className="lg:h-[32rem] xl:h-[44rem] md:w-1/2 relative overflow-hidden lg:overflow-visible z-20">
               <Image
                 src="/assets/images/courier/side-hustle.png"
-                className="absolute max-w-[20rem] xl:max-w-[32rem] h-auto left-8 top-48"
+                className="absolute max-w-[20rem] xl:max-w-[32rem] h-auto left-12 xl:left-24 top-24 xl:top-56"
                 alt="ecocan mobile app"
                 width={700}
                 height={900}

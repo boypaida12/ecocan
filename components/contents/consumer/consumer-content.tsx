@@ -13,7 +13,7 @@ import {
   LucideRecycle,
 } from "lucide-react";
 import MultipleImagesAndItem from "@/components/shared/multiple-images-and-item/multiple-images-and-item";
-import TextWithComponent from "./components/buy-online";
+import TextWithComponent from "./components/text-with-component";
 import { Input } from "@/components/ui/input";
 import { FaqSection } from "./components/faq";
 import CtaCard from "@/components/shared/cta-card/cta-card";
@@ -28,6 +28,10 @@ import WasteLitter from "@/app/solutions/components/brand-protection/components/
 import IdentifyGenuine from "./components/identify-genuine";
 import News from "./components/news";
 import ReturnEmpties from "./components/return-empties";
+import BuyOnline from "./components/buy-online";
+import Exclusive from "./components/exclusive";
+import Newsletter from "./components/newsletter";
+import CtaCardComponent from "./components/cta-card";
 
 const images = [
   "/assets/images/consumer/get-app.svg",
@@ -128,8 +132,8 @@ export default function ConsumerContent() {
 
   return (
     <>
-      <div className="space-y-32 py-8 px-4 xl:px-0">
-        <div className="max-w-[65rem] mx-auto space-y-32">
+      <div className="space-y-24 py-8 px-4 xl:px-0">
+        <div className="max-w-[65rem] mx-auto space-y-24">
           <TextWithCards
             title="Get Started"
             description={
@@ -160,8 +164,17 @@ export default function ConsumerContent() {
           />
         </div>
       </div>
+      {/* buy online */}
+      <BuyOnline />
+      {/* exclusive benefits */}
+      <Exclusive />
 
-      <div className="bg-[#B2B2B240] py-8 my-32">
+      <div className="max-w-[65rem] mx-auto space-y-24 px-4 xl:px-0">
+        <WasteLitter />
+        <IdentifyGenuine />
+        <ReturnEmpties />
+      </div>
+      <div className="bg-[#B2B2B240] py-8 my-24">
         <div className="max-w-[65rem] mx-auto px-4 xl:px-0">
           <ImageAndItem
             className="md:flex-row-reverse items-center"
@@ -205,155 +218,12 @@ export default function ConsumerContent() {
         </div>
       </div>
 
-      {/* buy online */}
-      <div className="max-w-[65rem] mx-auto mb-32 px-4 xl:px-0">
-        <ImageAndItem
-          className="gap-12 items-center"
-          image={
-            <Image
-              src="/assets/images/consumer/buy-online-consumer.svg"
-              alt="Online store"
-              className="object-cover rounded-3xl bg-primary"
-              priority
-              width={500}
-              height={100}
-            />
-          }
-          item={
-            <div className="w-4/5">
-              <TextWithComponent
-                title="Buy Online"
-                description={
-                  <p>
-                    Discover new <HyperLink link="ECO-products" href="/" /> on
-                    ECOCAN market, and place your order with just a few clicks.
-                    After consumption, conveniently request for empties pick up
-                    from your door, for recycling
-                  </p>
-                }
-                component={<PrimaryButton buttonText="Learn more" />}
-              />
-            </div>
-          }
-        />
-      </div>
-      {/* exclusive benefits */}
-      <div className="bg-[url('/assets/images/consumer/bananas-bg.svg')] h-[36rem] bg-center bg-cover flex items-center mb-32">
-        <div className="max-w-[65rem] mx-auto px-4 xl:px-0">
-          <TextWithCards
-            title="Exclusive benefits for ECOnsumers"
-            subtitle={
-              <span className="bg-gradient-to-t text-2xl from-[#FFDD4C] to-[#4AC63F] text-transparent bg-clip-text font-semibold">
-                You&apos;ll go bananas!
-              </span>
-            }
-            description={
-              <span>
-                Enjoy unbelievably jaw dropping benefits by simply joining the{" "}
-                <HyperLink link="ECOmmunity" href="/" />.
-              </span>
-            }
-            className="mx-auto text-center"
-            customCard={
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 xl:w-[65rem]">
-                {cardContent.map((card, index) => (
-                  <WhiteBgCard
-                    className="border-none"
-                    iconPath={card.iconPath}
-                    key={index}
-                    title={card.title}
-                    content={<ExpandableContent content={card.content} />}
-                  />
-                ))}
-              </div>
-            }
-          />
-        </div>
-      </div>
-      <div className="max-w-[65rem] mx-auto space-y-32 px-4 xl:px-0">
-        <WasteLitter />
-        <IdentifyGenuine />
-        <ReturnEmpties />
+      <div className="max-w-[65rem] mx-auto space-y-24 px-4 xl:px-0">
         <News />
         {/* stay in the loop */}
-        <MultipleImagesAndItem
-          item={
-            <TextWithComponent
-              title="Stay in the loop"
-              description="Subscribe to our newsletter and stay updated with what's happening within the Ecommunity."
-              component={
-                <div className="mb-4 border border-[#E6E8EC] bg-white rounded-full flex items-center w-3/5">
-                  <Input
-                    placeholder="Enter your email"
-                    className="text-[#777E90] border-none rounded-full focus:outline-none focus:border-none focus:ring-0"
-                  />
-                  <Image
-                    src="/assets/icons/right-arrow.svg"
-                    className="m-2"
-                    alt="right chevron arrow"
-                    width={32}
-                    height={32}
-                  />
-                </div>
-              }
-            />
-          }
-          multipleImages={
-            <Image
-              src="/assets/images/courier/courier-four-img.svg"
-              alt="multiple image"
-              width={500}
-              height={500}
-              className="w-auto h-auto"
-            />
-          }
-        />
+        <Newsletter />
         <FaqSection />
-        <CtaCard
-          className="bg-[url('/assets/images/consumer/consumer-cta-card.jpeg')] py-[3.75rem] ps-[7.25rem] bg-cover bg-center relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:-z-10 overflow-hidden z-50"
-          item={
-            <TextWithComponent
-              title={
-                <h2 className="text-white text-5xl mb-3">
-                  Cheers to ECO-
-                  <br />
-                  friendly savings!
-                </h2>
-              }
-              description={
-                <span className="text-white">
-                  Save BIG, while, Saving the planet. Only with <br />{" "}
-                  EcocanApp.
-                </span>
-              }
-              component={
-                <div className="flex gap-4">
-                  <PrimaryButton
-                    buttonText="Download App"
-                    buttonIcon={<LucideDownload />}
-                  />
-                  <Button
-                    variant="outline"
-                    className="bg-transparent hover:bg-transparent border-white text-white hover:text-white rounded-full h-[3.25rem] py-3 px-8 text-lg"
-                  >
-                    Become an Econsumer
-                  </Button>
-                </div>
-              }
-            />
-          }
-          image={
-            <div className="w-[19.75rem] h-[22.625rem] mx-auto">
-              <Image
-                src="/assets/images/mobile-alt.svg"
-                alt=""
-                width={100}
-                height={100}
-                className="w-full h-full"
-              />
-            </div>
-          }
-        />
+        <CtaCardComponent />
       </div>
     </>
   );

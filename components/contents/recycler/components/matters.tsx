@@ -1,6 +1,6 @@
 import ImageAndItem from "@/components/shared/image-and-item/image-and-item";
 import React from "react";
-import TextWithComponent from "../../consumer/components/buy-online";
+import TextWithComponent from "../../consumer/components/text-with-component";
 import CheckList from "../../consumer/components/checklist";
 import Image from "next/image";
 
