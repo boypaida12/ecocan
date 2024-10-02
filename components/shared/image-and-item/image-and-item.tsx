@@ -16,6 +16,7 @@ interface ImageAndItemProps {
 export default function ImageAndItem({
   title,
   subtitle,
+  description,
   fDivClassName,
   item,
   mainClassName,
@@ -34,9 +35,10 @@ export default function ImageAndItem({
         >
           {subtitle}
         </p>
+        <p className="text-accent font-light text-lg">{description}</p>
       </div>
       <div className={clsx("flex flex-col md:flex-row", className)}>
-        <div className="space-y-4 relative">{image}</div>
+        <div className="space-y-4 relative w-1/2">{image}</div>
         <div className="md:w-1/2 space-y-4 me-auto">{item}</div>
       </div>
     </div>

@@ -6,6 +6,7 @@ import TextWithCards from "@/components/shared/text-with-cards/text-with-cards";
 import WhiteBgCard from "@/components/shared/white-bg-card";
 import {
   LucideAward,
+  LucideChevronRight,
   LucideDownload,
   LucideGem,
   LucideRecycle,
@@ -22,6 +23,10 @@ import CtaCard from "@/components/shared/cta-card/cta-card";
 import TextWithComponent from "../consumer/components/text-with-component";
 import ExpandableContent from "../consumer/components/expandable-content";
 import SimpleCard from "./components/simpleCard";
+import AlchemyControls from "./components/alchemy-controls";
+import AlchemyOnlineSales from "./components/alchemy-online-sales";
+import AlchemyEngagement from "./components/alchemy-engagement";
+
 
 const cardContent = [
   {
@@ -42,21 +47,38 @@ const cardContent = [
   },
 ];
 
+
+
 const alchemyContent = [
   {
     icon: "/assets/images/producer/alchemy-1.svg",
     title: "Brand protection",
     content: "We give you the controls",
+    child: (
+      <>
+        <AlchemyControls/>
+      </>
+    ),
   },
   {
     icon: "/assets/images/producer/alchemy-2.svg",
     title: "Online Sales",
     content: "We live in a world of Super Convenience ",
+    child: (
+      <>
+        <AlchemyOnlineSales/>
+      </>
+    ),
   },
   {
     icon: "/assets/images/producer/alchemy-3.svg",
     title: "Engagement",
     content: "Econsumers care more than just the price",
+    child: (
+      <>
+        <AlchemyEngagement/>
+      </>
+    ),
   },
 ];
 
@@ -202,7 +224,7 @@ const howToData = [
 export default function ProducerContent() {
   return (
     <div className="w-full">
-      <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+      <div className="space-y-24 py-8 max-w-[69.375rem] mx-auto px-4 xl:px-0">
         <TextWithCards
           title="Do more in the ECOmmunity"
           description="Directly engage with ECOnsumers to elevate your presence, amplify your impact and shape your strategies"
@@ -256,7 +278,7 @@ export default function ProducerContent() {
 
       {/* alchemy */}
       <div className="bg-[url('/assets/images/consumer/bananas-bg.svg')] h-[36rem] bg-center bg-cover flex items-center my-16">
-        <div className="max-w-[65rem] mx-auto">
+        <div className="max-w-[69.375rem] mx-auto">
           <TextWithCards
             title="The Alchemy behind this ECOCAN magic"
             className="mx-auto text-center"
@@ -268,11 +290,8 @@ export default function ProducerContent() {
                     className="border-none"
                     key={index}
                     title={card.title}
-                    content={
-                      <div>
-                        <ExpandableContent content={card.content} />
-                      </div>
-                    }
+                    content={card.content}
+                    child={card.child}
                   />
                 ))}
               </div>
@@ -280,7 +299,7 @@ export default function ProducerContent() {
           />
         </div>
       </div>
-      <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+      <div className="space-y-24 py-8 max-w-[69.375rem] mx-auto px-4 xl:px-0">
         {/* faq */}
         <FaqSection />
 

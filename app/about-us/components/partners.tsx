@@ -21,13 +21,17 @@ const logos = [
       name: 'NEFCO',
       url: '/assets/images/about/support-5.svg',
     },
+    {
+      name: 'FINNPARTNERSHIP',
+      url: '/assets/images/about/support-6.svg',
+    },
   ]
   
   const Partners = () => {
     return (
       <div className="w-full py-12">
         <div className="flex w-full flex-col items-center justify-center px-4 md:px-8">
-          <div className="grid grid-cols-3 gap-x-6 md:grid-cols-5">
+          <div className="grid grid-cols-3 gap-x-6 md:grid-cols-6">
             {logos.map((logo, index) => (
               <Image
                 key={index}

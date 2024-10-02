@@ -32,67 +32,7 @@ import BuyOnline from "./components/buy-online";
 import Exclusive from "./components/exclusive";
 import Newsletter from "./components/newsletter";
 import CtaCardComponent from "./components/cta-card";
-
-const images = [
-  "/assets/images/consumer/get-app.svg",
-  "/assets/images/consumer/scan-image.svg",
-  "/assets/images/consumer/map-image.svg",
-  "/assets/images/consumer/pay-image.svg",
-  "/assets/images/consumer/earn-image.svg",
-];
-
-const iconSize = 18;
-
-const steps = [
-  {
-    id: 1,
-    description:
-      "Verify empties' eligibility by scanning attached ECOCAN security codes. DO NOT rely on your naked eye",
-  },
-  {
-    id: 2,
-    description:
-      "Use ECOCAN Map to navigate to the closest or your preferred ECO-station",
-  },
-  {
-    id: 3,
-    description:
-      "Hand-over your intact empties to ECO-Station Egents, who will verify them, and digitally issue applicable deposit into your ECO-Wallet",
-  },
-  {
-    id: 4,
-    description:
-      "Alternatively, feed eligible empties into ECOCAN R.V.M, which will verify the package and transfer applicable deposit into your ECO-Wallet",
-  },
-  {
-    id: 5,
-    description: "That's all. You can then spend your money as you please",
-  },
-];
-
-const cardContent = [
-  {
-    icon: <LucideRecycle />,
-    iconPath: "/assets/images/consumer/coupons.svg",
-    title: "Recycling Coupons",
-    content:
-      "Whenever you return 10 eligible empties for recycling, you'll get back the deposit money, plus, we'll reward you with up to 30% discount on your next purchase. Just activate your e-coupon while at the ECO-station, show the one-time coupon QR code to the Egent, and pay less! Or, if you order online, add the coupon to your order, to discount your bill",
-  },
-  {
-    icon: <LucideAward />,
-    title: "Loyalty Discounts",
-    iconPath: "/assets/images/consumer/discounts.svg",
-    content:
-      "Before you buy an ECO-product, authenticate it using your ECO-Scanner. And after enjoying the drink, return to ECO-stations the exact same empties you authenticated. And we'll reward you with up to a 50% loyalty discount on your next ECO-product purchase.",
-  },
-  {
-    icon: <LucideGem />,
-    title: "VIP treatment",
-    iconPath: "/assets/images/consumer/vip.svg",
-    content:
-      "Join the ECOmmunity, and we'll roll out the Red Carpet, just for YOU! And enjoy priority access to exclusive events. Skip the long queues by ordering your drinks in advance. Get exclusive behind-the-scenes content. And we might just spoil you by popping a complimentary drink!",
-  },
-];
+import TapTap from "./components/tap-tap";
 
 const rvmContent = [
   {
@@ -115,25 +55,11 @@ const rvmContent = [
   },
 ];
 
-// const accordionItems = [
-//   {
-//     id: "item-1",
-//     question: <p className="text-primary">See full ECO-products list below</p>,
-//     answer: <CheckList items={steps} className="items-center" />,
-//   },
-// ];
-
 export default function ConsumerContent() {
-  const [selectedImage, setSelectedImage] = useState(0);
-
-  const handleAccordionSelect = (id: number) => {
-    setSelectedImage(id - 1);
-  };
-
   return (
     <>
       <div className="space-y-24 py-8 px-4 xl:px-0">
-        <div className="max-w-[65rem] mx-auto space-y-24">
+        <div className="max-w-[69.375rem] mx-auto space-y-24">
           <TextWithCards
             title="Get Started"
             description={
@@ -146,22 +72,7 @@ export default function ConsumerContent() {
             }
             customCard={<CustomCard />}
           />
-          <ImageAndItem
-            className="gap-12 items-center"
-            title="How EcocanApp works"
-            subtitle="Tap Tap Tap, and, Wallah!"
-            image={
-              <Image
-                src={images[selectedImage]}
-                alt={`EcocanApp step ${selectedImage + 1}`}
-                className="object-cover"
-                width={500}
-                height={100}
-                priority
-              />
-            }
-            item={<AccordionDemo onSelect={handleAccordionSelect} />}
-          />
+          <TapTap/>
         </div>
       </div>
       {/* buy online */}
@@ -169,13 +80,13 @@ export default function ConsumerContent() {
       {/* exclusive benefits */}
       <Exclusive />
 
-      <div className="max-w-[65rem] mx-auto space-y-24 px-4 xl:px-0">
+      <div className="max-w-[69.375rem] mx-auto space-y-24 px-4 xl:px-0">
         <WasteLitter />
         <IdentifyGenuine />
         <ReturnEmpties />
       </div>
       <div className="bg-[#B2B2B240] py-8 my-24">
-        <div className="max-w-[65rem] mx-auto px-4 xl:px-0">
+        <div className="max-w-[69.375rem] mx-auto px-4 xl:px-0">
           <ImageAndItem
             className="md:flex-row-reverse items-center"
             image={
@@ -218,7 +129,7 @@ export default function ConsumerContent() {
         </div>
       </div>
 
-      <div className="max-w-[65rem] mx-auto space-y-24 px-4 xl:px-0">
+      <div className="max-w-[69.375rem] mx-auto space-y-24 px-4 xl:px-0">
         <News />
         {/* stay in the loop */}
         <Newsletter />

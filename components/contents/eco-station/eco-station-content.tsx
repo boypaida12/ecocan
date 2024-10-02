@@ -98,7 +98,7 @@ const howToData = [
 
 export default function EcoStationContent() {
   return (
-    <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+    <div className="space-y-24 py-8 max-w-[69.375rem] mx-auto px-4 xl:px-0">
       <TextWithCards
         title="Why become an ECO-station"
         description="It's a win-win-win; while you help keep the environment clean by accepting empties, and issuing deposits to ECOnsumers, we’ll bring more business to you"

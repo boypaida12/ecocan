@@ -1,55 +1,54 @@
-import React, { useState, useEffect } from "react";
-import Image from "next/image";
-import { CardData } from "@/types/card-data";
+import React, { useState } from 'react';
+import BrandProtectionCard from './cards/brand-protection-card';
+import ConsumerEngagementCard from './cards/consumer-engagement-card';
+import OnlineSalesCard from './cards/online-sales-card';
+import PackagingRecyclingCard from './cards/packaging-recycling-card';
+import { CardData } from '@/types/card-data';
 
 interface ExpandableCardsProps {
   cardData: CardData[];
   onCardExpand: (card: CardData) => void;
 }
 
-const ExpandableCards: React.FC<ExpandableCardsProps> = ({
-  cardData,
-  onCardExpand,
-}) => {
-  const consumerEngagementCardId =
-    cardData.find((card) => card.title === "Brand Protection")?.id || 1;
+const ExpandableCards: React.FC<ExpandableCardsProps> = ({ cardData, onCardExpand }) => {
+  const [hoveredCardId, setHoveredCardId] = useState<number | null>(null);
 
-  const [activeCardId, setActiveCardId] = useState<number>(
-    consumerEngagementCardId
-  );
-
-  useEffect(() => {
-    setActiveCardId(consumerEngagementCardId);
-  }, [consumerEngagementCardId]);
-
-  const handleCardClick = (card: CardData) => {
-    if (activeCardId === card.id) {
-      onCardExpand(card);
-    } else {
-      setActiveCardId(card.id);
+  const handleCardClick = (id: number) => {
+    if (id !== 1) {
+      const clickedCard = cardData.find(card => card.id === id);
+      if (clickedCard) {
+        onCardExpand(clickedCard);
+      }
     }
   };
 
+  const isCardActive = (id: number) => id === 1 ? hoveredCardId === null : hoveredCardId === id;
+
   return (
-    <div className="flex xl:space-x-1">
-      {cardData.map((card) => (
-        <div
-          key={card.id}
-          className={`relative transition-all duration-300 ${
-            activeCardId === card.id
-              ? "w-[45.5625rem] cursor-pointer"
-              : "w-[12.25rem] xl:h-[29.4375rem] lg:h-80"
-          } rounded-2xl overflow-hidden`}
-          onClick={() => handleCardClick(card)}
-        >
-          <Image
-            src={activeCardId === card.id ? card.imageColor : card.imageGrey}
-            alt={card.title}
-            layout="fill"
-            className="xl:object-cover"
-          />
-        </div>
-      ))}
+    <div className="flex space-x-3 h-96 overflow-hidden">
+      <BrandProtectionCard
+        isAnyOtherCardHovered={hoveredCardId !== null && hoveredCardId !== 1}
+        onMouseEnter={() => setHoveredCardId(1)}
+        onMouseLeave={() => setHoveredCardId(null)}
+      />
+      <PackagingRecyclingCard
+        isActive={isCardActive(2)}
+        onClick={() => handleCardClick(2)}
+        onMouseEnter={() => setHoveredCardId(2)}
+        onMouseLeave={() => setHoveredCardId(null)}
+      />
+      <ConsumerEngagementCard
+        isActive={isCardActive(3)}
+        onClick={() => handleCardClick(3)}
+        onMouseEnter={() => setHoveredCardId(3)}
+        onMouseLeave={() => setHoveredCardId(null)}
+      />
+      <OnlineSalesCard
+        isActive={isCardActive(4)}
+        onClick={() => handleCardClick(4)}
+        onMouseEnter={() => setHoveredCardId(4)}
+        onMouseLeave={() => setHoveredCardId(null)}
+      />
     </div>
   );
 };

@@ -8,11 +8,15 @@ import ImageText from "./components/image-text";
 import { FaqSection } from "./components/faq";
 import Testimonials from "./components/testimonials";
 import GreatMoments from "./components/greatMoments";
+import ImageAndItem from "@/components/shared/image-and-item/image-and-item";
+import { title } from "process";
+import TextWithComponent from "../consumer/components/text-with-component";
+import Image from "next/image";
 
 const Events = () => {
   return (
     <>
-      <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+      <div className="space-y-24 py-8 max-w-[69.375rem] mx-auto px-4 xl:px-0">
         <TextWithCards
           title="Catch the Wave"
           description={
@@ -41,38 +45,65 @@ const Events = () => {
           </div>
         </div>
 
-        <ImageText
-          className="md:flex-row-reverse items-center"
-          title="We’ll avail ECOCAN RVMs"
-          description={
-            <>
-              By teaming up with us, the turnout will be massive for sure; and
-              you’ll sell more drinks, meaning empties will be plenty to
-              collect.
-              <br />
-              <br />
-              So, to boost collection efficiency and give your fans an
-              unforgettable recycling experience, we’ll bring over our
-              intelligent RVMs.
-            </>
+        <ImageAndItem
+          className="items-center md:flex-row-reverse"
+          image={
+            <Image
+              src="/assets/images/online-store.svg"
+              alt="Online store"
+              priority
+              width={500}
+              height={100}
+            />
+          }
+          item={
+            <TextWithComponent
+              title="We’ll avail ECOCAN RVMs"
+              description={
+                <div className="w-11/12">
+                  By teaming up with us, the turnout will be massive for sure;
+                  and you’ll sell more drinks, meaning empties will be plenty to
+                  collect.
+                  <br />
+                  <br />
+                  So, to boost collection efficiency and give your fans an
+                  unforgettable recycling experience, we’ll bring over our
+                  intelligent RVMs.
+                </div>
+              }
+            />
           }
         />
-        <ImageText
-          title="Let’s keep enhancing the fan experience, together "
-          className="items-center"
-          description={
-            <>
-              We’ve rolled out the Red Carpet for ECOnsumers and availed the
-              ECOCAN RVMs. You can as well sprinkle in a surprise package.
-              <br />
-              <br />
-              That we create a truly immersive and unforgettable ECO-Event
-            </>
+        <ImageAndItem
+          className="items-center gap-12"
+          image={
+            <Image
+              src="/assets/images/online-store.svg"
+              alt="Online store"
+              priority
+              width={500}
+              height={100}
+            />
+          }
+          item={
+            <TextWithComponent
+            className="w-11/12 ms-auto"
+              title="Let’s keep enhancing the fan experience, together"
+              description={
+                <>
+                  We’ve rolled out the Red Carpet for ECOnsumers and availed the
+                  ECOCAN RVMs. You can as well sprinkle in a surprise package.
+                  <br />
+                  <br />
+                  That we create a truly immersive and unforgettable ECO-Event
+                </>
+              }
+            />
           }
         />
       </div>
       <Testimonials />
-      <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+      <div className="space-y-24 py-8 max-w-[69.375rem] mx-auto px-4 xl:px-0">
         <FaqSection />
         <GreatMoments />
       </div>

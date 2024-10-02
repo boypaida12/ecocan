@@ -6,7 +6,7 @@ import { ItemList } from "../contents/courier/components/ItemList";
 interface HowToItem {
   id: number;
   title: React.ReactNode;
-  description: React.ReactNode;
+  description?: React.ReactNode;
   icon?: React.ReactNode;
 }
 

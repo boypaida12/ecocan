@@ -10,6 +10,10 @@ import WhiteBgCard from "@/components/shared/white-bg-card";
 import { LucideAward, LucideGem, LucideRecycle } from "lucide-react";
 import Partners from "./components/partners";
 import CtaCard from "@/components/shared/cta-card/cta-card";
+import { DM_Sans, Poppins } from "next/font/google";
+
+const dmSans = DM_Sans({ subsets: ["latin"] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["300", "600"] });
 
 const accordionItems = [
   {
@@ -80,26 +84,34 @@ export default function AboutPage() {
   return (
     <>
       <AboutHero />
-      <div className="space-y-24 py-8 max-w-[65rem] mx-auto px-4 xl:px-0">
+      <div className="space-y-24 py-8 max-w-[69.375rem] mx-auto px-4 xl:px-0">
         <TextWithCards
           title="Who is ECOCAN"
           subtitle={
-            <p className="bg-gradient-to-r from-[#228B22] via-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text font-semibold text-2xl">
+            <p
+              className={`bg-gradient-to-r from-[#228B22] via-[#FFDD4C] to-[#FFDD4C] text-transparent bg-clip-text font-semibold text-3xl ${dmSans.className}`}
+            >
               We are catalysts of positive change
             </p>
           }
           description={
-            <div className="space-y-8 mt-4">
+            <div className="space-y-8 mt-4 text-[#23262fcc]">
               <p>
                 Offering an end-to-end service, for sustainable management of
                 beverage products; from point of manufacture, through retail, to
                 recycling. This dynamic, first-to-market service is delivered
-                through the <HyperLink link="ECOCAN TnT platform" href="/"/>; a revolutionary technology
-                leveraging IoT, Blockchain, and AI, to provide comprehensive
-                product circulation insights, and deep market intelligence.
-                Giving stakeholders greater and unparalleled control.
+                through the <HyperLink link="ECOCAN TnT platform" href="/" />; a
+                revolutionary technology leveraging IoT, Blockchain, and AI, to
+                provide comprehensive product circulation insights, and deep
+                market intelligence. Giving stakeholders greater and
+                unparalleled control.
               </p>
-              <p>At the core of the ECOCAN TnT is our free-to-use <HyperLink link="EcocanApp" href="/"/>, robust ECOCAN security codes, and the innovative ECOCAN DRS. </p>
+              <p>
+                At the core of the ECOCAN TnT is our free-to-use{" "}
+                <HyperLink link="EcocanApp" href="/" />, robust{" "}
+                <HyperLink link="ECOCAN security codes" href="/" />, and the
+                innovative <HyperLink link="ECOCAN DRS" href="/" />.{" "}
+              </p>
             </div>
           }
         />
@@ -111,7 +123,7 @@ export default function AboutPage() {
             <Image
               src="/assets/images/about/people.svg"
               alt="community of people on ground"
-              width={100}
+              width={500}
               height={100}
               className="w-full h-full"
               priority
@@ -119,14 +131,13 @@ export default function AboutPage() {
           }
           item={
             <TextWithComponent
-              title="Who is ECOCAN"
               description={
                 <div>
-                  <h2 className="bg-gradient-to-bl my-2 from-[#228B22] via-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text font-semibold text-2xl">
-                    A COmmunity of{" "}
-                    <span className="bg-gradient-to-bl from-[#4AC63F] via-[#FFDD4C] to-[#0000001A] text-transparent bg-clip-text">
-                      visionaries
-                    </span>
+                  <h2
+                    className={`bg-gradient-to-r my-2 from-[#228B22] via-[#FFDD4C] to-[#FFDD4C] text-transparent bg-clip-text font-semibold text-3xl ${dmSans.className}`}
+                  >
+                    Building a COmmunity of <br />
+                    visionaries{" "}
                   </h2>
                   <p>
                     Who envision a planet fee from pollution, safe for all the
@@ -149,7 +160,7 @@ export default function AboutPage() {
             <Image
               src="/assets/images/about/more-people.svg"
               alt="community of people on ground"
-              width={100}
+              width={500}
               height={100}
               className="w-full h-full"
               priority
@@ -158,7 +169,7 @@ export default function AboutPage() {
           item={
             <TextWithComponent
               title={
-                <h2 className="bg-gradient-to-bl my-2 from-[#228B22] via-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text font-semibold text-2xl">
+                <h2 className={`bg-gradient-to-tl my-2 from-[#FFDD4C] via-[#FFDD4C] to-[#228B22] text-transparent bg-clip-text font-semibold text-3xl ${dmSans.className}`}>
                   On a mission
                 </h2>
               }
@@ -169,14 +180,14 @@ export default function AboutPage() {
 
         {/* to be committed */}
         <ImageAndItem
-          className="gap-12 md:flex-row-reverse items-center"
+          className="md:flex-row-reverse items-center"
           image={
             <Image
               src="/assets/images/about/board-char.svg"
               alt="community of people on ground"
-              width={100}
+              width={500}
               height={100}
-              className="w-full h-full"
+              className=""
               priority
             />
           }
@@ -184,7 +195,7 @@ export default function AboutPage() {
             <TextWithComponent
               description={
                 <div>
-                  <h2 className="bg-gradient-to-bl my-2 from-[#228B22] via-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text font-semibold text-2xl">
+                  <h2 className={`bg-gradient-to-bl my-2 from-[#228B22] via-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text font-semibold text-3xl ${dmSans.className}`}>
                     To which we are{" "}
                     <span className="bg-gradient-to-bl from-[#4AC63F] via-[#FFDD4C] to-[#0000001A] text-transparent bg-clip-text">
                       committed
@@ -210,7 +221,7 @@ export default function AboutPage() {
             <Image
               src="/assets/images/about/dog-street.svg"
               alt="community of people on ground"
-              width={100}
+              width={500}
               height={100}
               className="w-full h-full"
               priority
@@ -220,7 +231,7 @@ export default function AboutPage() {
             <TextWithComponent
               description={
                 <div>
-                  <h2 className="bg-gradient-to-bl my-2 from-[#228B22] via-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text font-semibold text-2xl">
+                  <h2 className={`bg-gradient-to-bl my-2 from-[#228B22] via-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text font-semibold text-3xl ${dmSans.className}`}>
                     And draw our{" "}
                     <span className="bg-gradient-to-tr from-[#4AC63F] via-[#FFDD4C] to-[#0000001A] text-transparent bg-clip-text">
                       identity

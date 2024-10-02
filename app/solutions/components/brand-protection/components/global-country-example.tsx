@@ -23,7 +23,7 @@ const steps = [
 
 export default function GlobalCountryExample() {
   return (
-    <div className="flex gap-12 max-w-[65rem]">
+    <div className="flex gap-12 max-w-[69.375rem]">
       <div className="w-3/5">
         <Card className="bg-[#F6C92D] p-6 h-[26.25rem] rounded-2xl border-none">
           <CardHeader className="px-0 text-xl font-semibold">Global</CardHeader>
@@ -41,11 +41,11 @@ export default function GlobalCountryExample() {
             <TextWithCards
               className="text-white w-full"
               title="In Kenya for example:"
-              description={<><CheckList items={steps} /></>}
+              description={<><CheckList items={steps} className="items-center"/></>}
             />
           </div>
         }
-        className="bg-[url('/assets/images/solutions/bottles-in-bucket.png')] flex items-center"
+        className="bg-[url('/assets/images/solutions/bottles-in-bucket.png')] flex items-center after:bg-black/60"
       />
     </div>
   );

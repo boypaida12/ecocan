@@ -52,10 +52,10 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
         className,
       )}
     >
-      <div className="flex items-center justify-between flex-wrap xl:max-w-[65rem] mx-auto px-4 md:px-0">
+      <div className="flex items-center justify-between flex-wrap xl:max-w-[69.375rem] mx-auto px-4 md:px-0">
         <div className="flex items-center flex-shrink-0 text-white py-4">
           <Image
-            src={logoSrc}
+            src={logoSrc }
             alt="ecocan logo"
             width={46}
             height={46}
@@ -99,7 +99,6 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
                 key={link.label}
                 className={clsx(
                   "block md:inline-block text-center text-sm font-[500]",
-                  isScrolled ? "text-white" : "text-[#00000080]",
                   linkColor
                 )}
               >
@@ -113,9 +112,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
               className={clsx(
                 "hover:bg-transparent",
                 firstButtonClassName,
-                isScrolled
-                  ? "text-white border-none hover:text-white"
-                  : "text-primary hover:text-primary"
+                "text-primary hover:text-primary"
               )}
             >
               Join ECOmmunity
@@ -124,6 +121,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
               asChild
               className={clsx(
                 "rounded-full h-7 xl:h-8 text-black hover:text-primary bg-white hover:bg-white",
+                isScrolled ? "bg-primary text-white hover:bg-primary hover:text-white" : "bg-white",
                 secondButtonClassName
               )}
             >

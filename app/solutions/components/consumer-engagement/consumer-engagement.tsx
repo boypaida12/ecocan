@@ -9,6 +9,7 @@ import TextWithCards from "@/components/shared/text-with-cards/text-with-cards";
 import { alphaMale, beachBottleTall, ecomarket } from "@/lib/imageIndex";
 import Image from "next/image";
 import React from "react";
+import EconsumersCare from "./components/econsumers-care";
 
 const accordionItems = [
   {
@@ -63,15 +64,19 @@ export default function ConsumerEngagement() {
         className="md:flex-row-reverse items-center"
         image={
           <Image
-            src={alphaMale}
+            src="/assets/images/solutions/male.svg"
             alt="male office guy"
-            width={1000}
-            height={1000}
-            className="w-full h-full rounded-2xl"
+            width={500}
+            height={100}
           />
         }
-        item={<ReusableAccordion items={accordionItems} />}
-      />{" "}
+        item={
+          <div className="w-11/12">
+            <ReusableAccordion items={accordionItems} />
+          </div>
+        }
+      />
+      <EconsumersCare/>
     </div>
   );
 }

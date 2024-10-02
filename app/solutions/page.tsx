@@ -13,13 +13,14 @@ const cardData: CardData[] = [
   {
     id: 1,
     title: "Brand Protection",
+    description: "kkkk",
     imageGrey: "/assets/images/solutions/brand-protection.svg",
     imageColor: "/assets/images/solutions/brand-protection-active.svg",
-    content: <BrandProtection />,
   },
   {
     id: 2,
     title: "Packaging Recycling",
+    description: "kkkk",
     imageGrey: "/assets/images/solutions/packaging.svg",
     imageColor: "/assets/images/solutions/packaging-active.svg",
     content: <PackagingRecycling />,
@@ -27,6 +28,7 @@ const cardData: CardData[] = [
   {
     id: 3,
     title: "Consumer Engagement",
+    description: "kkkk",
     imageGrey: "/assets/images/solutions/consumer.svg",
     imageColor: "/assets/images/solutions/consumer-active.svg",
     content: <ConsumerEngagement />,
@@ -34,6 +36,7 @@ const cardData: CardData[] = [
   {
     id: 4,
     title: "Online Sales",
+    description: "kkkk",
     imageGrey: "/assets/images/solutions/online-sales.svg",
     imageColor: "/assets/images/solutions/onlinesales-active.svg",
     content: <OnlineSales />,

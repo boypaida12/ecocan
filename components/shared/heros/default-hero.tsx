@@ -14,19 +14,15 @@ export default function DefaultHero() {
     <>
       <NavigationBar
         className={
-          isScrolled ? "bg-[#4ac63f]" : "bg-transparent backdrop-blur-xl"
+          isScrolled ? "bg-white" : "bg-transparent backdrop-blur-xl"
         }
         logoSrc="/assets/images/ecocan-logo.svg"
         firstButtonClassName="rounded-full h-7 xl:h-8 bg-transparent text-primary hover:bg-transparent hover:text-primary"
-        secondButtonClassName={`rounded-full h-7 xl:h-8 ${
-          isScrolled
-            ? "bg-white text-[#383A35] hover:bg-white hover:text-[#383A35]"
-            : "bg-transparent hover:bg-transparent text-primary border border-primary hover:text-primary"
-        }`}
+        secondButtonClassName={`rounded-full h-7 xl:h-8 bg-transparent hover:bg-transparent text-primary border border-primary hover:text-primary`}
       />
       <div className="lg:h-[32.875rem] xl:h-[44rem] mt-[3.575rem]">
         <div className="bg-[url('/assets/images/consumer/hero-bg.jpeg')] bg-center h-[27rem] relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-70 after:z-10">
-          <div className="xl:max-w-[65rem] flex flex-col md:flex md:flex-row mx-auto lg:gap-12">
+          <div className="xl:max-w-[69.375rem] flex flex-col md:flex md:flex-row mx-auto lg:gap-12">
             <div className="flex flex-col gap-4 md:w-1/2 px-4 xl:px-0 text-white z-50 items-center justify-center mt-4 xl:mt-16 space-y-4">
               <div>
                 <h1 className="lg:text-6xl text-2xl xl:text-[4rem] text-center md:text-start font-semibold">

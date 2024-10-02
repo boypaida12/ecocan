@@ -11,6 +11,9 @@ import { LucideCheckCircle2 } from "lucide-react";
 import HyperLink from "@/components/shared/hyperlink/hyperlink";
 import StyledText from "@/components/shared/styled-text";
 import Image from "next/image";
+import { Nunito_Sans } from "next/font/google";
+
+const nunitoSans = Nunito_Sans({ subsets: ["latin"] });
 
 interface AccordionData {
   id: number;
@@ -143,12 +146,12 @@ export function AccordionDemo({
               />
             </div>
             <div className="w-full">
-              <AccordionTrigger onClick={() => handleItemClick(item.id)}>
+              <AccordionTrigger onClick={() => handleItemClick(item.id)} className={`text-lg ${nunitoSans.className}`}>
                 {item.title}
               </AccordionTrigger>
             </div>
           </div>
-          <AccordionContent>{item.description}</AccordionContent>
+          <AccordionContent className={`font-medium ${nunitoSans.className}`}>{item.description}</AccordionContent>
         </AccordionItem>
       ))}
     </Accordion>

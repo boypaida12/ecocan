@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "../ui/card";
 import clsx from "clsx";
 import Image from "next/image";
 import { greenBall } from "@/lib/imageIndex";
@@ -8,12 +8,14 @@ export default function WhiteBgCard({
   title,
   content,
   className,
-  iconPath
+  iconPath,
+  child
 }: {
   title?: string;
   content?: React.ReactNode;
   className?: string;
   iconPath: string;
+  child?: React.ReactNode;
 }) {
   return (
     <Card
@@ -37,6 +39,9 @@ export default function WhiteBgCard({
       <CardContent>
         <div className="text-accent/70 text-sm">{content}</div>
       </CardContent>
+      <CardFooter>
+        {child}
+      </CardFooter>
     </Card>
   );
 }

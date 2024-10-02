@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import StyledText from "@/components/shared/styled-text";
+import { Nunito_Sans } from "next/font/google";
+
+const nunitoSans = Nunito_Sans({ subsets: ["latin"] });
 
 type FeatureItem = {
   title: string;
@@ -14,10 +17,12 @@ const FeatureList: React.FC<{ items: FeatureItem[]; startIndex?: number }> = ({
   <ul className="space-y-4">
     {items.map((item, index) => (
       <li key={index}>
-        <h3 className="font-semibold">
+        <h3 className={`font-bold text-lg ${nunitoSans.className}`}>
           {startIndex + index}. {item.title}
         </h3>
-        <StyledText>{item.description}</StyledText>
+        <StyledText>
+          <p className={`text-sm ${nunitoSans.className}`}>{item.description}</p>
+        </StyledText>
       </li>
     ))}
   </ul>
@@ -64,20 +69,22 @@ export default function IdentifyGenuine() {
         <p className="text-lg">How ECOCAN Authentication Works:</p>
       </div>
       <div className="flex flex-col md:flex-row items-center">
-        <div className="md:w-1/3">
+        <div className="md:w-2/5">
           <FeatureList items={leftFeatures} />
         </div>
-        <div className="md:w-1/3">
+        <div className="md:w-1/4">
           <Image
             src="/assets/images/consumer/identify-genuine.svg"
             alt="ECOCAN Authentication"
             width={300}
             height={600}
-            className=""
+            className="mx-auto"
           />
         </div>
-        <div className="md:w-1/3">
-          <FeatureList items={rightFeatures} startIndex={4} />
+        <div className="md:w-2/5">
+          <div className="ms-auto w-5/6">
+            <FeatureList items={rightFeatures} startIndex={4} />
+          </div>
         </div>
       </div>
       <div className="relative h-[6rem] w-[12rem] mx-auto overflow-hidden">
@@ -86,7 +93,7 @@ export default function IdentifyGenuine() {
           alt="ECOCAN Authentication"
           width={47}
           height={47}
-          className="w-auto h-auto absolute -top-10 right-5"
+          className="w-auto h-auto absolute -top-10 -right-2"
         />
       </div>
     </div>
