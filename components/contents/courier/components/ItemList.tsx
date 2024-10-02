@@ -8,7 +8,7 @@ interface ItemListProps {
   }
   
   export const ItemList: React.FC<ItemListProps> = ({ id, title, description }) => (
-    <div className="flex flex-row gap-3">
+    <div className="flex flex-row mb-4 gap-3">
       <div>
         <div className="flex items-center justify-center w-8 h-8 bg-gradient-to-r from-[#228B22] via-[#4ac63fcf] to-[#FFDD4C] rounded-full">
           <p className="text-xs text-white leading-none">{id}</p>
