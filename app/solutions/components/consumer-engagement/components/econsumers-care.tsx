@@ -38,7 +38,7 @@ export default function EconsumersCare() {
         Econsumers care more than just the price
       </h2>
       <p className="text-xl text-center text-gray-600 mb-12">
-        We'll work together to let them know:
+        We&apos;ll work together to let them know:
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
