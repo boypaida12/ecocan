@@ -6,6 +6,7 @@ import Image from "next/image";
 import React from "react";
 import NavigationBar from "../navbar/navbar";
 import { useScroll } from "@/lib/useScroll";
+import JoinEcommunity from "@/components/contents/consumer/components/join-ecommunity";
 
 export default function DefaultHero() {
   const isScrolled = useScroll();
@@ -14,7 +15,7 @@ export default function DefaultHero() {
     <>
       <NavigationBar
         className={
-          isScrolled ? "bg-white" : "bg-transparent backdrop-blur-xl"
+          isScrolled ? "bg-white" : "bg-white backdrop-blur-xl"
         }
         logoSrc="/assets/images/ecocan-logo.svg"
         firstButtonClassName="rounded-full h-7 xl:h-8 bg-transparent text-primary hover:bg-transparent hover:text-primary"
@@ -46,19 +47,16 @@ export default function DefaultHero() {
                   <span className="relative z-10 text-lg">Download App</span>
                   <LucideDownload className="ml-2" />
                 </Button>
-                <Button className="rounded-full bg-transparent border border-primary text-primary hover:bg-transparent xl:h-[3.25rem] xl:py-3 xl:px-8 ml-4">
-                  <span className="relative z-10 text-lg">Join ECOmmunity</span>
-                  <LucideArrowRight className="ml-2" />
-                </Button>
+                <JoinEcommunity/>
               </div>
             </div>
             <div className="lg:h-[32rem] xl:h-[44rem] md:w-1/2 relative overflow-hidden lg:overflow-visible z-20">
               <Image
-                src="/assets/images/consumer/hero-img.svg"
-                className="absolute max-w-[35rem] xl:max-w-none h-auto lg:-left-20 xl:-left-0"
+                src="/assets/images/consumer/consumer-hero-mobile.svg"
+                className="absolute max-w-[46rem] xl:max-w-none lg:-left-[15.5rem] xl:-left-56 xl:top-5"
                 alt="ecocan mobile app"
-                width={700}
-                height={900}
+                width={900}
+                height={100}
               />
             </div>
           </div>

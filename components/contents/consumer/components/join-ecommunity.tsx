@@ -1,0 +1,111 @@
+import React from "react";
+import {
+  AlertDialog,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogFooter,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
+import { Button } from "@/components/ui/button";
+import { LucideArrowRight, LucideChevronRight } from "lucide-react";
+import HowTo from "@/components/shared/HowTo";
+import ImageAndItem from "@/components/shared/image-and-item/image-and-item";
+import PrimaryButton from "@/components/shared/primary-btn";
+import { ItemList } from "../../courier/components/ItemList";
+import Image from "next/image";
+
+const howToData = [
+  {
+    id: 1,
+    title: (
+      <p className="text-[#404040] font-normal text-[0.9375rem]">
+        Create an EcocanApp account, and customise your ECOCAN ID
+      </p>
+    ),
+  },
+  {
+    id: 2,
+    title: (
+      <p className="text-[#404040] font-normal text-[0.9375rem]">
+        Participate in the ECOCAN DRS, and Anti-counterfeit campaigns
+      </p>
+    ),
+  },
+  {
+    id: 3,
+    title: (
+      <p className="text-[#404040] font-normal text-[0.9375rem]">
+        Support ECO-friendly brands with your purchases on ECOCAN Market
+      </p>
+    ),
+  },
+];
+
+const iconSize = 18;
+
+export default function JoinEcommunity() {
+  return (
+    <AlertDialog>
+      <AlertDialogTrigger asChild>
+        <Button className="rounded-full bg-transparent border border-primary text-primary hover:bg-transparent xl:h-[3.25rem] xl:py-3 xl:px-8 ml-4">
+          <span className="relative z-10 text-lg">Join ECOmmunity</span>
+          <LucideArrowRight className="ml-2" />
+        </Button>
+      </AlertDialogTrigger>
+      <AlertDialogContent>
+        <ImageAndItem
+          className="items-center gap-6"
+          image={
+            <Image
+              src="/assets/images/consumer/ecommunity-popup.svg"
+              alt="buy online with ecocan"
+              width={400}
+              height={100}
+              className="mx-auto"
+            />
+          }
+          item={
+            <div className="space-y-6">
+              <h2 className="font-semibold text-3xl">
+                It can&apos;t get better than this!
+              </h2>
+              <div className="space-y-2 text-[#23262fcd] text-[0.9375rem]">
+                <p>
+                  ECOCAN Market is the go-to digital market in your pocket. That
+                  facilitates affordable purchase and fast delivery of genuine
+                  drinks. As well as convenient pick-up of used empties, for
+                  recycling.
+                </p>
+              </div>
+              {howToData.map((data) => (
+                <ItemList key={data.id} title={data.title} id={data.id} />
+              ))}
+              <div className="text-center text-[#23262fcd] space-y-4 text-sm">
+                <p>
+                  And we&apos;ll make sure to recognise, and reward your
+                  ECO-conscious efforts. With deposit money, exclusive recycling
+                  coupons, loyalty discounts, and Red-Carpet experience at
+                  ECO-events
+                </p>
+                <p>
+                  One size never fits all! Customising your ECOCAN ID makes
+                  things personalized, easier and quicker. So we can know each
+                  other better. That we can serve you best. And, subscribe to
+                  our newsletter to stay in the loop!
+                </p>
+              </div>
+              <div>
+                <PrimaryButton className="w-full" buttonText="Get started" />
+              </div>
+            </div>
+          }
+        />
+        <AlertDialogFooter>
+          <AlertDialogCancel className="border-none hover:bg-transparent text-primary/80 hover:text-primary">
+            Go Back
+          </AlertDialogCancel>
+        </AlertDialogFooter>
+      </AlertDialogContent>
+    </AlertDialog>
+  );
+}

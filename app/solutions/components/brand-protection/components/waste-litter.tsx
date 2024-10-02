@@ -86,7 +86,7 @@ export default function WasteLitter() {
                       </CarouselItem>
                     ))}
                   </CarouselContent>
-                  <div className="absolute top-2 right-5">
+                  <div className="absolute top-2 right-14">
                     <CarouselPrevious />
                     <CarouselNext />
                   </div>
