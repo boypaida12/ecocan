@@ -40,7 +40,7 @@ export default function SolutionsContent({
       />
       {/* our offering */}
       <div className="lg:h-[36rem] xl:h-[40rem]">
-        <div className="bg-[url('/assets/images/solutions/solution-hero.png')] lg:h-[32rem] xl:h-[40rem] bg-cover relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:z-10">
+        <div className="bg-[url('/assets/images/solutions/solution-hero.svg')] lg:h-[32rem] xl:h-[44rem] bg-cover bg-[-5px] relative after:absolute after:inset-0 after:content-[''] after:bg-black/90 after:opacity-50 after:z-10">
           <div className="xl:max-w-[69.375rem] flex flex-col md:flex md:flex-row mx-auto lg:my-0 lg:gap-12">
             <div className="mt-60 px-4 xl:px-0 text-white z-50 mx-auto">
               <div>

@@ -39,7 +39,7 @@ const cardContent = [
     content: "Optimise your efficiency",
   },
   {
-    src: "/assets/images/producer/club.svg",
+    src: "/assets/images/producer/protect.svg",
     content: "Protect your customers",
   },
   {
@@ -233,13 +233,13 @@ export default function ProducerContent() {
                 <SimpleCard
                   className="border-transparent p-0 xl:w-[16rem]"
                   image={
-                    <div className=" w-[full] max-h-[11.75rem] overflow-hidden">
+                    <div className=" w-[full] h-[11.75rem] overflow-hidden relative">
                       <Image
                         src={card.src}
                         alt="image"
                         width={280}
                         height={220}
-                        className="object-cover h-full w-full"
+                        className="absolute -top-10"
                       />
                     </div>
                   }
@@ -325,7 +325,7 @@ export default function ProducerContent() {
         {/* call to action */}
 
         <CtaCard
-          className="bg-[url('/assets/images/producer/unfair-advantage.jpeg')] ps-[2.25rem] py-[4.75rem] bg-cover bg-center items-center h-[26.75rem]"
+          className="bg-[url('/assets/images/producer/unfair-advantage.svg')] ps-[2.25rem] py-[4.75rem] bg-cover bg-center items-center h-[26.75rem] relative after:absolute after:inset-0 after:content-[''] after:bg-black/50 after:opacity-70 after:z-10 overflow-hidden"
           item={
             <TextWithComponent
               title={

@@ -1,29 +1,19 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import TextWithCards from "../../shared/text-with-cards/text-with-cards";
 import ImageAndItem from "@/components/shared/image-and-item/image-and-item";
 import Image from "next/image";
-import { AccordionDemo } from "./components/accordion";
 import HyperLink from "@/components/shared/hyperlink/hyperlink";
 import {
   LucideAward,
-  LucideDownload,
   LucideGem,
   LucideRecycle,
 } from "lucide-react";
-import MultipleImagesAndItem from "@/components/shared/multiple-images-and-item/multiple-images-and-item";
 import TextWithComponent from "./components/text-with-component";
-import { Input } from "@/components/ui/input";
 import { FaqSection } from "./components/faq";
-import CtaCard from "@/components/shared/cta-card/cta-card";
-import PrimaryButton from "@/components/shared/primary-btn";
-import { Button } from "@/components/ui/button";
 import WhiteBgCard from "@/components/shared/white-bg-card";
-import CheckList from "./components/checklist";
 import CustomCard from "@/components/shared/text-with-cards/custom-card";
-import ExpandableContent from "./components/expandable-content";
-import { ReusableAccordion } from "@/components/shared/accordion";
 import WasteLitter from "@/app/solutions/components/brand-protection/components/waste-litter";
 import IdentifyGenuine from "./components/identify-genuine";
 import News from "./components/news";
