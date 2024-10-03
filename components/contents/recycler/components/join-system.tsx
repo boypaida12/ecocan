@@ -6,20 +6,20 @@ import Image from "next/image";
 
 const cardContent = [
   {
-    src: "/assets/images/recycler/why.png",
+    src: "/assets/images/recycler/recyclate.svg",
     title: "Food-grade recyclate",
     content:
       "ECOCAN DRS’s clean-loop, incentivised, and fully digitised ECO-system ensures recyclate segregation at source. ",
   },
   {
-    src: "/assets/images/recycler/why.png",
+    src: "/assets/images/recycler/reliable.svg",
     title: "Reliable recyclate supply",
     by: "by John Smith",
     content:
       "Our extensive ECO-station network, and direct engagement with ECOnsumers, ensures dependable and high-volume empties collection",
   },
   {
-    src: "/assets/images/recycler/why.png",
+    src: "/assets/images/recycler/carbon.svg",
     title: "Cut your carbon footprint",
     by: "by John Smith",
     content:
@@ -43,9 +43,9 @@ export default function JoinSystem() {
           {cardContent.map((card, index) => (
             <SimpleCard
               className="border-transparent p-0"
-              cardHeight="h-[14rem]"
+              cardHeight="h-[12rem]"
               image={
-                <div className=" w-[full] max-h-[11.75rem] overflow-hidden">
+                <div className=" w-[full] max-h-[15.75rem] overflow-hidden">
                   <Image
                     src={card.src}
                     alt="image"

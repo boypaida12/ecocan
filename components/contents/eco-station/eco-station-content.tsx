@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  ArrowRight,
   LucideCreditCard,
   LucideDownload,
   LucideEye,
@@ -280,16 +281,16 @@ export default function EcoStationContent() {
 
       {/* call to action */}
       <CtaCard
-        className="bg-[url('/assets/images/join-eco-community.jpeg')] ps-[7.25rem] py-[3.75rem] bg-cover bg-center relative"
+        className="bg-[url('/assets/images/eco-station/join-ecommunity-bg.svg')] ps-[7.25rem] py-[3.75rem] bg-cover bg-center relative"
         item={
           <TextWithComponent
             title={
               <p className="text-white text-5xl">
-                ECO-friendly heroes must wear caps
+                Sustainable commerce
               </p>
             }
             description={
-              <span className="text-white">You are one of them.</span>
+              <span className="text-white">With ECOCAN</span>
             }
             component={
               <Button
@@ -297,6 +298,7 @@ export default function EcoStationContent() {
                 className="bg-[#FFDD4C] hover:bg-[#FFDD4C] rounded-full h-[3.25rem] w-[24.3125rem] border-none px-8 text-lg"
               >
                 Join ECOmmunity
+                <ArrowRight className="ms-4"/>
               </Button>
             }
           />

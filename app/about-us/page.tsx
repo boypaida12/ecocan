@@ -187,7 +187,7 @@ export default function AboutPage() {
               alt="community of people on ground"
               width={500}
               height={100}
-              className=""
+              className="ms-auto"
               priority
             />
           }
@@ -230,7 +230,7 @@ export default function AboutPage() {
           item={
             <TextWithComponent
               description={
-                <div>
+                <div className="w-11/12 ms-auto">
                   <h2 className={`bg-gradient-to-bl my-2 from-[#228B22] via-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text font-semibold text-3xl ${dmSans.className}`}>
                     And draw our{" "}
                     <span className="bg-gradient-to-tr from-[#4AC63F] via-[#FFDD4C] to-[#0000001A] text-transparent bg-clip-text">

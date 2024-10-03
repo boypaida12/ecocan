@@ -9,17 +9,19 @@ interface FeatureProps {
 }
 
 const FeatureCard = ({ title, description, imageSrc }: FeatureProps) => (
-  <div className="bg-white overflow-hidden">
-    <Image
-      src={imageSrc}
-      alt={title}
-      className="w-full h-60 object-cover rounded-2xl"
-      width={100}
-      height={100}
-    />
+  <div className="bg-white">
+    <div className="overflow-hidden rounded-[2rem]">
+      <Image
+        src={imageSrc}
+        alt={title}
+        className="w-full lg:h-72 object-cover"
+        width={100}
+        height={100}
+      />
+    </div>
     <div className="p-4">
-      <h3 className="font-bold text-lg mb-2">{title}</h3>
-      <p className="text-gray-600 text-sm">{description}</p>
+      <h3 className="font-bold text-sm mb-2">{title}</h3>
+      <p className="text-gray-600 text-sm font-light">{description}</p>
     </div>
   </div>
 );

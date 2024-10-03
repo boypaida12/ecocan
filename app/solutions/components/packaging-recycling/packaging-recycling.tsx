@@ -77,7 +77,7 @@ export default function PackagingRecycling() {
         }
         image={
           <Image
-            src={ecostation}
+            src="/assets/images/solutions/small-deeds.svg"
             alt="eco station"
             width={1000}
             height={1000}

@@ -26,7 +26,8 @@ import SimpleCard from "./components/simpleCard";
 import AlchemyControls from "./components/alchemy-controls";
 import AlchemyOnlineSales from "./components/alchemy-online-sales";
 import AlchemyEngagement from "./components/alchemy-engagement";
-
+import ImageAndItem from "@/components/shared/image-and-item/image-and-item";
+import { ItemList } from "../courier/components/ItemList";
 
 const cardContent = [
   {
@@ -47,8 +48,6 @@ const cardContent = [
   },
 ];
 
-
-
 const alchemyContent = [
   {
     icon: "/assets/images/producer/alchemy-1.svg",
@@ -56,7 +55,7 @@ const alchemyContent = [
     content: "We give you the controls",
     child: (
       <>
-        <AlchemyControls/>
+        <AlchemyControls />
       </>
     ),
   },
@@ -66,7 +65,7 @@ const alchemyContent = [
     content: "We live in a world of Super Convenience ",
     child: (
       <>
-        <AlchemyOnlineSales/>
+        <AlchemyOnlineSales />
       </>
     ),
   },
@@ -76,7 +75,7 @@ const alchemyContent = [
     content: "Econsumers care more than just the price",
     child: (
       <>
-        <AlchemyEngagement/>
+        <AlchemyEngagement />
       </>
     ),
   },
@@ -266,11 +265,31 @@ export default function ProducerContent() {
           }
         />
         {/* how to join the ecommunity */}
-        <HowTo
-          itemsTitle="How to join the ECOmmunity"
-          items={howToData}
-          imageSrc="/assets/images/producer/howto.png"
-          imageAlt="Become an Eco-station"
+        <ImageAndItem
+          className="items-center gap-6"
+          image={
+            <Image
+              src="/assets/images/producer/howto.png"
+              alt="buy online with ecocan"
+              width={500}
+              height={100}
+            />
+          }
+          item={
+            <div className="space-y-6">
+              <h2 className="font-semibold text-3xl">
+                How to join the ECOmmunity
+              </h2>
+              {howToData.map((data) => (
+                <ItemList
+                  key={data.id}
+                  title={data.title}
+                  description={data.description}
+                  id={data.id}
+                />
+              ))}
+            </div>
+          }
         />
         {/* optimize */}
         <Optimize />

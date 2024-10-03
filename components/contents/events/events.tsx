@@ -49,11 +49,12 @@ const Events = () => {
           className="items-center md:flex-row-reverse"
           image={
             <Image
-              src="/assets/images/online-store.svg"
+              src="/assets/images/events/bottle.svg"
               alt="Online store"
               priority
               width={500}
               height={100}
+              className="ms-auto"
             />
           }
           item={
@@ -78,7 +79,7 @@ const Events = () => {
           className="items-center gap-12"
           image={
             <Image
-              src="/assets/images/online-store.svg"
+              src="/assets/images/events/club.svg"
               alt="Online store"
               priority
               width={500}

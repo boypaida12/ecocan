@@ -113,7 +113,7 @@ export default function DepositRefundSystem() {
           </h2>
           <p>You&apos;re an expert, so we&apos;ll skip the 101</p>
           <Image
-            src="/assets/images/recycler/frank.png"
+            src="/assets/images/recycler/drs.svg"
             width={486}
             height={400}
             priority
