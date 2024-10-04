@@ -13,6 +13,7 @@ import ImageAndItem from "@/components/shared/image-and-item/image-and-item";
 import PrimaryButton from "@/components/shared/primary-btn";
 import { ItemList } from "../../courier/components/ItemList";
 import Image from "next/image";
+import HyperLink from "@/components/shared/hyperlink/hyperlink";
 
 const howToData = [
   {
@@ -66,15 +67,12 @@ export default function JoinEcommunity() {
           }
           item={
             <div className="space-y-6">
-              <h2 className="font-semibold text-3xl">
-                It can&apos;t get better than this!
+              <h2 className="font-medium text-lg">
+                We are an ECO-friendly community backed by sustainability, cooperation and responsibility.
               </h2>
               <div className="space-y-2 text-[#23262fcd] text-[0.9375rem]">
                 <p>
-                  ECOCAN Market is the go-to digital market in your pocket. That
-                  facilitates affordable purchase and fast delivery of genuine
-                  drinks. As well as convenient pick-up of used empties, for
-                  recycling.
+                  Join the ECOmmunity by closing the <HyperLink link="ECO loop" href="/"/> with these three easy steps:
                 </p>
               </div>
               {howToData.map((data) => (

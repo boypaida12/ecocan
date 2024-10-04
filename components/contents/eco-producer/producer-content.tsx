@@ -269,7 +269,7 @@ export default function ProducerContent() {
           className="items-center gap-6"
           image={
             <Image
-              src="/assets/images/producer/howto.png"
+              src="/assets/images/producer/ecommunity.svg"
               alt="buy online with ecocan"
               width={500}
               height={100}
