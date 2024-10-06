@@ -18,6 +18,7 @@ import {
 import { Button } from "@/components/ui/button";
 import HowTo from "@/components/shared/HowTo";
 import { ItemList } from "../../courier/components/ItemList";
+import { LucideX } from "lucide-react";
 
 const howToData = [
   {
@@ -99,6 +100,9 @@ export default function BuyOnline() {
                         </Button>
                       </AlertDialogTrigger>
                       <AlertDialogContent>
+                        <AlertDialogCancel className="hover:bg-transparent text-black/60 hover:text-black w-fit border-none">
+                         <LucideX/>
+                        </AlertDialogCancel>
                         <ImageAndItem
                           className="items-center gap-6"
                           image={
@@ -121,12 +125,6 @@ export default function BuyOnline() {
                                   purchase and fast delivery of genuine drinks.
                                   As well as convenient pick-up of used empties,
                                   for recycling.
-                                </p>
-                                <p>
-                                  When you place orders via EcocanApp,
-                                  we&apos;ll reward you with exclusive loyalty
-                                  discounts, and with recycling coupons when you
-                                  request for empties pick-up
                                 </p>
                               </div>
                               {howToData.map((data) => (
@@ -153,11 +151,6 @@ export default function BuyOnline() {
                             </div>
                           }
                         />
-                        <AlertDialogFooter>
-                          <AlertDialogCancel className="border-none hover:bg-transparent text-primary/80 hover:text-primary">
-                            Go Back
-                          </AlertDialogCancel>
-                        </AlertDialogFooter>
                       </AlertDialogContent>
                     </AlertDialog>
                   </>

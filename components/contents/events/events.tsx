@@ -4,12 +4,10 @@ import TextWithCards from "../../shared/text-with-cards/text-with-cards";
 import CustomCard from "../../shared/text-with-cards/custom-card";
 import featureData from "./components/featureData";
 import HyperLink from "@/components/shared/hyperlink/hyperlink";
-import ImageText from "./components/image-text";
 import { FaqSection } from "./components/faq";
 import Testimonials from "./components/testimonials";
 import GreatMoments from "./components/greatMoments";
 import ImageAndItem from "@/components/shared/image-and-item/image-and-item";
-import { title } from "process";
 import TextWithComponent from "../consumer/components/text-with-component";
 import Image from "next/image";
 
@@ -22,8 +20,8 @@ const Events = () => {
           description={
             <>
               Seamlessly blend our cutting-edge green technology with your bomb
-              creativity, for a <br />
-              recommendable fan cocktail. And a BIG win for the environment
+              creativity, for a 
+              recommendable<br /> fan cocktail. And a BIG win for the environment
             </>
           }
           customCard={<CustomCard features={featureData} />}

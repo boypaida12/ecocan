@@ -21,7 +21,7 @@ export interface TabContent {
       hero: <DefaultHero/>,
       content: <ConsumerContent/>,
     },
-    "ECO-station": {
+    "ECO-Station": {
       hero: <EcoStationHero/>,
       content: <EcoStationContent/>,
     },

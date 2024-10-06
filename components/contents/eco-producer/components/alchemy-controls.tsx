@@ -11,7 +11,7 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
-import { LucideChevronRight } from "lucide-react";
+import { LucideChevronRight, LucideX } from "lucide-react";
 import ImageAndItem from "@/components/shared/image-and-item/image-and-item";
 import Image from "next/image";
 import TextWithComponent from "../../consumer/components/text-with-component";
@@ -65,8 +65,11 @@ export default function AlchemyControls() {
         </Button>
       </AlertDialogTrigger>
       <AlertDialogContent>
+        <AlertDialogCancel className="hover:bg-transparent text-black/60 hover:text-black w-fit border-none">
+          <LucideX />
+        </AlertDialogCancel>
         <ImageAndItem
-          className="items-center gap-6"
+          className="items-center"
           image={
             <Image
               src="/assets/images/producer/courier.svg"
@@ -89,11 +92,6 @@ export default function AlchemyControls() {
             </div>
           }
         />
-        <AlertDialogFooter>
-          <AlertDialogCancel className="border-none hover:bg-transparent text-primary/80 hover:text-primary">
-            Go Back
-          </AlertDialogCancel>
-        </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>
   );

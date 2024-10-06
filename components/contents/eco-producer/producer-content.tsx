@@ -5,6 +5,7 @@ import HyperLink from "@/components/shared/hyperlink/hyperlink";
 import TextWithCards from "@/components/shared/text-with-cards/text-with-cards";
 import WhiteBgCard from "@/components/shared/white-bg-card";
 import {
+  ArrowRight,
   LucideAward,
   LucideChevronRight,
   LucideDownload,
@@ -28,6 +29,7 @@ import AlchemyOnlineSales from "./components/alchemy-online-sales";
 import AlchemyEngagement from "./components/alchemy-engagement";
 import ImageAndItem from "@/components/shared/image-and-item/image-and-item";
 import { ItemList } from "../courier/components/ItemList";
+import JoinCommunityButton from "@/components/shared/join-community-btn";
 
 const cardContent = [
   {
@@ -325,27 +327,32 @@ export default function ProducerContent() {
         {/* call to action */}
 
         <CtaCard
-          className="bg-[url('/assets/images/producer/unfair-advantage.svg')] ps-[2.25rem] py-[4.75rem] bg-cover bg-center items-center h-[26.75rem] relative after:absolute after:inset-0 after:content-[''] after:bg-black/50 after:opacity-70 after:z-10 overflow-hidden"
+          className="bg-[url('/assets/images/producer/unfair-advantage.svg')] ps-[7.25rem] bg-cover bg-center items-center h-[30.125rem] relative after:absolute after:inset-0 after:content-[''] after:bg-black/50 after:opacity-70 after:z-10 overflow-hidden"
           item={
             <TextWithComponent
               title={
-                <p className="text-white text-4xl">
+                <p className="text-white text-[2.5rem]">
                   ECOCAN, your unfair advantage!
                 </p>
               }
-              description={
-                <span className="text-white">Join the ECOmmunity today</span>
+              component={
+                <Button
+                  variant="outline"
+                  className="bg-[#FFDD4C] hover:bg-[#FFDD4C] rounded-full h-[3rem] w-[24.3125rem] border-none px-8 text-base"
+                >
+                  Join ECOmmunity
+                  <ArrowRight className="ms-4" />
+                </Button>
               }
             />
           }
           image={
             <div>
               <Image
-                src="/assets/images/producer/top-img.png"
-                alt=""
-                width={841.78}
-                height={473.5}
-                className="w-full h-full"
+                src="/assets/images/producer/top-img.svg"
+                alt="ecocan app on web, mobile and tablet"
+                width={1900}
+                height={100}
               />
             </div>
           }

@@ -25,12 +25,14 @@ export default function CourierHero() {
   }, []);
   return (
     <>
-       <NavigationBar
-        logoSrc={isScrolled ? "/assets/images/ecocan-logo.svg": "/assets/images/ecocan-logo-alt.svg"}
-        className={
+      <NavigationBar
+        logoSrc={
           isScrolled
-            ? "bg-white"
-            : "bg-transparent text-white border-b-0 "
+            ? "/assets/images/ecocan-logo.svg"
+            : "/assets/images/ecocan-logo-alt.svg"
+        }
+        className={
+          isScrolled ? "bg-white" : "bg-transparent text-white border-b-0 "
         }
         linkColor={isScrolled ? "text-black" : "text-white"}
       />
@@ -39,18 +41,18 @@ export default function CourierHero() {
           <div className="xl:max-w-[69.375rem] flex flex-col md:flex md:flex-row mx-auto lg:gap-12 lg:pt-[3.125rem] xl:pt-0">
             <div className="flex flex-col gap-4 lg:mt-28 xl:mt-80 md:w-1/2 px-4 xl:px-0 text-white z-50">
               <div>
-                <h1 className="lg:text-6xl text-2xl xl:text-[4rem] text-center md:text-start font-semibold">
-                  Every day is
+                <h1 className="lg:text-6xl text-2xl text-center md:text-start font-semibold">
+                  Every day
                   <br />
                   <span className="bg-gradient-to-br from-[#228B22] via-[#4AC63FCF] to-[#A6A6A6] text-transparent bg-clip-text">
-                    Payday!
+                    is Payday!
                   </span>
                 </h1>
               </div>
               <div className="text-sm lg:text-base xl:text-lg">
                 <p>
-                  Make deliveries and pick-ups, and get paid
-                  <br /> twice!
+                  Make deliveries and pick-ups,
+                  <br /> and get paid twice!
                 </p>
               </div>
             </div>

@@ -53,12 +53,12 @@ export default function ConsumerContent() {
           <TextWithCards
             title="Get Started"
             description={
-              <span>
+              <p className="w-4/5">
                 Whether you want to keep your environment clean, earn extra
                 cash, or to safeguard your health from fake drinks. With
                 EcocanApp, it&apos;s all just a{" "}
                 <HyperLink link="click away!" href="/" />
-              </span>
+              </p>
             }
             customCard={<CustomCard />}
           />

@@ -19,6 +19,8 @@ import ImageTextOverlay from "./components/imageText";
 import { ReusableAccordion } from "@/components/shared/accordion";
 import HyperLink from "@/components/shared/hyperlink/hyperlink";
 import News from "../consumer/components/news";
+import TextWithComponent from "../consumer/components/text-with-component";
+import { ItemList } from "./components/ItemList";
 
 const iconSize = 18;
 
@@ -67,7 +69,7 @@ const howToData = [
     description: (
       <p className="text-sm">
         It&apos;d be easier to just shout instructions at you, but we
-        can&apos;t. So, grab a working smartphone{" "}
+        can&apos;t. <br/>So, grab a working smartphone{" "}
       </p>
     ),
   },
@@ -76,7 +78,7 @@ const howToData = [
     title: "Be mobile",
     description: (
       <p className="text-sm">
-        Deliver however, but don&apos;t use fossil fuel. And don&apos;t keep
+        Deliver however, but don&apos;t use fossil fuel. And don&apos;t keep<br/>
         ECOnsumers waiting
       </p>
     ),
@@ -86,7 +88,7 @@ const howToData = [
     title: "And have insurance",
     description: (
       <p className="text-sm">
-        Let&apos;s keep the good times rolling! So get yourself covered, that we
+        Let&apos;s keep the good times rolling! So get yourself covered,<br/> that we
         keep doing this. Together
       </p>
     ),
@@ -154,12 +156,26 @@ export default function CourierContent() {
       />
 
       {/* how to become an eco-courier */}
-      <HowTo
-        itemsTitle="How to become an Eco-Courier"
-        itemsSubtitle="It's easy like Sunday Morning."
-        items={howToData}
-        imageSrc="/assets/images/courier/courier-woman.svg"
-        imageAlt="Become an Eco-Courier"
+      <ImageAndItem
+      className="items-center"
+        image={
+          <Image
+            src="/assets/images/courier/courier-woman.svg"
+            alt="eco-can courier"
+            width={500}
+            height={100}
+            priority
+          />
+        }
+        item={
+          <TextWithComponent
+            title="How to become an Eco-Courier"
+            description="It's easy like Sunday Morning."
+            component={howToData.map((data) => (
+              <ItemList key={data.id} title={data.title} id={data.id} description={data.description} />
+            ))}
+          />
+        }
       />
 
       {/* your hustle your rules */}
@@ -189,16 +205,12 @@ export default function CourierContent() {
         item={
           <div className="w-5/6 mx-auto">
             <h2 className="text-[2rem] font-bold">Maximise your earnings</h2>
-            <p className="text-lg font-light">
-              We love having you around, so we are sharing these handy tips to
-              help you earn more
-            </p>
             <ReusableAccordion items={accordionItems} />
           </div>
         }
       />
 
-      <News/>
+      <News />
 
       {/* Faq section */}
       <FaqSection />

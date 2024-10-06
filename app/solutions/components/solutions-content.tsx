@@ -44,7 +44,7 @@ export default function SolutionsContent({
           <div className="xl:max-w-[69.375rem] flex flex-col md:flex md:flex-row mx-auto lg:my-0 lg:gap-12">
             <div className="mt-60 px-4 xl:px-0 text-white z-50 mx-auto">
               <div>
-                <h1 className="lg:text-6xl text-2xl xl:text-[4rem] text-center font-semibold text-white">
+                <h1 className="lg:text-6xl text-2xl text-center font-semibold text-white">
                   Smart Sustainable Solutions
                 </h1>
               </div>

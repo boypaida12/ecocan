@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Input } from "@/components/ui/input";
+import HyperLink from "../hyperlink/hyperlink";
 
 type FooterItem =
   | { type: "logo"; src: string; alt: string }
@@ -13,7 +14,7 @@ type FooterItem =
   | { type: "input"; placeholder: string };
 
 type FooterColumn = {
-  title: string | null;
+  title: React.ReactNode;
   items: FooterItem[];
 };
 
@@ -57,12 +58,12 @@ const footerData: FooterColumn[] = [
     ],
   },
   {
-    title: "Home",
+    title: <HyperLink href="/" link="Home" className="after:h-0 text-[#000000]"/>,
     items: [
-      { type: "link", href: "#", content: "About us" },
-      { type: "link", href: "#", content: "Solutions" },
-      { type: "link", href: "#", content: "Blog" },
-      { type: "link", href: "#", content: "Contact us" },
+      { type: "link", href: "/about-us", content: "About us" },
+      { type: "link", href: "/solutions", content: "Solutions" },
+      { type: "link", href: "/blog", content: "Blog" },
+      { type: "link", href: "/contact", content: "Contact us" },
     ],
   },
   {

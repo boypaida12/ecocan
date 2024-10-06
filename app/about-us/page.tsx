@@ -95,7 +95,7 @@ export default function AboutPage() {
             </p>
           }
           description={
-            <div className="space-y-8 mt-4 text-[#23262fcc]">
+            <div className="space-y-8 mt-4 text-[#23262fcc] w-4/5">
               <p>
                 Offering an end-to-end service, for sustainable management of
                 beverage products; from point of manufacture, through retail, to
@@ -290,11 +290,11 @@ export default function AboutPage() {
 
         {/* call to action */}
         <CtaCard
-          className="bg-white py-0 md:flex-row-reverse shadow-lg rounded-2xl overflow-hidden"
+          className="bg-white py-0 md:flex-row-reverse shadow-lg rounded-2xl h-[18rem] gap-12 overflow-hidden"
           item={
             <TextWithComponent
               title={
-                <p className="text-accent text-4xl pt-[3.25rem]">
+                <p className="text-accent text-4xl">
                   In the ECOmmunity
                 </p>
               }
@@ -313,8 +313,8 @@ export default function AboutPage() {
               <Image
                 src="/assets/images/about/hands.svg"
                 alt=""
-                width={1000}
-                height={1000}
+                width={1200}
+                height={100}
                 className="w-full h-full"
               />
             </div>

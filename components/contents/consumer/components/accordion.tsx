@@ -51,11 +51,8 @@ const accordionData: AccordionData[] = [
         </StyledText>
         <StyledText>
           Just scan the ECOCAN security codes, and an authentication page will
-          pop up.{" "}
-          <p>
-            If it doesn’t pop up,{" "}
+          pop up. If it doesn’t pop up,{" "}
             <span className="text-red-500">it’s a fake! DON’T BUY IT!</span>
-          </p>
         </StyledText>
       </>
     ),
@@ -66,7 +63,7 @@ const accordionData: AccordionData[] = [
     description: (
       <>
         <StyledText>
-          After enjoying your drink, you can find the nearest ECO-station with
+          After enjoying your drink, you can find the nearest ECO-station on ECOCAN Map with
           just a quick tap.
         </StyledText>
         <StyledText>

@@ -13,7 +13,7 @@ export default function CtaCardComponent() {
       item={
         <TextWithComponent
           title={
-            <h2 className="text-white text-5xl mb-3">
+            <h2 className="text-white text-[2.5rem] mb-3">
               Cheers to ECO-
               <br />
               friendly savings!
@@ -32,7 +32,7 @@ export default function CtaCardComponent() {
               />
               <Button
                 variant="outline"
-                className="bg-transparent hover:bg-transparent border-white text-white hover:text-white rounded-full h-[3.25rem] py-3 px-8 text-lg"
+                className="bg-transparent hover:bg-transparent border-white text-white hover:text-white rounded-full h-[3rem] py-3 px-8 text-base"
               >
                 Become an Econsumer
               </Button>

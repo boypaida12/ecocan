@@ -101,8 +101,14 @@ export default function EcoStationContent() {
   return (
     <div className="space-y-24 py-8 max-w-[69.375rem] mx-auto px-4 xl:px-0">
       <TextWithCards
-        title="Why become an ECO-station"
-        description="It's a win-win-win; while you help keep the environment clean by accepting empties, and issuing deposits to ECOnsumers, we’ll bring more business to you"
+        title="Why become an ECO-Station"
+        description={
+          <p className="w-4/5">
+            It&apos;s a win-win-win; while you help keep the environment clean
+            by accepting empties, and issuing deposits to ECOnsumers, we’ll
+            bring more business to you
+          </p>
+        }
         customCard={
           <CustomCard
             features={[
@@ -216,7 +222,7 @@ export default function EcoStationContent() {
 
       {/* your success our pride */}
       <ImageAndItem
-      className="gap-12 items-center"
+        className="gap-12 items-center"
         image={
           <Image
             src="/assets/images/eco-station/success-pride.svg"
@@ -227,7 +233,9 @@ export default function EcoStationContent() {
         }
         item={
           <div className="space-y-6">
-            <h2 className="font-semibold text-[2rem]">Your success, our pride</h2>
+            <h2 className="font-semibold text-[2rem]">
+              Your success, our pride
+            </h2>
             <p>
               Facilitate ECOnsumers to return eligible empties to your shop for
               recycling. And over 60% will most likely spend their deposit money
@@ -263,7 +271,12 @@ export default function EcoStationContent() {
             Performance Indicators
           </div>
         }
-        item={<ReusableAccordion items={accordionItems} defaultOpenItems={["item-1", "item-4"]}/>}
+        item={
+          <ReusableAccordion
+            items={accordionItems}
+            defaultOpenItems={["item-1", "item-4"]}
+          />
+        }
         image={
           <Image
             src="/assets/images/courier/insights.svg"
@@ -275,44 +288,27 @@ export default function EcoStationContent() {
           />
         }
       />
-      <News/>
+      <News />
       {/* faq */}
       <FaqSection />
 
       {/* call to action */}
       <CtaCard
-        className="bg-[url('/assets/images/eco-station/join-ecommunity-bg.svg')] ps-[7.25rem] py-[3.75rem] bg-cover bg-center relative"
+        className="bg-[url('/assets/images/eco-station/join-ecommunity-bg.svg')] ps-[7.25rem] h-[30.125rem] bg-cover bg-center relative"
         item={
           <TextWithComponent
-            title={
-              <p className="text-white text-5xl">
-                Sustainable commerce
-              </p>
-            }
-            description={
-              <span className="text-white">With ECOCAN</span>
-            }
+            title={<p className="text-white text-5xl">Sustainable commerce</p>}
+            description={<span className="text-white">With ECOCAN</span>}
             component={
               <Button
                 variant="outline"
-                className="bg-[#FFDD4C] hover:bg-[#FFDD4C] rounded-full h-[3.25rem] w-[24.3125rem] border-none px-8 text-lg"
+                className="bg-[#FFDD4C] hover:bg-[#FFDD4C] rounded-full h-[3rem] w-[24.3125rem] border-none px-8 text-base"
               >
                 Join ECOmmunity
-                <ArrowRight className="ms-4"/>
+                <ArrowRight className="ms-4" />
               </Button>
             }
           />
-        }
-        image={
-          <div className="w-[19.75rem] h-[22.625rem] mx-auto">
-            <Image
-              src="/assets/images/mobile-alt.svg"
-              alt=""
-              width={100}
-              height={100}
-              className="w-full h-full"
-            />
-          </div>
         }
       />
     </div>

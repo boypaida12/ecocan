@@ -35,7 +35,7 @@ export default function RecyclerHero() {
           <div className="xl:max-w-[69.375rem] flex flex-col md:flex md:flex-row mx-auto lg:my-0 lg:gap-12">
             <div className="mt-60 px-4 xl:px-0 text-white z-50 mx-auto w-[70.625rem] text-left">
               <div>
-                <h1 className="lg:text-6xl text-2xl xl:text-[4rem] text-left font-semibold text-white">
+                <h1 className="lg:text-6xl text-2xl text-left font-semibold text-white">
                   Highest Quality
                   <br />
                   <span className="bg-gradient-to-br from-[#228B22] via-[#4AC63FCF] to-[#A6A6A6] text-transparent bg-clip-text">

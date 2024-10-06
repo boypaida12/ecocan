@@ -111,11 +111,11 @@ export default function DepositRefundSystem() {
           <h2 className="text-[1.85rem] font-semibold">
             Why a Deposit Refund System?
           </h2>
-          <p>You&apos;re an expert, so we&apos;ll skip the 101</p>
+          <p className="my-2">You&apos;re an expert, so we&apos;ll skip the 101</p>
           <Image
             src="/assets/images/recycler/drs.svg"
-            width={486}
-            height={400}
+            width={500}
+            height={100}
             priority
             alt="How to return eligible empties"
           />

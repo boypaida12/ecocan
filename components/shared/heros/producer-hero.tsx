@@ -32,11 +32,11 @@ export default function ProducerHero() {
         linkColor={isScrolled ? "text-black" : "text-white"}
       />
       <div className="lg:h-[36rem] xl:h-[47.575rem]">
-        <div className="bg-[url('/assets/images/producer/hero.svg')] lg:h-[36rem] xl:h-[48rem] lg:bg-cover relative after:absolute after:inset-0 after:content-[''] after:bg-black/40 after:opacity-60 after:z-10">
+        <div className="bg-[url('/assets/images/producer/hero.svg')] lg:h-[36rem] xl:h-[48rem] lg:bg-cover lg:bg-[300px] relative after:absolute after:inset-0 after:content-[''] after:bg-black/40 after:opacity-60 after:z-10">
           <div className="xl:max-w-[69.375rem] flex flex-col md:flex md:flex-row mx-auto lg:my-0 lg:gap-12">
             <div className="lg:mt-28 xl:mt-60 px-4 xl:px-0 text-white z-50">
               <div>
-                <h1 className="lg:text-6xl text-2xl xl:text-[4rem] text-left font-semibold text-white">
+                <h1 className="lg:text-6xl text-2xl text-left font-semibold text-white">
                   Maximize Earnings,
                   <br />
                   <span className="bg-gradient-to-br from-[#228B22] via-[#4AC63F] to-[#A6A6A6] text-transparent bg-clip-text text-[3rem] text-left space-x-1">

@@ -103,11 +103,11 @@ export default function RecyclerContent() {
       {/* call to action */}
 
       <CtaCard
-        className="bg-[url('/assets/images/recycler/recycler-cta.jpeg')] ps-[7.25rem] py-[4.75rem] bg-cover bg-center items-center"
+        className="bg-[url('/assets/images/recycler/recycler-cta.jpeg')] ps-[7.25rem] h-[30.125rem] bg-cover bg-center items-center"
         item={
           <TextWithComponent
             title={
-              <p className="text-white text-5xl">
+              <p className="text-white text-[2.5rem]">
                 Recycling is
                 <br />
                 Cooperation

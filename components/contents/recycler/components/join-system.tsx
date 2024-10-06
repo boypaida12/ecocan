@@ -32,7 +32,7 @@ export default function JoinSystem() {
     <TextWithCards
       title="Why join the ECO-system?"
       description={
-        <p>
+        <p className="w-4/5">
           Want to cut contaminated recyclate losses? Boost your efficiency? And
           make more money? Then the ECOCAN collection system is where you should
           be

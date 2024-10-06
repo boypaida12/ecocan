@@ -81,9 +81,9 @@ export default function Optimize() {
       </div>
 
       <div className="w-full flex items-center justify-center ">
-        <p className="text-[#23262FCC] font-inter text-[1.25rem] font-semibold leading-[1.5125rem] tracking-[-0.02em] text-center w-[39.938rem] mb-4">
-          Only ECOCAN can offer you this level of insight, security and
-          sustainability.And we say this with Absolute Confidence! Prove us
+        <p className="text-[#23262FCC] text-lg font-semibold leading-[1.5125rem] text-center mb-4">
+          Only ECOCAN can offer you this level of insight, security, efficiency
+          and <br/>sustainability. And we say this with Absolute Confidence! Prove us
           wrong
         </p>
       </div>

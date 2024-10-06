@@ -38,6 +38,7 @@ export default function TapTap() {
           width={500}
           height={100}
           priority
+          loading="eager"
         />
       }
       item={<AccordionDemo onSelect={handleAccordionSelect} />}
