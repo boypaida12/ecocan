@@ -169,7 +169,7 @@ export default function CourierContent() {
         }
         item={
           <TextWithComponent
-            title="How to become an Eco-Courier"
+            title="How to become an ECOurier"
             description="It's easy like Sunday Morning."
             component={howToData.map((data) => (
               <ItemList key={data.id} title={data.title} id={data.id} description={data.description} />

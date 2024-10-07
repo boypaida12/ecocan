@@ -29,7 +29,7 @@ export default function DefaultHero() {
               <div>
                 <h1 className="lg:text-6xl text-2xl text-center md:text-start font-semibold">
                   Re-imagining{" "}
-                  <span className="bg-gradient-to-br from-[#228B22] via-[#4AC63FCF] to-[#A6A6A6] text-transparent bg-clip-text">
+                  <span className="bg-gradient-to-r from-[#228B22] via-[#4AC63FCF] to-[#FFDD4C] text-transparent bg-clip-text">
                     Sustainability
                   </span>
                 </h1>

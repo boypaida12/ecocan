@@ -15,14 +15,6 @@ const steps = [
   },
   {
     id: 3,
-    step: <div>Collected-for-Recycling</div>,
-  },
-  {
-    id: 4,
-    step: <div>Sent-to-Recycling</div>,
-  },
-  {
-    id: 5,
     step: <div>Closed-loop Recycling</div>,
   },
 ];

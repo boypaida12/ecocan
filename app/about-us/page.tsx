@@ -26,7 +26,7 @@ const accordionItems = [
     id: "item-2",
     question: "Preserve life",
     answer:
-      "We’ll instantly alert you every time a customer engages with your products, detailing exactly when and where it happens. Plus, with advanced data analytics tools, the TnT will generate dynamic performance reports on all interactions. You can then use these insights to take your business to the next level.",
+      "We'll instantly alert you every time a customer engages with your products, detailing exactly when and where it happens. Plus, with advanced data analytics tools, the TnT will generate dynamic performance reports on all interactions. You can then use these insights to take your business to the next level.",
   },
   {
     id: "item-3",
@@ -95,7 +95,7 @@ export default function AboutPage() {
             </p>
           }
           description={
-            <div className="space-y-8 mt-4 text-[#23262fcc] w-4/5">
+            <div className="mt-4 text-[#23262fcc] w-4/5">
               <p>
                 Offering an end-to-end service, for sustainable management of
                 beverage products; from point of manufacture, through retail, to
@@ -104,11 +104,8 @@ export default function AboutPage() {
                 revolutionary technology leveraging IoT, Blockchain, and AI, to
                 provide comprehensive product circulation insights, and deep
                 market intelligence. Giving stakeholders greater and
-                unparalleled control.
-              </p>
-              <p>
-                At the core of the ECOCAN TnT is our free-to-use{" "}
-                <HyperLink link="EcocanApp" href="/" />, robust{" "}
+                unparalleled control. At the core of the ECOCAN TnT is our
+                free-to-use <HyperLink link="EcocanApp" href="/" />, robust{" "}
                 <HyperLink link="ECOCAN security codes" href="/" />, and the
                 innovative <HyperLink link="ECOCAN DRS" href="/" />.{" "}
               </p>
@@ -143,7 +140,7 @@ export default function AboutPage() {
                     Who envision a planet fee from pollution, safe for all the
                     life it sustains, and brimming with limitless opportunities
                     to thrive. Sounds like a Cinderella tale. But to us, the
-                    change makers, disruptors, and go getters, it’s an
+                    change makers, disruptors, and go getters, it&apos;s an
                     achievable reality; when we bring communities together, and
                     empower them with intelligent tools to prosper
                   </p>
@@ -169,7 +166,9 @@ export default function AboutPage() {
           item={
             <TextWithComponent
               title={
-                <h2 className={`bg-gradient-to-tl my-2 from-[#FFDD4C] via-[#FFDD4C] to-[#228B22] text-transparent bg-clip-text font-semibold text-3xl ${dmSans.className}`}>
+                <h2
+                  className={`bg-gradient-to-tl my-2 from-[#FFDD4C] via-[#FFDD4C] to-[#228B22] text-transparent bg-clip-text font-semibold text-3xl ${dmSans.className}`}
+                >
                   On a mission
                 </h2>
               }
@@ -195,7 +194,9 @@ export default function AboutPage() {
             <TextWithComponent
               description={
                 <div>
-                  <h2 className={`bg-gradient-to-bl my-2 from-[#228B22] via-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text font-semibold text-3xl ${dmSans.className}`}>
+                  <h2
+                    className={`bg-gradient-to-bl my-2 from-[#228B22] via-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text font-semibold text-3xl ${dmSans.className}`}
+                  >
                     To which we are{" "}
                     <span className="bg-gradient-to-bl from-[#4AC63F] via-[#FFDD4C] to-[#0000001A] text-transparent bg-clip-text">
                       committed
@@ -205,8 +206,8 @@ export default function AboutPage() {
                     Environmental, health and economic sustainability are our
                     north stars. And promoting healthier and fulfilled
                     communities remains our focus. We think we have a solid plan
-                    to archive this. And we’ve built needed technology and tools
-                    to get started. But we can’t make it all the way without you
+                    to archive this. And we&apos;ve built needed technology and tools
+                    to get started. But we can&apos;t make it all the way without you
                   </p>
                 </div>
               }
@@ -231,7 +232,9 @@ export default function AboutPage() {
             <TextWithComponent
               description={
                 <div className="w-11/12 ms-auto">
-                  <h2 className={`bg-gradient-to-bl my-2 from-[#228B22] via-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text font-semibold text-3xl ${dmSans.className}`}>
+                  <h2
+                    className={`bg-gradient-to-bl my-2 from-[#228B22] via-[#4AC63F] to-[#0000001A] text-transparent bg-clip-text font-semibold text-3xl ${dmSans.className}`}
+                  >
                     And draw our{" "}
                     <span className="bg-gradient-to-tr from-[#4AC63F] via-[#FFDD4C] to-[#0000001A] text-transparent bg-clip-text">
                       identity
@@ -240,8 +243,8 @@ export default function AboutPage() {
                   <p>
                     A strong belief in meaningful cooperation. Formidable spirit
                     of resilience. The ability to re-imagine. And the courage to
-                    disrupt. That’s the essence of our DNA. And the CORE of
-                    ECOCAN. We pledge to uphold this all the way. That’s our
+                    disrupt. That&apos;s the essence of our DNA. And the CORE of
+                    ECOCAN. We pledge to uphold this all the way. That&apos;s our
                     promise you!
                   </p>
                 </div>
@@ -276,8 +279,8 @@ export default function AboutPage() {
             title="And join other disruptors"
             description={
               <>
-                <p className="text-[#777E90]">
-                  Building on our collaborative spirit, you’ll be joining these
+                <p className="text-[#777E90] w-4/6 mx-auto">
+                  Building on our collaborative spirit, you&apos;ll be joining these
                   strategic partners, who are instrumental to bringing our
                   aspirations to fruition. Cheers to them, or as they say in
                   Finland; hölökyn kölökyn!
@@ -293,11 +296,7 @@ export default function AboutPage() {
           className="bg-white py-0 md:flex-row-reverse shadow-lg rounded-2xl h-[18rem] gap-12 overflow-hidden"
           item={
             <TextWithComponent
-              title={
-                <p className="text-accent text-4xl">
-                  In the ECOmmunity
-                </p>
-              }
+              title={<p className="text-accent text-4xl">In the ECOmmunity</p>}
               description={
                 <p className="text-black/70 mt-4 lg:w-4/5">
                   We believe in the power of collaboration to drive positive

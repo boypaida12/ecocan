@@ -61,12 +61,9 @@ const Events = () => {
               description={
                 <div className="w-11/12">
                   By teaming up with us, the turnout will be massive for sure;
-                  and you’ll sell more drinks, meaning empties will be plenty to
-                  collect.
-                  <br />
-                  <br />
-                  So, to boost collection efficiency and give your fans an
-                  unforgettable recycling experience, we’ll bring over our
+                  and you&apos;ll sell more drinks, meaning empties will be plenty to
+                  collect. So, to boost collection efficiency and give your fans an
+                  unforgettable recycling experience, we&apos;ll bring over our
                   intelligent RVMs.
                 </div>
               }
@@ -91,10 +88,7 @@ const Events = () => {
               description={
                 <>
                   We’ve rolled out the Red Carpet for ECOnsumers and availed the
-                  ECOCAN RVMs. You can as well sprinkle in a surprise package.
-                  <br />
-                  <br />
-                  That we create a truly immersive and unforgettable ECO-Event
+                  ECOCAN RVMs. You can as well sprinkle in a surprise package. That we create a truly immersive and unforgettable ECO-Event
                 </>
               }
             />
