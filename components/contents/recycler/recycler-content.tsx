@@ -36,12 +36,11 @@ export default function RecyclerContent() {
         image={
           <div className="relative w-[31.013rem] h-[30.719rem]">
             <Image
-              src="/assets/images/courier/hustle-rules.svg"
-              width={496.21}
-              height={491.5}
+              src="/assets/images/recycler/takeover.svg"
+              width={500}
+              height={100}
               priority
               alt="How to return eligible empties"
-              className="w-[496.21px] h-[491.5px] "
             />
           </div>
         }
@@ -97,7 +96,7 @@ export default function RecyclerContent() {
       </div>
 
       {/* that which matters */}
-      <Matters/>
+      <Matters />
       {/* faq */}
       <FaqSection />
       {/* call to action */}
