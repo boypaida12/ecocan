@@ -44,36 +44,36 @@ const accordionItems = [
 
 const rvmContent = [
   {
-    icon: <LucideRecycle />,
+    icon: "/assets/images/producer/conserve.svg",
     title: "Conserve our environment",
     content: "Currently, our cities and oceans are choking with plastic waste",
   },
   {
-    icon: <LucideAward />,
+    icon: "/assets/images/producer/health.svg",
     title: "Protect consumer health",
     content:
       "Our markets are filled with counterfeit products, dangerous to our health",
   },
   {
-    icon: <LucideGem />,
+    icon: "/assets/images/producer/support.svg",
     title: "Support our communities",
     content:
       "We offer fair opportunities for everyone to make their contribution to protect our planet, and earn from it.",
   },
   {
-    icon: <LucideRecycle />,
+    icon: "/assets/images/producer/market.svg",
     title: "First to market Solutions",
     content:
       "We offer innovative technology to revolutionise the packaging and brand protection sectors",
   },
   {
-    icon: <LucideAward />,
+    icon: "/assets/images/producer/compliance.svg",
     title: "Legal Compliance",
     content:
       "We facilitate beverage producers and consumers to comply with environmental laws. We offer innovative technology to revolutionise the packaging and brand protection sectors",
   },
   {
-    icon: <LucideGem />,
+    icon: "/assets/images/producer/cool.svg",
     title: "We think we are cool",
     content:
       "We are on a mission, driving a movement, with a purpose. Stand for something you believe in.",
@@ -261,7 +261,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
               {rvmContent.map((card, index) => (
                 <WhiteBgCard
-                  iconPath="/assets/images/all/green-ball.svg"
+                  iconPath={card.icon}
                   className="border-none"
                   title={card.title}
                   key={index}
